@@ -2,7 +2,8 @@
 /*
 All the functions are in the PHP pages in the `functions/` folder.
 */
-
+  
+  require get_template_directory() . '/update/plugin-update-checker.php';
 	require get_template_directory() . '/functions/cleanup.php';
 	require get_template_directory() . '/functions/setup.php';
 	require get_template_directory() . '/functions/enqueues.php';
@@ -13,7 +14,12 @@ All the functions are in the PHP pages in the `functions/` folder.
 	require get_template_directory() . '/functions/split-post-pagination.php';
 	require get_template_directory() . '/functions/feedback.php';
 	require get_template_directory() . '/functions/remove-query-string.php';
-  
+
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/ptibogxiv/ptibogxivtheme/',
+	__FILE__,
+	'ptibogxivtheme'
+);
 
 function ptibogxivtheme_load_theme_textdomain() {
 load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages' );

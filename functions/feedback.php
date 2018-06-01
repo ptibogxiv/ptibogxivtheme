@@ -4,7 +4,7 @@ Custom feedback comments
 https://codex.wordpress.org/Function_Reference/wp_list_comments#Comments_Only_With_A_Custom_Comment_Display
 */
 
-function b4st_comment($comment, $args, $depth) {
+function ptibogxivtheme_comment($comment, $args, $depth) {
   $GLOBALS['comment'] = $comment;
   extract($args, EXTR_SKIP);
   if ( 'div' == $args['style'] ) {
@@ -25,9 +25,9 @@ function b4st_comment($comment, $args, $depth) {
       </div>
       <div>
         <h4 style="margin: 0 0 5px 0"><?php comment_author(); ?></h4>
-        <p class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf('%1$s ' . __('at', 'b4st') . ' %2$s', get_comment_date(), get_comment_time()) ?></a></p>
+        <p class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf('%1$s ' . __('at', 'ptibogxivtheme') . ' %2$s', get_comment_date(), get_comment_time()) ?></a></p>
         <?php if ($comment->comment_approved == '0') : ?>
-          <p><em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.', 'b4st') ?></em></p>
+          <p><em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.', 'ptibogxivtheme') ?></em></p>
         <?php endif; ?>
       </div>
     </div>
@@ -38,7 +38,7 @@ function b4st_comment($comment, $args, $depth) {
       </div>  
     </div>
     <div class="reply">
-      <p class="text-right"><?php edit_comment_link("<span class='btn btn-default btn-warning'>" . __('Edit', 'b4st') . "</span>",' ','' );	?> <?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></p>
+      <p class="text-right"><?php edit_comment_link("<span class='btn btn-default btn-warning'>" . __('Edit', 'ptibogxivtheme') . "</span>",' ','' );	?> <?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></p>
     </div>
       <?php if ( 'div' != $args['style'] ) : ?>
     </div>

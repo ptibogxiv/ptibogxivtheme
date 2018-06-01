@@ -48,7 +48,7 @@ the_custom_logo(); ?>
         'fallback_cb'		  => '__return_false',
       	'items_wrap'		  => '<UL id="%1$s" class="navbar-nav mr-auto mt-2 mt-lg-0 %2$s">%3$s</UL>',
         'depth'			      => 2,
-	      'walker'  	      => new b4st_walker_nav_menu()
+	      'walker'  	      => new ptibogxivtheme_walker_nav_menu()
       ) );
 if (function_exists('pll_the_languages')) {       
 ?><A href="#" data-toggle="modal" data-target="#SelectLang" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><I class='fas fa-language fa-fw fa-2x'></I></A>&nbsp;|&nbsp;<?php

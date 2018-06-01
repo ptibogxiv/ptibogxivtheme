@@ -1,6 +1,6 @@
 <?php
 
-class b4st_walker_nav_menu extends Walker_Nav_menu {
+class ptibogxivtheme_walker_nav_menu extends Walker_Nav_menu {
 
 	function start_lvl( &$output, $depth = 0, $args = array() ){ // ul
 		$indent = str_repeat("\t",$depth); // indents the outputted HTML

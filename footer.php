@@ -38,7 +38,7 @@ dynamic_sidebar('footer-widget-area'); }?></DIV>
 </DIV></DIV></FOOTER>
 <?php wp_footer(); ?>
 <DIV class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><DIV class="modal-dialog modal-dialog-centered modal-lg" role="document"><DIV class="modal-content"><DIV class="modal-header">
-<H5 class="modal-title" id="exampleModalLongTitle">Mentions légales</H5>
+<H5 class="modal-title" id="exampleModalLongTitle"><?php _e('Privacy Policy', 'ptibogxivtheme'); ?></H5>
 <BUTTON type="button" class="close" data-dismiss="modal" aria-label="Close"><SPAN aria-hidden="true">&times;</SPAN></BUTTON></DIV>
 <DIV class="modal-body">
 <P class="text-justify">En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé, aux utilisateurs du présent site, l'identité des différents intervenants.</P>

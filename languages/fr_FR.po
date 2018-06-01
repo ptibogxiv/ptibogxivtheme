@@ -1,0 +1,459 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ptibogxiv\n"
+"POT-Creation-Date: 2018-06-01 16:50+0200\n"
+"PO-Revision-Date: 2018-06-01 16:51+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:10
+msgid "Error"
+msgstr "Erreur"
+
+#: 404.php:11
+msgid "The page you were looking for does not exist."
+msgstr "La page que vous recherchez n’existe pas."
+
+#: author.php:24
+#, php-format
+msgid "Author %s"
+msgstr "Auteur %s"
+
+#: footer.php:62
+msgid "Change language"
+msgstr "Changer de langue"
+
+#: functions.php:164
+msgid "Title:"
+msgstr "Titre:"
+
+#: functions/feedback.php:28
+msgid "at"
+msgstr "à"
+
+#: functions/feedback.php:30
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: functions/feedback.php:41
+msgid "Edit"
+msgstr "Éditer"
+
+#: functions/index-pagination.php:29
+msgid "<i class=\"fas fa-angle-left\"></i> Newer"
+msgstr ""
+
+#: functions/index-pagination.php:31
+msgid "Older <i class=\"fas fa-angle-right\"></i>"
+msgstr ""
+
+#: functions/navbar.php:59
+msgid "Navbar"
+msgstr "Barre de navigation"
+
+#: functions/search-widget.php:6
+msgid "Search"
+msgstr "Chercher"
+
+#: functions/setup.php:18
+msgid "Read more"
+msgstr "Lire plus"
+
+#: functions/setup.php:35
+msgid "Theme Layout Settings"
+msgstr "Paramètres de mise en page"
+
+#: functions/setup.php:37
+msgid "Container width and sidebar defaults"
+msgstr "Largeur du site (avec widget latéraux)"
+
+#: functions/setup.php:52
+msgid "Container Width"
+msgstr "Largeur de conteneur"
+
+#: functions/setup.php:53
+msgid "Choose between Bootstrap's container and container-fluid"
+msgstr ""
+
+#: functions/setup.php:58
+msgid "Fixed width container"
+msgstr "Conteneur à largeur fixe"
+
+#: functions/setup.php:59
+msgid "Full width container"
+msgstr "Container pleine largeur"
+
+#: functions/setup.php:76
+msgid "Navbar Css scheme"
+msgstr "Barre de navigation"
+
+#: functions/setup.php:77
+msgid "Choose between css scheme"
+msgstr "Choisissez un jeu de couleurs"
+
+#: functions/setup.php:82
+msgid "Default"
+msgstr ""
+
+#: functions/setup.php:83
+msgid "Cerulean"
+msgstr ""
+
+#: functions/setup.php:84
+msgid "Cosmo"
+msgstr ""
+
+#: functions/setup.php:85
+msgid "Cyborg"
+msgstr ""
+
+#: functions/setup.php:86
+msgid "Darkly"
+msgstr ""
+
+#: functions/setup.php:87
+msgid "Flatly"
+msgstr ""
+
+#: functions/setup.php:88
+msgid "Journal"
+msgstr ""
+
+#: functions/setup.php:89
+msgid "Litera"
+msgstr ""
+
+#: functions/setup.php:90
+msgid "Lumen"
+msgstr ""
+
+#: functions/setup.php:91
+msgid "Lux"
+msgstr ""
+
+#: functions/setup.php:92
+msgid "Materia"
+msgstr ""
+
+#: functions/setup.php:93
+msgid "Minty"
+msgstr ""
+
+#: functions/setup.php:94
+msgid "Pulse"
+msgstr ""
+
+#: functions/setup.php:95
+msgid "Sandstone"
+msgstr ""
+
+#: functions/setup.php:96
+msgid "Simplex"
+msgstr ""
+
+#: functions/setup.php:97
+msgid "Sketchy"
+msgstr ""
+
+#: functions/setup.php:98
+msgid "Slate"
+msgstr ""
+
+#: functions/setup.php:99
+msgid "Solar"
+msgstr ""
+
+#: functions/setup.php:100
+msgid "Spacelab"
+msgstr ""
+
+#: functions/setup.php:101
+msgid "Superhero"
+msgstr ""
+
+#: functions/setup.php:102
+msgid "United"
+msgstr ""
+
+#: functions/setup.php:103
+msgid "Yeti"
+msgstr ""
+
+#: functions/setup.php:120
+msgid "Navbar Color scheme"
+msgstr "Barre de navigation"
+
+#: functions/setup.php:121
+msgid "Choose between color scheme"
+msgstr "Choisissez un jeu de couleurs"
+
+#: functions/setup.php:126
+msgid "Light scheme"
+msgstr ""
+
+#: functions/setup.php:127
+msgid "Dark scheme"
+msgstr ""
+
+#: functions/setup.php:128
+msgid "Primary scheme"
+msgstr ""
+
+#: functions/setup.php:129
+msgid "Secondary scheme"
+msgstr ""
+
+#: functions/setup.php:130
+msgid "Info scheme"
+msgstr ""
+
+#: functions/setup.php:131
+msgid "Success scheme"
+msgstr ""
+
+#: functions/setup.php:132
+msgid "Warning scheme"
+msgstr ""
+
+#: functions/setup.php:133
+msgid "Danger scheme"
+msgstr ""
+
+#: functions/setup.php:150
+msgid "Home brand style"
+msgstr ""
+
+#: functions/setup.php:151
+msgid "Style of brand home button in navbar"
+msgstr "Style du bouton d'acceuil"
+
+#: functions/setup.php:157
+msgid "Brand only"
+msgstr ""
+
+#: functions/setup.php:158
+msgid "Logo only"
+msgstr ""
+
+#: functions/setup.php:159
+msgid "Brand & logo"
+msgstr ""
+
+#: functions/setup.php:160
+msgid "Generic Home"
+msgstr ""
+
+#: functions/setup.php:177
+msgid "Sidebar Positioning"
+msgstr ""
+
+#: functions/setup.php:178
+msgid ""
+"Set sidebar's default position. Can either be: right, left, both or none. "
+"Note: this can be overridden on individual pages."
+msgstr ""
+
+#: functions/setup.php:184
+msgid "Right sidebar"
+msgstr ""
+
+#: functions/setup.php:185
+msgid "Left sidebar"
+msgstr ""
+
+#: functions/setup.php:186
+msgid "Left & Right sidebars"
+msgstr ""
+
+#: functions/setup.php:187
+msgid "No sidebar"
+msgstr ""
+
+#: functions/widgets.php:9
+msgid "Sidebar"
+msgstr ""
+
+#: functions/widgets.php:11
+msgid "The sidebar widget area"
+msgstr "Zone du widget latéral"
+
+#: functions/widgets.php:22
+msgid "Footer"
+msgstr "Pied de page"
+
+#: functions/widgets.php:24
+msgid "The footer widget area"
+msgstr "Zone du widget du pied de la  page"
+
+#: functions/widgets.php:35
+msgid "Top"
+msgstr ""
+
+#: functions/widgets.php:37
+msgid "The top widget area"
+msgstr "Zone du widget d'entête"
+
+#: functions/widgets.php:48
+msgid "Caroussel"
+msgstr "Carousel"
+
+#: functions/widgets.php:50
+msgid "The caroussel widget area"
+msgstr ""
+
+#: header.php:54
+msgid "Choose language"
+msgstr "Choisissez une langue"
+
+#: loops/comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: loops/comments.php:17
+msgid "Feedback"
+msgstr "Feedback"
+
+#: loops/comments.php:19 loops/content-single.php:22
+msgid "Comments"
+msgstr "Commentaires"
+
+#: loops/comments.php:19
+msgid "None"
+msgstr "Aucun"
+
+#: loops/comments.php:33
+msgid "Be the first to write a comment."
+msgstr "Soyez le premier à commenter."
+
+#: loops/comments.php:35
+msgid "Comments are closed for this post."
+msgstr "Les commentaires sont fermés pour cet article."
+
+#: loops/comments.php:42
+msgid "Your feedback"
+msgstr "Vos retours"
+
+#: loops/comments.php:42
+#, php-format
+msgid "Responses to %s"
+msgstr "Réponses à %s"
+
+#: loops/comments.php:45
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+"Vous devez être <a href=\"%s\">connecté</a> pour publier un commentaire."
+
+#: loops/comments.php:50
+msgid "Logged in as"
+msgstr "Connecté en tant que"
+
+#: loops/comments.php:51
+msgid "Log out of this account"
+msgstr "Déconnecter"
+
+#: loops/comments.php:51
+msgid "Log out"
+msgstr "Déconnecter"
+
+#: loops/comments.php:55 loops/comments.php:56
+msgid "Your name"
+msgstr "Votre nom"
+
+#: loops/comments.php:55
+msgid "(required)"
+msgstr "(requis)"
+
+#: loops/comments.php:59 loops/comments.php:60
+msgid "Your email address"
+msgstr "Votre adresse email"
+
+#: loops/comments.php:59
+msgid "(required, but will not be published)"
+msgstr ""
+
+#: loops/comments.php:63
+msgid "Your website"
+msgstr "Votre site internet"
+
+#: loops/comments.php:63
+msgid "if you have one (not required)"
+msgstr ""
+
+#: loops/comments.php:64
+msgid "Your website url"
+msgstr "Votre site internet"
+
+#: loops/comments.php:68 loops/comments.php:69
+msgid "Your comment"
+msgstr "Votre commentaire"
+
+#: loops/comments.php:71
+msgid "Submit comment"
+msgstr "Envoyer votre commentaire"
+
+#: loops/content-search.php:18
+msgid "Sorry, your search yielded no results."
+msgstr "Désolé, votre recherche ne retourne aucun résultat."
+
+#: loops/content-single.php:14
+msgid "By"
+msgstr "Par"
+
+#: loops/content-single.php:15 loops/content.php:23
+msgid "Post on"
+msgstr "Publié le"
+
+#: loops/content-single.php:19
+msgid "Filed under"
+msgstr "Catégorie(s)"
+
+#: loops/content-single.php:26
+msgid "Share"
+msgstr "Partager"
+
+#: loops/content.php:29
+msgid "Previous"
+msgstr "Précédent"
+
+#: loops/content.php:31
+msgid "Next"
+msgstr "Suivant"
+
+#: navbar-search.php:12
+msgctxt "ptibogxivtheme"
+msgid "Search"
+msgstr "Chercher"
+
+#: search.php:9
+msgid "Search Results for"
+msgstr "Résultats de la recherche pour"
+
+#. Theme Name of the plugin/theme
+#. Author of the plugin/theme
+msgid "ptibogxiv"
+msgstr "ptibogxiv"
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.ptibogxiv.net/en"
+msgstr "https://www.ptibogxiv.net/fr"
+
+#. Description of the plugin/theme
+msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
+msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-03 21:40+0200\n"
-"PO-Revision-Date: 2018-06-03 21:41+0200\n"
+"POT-Creation-Date: 2018-06-03 21:50+0200\n"
+"PO-Revision-Date: 2018-06-03 21:51+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -243,8 +243,8 @@ msgid "Home brand style"
 msgstr "Style du bouton d'acceuil"
 
 #: functions/setup.php:151
-msgid "Choose between style of home button in navbar"
-msgstr "Choisissez un style pour le bouton d'accueil dans la barre"
+msgid "Choose between style of home button"
+msgstr "Choisissez un style pour le bouton d'accueil"
 
 #: functions/setup.php:156
 msgid "Brand only"

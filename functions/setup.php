@@ -148,7 +148,7 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 				$wp_customize,
 				'ptibogxivtheme_brand_style', array(
 					'label'       => __( 'Home brand style', 'ptibogxivtheme' ),
-					'description' => __( "Choose between style of home button in navbar", 'ptibogxivtheme' ),
+					'description' => __( "Choose between style of home button", 'ptibogxivtheme' ),
 					'section'     => 'ptibogxivtheme_theme_layout_options',
 					'settings'    => 'ptibogxivtheme_brand_style',
 					'type'        => 'select',

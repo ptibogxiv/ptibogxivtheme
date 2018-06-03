@@ -20,6 +20,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__,
 	'ptibogxivtheme'
 );
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
 
 function ptibogxivtheme_load_theme_textdomain() {
 load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages' );

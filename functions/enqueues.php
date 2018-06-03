@@ -3,18 +3,18 @@
 function ptibogxivtheme_enqueues() {
 
 /* Styles */
-if (get_theme_mod( 'b4st_css') == '' or get_theme_mod( 'b4st_css') == 'css') {
+if (get_theme_mod( 'ptibogxivtheme_css') == '' or get_theme_mod( 'ptibogxivtheme_css') == 'css') {
 $type='bootstrap';
 $css='css'; 
 } else {
 $type='bootswatch';
-$css=get_theme_mod( 'b4st_css'); 
+$css=get_theme_mod( 'ptibogxivtheme_css'); 
 }
  
 	wp_register_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/'.$type.'/4.1.1/'.$css.'/bootstrap.min.css', false, '4.1.1', null);
 	wp_enqueue_style('bootstrap-css');
    
-  wp_register_style('ptibogxivtheme-css', get_template_directory_uri() . '/theme/css/b4st.css', false, null);
+  wp_register_style('ptibogxivtheme-css', get_template_directory_uri() . '/theme/css/ptibogxivtheme.css', false, null);
 	wp_enqueue_style('ptibogxivtheme-css');
 
 	/* Scripts */
@@ -34,7 +34,7 @@ $css=get_theme_mod( 'b4st_css');
   wp_register_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', false, '4.1.1', true);
 	wp_enqueue_script('bootstrap-js');
 
-	wp_register_script('ptibogxivtheme-js', get_template_directory_uri() . '/theme/js/b4st.js', false, null, true);
+	wp_register_script('ptibogxivtheme-js', get_template_directory_uri() . '/theme/js/ptibogxivtheme.js', false, null, true);
 	wp_enqueue_script('ptibogxivtheme-js');
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {

@@ -22,15 +22,15 @@ bloginfo('name'); echo " - "; bloginfo('description');
 <?php if (get_header_image()){ ?> 
 <IMG class="d-block w-100 img-fluid" src="<?php header_image(); ?>" alt="banner logo">
 <?php } ?>
-<NAV class="navbar sticky-top navbar-expand-md <?php echo esc_attr(get_theme_mod( 'b4st_navbar_color' )); ?>"> 
+<NAV class="navbar sticky-top navbar-expand-md <?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )); ?>"> 
   <DIV class="container"><?php
-  if (get_theme_mod( 'b4st_brand_style') == 'home_mode') {
+  if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode') {
 ?><A class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><SPAN class="fas fa-home fa-fw fa-1x"></SPAN></A> 
 <?php } 
-elseif (get_theme_mod( 'b4st_brand_style') == 'dual_mode') {
+elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode') {
 the_custom_logo(); ?> <A class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></A> 
 <?php }
-elseif (get_theme_mod( 'b4st_brand_style') == 'logo_mode') {
+elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'logo_mode') {
 the_custom_logo(); ?>
 <?php } else {
 ?><A class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></A><?php

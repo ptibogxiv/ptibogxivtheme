@@ -1,36 +1,26 @@
-#b4st - A Bootstrap 4 Starter Theme, for WordPress
+**ptibogxivtheme is a WordPress starter theme loaded with Bootstrap 4. Based on b4st theme. Optimized for Doliconnect, Polylang, Secupress modules.
 
-*Version 1.7.4*
-
-[https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
-
-------------------
-
-**b4st is a simple WordPress starter theme loaded with Bootstrap 4.**
-
-> **NOTE:** Bootstrap v4.0.0-beta.2 is being called from `https://cdnjs.com/libraries/twitter-bootstrap`
-
-## Features of b4st
+## Features of this theme
 
 * Simple, intuitive, clean code.
 
 * Bootstrap, theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.0.0-beta.2** (served by cdnjs.com CDN) CSS and JS enqueued.
+* **Bootstrap 4.1.1** CSS and JS enqueued.
 
-* **Popper 1.12.3** (served by cdnjs.com CDN) JS enqueued. Because Bootstrap popovers and tooltips need it.
+* **Popper 1.14.3** JS enqueued. Because Bootstrap popovers and tooltips need it.
 
-* **jQuery 3.2.1** enqueued, (served by cdnjs.com CDN),
+* **jQuery 3.3.1** enqueued.
 
-* **Font Awesome 4.7.0** (served by cdnjs.com CDN) enqueued.
+* **Font Awesome 5.0.13** enqueued.
 
-* **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
+* **Modernizr 2.8.3** enqueued.
 
-* **Navbar with dropdowns (child menus)** – a [custom walker nav menu class](https://github.com/SimonPadbury/b4st/blob/master/functions/navbar.php) has been built to handle the dropdowns.
+* **Navbar with dropdowns (child menus)**
 
 * Sidebar-widget-area is optional. If no widgets, then the sidebar will not be shown (main column automatically becomes full width).
 
-* A starter CSS theme – `/theme/css/b4st.css`, enqueued. (Note: do not put your styles in `styles.css`.)
+* A starter CSS theme – `/theme/css/ptibogxivtheme.css`, enqueued. (Note: do not put your styles in `styles.css`.)
 
 * WordPress menu and WordPress search form in the Bootstrap 4 `.navbar` (Note: Bootstrap 4 navbar dropdowns supports only two levels of menu links (no sub-sub menus).
 
@@ -39,13 +29,3 @@
 * Bootstrap pagination for posts/pages if split over a series of 'pages'.
 
 * Visual editor stylesheet – into which the same Bootstrap 4 and starter CSS theme are preloaded by `@import`, so that what you see in the visual editor is (mostly!) what you get at the front end (WYSI(M!)WYG). E.g. you will see the theme's typpography in the WordPress Post/Page editor, and you can use Bootstrap CSS in the editor – but its width will not be the same as your article column width in the front end.
-
-* [UNLICENCE](http://unlicense.org) (open source).
-
----
-
-#### Maybe you would also be interested in [Atomic Boot Pug](https://github.com/SimonPadbury/Atomic-Boot-Pug).
-
-Inspired by Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/), Atomic Boot Pug is comprised of a set of Bootstrap 4 docs demo snippets (tranformed into [Pug](https://pugjs.org/api/getting-started.html) mixins) reorganized into a starter styleguide.
-
-Just a little something to help you kick off your next project. :-)

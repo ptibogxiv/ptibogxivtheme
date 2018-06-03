@@ -2,11 +2,11 @@
 
 ## Features of this theme
 
-* Simple, intuitive, clean code.
+* Simple, intuitive, clean code with autoupdater from our github's releases.
 
 * Bootstrap, theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.1.1** CSS and JS enqueued.
+* **Bootstrap 4.1.1** CSS and JS enqueued with several color scheme.
 
 * **Popper 1.14.3** JS enqueued. Because Bootstrap popovers and tooltips need it.
 

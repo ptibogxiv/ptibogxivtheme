@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-01 16:50+0200\n"
-"PO-Revision-Date: 2018-06-01 16:51+0200\n"
+"POT-Creation-Date: 2018-06-03 20:05+0200\n"
+"PO-Revision-Date: 2018-06-03 20:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -34,11 +34,15 @@ msgstr "La page que vous recherchez n’existe pas."
 msgid "Author %s"
 msgstr "Auteur %s"
 
-#: footer.php:62
+#: footer.php:42
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+#: footer.php:63
 msgid "Change language"
 msgstr "Changer de langue"
 
-#: functions.php:164
+#: functions.php:171
 msgid "Title:"
 msgstr "Titre:"
 
@@ -244,23 +248,23 @@ msgstr "Style du bouton d'acceuil"
 
 #: functions/setup.php:157
 msgid "Brand only"
-msgstr ""
+msgstr "Marque seulement"
 
 #: functions/setup.php:158
 msgid "Logo only"
-msgstr ""
+msgstr "Logo seulement"
 
 #: functions/setup.php:159
 msgid "Brand & logo"
-msgstr ""
+msgstr "Marque et logo"
 
 #: functions/setup.php:160
 msgid "Generic Home"
-msgstr ""
+msgstr "Maison générique"
 
 #: functions/setup.php:177
 msgid "Sidebar Positioning"
-msgstr ""
+msgstr "Positionnement de la barre latérale"
 
 #: functions/setup.php:178
 msgid ""
@@ -270,23 +274,23 @@ msgstr ""
 
 #: functions/setup.php:184
 msgid "Right sidebar"
-msgstr ""
+msgstr "Barre latérale à droite"
 
 #: functions/setup.php:185
 msgid "Left sidebar"
-msgstr ""
+msgstr "Barre latérale à gauche"
 
 #: functions/setup.php:186
 msgid "Left & Right sidebars"
-msgstr ""
+msgstr "Barres latérales gauche et droite"
 
 #: functions/setup.php:187
 msgid "No sidebar"
-msgstr ""
+msgstr "Pas de barre latérale"
 
 #: functions/widgets.php:9
 msgid "Sidebar"
-msgstr ""
+msgstr "Zone du widget latéral"
 
 #: functions/widgets.php:11
 msgid "The sidebar widget area"
@@ -443,6 +447,46 @@ msgstr "Chercher"
 #: search.php:9
 msgid "Search Results for"
 msgstr "Résultats de la recherche pour"
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:395
+msgid "Check for updates"
+msgstr ""
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:432
+msgid "View details"
+msgstr ""
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:455
+#, php-format
+msgid "More information about %s"
+msgstr ""
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:548
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr ""
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:550
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr ""
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:552
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr ""
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:558
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: update/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr ""
 
 #. Theme Name of the plugin/theme
 #. Author of the plugin/theme

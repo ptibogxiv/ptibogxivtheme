@@ -18,7 +18,7 @@
 </CENTER><BR></DIV><DIV class="col-12 col-md-6">
 <STRONG><?php bloginfo('description'); ?></STRONG>
 <DIV class="row"><DIV class="col-6">
-<?php if(! is_active_sidebar('footer-widget-area')){
+<?php if(! is_active_sidebar('footer-widget-area') && function_exists('doliconst')){
 doliconst(MAIN_INFO_SOCIETE_ADDRESS);
 echo "<BR />";
 doliconst(MAIN_INFO_SOCIETE_ZIP);
@@ -36,7 +36,8 @@ dynamic_sidebar('footer-widget-area'); }?></DIV>
 <DIV class="row">
 <DIV class="col"><P class="text-center"><SPAN class="fas fa-copyright"></SPAN> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - Tous droits réservés<BR><SMALL>Conception par <A href="https://www.ptibogxiv.net" class="text-info">ptibogxiv.net</A></SMALL></P></DIV>
 </DIV></DIV></FOOTER>
-<?php wp_footer(); ?>
+<?php wp_footer();
+if(function_exists('doliconst')){ ?>
 <DIV class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><DIV class="modal-dialog modal-dialog-centered modal-lg" role="document"><DIV class="modal-content"><DIV class="modal-header">
 <H5 class="modal-title" id="exampleModalLongTitle"><?php _e('Privacy Policy', 'ptibogxivtheme'); ?></H5>
 <BUTTON type="button" class="close" data-dismiss="modal" aria-label="Close"><SPAN aria-hidden="true">&times;</SPAN></BUTTON></DIV>
@@ -53,7 +54,7 @@ dynamic_sidebar('footer-widget-area'); }?></DIV>
 <P>Responsable de la publication : <?php doliconst(MAIN_INFO_SOCIETE_MANAGERS); ?></P>
 <P><STRONG>Conception et Hébergement</STRONG><BR />ptibogxiv.net<BR />1 rue de la grande brasserie, 59000 LILLE<BR />www.ptibogxiv.net<BR />SIRET: 83802482600011 - APE6201Z</P>
 </DIV></DIV></DIV></DIV>
-<?php
+<?php }
 if (function_exists('pll_the_languages')) {       
 ?> 
 <DIV class="modal fade" id="SelectLang" tabindex="-1" role="dialog" aria-labelledby="SelectLangLabel" aria-hidden="true">

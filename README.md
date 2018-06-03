@@ -1,4 +1,5 @@
-**ptibogxivtheme is a WordPress starter theme loaded with Bootstrap 4. Based on b4st theme. Optimized for Doliconnect, Polylang, Secupress modules.
+**ptibogxivtheme** is a WordPress starter theme loaded with Bootstrap 4. Based on b4st theme. Optimized for Doliconnect, Polylang, Secupress modules.
+You can view it in on our website https://www.ptibogxiv.net
 
 ## Features of this theme
 

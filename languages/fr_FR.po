@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
 "POT-Creation-Date: 2018-06-03 21:50+0200\n"
-"PO-Revision-Date: 2018-06-03 21:51+0200\n"
+"PO-Revision-Date: 2018-06-03 22:33+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -92,7 +92,7 @@ msgstr "Largeur de conteneur"
 
 #: functions/setup.php:53
 msgid "Choose between Bootstrap's container and container-fluid"
-msgstr ""
+msgstr "Choisissez entre conteneur Bootstrap ou conteneur-fluide"
 
 #: functions/setup.php:58
 msgid "Fixed width container"
@@ -389,7 +389,7 @@ msgstr "Votre adresse email"
 
 #: loops/comments.php:59
 msgid "(required, but will not be published)"
-msgstr ""
+msgstr "(requis, mais ne sera pas publié)"
 
 #: loops/comments.php:63
 msgid "Your website"
@@ -397,7 +397,7 @@ msgstr "Votre site internet"
 
 #: loops/comments.php:63
 msgid "if you have one (not required)"
-msgstr ""
+msgstr "si vous en avez un (non requis)"
 
 #: loops/comments.php:64
 msgid "Your website url"
@@ -450,43 +450,44 @@ msgstr "Résultats de la recherche pour"
 
 #: update/Puc/v4p4/Plugin/UpdateChecker.php:395
 msgid "Check for updates"
-msgstr ""
+msgstr "Vérifier les mises à jour"
 
 #: update/Puc/v4p4/Plugin/UpdateChecker.php:432
 msgid "View details"
-msgstr ""
+msgstr "Voir les détails"
 
 #: update/Puc/v4p4/Plugin/UpdateChecker.php:455
 #, php-format
 msgid "More information about %s"
-msgstr ""
+msgstr "Informations à propos de %s"
 
 #: update/Puc/v4p4/Plugin/UpdateChecker.php:548
 #, php-format
 msgctxt "the plugin title"
 msgid "The %s plugin is up to date."
-msgstr ""
+msgstr "L'extension %s est à jour."
 
 #: update/Puc/v4p4/Plugin/UpdateChecker.php:550
 #, php-format
 msgctxt "the plugin title"
 msgid "A new version of the %s plugin is available."
-msgstr ""
+msgstr "Une nouvelle version de %s est disponible."
 
 #: update/Puc/v4p4/Plugin/UpdateChecker.php:552
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
 msgstr ""
+"Impossible de déterminer si des mises à jour sont disponibles pour %s."
 
 #: update/Puc/v4p4/Plugin/UpdateChecker.php:558
 #, php-format
 msgid "Unknown update checker status \"%s\""
-msgstr ""
+msgstr "Statut des mises à jour inconnu \"%s\""
 
 #: update/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
 msgid "There is no changelog available."
-msgstr ""
+msgstr "Aucun registre de modifications disponible."
 
 #. Theme Name of the plugin/theme
 #. Author of the plugin/theme

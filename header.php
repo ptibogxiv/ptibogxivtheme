@@ -60,7 +60,7 @@ if ( is_user_logged_in() ) { ?><A href="<?php echo doliconnecturl('doliaccount')
 <?php if (current_user_can( 'edit_posts' )) { ?><A href="<?php echo admin_url(); ?>" title="Zone admin"><I class="fas fa-cogs fa-fw fa-2x"></I></A>&nbsp;<?php } ?><A href="<?php echo wp_logout_url( get_permalink() ); ?>" title="Déconnexion"><I class="fas fa-sign-out-alt fa-fw fa-2x"></I></A> 
 <?php } else { 
 if (get_option('doliloginmodal')=='1') {       
-?><A href="#" data-toggle="modal" data-target="#DoliconnectLogin" title="Connexion"><I class="fas fa-sign-in-alt fa-fw fa-2x"></I></A><?php
+?><A href="#" data-toggle="modal" data-target="#DoliconnectLogin" title="Connexion">Connexion</A><?php //<I class="fas fa-sign-in-alt fa-fw fa-2x"></I>
 } else {?>
 <A href="<?php echo wp_login_url( get_permalink() ); ?>?redirect_to=<?php echo get_permalink(); ?>" title="Connexion">Connexion</A>
 <?php  } 

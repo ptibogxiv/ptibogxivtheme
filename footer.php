@@ -30,7 +30,7 @@ dynamic_sidebar('footer-widget-area'); }?></DIV>
 <LI><SPAN class="fa-li"><I class="fas fa-lock"></I></SPAN><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><A href="https://dolibarr.ptibogxiv.net/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" class="text-info" target="_blank"><?php } ?>Dolibarr<?php if (current_user_can( 'administrator' )) { ?></A><?php } ?></LI>
 <LI><SPAN class="fa-li"><I class="fas fa-lock"></I></SPAN><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><A href="https://webmail.ptibogxiv.net" class="text-info" target="_blank"><?php } ?>Webmail<?php if (current_user_can( 'administrator' )) { ?></A><?php } ?></LI>
 <LI><SPAN class="fa-li"><I class="fas fa-lock"></I></SPAN><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><A href="https://my.ptibogxiv.net" class="text-info" target="_blank"><?php } ?>Serveur/Cloud<?php if (current_user_can( 'administrator' )) { ?></A><?php } ?></LI>
-<LI><SPAN class="fa-li"><I class="fas fa-info-circle"></I></SPAN><A href="#" class="text-info" data-toggle="modal" data-target="#legacymention">Mentions légales</A></LI>
+<LI><SPAN class="fa-li"><I class="fas fa-info-circle"></I></SPAN><A href="#" class="text-info" data-toggle="modal" data-target="#legacymention"><?php _e('Privacy Policy', 'ptibogxivtheme'); ?></A></LI>
 <LI><SPAN class="fa-li"><I class="fas fa-info-circle"></I></SPAN><A href="#" class="text-info" data-toggle="modal" data-target="#cgvumention">C.G.U.</A></LI>
 </UL><BR></DIV></DIV></DIV></DIV>
 <DIV class="row">

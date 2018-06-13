@@ -187,7 +187,20 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 					),
 					'priority'    => '40',
 				)
-			) );    
+			) );
+      
+    $wp_customize->add_setting( 'ptibogxivtheme_adminbar', array(
+    'default'        => false,
+    'capability'     => 'edit_theme_options'
+    ) );
+
+    $wp_customize->add_control( 'ptibogxivtheme_adminbar', array(
+    'settings' => 'ptibogxivtheme_adminbar',
+    'label'    => __( 'Restore the native admin bar', 'ptibogxivtheme' ),
+    'section'  => 'ptibogxivtheme_theme_layout_options',
+    'type'     => 'checkbox',
+    'priority'    => '50',
+) );    
 
 	}
 } // endif function_exists( 'understrap_theme_customize_register' ).

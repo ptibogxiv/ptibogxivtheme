@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-13 17:01+0200\n"
-"PO-Revision-Date: 2018-06-13 17:01+0200\n"
+"POT-Creation-Date: 2018-06-13 20:06+0200\n"
+"PO-Revision-Date: 2018-06-13 20:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -210,87 +210,91 @@ msgstr ""
 msgid "Navbar Color scheme"
 msgstr "Barre de navigation"
 
-#: functions/setup.php:126
+#: functions/setup.php:127
 msgid "Light scheme"
 msgstr ""
 
-#: functions/setup.php:127
+#: functions/setup.php:128
 msgid "Dark scheme"
 msgstr ""
 
-#: functions/setup.php:128
+#: functions/setup.php:129
 msgid "Primary scheme"
 msgstr ""
 
-#: functions/setup.php:129
+#: functions/setup.php:130
 msgid "Secondary scheme"
 msgstr ""
 
-#: functions/setup.php:130
+#: functions/setup.php:131
 msgid "Info scheme"
 msgstr ""
 
-#: functions/setup.php:131
+#: functions/setup.php:132
 msgid "Success scheme"
 msgstr ""
 
-#: functions/setup.php:132
+#: functions/setup.php:133
 msgid "Warning scheme"
 msgstr ""
 
-#: functions/setup.php:133
+#: functions/setup.php:134
 msgid "Danger scheme"
 msgstr ""
 
-#: functions/setup.php:150
+#: functions/setup.php:151
 msgid "Home brand style"
 msgstr "Style du bouton d'acceuil"
 
-#: functions/setup.php:151
+#: functions/setup.php:152
 msgid "Choose between style of home button"
 msgstr "Choisissez un style pour le bouton d'accueil"
 
-#: functions/setup.php:156
+#: functions/setup.php:157
 msgid "Brand only"
 msgstr "Marque seulement"
 
-#: functions/setup.php:157
+#: functions/setup.php:158
 msgid "Logo only"
 msgstr "Logo seulement"
 
-#: functions/setup.php:158
+#: functions/setup.php:159
 msgid "Brand & logo"
 msgstr "Marque et logo"
 
-#: functions/setup.php:159
+#: functions/setup.php:160
 msgid "Generic Home"
 msgstr "Maison générique"
 
-#: functions/setup.php:176
+#: functions/setup.php:177
 msgid "Sidebar Positioning"
 msgstr "Positionnement de la barre latérale"
 
-#: functions/setup.php:177
+#: functions/setup.php:178
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none. "
 "Note: this can be overridden on individual pages."
 msgstr ""
 
-#: functions/setup.php:182
+#: functions/setup.php:183
 msgid "Right sidebar"
 msgstr "Barre latérale à droite"
 
-#: functions/setup.php:183
+#: functions/setup.php:184
 msgid "Left sidebar"
 msgstr "Barre latérale à gauche"
 
-#: functions/setup.php:184
+#: functions/setup.php:185
 msgid "Left & Right sidebars"
 msgstr "Barres latérales gauche et droite"
 
-#: functions/setup.php:185
+#: functions/setup.php:186
 msgid "No sidebar"
 msgstr "Pas de barre latérale"
+
+#: functions/setup.php:199
+msgid "Restore the native admin bar"
+msgstr "Restaurer la barre admin native"
 
 #: functions/widgets.php:9
 msgid "Sidebar"

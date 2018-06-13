@@ -64,7 +64,7 @@ if ( is_user_logged_in() ) { ?><A href="<?php echo doliconnecturl('doliaccount')
 if (get_site_option('doliconnect_mode')=='one') {
 restore_current_blog();
 }
-if (current_user_can( 'edit_posts' )) { ?><A href="<?php echo admin_url(); ?>" title="Zone admin"><I class="fas fa-cogs fa-fw fa-2x"></I></A>&nbsp;<?php } ?><A href="<?php echo wp_logout_url( get_permalink() ); ?>" title="Déconnexion"><I class="fas fa-sign-out-alt fa-fw fa-2x"></I></A> 
+if (current_user_can( 'edit_posts' ) &&  !get_theme_mod( 'ptibogxivtheme_adminbar') ) { ?><A href="<?php echo admin_url(); ?>" title="Zone admin"><I class="fas fa-cogs fa-fw fa-2x"></I></A>&nbsp;<?php } ?><A href="<?php echo wp_logout_url( get_permalink() ); ?>" title="Déconnexion"><I class="fas fa-sign-out-alt fa-fw fa-2x"></I></A> 
 <?php } else {
 if (get_site_option('doliconnect_mode')=='one') {
 restore_current_blog();

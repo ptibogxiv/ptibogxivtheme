@@ -1,23 +1,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-03 21:50+0200\n"
-"PO-Revision-Date: 2018-06-03 22:33+0200\n"
+"POT-Creation-Date: 2018-06-13 10:05+0200\n"
+"PO-Revision-Date: 2018-06-13 10:05+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.0.8\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -34,9 +34,13 @@ msgstr "La page que vous recherchez n’existe pas."
 msgid "Author %s"
 msgstr "Auteur %s"
 
-#: footer.php:42
+#: footer.php:33 footer.php:42
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
+
+#: footer.php:37
+msgid "Theme by"
+msgstr "Thème par"
 
 #: footer.php:63
 msgid "Change language"
@@ -327,6 +331,8 @@ msgstr "Choisissez une langue"
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
+"Ce message est protégé par mot de passe. Entrer le mot de passe pour voir "
+"les commentaires."
 
 #: loops/comments.php:17
 msgid "Feedback"
@@ -477,8 +483,7 @@ msgstr "Une nouvelle version de %s est disponible."
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
-msgstr ""
-"Impossible de déterminer si des mises à jour sont disponibles pour %s."
+msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
 
 #: update/Puc/v4p4/Plugin/UpdateChecker.php:558
 #, php-format

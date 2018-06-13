@@ -73,8 +73,8 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 			new WP_Customize_Control(
 				$wp_customize,
 				'ptibogxivtheme_css', array(
-					'label'       => __( 'Navbar Css scheme', 'ptibogxivtheme' ),
-					'description' => __( "Choose between css scheme", 'ptibogxivtheme' ),
+					'label'       => __( 'Css scheme', 'ptibogxivtheme' ),
+					'description' => __( "Choose between scheme", 'ptibogxivtheme' ),
 					'section'     => 'ptibogxivtheme_theme_layout_options',
 					'settings'    => 'ptibogxivtheme_css',
 					'type'        => 'select',
@@ -118,7 +118,7 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 				$wp_customize,
 				'ptibogxivtheme_navbar_color', array(
 					'label'       => __( 'Navbar Color scheme', 'ptibogxivtheme' ),
-					'description' => __( "Choose between color scheme", 'ptibogxivtheme' ),
+					'description' => __( "Choose between scheme", 'ptibogxivtheme' ),
 					'section'     => 'ptibogxivtheme_theme_layout_options',
 					'settings'    => 'ptibogxivtheme_navbar_color',
 					'type'        => 'select',

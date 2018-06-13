@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-13 10:05+0200\n"
-"PO-Revision-Date: 2018-06-13 10:05+0200\n"
+"POT-Creation-Date: 2018-06-13 16:39+0200\n"
+"PO-Revision-Date: 2018-06-13 16:39+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -45,6 +45,10 @@ msgstr "Thème par"
 #: footer.php:63
 msgid "Change language"
 msgstr "Changer de langue"
+
+#: functions.php:168 functions/widgets.php:48
+msgid "Caroussel"
+msgstr "Carousel"
 
 #: functions.php:171
 msgid "Title:"
@@ -107,8 +111,8 @@ msgid "Full width container"
 msgstr "Container pleine largeur"
 
 #: functions/setup.php:76
-msgid "Navbar Css scheme"
-msgstr "Barre de navigation"
+msgid "Css scheme"
+msgstr "Schéma CSS"
 
 #: functions/setup.php:77
 msgid "Choose between css scheme"
@@ -315,10 +319,6 @@ msgstr ""
 #: functions/widgets.php:37
 msgid "The top widget area"
 msgstr "Zone du widget d'entête"
-
-#: functions/widgets.php:48
-msgid "Caroussel"
-msgstr "Carousel"
 
 #: functions/widgets.php:50
 msgid "The caroussel widget area"

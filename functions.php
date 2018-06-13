@@ -75,7 +75,7 @@ function theme_prefix_setup() {
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
  
 function wpc_show_admin_bar() { 
-if (!get_theme_mod( 'ptibogxivtheme_adminbar')) {  
+if (current_user_can( 'edit_posts' ) &&  !get_theme_mod( 'ptibogxivtheme_adminbar') ) {  
 return false;
 } else {
 return true;

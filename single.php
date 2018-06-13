@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<DIV class="container site-content">
+<DIV class="<?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_container_type')); ?> site-content">
 <DIV class="row"> 
     <DIV class="<?php if(is_active_sidebar('sidebar-widget-area')): ?>col-12 col-md-8<?php else: ?>col-12<?php endif; ?>">
       <DIV id="content" role="main">

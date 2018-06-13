@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<DIV class="container site-content">
+<DIV class="<?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_container_type')); ?> site-content">
 <DIV class="row">
 <?php dynamic_sidebar('top-widget-area');?>
  </DIV>

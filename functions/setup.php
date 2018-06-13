@@ -39,7 +39,7 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 		) );
 
 		$wp_customize->add_setting( 'ptibogxivtheme_container_type', array(
-			'default'           => 'container',
+      'default'     => 'container',
 			'type'              => 'theme_mod',
 			'sanitize_callback' => 'esc_textarea',
 			'capability'        => 'edit_theme_options',
@@ -107,7 +107,7 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 			) ); 
       
     $wp_customize->add_setting( 'ptibogxivtheme_navbar_color', array(
-			'default'           => 'navbar-light bg-light',
+			'default'           => 'navbar-dark bg-dark',
 			'type'              => 'theme_mod',
 			'sanitize_callback' => 'esc_textarea',
 			'capability'        => 'edit_theme_options',
@@ -122,6 +122,7 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 					'section'     => 'ptibogxivtheme_theme_layout_options',
 					'settings'    => 'ptibogxivtheme_navbar_color',
 					'type'        => 'select',
+          'default'     => 'navbar-dark bg-dark',
 					'choices'     => array(
 						'navbar-light bg-light' => __( 'Light scheme', 'ptibogxivtheme' ),
 						'navbar-dark bg-dark' => __( 'Dark scheme', 'ptibogxivtheme' ),

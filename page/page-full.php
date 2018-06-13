@@ -9,7 +9,7 @@ Template Name: PleinePage
 
 get_header(); ?>
 
-<div class="container site-content">
+<div class="<?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_container_type')); ?> site-content">
   <div class="row">
     
     <div class="col-12">

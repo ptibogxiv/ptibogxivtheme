@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-13 16:39+0200\n"
-"PO-Revision-Date: 2018-06-13 16:39+0200\n"
+"POT-Creation-Date: 2018-06-13 17:01+0200\n"
+"PO-Revision-Date: 2018-06-13 17:01+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -114,8 +114,8 @@ msgstr "Container pleine largeur"
 msgid "Css scheme"
 msgstr "Schéma CSS"
 
-#: functions/setup.php:77
-msgid "Choose between css scheme"
+#: functions/setup.php:77 functions/setup.php:121
+msgid "Choose between scheme"
 msgstr "Choisissez un jeu de couleurs"
 
 #: functions/setup.php:82
@@ -209,10 +209,6 @@ msgstr ""
 #: functions/setup.php:120
 msgid "Navbar Color scheme"
 msgstr "Barre de navigation"
-
-#: functions/setup.php:121
-msgid "Choose between color scheme"
-msgstr "Choisissez un jeu de couleurs"
 
 #: functions/setup.php:126
 msgid "Light scheme"
@@ -322,7 +318,7 @@ msgstr "Zone du widget d'entête"
 
 #: functions/widgets.php:50
 msgid "The caroussel widget area"
-msgstr ""
+msgstr "La zone de widget caroussel"
 
 #: header.php:54
 msgid "Choose language"
@@ -507,3 +503,6 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Choose between color scheme"
+#~ msgstr "Choisissez un jeu de couleurs"

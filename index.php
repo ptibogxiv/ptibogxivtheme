@@ -12,7 +12,7 @@
       </div><!-- /#content -->
     </div>
     <div class="col-12 col-md-4" id="sidebar" role="navigation">
-<BR><DIV class="card border-light"><DIV class="card-body"><?php echo $sidebar_pos; get_sidebar(); ?></DIV></DIV>
+<BR><DIV class="card border-light shadow-lg" style="background-color: rgba(256, 256, 256, 0.8)"><DIV class="card-body"><?php echo $sidebar_pos; get_sidebar(); ?></DIV></DIV>
     </div>
     
   </div><!-- /.row -->

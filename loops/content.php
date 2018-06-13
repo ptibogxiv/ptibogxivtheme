@@ -12,7 +12,7 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
 ?>
 
 <?php if(have_posts()): while(have_posts()): the_post();?><ARTICLE role="article" id="post_<?php the_ID()?>">
-<DIV class="card border-light"><TABLE><TR><TD class="w-22">
+<DIV class="card border-light shadow-lg" style="background-color: rgba(256, 256, 256, 0.8)"><TABLE><TR><TD class="w-22">
 <?php if ( has_post_thumbnail() ){ ?><A href="<?php the_permalink(); ?>"><IMG class="img-fluid" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="<?php the_title()?>"></A><?php } ?>
 </TD><TD class="align-top">
 <DIV class="card-body"><HEADER>

@@ -6,7 +6,7 @@ The Single Posts Loop
 ?>
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
 <ARTICLE role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
-<DIV class="card border-light">
+<DIV class="card border-light shadow-lg" style="background-color: rgba(256, 256, 256, 0.8)">
 <?php if ( has_post_thumbnail() ){ ?><CENTER><IMG class="card-img-top" src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'large' ); ?>" alt="<?php the_title()?>"></CENTER><?php } ?>
 <DIV class="card-body">
 <HEADER><H1><?php the_title()?> <?php edit_post_link('<I class="fas fa-edit"></I>', '<SPAN class="edit-link">', '</SPAN>' ); ?></H1>
@@ -29,7 +29,7 @@ The Single Posts Loop
 <A href="https://www.linkedin.com/shareArticle?mini=true&url=url=<?php echo get_permalink($post->ID);?>&title=<?php the_title()?>&source=<?php echo get_option('doliconnect_social_linkedin');?>" type="button" class="btn btn-linkedin" target="_blank"><I class="fab fa-linkedin-in fa-fw"></I></A>
 <SCRIPT>if (navigator.userAgent.match(/iPhone|Android/i)) {
 document.write('<A href="whatsapp://send?text=<?php echo get_permalink($post->ID);?>" data-action="share/whatsapp/share" type="button" class="btn btn-whatsapp" target="_blank"><I class="fab fa-whatsapp fa-fw"></I></A>');
-}</script>
+}</SCRIPT>
 <A href="mailto:?subject=[<?php bloginfo('name'); ?>] Informations intéressante&body=Bonjour,<?php echo get_permalink($post->ID);?>" type="button" class="btn btn-light" target="_blank"><I class="fas fa-envelope fa-fw"></I></A> 
 </DIV>     
     </HEADER>

@@ -3,10 +3,10 @@
 <div class="container">
   <div class="row">
     
-    <div class="<?php if(is_active_sidebar('sidebar-widget-area')): ?>col-sm-8<?php else: ?>col-sm-12<?php endif; ?>">
+    <div class="<?php if(is_active_sidebar('sidebar-right-widget-area')): ?>col-sm-8<?php else: ?>col-sm-12<?php endif; ?>">
       <div id="content" role="main">
         <header>
-          <h1><?php _e('Search Results for', 'b4st'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;</h1>
+          <h1><?php _e('Search Results for', 'ptibogxivtheme'); ?> &ldquo;<?php the_search_query(); ?>&rdquo;</h1>
         </header>
         <hr/>
         <?php get_template_part('loops/content', 'search'); ?>

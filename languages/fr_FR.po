@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-14 10:14+0200\n"
-"PO-Revision-Date: 2018-06-14 10:15+0200\n"
+"POT-Creation-Date: 2018-06-14 11:07+0200\n"
+"PO-Revision-Date: 2018-06-14 11:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -46,7 +46,7 @@ msgstr "Thème par"
 msgid "Change language"
 msgstr "Changer de langue"
 
-#: functions.php:171 functions/widgets.php:48
+#: functions.php:171 functions/widgets.php:61
 msgid "Caroussel"
 msgstr "Carousel"
 
@@ -277,11 +277,11 @@ msgstr ""
 "Définissez la position par défaut de la barre latérale. Peut être : droite, "
 "gauche, tous les deux ou aucun."
 
-#: functions/setup.php:183
+#: functions/setup.php:183 functions/widgets.php:22
 msgid "Right sidebar"
 msgstr "Barre latérale à droite"
 
-#: functions/setup.php:184
+#: functions/setup.php:184 functions/widgets.php:9
 msgid "Left sidebar"
 msgstr "Barre latérale à gauche"
 
@@ -297,31 +297,35 @@ msgstr "Pas de barre latérale"
 msgid "Restore the native admin bar"
 msgstr "Restaurer la barre admin native"
 
-#: functions/widgets.php:9
-msgid "Sidebar"
-msgstr "Zone du widget latéral"
-
 #: functions/widgets.php:11
-msgid "The sidebar widget area"
+#, fuzzy
+#| msgid "The sidebar widget area"
+msgid "The left sidebar widget area"
 msgstr "Zone du widget latéral"
 
-#: functions/widgets.php:22
+#: functions/widgets.php:24
+#, fuzzy
+#| msgid "The sidebar widget area"
+msgid "The right sidebar widget area"
+msgstr "Zone du widget latéral"
+
+#: functions/widgets.php:35
 msgid "Footer"
 msgstr "Pied de page"
 
-#: functions/widgets.php:24
+#: functions/widgets.php:37
 msgid "The footer widget area"
 msgstr "Zone du widget du pied de la  page"
 
-#: functions/widgets.php:35
+#: functions/widgets.php:48
 msgid "Top"
 msgstr ""
 
-#: functions/widgets.php:37
+#: functions/widgets.php:50
 msgid "The top widget area"
 msgstr "Zone du widget d'entête"
 
-#: functions/widgets.php:50
+#: functions/widgets.php:63
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
@@ -508,6 +512,9 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Sidebar"
+#~ msgstr "Zone du widget latéral"
 
 #~ msgid "Choose between color scheme"
 #~ msgstr "Choisissez un jeu de couleurs"

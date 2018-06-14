@@ -3,12 +3,25 @@
 function ptibogxivtheme_widgets_init() {
 
   /*
-  Sidebar (one widget area)
+  Left sidebar (one widget area)
    */
   register_sidebar( array(
-    'name'            => __( 'Sidebar', 'ptibogxivtheme' ),
-    'id'              => 'sidebar-widget-area',
-    'description'     => __( 'The sidebar widget area', 'ptibogxivtheme' ),
+    'name'            => __( 'Left sidebar', 'ptibogxivtheme' ),
+    'id'              => 'sidebar-left-widget-area',
+    'description'     => __( 'The left sidebar widget area', 'ptibogxivtheme' ),
+    'before_widget'   => '<section class="%1$s %2$s">',
+    'after_widget'    => '</section>',
+    'before_title'    => '<h4>',
+    'after_title'     => '</h4>',
+  ) );
+
+  /*
+  Right sidebar (one widget area)
+   */
+  register_sidebar( array(
+    'name'            => __( 'Right sidebar', 'ptibogxivtheme' ),
+    'id'              => 'sidebar-right-widget-area',
+    'description'     => __( 'The right sidebar widget area', 'ptibogxivtheme' ),
     'before_widget'   => '<section class="%1$s %2$s">',
     'after_widget'    => '</section>',
     'before_title'    => '<h4>',

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
 "POT-Creation-Date: 2018-06-14 11:07+0200\n"
-"PO-Revision-Date: 2018-06-14 11:07+0200\n"
+"PO-Revision-Date: 2018-06-14 11:27+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -298,16 +298,12 @@ msgid "Restore the native admin bar"
 msgstr "Restaurer la barre admin native"
 
 #: functions/widgets.php:11
-#, fuzzy
-#| msgid "The sidebar widget area"
 msgid "The left sidebar widget area"
-msgstr "Zone du widget latéral"
+msgstr "Zone du widget latéral gauche"
 
 #: functions/widgets.php:24
-#, fuzzy
-#| msgid "The sidebar widget area"
 msgid "The right sidebar widget area"
-msgstr "Zone du widget latéral"
+msgstr "Zone du widget latéral droit"
 
 #: functions/widgets.php:35
 msgid "Footer"

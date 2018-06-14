@@ -14,11 +14,6 @@ if ( post_password_required() ) { ?>
 
 if (have_comments()) : ?>
 
-<h3><?php _e('Feedback', 'ptibogxivtheme'); ?></h3>
-<p class="text-muted" style="margin-bottom: 20px;">
- <i class="fas fa-comment"></i>&nbsp; <?php _e('Comments', 'ptibogxivtheme');  ?>: <?php comments_number(__('None', 'ptibogxivtheme'), '1', '%'); ?>
-</p>
-
 <ol class="commentlist">
   <?php wp_list_comments('type=comment&callback=ptibogxivtheme_comment');?>
 </ol>
@@ -38,8 +33,8 @@ if (have_comments()) : ?>
 ?>
 
 <?php if (comments_open()) : ?>
-<section id="respond">
-  <h3><?php comment_form_title(__('Your feedback', 'ptibogxivtheme'), __('Responses to %s', 'ptibogxivtheme')); ?></h3>
+<section id="respond"><DIV class="card border-light shadow-lg" style="background-color: rgba(256, 256, 256, 0.8)"><DIV class="card-body">
+  <h3><?php comment_form_title(__('Your comment', 'ptibogxivtheme'), __('Responses to %s', 'ptibogxivtheme')); ?></h3>
   <p><?php cancel_comment_reply_link(); ?></p>
   <?php if (get_option('comment_registration') && !is_user_logged_in()) : ?>
   <p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.', 'ptibogxivtheme'), wp_login_url(get_permalink())); ?></p>
@@ -72,6 +67,6 @@ if (have_comments()) : ?>
     <?php comment_id_fields(); ?>
     <?php do_action('comment_form', $post->ID); ?>
   </form>
-  <?php endif; ?>
+  <?php endif; ?></DIV></DIV>
 </section>
 <?php endif; ?>

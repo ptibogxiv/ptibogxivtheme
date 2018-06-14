@@ -30,9 +30,9 @@ if (have_comments()) : ?>
 <?php
   else :
 	  if (comments_open()) :
-  echo "<p class='alert alert-info'>" . __('Be the first to write a comment.', 'ptibogxivtheme') . "</p>";
+  echo "<p class='alert alert-info shadow-lg'>" . __('Be the first to write a comment.', 'ptibogxivtheme') . "</p>";
 		else :
-			echo "<p class='alert alert-warning'>" . __('Comments are closed for this post.', 'ptibogxivtheme') . "</p>";
+			echo "<p class='alert alert-warning shadow-lg'>" . __('Comments are closed for this post.', 'ptibogxivtheme') . "</p>";
 		endif;
 	endif;
 ?>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-14 11:38+0200\n"
-"PO-Revision-Date: 2018-06-14 11:38+0200\n"
+"POT-Creation-Date: 2018-06-14 13:33+0200\n"
+"PO-Revision-Date: 2018-06-14 13:34+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -46,11 +46,11 @@ msgstr "Thème par"
 msgid "Change language"
 msgstr "Changer de langue"
 
-#: functions.php:171 functions/widgets.php:61
+#: functions.php:175 functions/widgets.php:61
 msgid "Caroussel"
 msgstr "Carousel"
 
-#: functions.php:174
+#: functions.php:178
 msgid "Title:"
 msgstr "Titre:"
 
@@ -359,7 +359,7 @@ msgstr ""
 msgid "Feedback"
 msgstr "Feedback"
 
-#: loops/comments.php:19 loops/content-single.php:22
+#: loops/comments.php:19
 msgid "Comments"
 msgstr "Commentaires"
 
@@ -446,17 +446,21 @@ msgstr "Désolé, votre recherche ne retourne aucun résultat."
 msgid "By"
 msgstr "Par"
 
-#: loops/content-single.php:15 loops/content.php:23
-msgid "Post on"
-msgstr "Publié le"
+#: loops/content-single.php:15
+msgid "on"
+msgstr "le"
 
-#: loops/content-single.php:19
-msgid "Filed under"
-msgstr "Catégorie(s)"
-
-#: loops/content-single.php:26
+#: loops/content-single.php:22
 msgid "Share"
 msgstr "Partager"
+
+#: loops/content-single.php:36
+msgid "About"
+msgstr "À propos de"
+
+#: loops/content.php:23
+msgid "Post on"
+msgstr "Publié le"
 
 #: loops/content.php:29
 msgid "Previous"
@@ -528,6 +532,14 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Filed under"
+#~ msgstr "Catégorie(s)"
+
+#, fuzzy
+#~| msgid "Post on"
+#~ msgid "post on"
+#~ msgstr "Publié le"
 
 #~ msgid "Sidebar"
 #~ msgstr "Zone du widget latéral"

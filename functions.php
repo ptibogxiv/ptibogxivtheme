@@ -77,9 +77,13 @@ add_action( 'after_setup_theme', 'theme_prefix_setup' );
 function wpc_show_admin_bar() { 
 if (current_user_can( 'edit_posts' ) &&  !get_theme_mod( 'ptibogxivtheme_adminbar') ) {  
 return false;
-} else {
+} elseif (current_user_can( 'edit_posts' ) && is_user_logged_in()) {
 return true;
-}}
+}
+else {
+return false;
+}
+ }
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 
 class My_Caroussel extends WP_Widget {

@@ -175,7 +175,7 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 				$wp_customize,
 				'ptibogxivtheme_sidebar_position', array(
 					'label'       => __( 'Sidebar Positioning', 'ptibogxivtheme' ),
-					'description' => __( "Set sidebar's default position. Can either be: right, left, both or none. Note: this can be overridden on individual pages.", 'ptibogxivtheme' ),
+					'description' => __( "Set sidebar's default position. Can either be: right, left, both or none.", 'ptibogxivtheme' ),
 					'section'     => 'ptibogxivtheme_theme_layout_options',
 					'settings'    => 'ptibogxivtheme_sidebar_position',
 					'type'        => 'select',

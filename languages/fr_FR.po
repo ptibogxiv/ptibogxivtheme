@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-13 20:30+0200\n"
-"PO-Revision-Date: 2018-06-13 21:35+0200\n"
+"POT-Creation-Date: 2018-06-14 10:14+0200\n"
+"PO-Revision-Date: 2018-06-14 10:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -46,11 +46,11 @@ msgstr "Thème par"
 msgid "Change language"
 msgstr "Changer de langue"
 
-#: functions.php:169 functions/widgets.php:48
+#: functions.php:171 functions/widgets.php:48
 msgid "Caroussel"
 msgstr "Carousel"
 
-#: functions.php:172
+#: functions.php:174
 msgid "Title:"
 msgstr "Titre:"
 
@@ -68,11 +68,11 @@ msgstr "Éditer"
 
 #: functions/index-pagination.php:29
 msgid "<i class=\"fas fa-angle-left\"></i> Newer"
-msgstr ""
+msgstr "<i class=\"fas fa-angle-left\"></i> Précédent"
 
 #: functions/index-pagination.php:31
 msgid "Older <i class=\"fas fa-angle-right\"></i>"
-msgstr ""
+msgstr "Suivant <i class=\"fas fa-angle-right\"></i>"
 
 #: functions/navbar.php:59
 msgid "Navbar"
@@ -272,9 +272,10 @@ msgstr "Positionnement de la barre latérale"
 
 #: functions/setup.php:178
 msgid ""
-"Set sidebar's default position. Can either be: right, left, both or none. "
-"Note: this can be overridden on individual pages."
+"Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
+"Définissez la position par défaut de la barre latérale. Peut être : droite, "
+"gauche, tous les deux ou aucun."
 
 #: functions/setup.php:183
 msgid "Right sidebar"

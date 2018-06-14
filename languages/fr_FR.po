@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-14 11:07+0200\n"
-"PO-Revision-Date: 2018-06-14 11:27+0200\n"
+"POT-Creation-Date: 2018-06-14 11:36+0200\n"
+"PO-Revision-Date: 2018-06-14 11:36+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -328,6 +328,22 @@ msgstr "La zone de widget caroussel"
 #: header.php:54
 msgid "Choose language"
 msgstr "Choisissez une langue"
+
+#: header.php:60
+msgid "Cart"
+msgstr "Panier"
+
+#: header.php:67
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: header.php:73 header.php:75
+msgid "Login"
+msgstr "Connexion"
+
+#: header.php:78
+msgid "Signup"
+msgstr "S'inscrire"
 
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."

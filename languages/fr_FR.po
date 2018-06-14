@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-14 14:52+0200\n"
-"PO-Revision-Date: 2018-06-14 14:53+0200\n"
+"POT-Creation-Date: 2018-06-14 15:40+0200\n"
+"PO-Revision-Date: 2018-06-14 15:40+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -337,7 +337,7 @@ msgstr "Mon compte"
 msgid "Cart"
 msgstr "Panier"
 
-#: header.php:67
+#: header.php:67 loops/comments.php:49
 msgid "Logout"
 msgstr "Déconnexion"
 
@@ -363,7 +363,7 @@ msgstr "Soyez le premier à commenter."
 msgid "Comments are closed for this post."
 msgstr "Les commentaires sont fermés pour cet article."
 
-#: loops/comments.php:37 loops/comments.php:63 loops/comments.php:64
+#: loops/comments.php:37 loops/comments.php:66 loops/comments.php:67
 msgid "Your comment"
 msgstr "Votre commentaire"
 
@@ -372,53 +372,57 @@ msgstr "Votre commentaire"
 msgid "Responses to %s"
 msgstr "Réponses à %s"
 
-#: loops/comments.php:40
+#: loops/comments.php:41
+msgid ""
+"You must be <a href=\"#\" data-toggle=\"modal\" data-target="
+"\"#DoliconnectLogin\">logged in</a> to post a comment."
+msgstr ""
+"Vous devez être <a href=\"#\" data-toggle=\"modal\" data-target="
+"\"#DoliconnectLogin\">connecté</a> pour publier un commentaire."
+
+#: loops/comments.php:42
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
 msgstr ""
 "Vous devez être <a href=\"%s\">connecté</a> pour publier un commentaire."
 
-#: loops/comments.php:45
+#: loops/comments.php:47 loops/comments.php:48
 msgid "Logged in as"
 msgstr "Connecté en tant que"
 
-#: loops/comments.php:46
+#: loops/comments.php:49
 msgid "Log out of this account"
 msgstr "Déconnecter"
 
-#: loops/comments.php:46
-msgid "Log out"
-msgstr "Déconnecter"
-
-#: loops/comments.php:50 loops/comments.php:51
+#: loops/comments.php:53 loops/comments.php:54
 msgid "Your name"
 msgstr "Votre nom"
 
-#: loops/comments.php:50
+#: loops/comments.php:53
 msgid "(required)"
 msgstr "(requis)"
 
-#: loops/comments.php:54 loops/comments.php:55
+#: loops/comments.php:57 loops/comments.php:58
 msgid "Your email address"
 msgstr "Votre adresse email"
 
-#: loops/comments.php:54
+#: loops/comments.php:57
 msgid "(required, but will not be published)"
 msgstr "(requis, mais ne sera pas publié)"
 
-#: loops/comments.php:58
+#: loops/comments.php:61
 msgid "Your website"
 msgstr "Votre site internet"
 
-#: loops/comments.php:58
+#: loops/comments.php:61
 msgid "if you have one (not required)"
 msgstr "si vous en avez un (non requis)"
 
-#: loops/comments.php:59
+#: loops/comments.php:62
 msgid "Your website url"
 msgstr "Votre site internet"
 
-#: loops/comments.php:66
+#: loops/comments.php:69
 msgid "Submit comment"
 msgstr "Envoyer votre commentaire"
 
@@ -516,6 +520,9 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Log out"
+#~ msgstr "Déconnecter"
 
 #~ msgid "Feedback"
 #~ msgstr "Feedback"

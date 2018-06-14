@@ -83,7 +83,7 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 						'cerulean' => __( 'Cerulean', 'ptibogxivtheme' ),
 						'cosmo' => __( 'Cosmo', 'ptibogxivtheme' ),
             'cyborg' => __( 'Cyborg', 'ptibogxivtheme' ),
-            'darky' => __( 'Darkly', 'ptibogxivtheme' ),
+            'darkly' => __( 'Darkly', 'ptibogxivtheme' ),
             'flatly' => __( 'Flatly', 'ptibogxivtheme' ),
 						'journal' => __( 'Journal', 'ptibogxivtheme' ),
             'litera' => __( 'Litera', 'ptibogxivtheme' ),

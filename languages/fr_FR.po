@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-16 18:00+0200\n"
-"PO-Revision-Date: 2018-06-16 18:01+0200\n"
+"POT-Creation-Date: 2018-06-16 23:32+0200\n"
+"PO-Revision-Date: 2018-06-16 23:32+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -37,6 +37,10 @@ msgstr "Auteur %s"
 #: footer.php:33 footer.php:42
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
+
+#: footer.php:37
+msgid "All rights reserved"
+msgstr "Tous droits réservés"
 
 #: footer.php:37
 msgid "Theme by"

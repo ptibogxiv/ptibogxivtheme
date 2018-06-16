@@ -61,19 +61,28 @@ if (function_exists('pll_the_languages')) {
 <DIV class="modal-dialog modal-dialog-centered" role="document">
 <DIV class="modal-content border-0"><DIV class="modal-header border-0">
 <H5 class="modal-title" id="SelectLangLabel"><?php _e('Change language', 'ptibogxivtheme'); ?></H5><BUTTON id="closemodalSelectLang" type="button" class="close" data-dismiss="modal" aria-label="Close">
-<SPAN aria-hidden="true">&times;</SPAN></BUTTON></DIV>
-<DIV class="modal-body"><DIV class="card"><UL class="list-group list-group-flush">
+<SPAN aria-hidden="true">&times;</SPAN></BUTTON></DIV> 
+<SCRIPT>
+function loadingLang() {
+jQuery('#closemodalSelectLang').hide();
+jQuery('#SelectLangmodal-form').hide();
+jQuery('#loadingSelectLang').show();  
+}
+</SCRIPT>
+<DIV class="modal-body"><DIV class="card" id="SelectLangmodal-form"><UL class="list-group list-group-flush">
 <?php  
 $translations = pll_the_languages( array( 'raw' => 1 ) );
 foreach ($translations as $key => $value) {
 ?>
-<A href='<?php echo $value[url]; ?>' class='list-group-item list-group-item-action list-group-item-light'>
+<A href='<?php echo $value[url]; ?>' onclick='loadingLang()' class='list-group-item list-group-item-action list-group-item-light'>
 <IMG src='<?php echo $value[flag]; ?>' class='img-fluid' alt='<?php echo $value[name]; ?>'> <?php echo $value[name]; ?> <?php if ($value[current_lang] == true) {?><I class='fas fa-language fa-fw'></I><?php } ?>
 </A>
 <?php
 }      
 ?>
-</UL></DIV></DIV></DIV></DIV></DIV>
+</UL></DIV>
+<DIV id="loadingSelectLang" style="display:none"><BR><BR><BR><BR><CENTER><DIV class="align-middle"><I class="fas fa-spinner fa-pulse fa-3x fa-fw"></I><H4><?php _e('Loading', 'ptibogxivtheme'); ?></H4></DIV></CENTER><BR><BR><BR><BR><BR><BR><BR><BR></DIV>
+</DIV></DIV></DIV></DIV>
 <?php
 }      
 ?> 

@@ -81,7 +81,7 @@ foreach ($translations as $key => $value) {
 }      
 ?>
 </UL></DIV>
-<DIV id="loadingSelectLang" style="display:none"><BR><BR><BR><BR><CENTER><DIV class="align-middle"><I class="fas fa-spinner fa-pulse fa-3x fa-fw"></I><H4><?php _e('Loading', 'ptibogxivtheme'); ?></H4></DIV></CENTER><BR><BR><BR><BR><BR><BR><BR><BR></DIV>
+<DIV id="loadingSelectLang" style="display:none"><BR><BR><BR><BR><BR><CENTER><DIV class="align-middle"><I class="fas fa-spinner fa-pulse fa-3x fa-fw"></I><H4><?php _e('Loading', 'ptibogxivtheme'); ?></H4></DIV></CENTER><BR><BR><BR><BR><BR></DIV>
 </DIV></DIV></DIV></DIV>
 <?php
 }      

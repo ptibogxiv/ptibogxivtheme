@@ -60,7 +60,7 @@ if (function_exists('pll_the_languages')) {
 <DIV class="modal fade" id="SelectLang" tabindex="-1" role="dialog" aria-labelledby="SelectLangLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
 <DIV class="modal-dialog modal-dialog-centered" role="document">
 <DIV class="modal-content border-0"><DIV class="modal-header border-0">
-<H5 class="modal-title" id="SelectLangLabel"><?php _e('Change language', 'ptibogxivtheme'); ?></H5><BUTTON type="button" class="close" data-dismiss="modal" aria-label="Close">
+<H5 class="modal-title" id="SelectLangLabel"><?php _e('Change language', 'ptibogxivtheme'); ?></H5><BUTTON id="closemodalSelectLang" type="button" class="close" data-dismiss="modal" aria-label="Close">
 <SPAN aria-hidden="true">&times;</SPAN></BUTTON></DIV>
 <DIV class="modal-body"><DIV class="card"><UL class="list-group list-group-flush">
 <?php  

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-16 23:32+0200\n"
-"PO-Revision-Date: 2018-06-16 23:32+0200\n"
+"POT-Creation-Date: 2018-06-17 23:53+0200\n"
+"PO-Revision-Date: 2018-06-17 23:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -342,7 +342,7 @@ msgid "My account"
 msgstr "Mon compte"
 
 #: header.php:60
-msgid "Cart"
+msgid "Basket"
 msgstr "Panier"
 
 #: header.php:67 loops/comments.php:49
@@ -528,6 +528,9 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Cart"
+#~ msgstr "Panier"
 
 #~ msgid "Log out"
 #~ msgstr "Déconnecter"

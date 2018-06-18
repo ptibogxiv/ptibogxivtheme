@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-17 23:53+0200\n"
-"PO-Revision-Date: 2018-06-17 23:54+0200\n"
+"POT-Creation-Date: 2018-06-18 20:13+0200\n"
+"PO-Revision-Date: 2018-06-18 20:13+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -333,27 +333,31 @@ msgstr "Zone du widget d'entête"
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
-#: header.php:54
+#: header.php:24
+msgid "Our websites"
+msgstr "Nos sites web"
+
+#: header.php:71
 msgid "Choose language"
 msgstr "Choisissez une langue"
 
-#: header.php:60
+#: header.php:77
 msgid "My account"
 msgstr "Mon compte"
 
-#: header.php:60
+#: header.php:77
 msgid "Basket"
 msgstr "Panier"
 
-#: header.php:67 loops/comments.php:49
+#: header.php:84 loops/comments.php:49
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: header.php:73 header.php:75
+#: header.php:90 header.php:92
 msgid "Login"
 msgstr "Connexion"
 
-#: header.php:78
+#: header.php:95
 msgid "Signup"
 msgstr "S'inscrire"
 
@@ -471,7 +475,7 @@ msgctxt "ptibogxivtheme"
 msgid "Search"
 msgstr "Chercher"
 
-#: search.php:9
+#: search.php:11
 msgid "Search Results for"
 msgstr "Résultats de la recherche pour"
 

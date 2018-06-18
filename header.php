@@ -18,7 +18,24 @@ bloginfo('name'); echo " - "; bloginfo('description');
 	<?php wp_head(); ?>
 </HEAD>
 
-<BODY <?php body_class();?>>
+<BODY <?php body_class();?>><?php if (is_multisite() && get_current_blog_id()=='1') { ?>
+<DIV class="bg-dark">
+<DIV class="container d-none d-md-block"><ul class="nav nav-pills">
+<li class="nav-item"><a class="nav-link disabled" href="#"><i class="fas fa-globe fa-fw"></i> <?php _e('Our websites', 'ptibogxivtheme'); ?></a></li><?php
+$defaults = array(
+//'site__not_in'=>get_current_blog_id(),
+'public'=>'1'
+	);
+$subsites = get_sites($defaults);
+foreach( $subsites as $subsite ) {
+  $subsite_id = get_object_vars($subsite)["blog_id"];
+  $subsite_name = get_blog_details($subsite_id)->blogname;
+  $subsite_url = get_blog_details($subsite_id)->siteurl; ?>
+<li class="nav-item"><a class="nav-link <?php if (get_current_blog_id()==$subsite_id){ echo "active"; } ?>" href="<?php echo $subsite_url; ?>"><?php echo $subsite_name; ?></a></li>
+<?php } ?>
+</ul>
+</DIV>
+</DIV><?php } ?>
 <?php if (get_header_image()){ ?> 
 <IMG class="d-block w-100 img-fluid" src="<?php header_image(); ?>" alt="banner logo">
 <?php } ?>

@@ -58,7 +58,7 @@ if(function_exists('doliconst')){ ?>
 if (function_exists('pll_the_languages')) {       
 ?> 
 <DIV class="modal fade" id="SelectLang" tabindex="-1" role="dialog" aria-labelledby="SelectLangLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-<DIV class="modal-dialog modal-dialog-centered" role="document">
+<DIV class="modal-dialog modal-sm modal-dialog-centered" role="document">
 <DIV class="modal-content border-0"><DIV class="modal-header border-0">
 <H5 class="modal-title" id="SelectLangLabel"><?php _e('Change language', 'ptibogxivtheme'); ?></H5><BUTTON id="closemodalSelectLang" type="button" class="close" data-dismiss="modal" aria-label="Close">
 <SPAN aria-hidden="true">&times;</SPAN></BUTTON></DIV> 
@@ -81,7 +81,7 @@ foreach ($translations as $key => $value) {
 }      
 ?>
 </UL></DIV>
-<DIV id="loadingSelectLang" style="display:none"><BR><BR><BR><BR><BR><CENTER><DIV class="align-middle"><I class="fas fa-spinner fa-pulse fa-3x fa-fw"></I><H4><?php _e('Loading', 'ptibogxivtheme'); ?></H4></DIV></CENTER><BR><BR><BR><BR><BR></DIV>
+<DIV id="loadingSelectLang" style="display:none"><BR><BR><BR><BR><CENTER><DIV class="align-middle"><I class="fas fa-spinner fa-pulse fa-3x fa-fw"></I><H4><?php _e('Loading', 'ptibogxivtheme'); ?></H4></DIV></CENTER><BR><BR><BR><BR></DIV>
 </DIV></DIV></DIV></DIV>
 <?php
 }      

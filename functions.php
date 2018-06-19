@@ -78,7 +78,7 @@ function wpc_show_admin_bar() {
 global $current_user;
 if (current_user_can( 'edit_posts' ) && !get_theme_mod( 'ptibogxivtheme_adminbar') ) {  
 return false;
-} elseif (current_user_can( 'edit_posts' ) && is_user_logged_in() && $current_user->show_admin_bar_front==true) {
+} elseif (current_user_can( 'edit_posts' ) && is_user_logged_in() && $current_user->show_admin_bar_front=='true') {
 return true;
 }
 else {

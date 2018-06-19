@@ -1,10 +1,15 @@
 <?php get_header(); ?>
 
-<div class="container">
-  <div class="row">
-    
-    <div class="<?php if(is_active_sidebar('sidebar-widget-area')): ?>col-sm-8<?php else: ?>col-sm-12<?php endif; ?>">
-      <div id="content" role="main">
+<DIV class="<?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_container_type')); ?> site-content">
+<DIV class="row">
+<?php dynamic_sidebar('top-widget-area');?>
+ </DIV>
+ <DIV class="row">   
+    <DIV class="<?php if(get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='none'): ?>col-12<?php
+    elseif(get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both'): ?>col-12 col-md-6<?php
+    elseif(is_active_sidebar('sidebar-left-widget-area') OR is_active_sidebar('sidebar-right-widget-area')): ?>col-12 col-md-8<?php 
+    else: ?>col-12<?php endif; ?>">
+      <DIV id="content" role="main">
         <header>
           <h1>Category: <?php echo single_cat_title(); ?></h1>
           <hr>

@@ -12,7 +12,7 @@ The Single Posts Loop
 <HEADER><TABLE width="100%"><TR><TD><H1><?php the_title()?> <?php edit_post_link('<I class="fas fa-edit"></I>', '<SPAN class="edit-link">', '</SPAN>' ); ?></H1>
 <H5><EM>
 <SPAN class="text-muted author"><?php _e('By', 'ptibogxivtheme'); echo " "; the_author() ?>, </SPAN>
-<TIME  class="text-muted" datetime="<?php the_time('d-m-Y')?>"><?php _e('on', 'ptibogxivtheme'); ?> <?php the_time('d F Y') ?></TIME>
+<TIME class="text-muted" datetime="<?php the_time()?>"><?php _e('on', 'ptibogxivtheme'); ?> <?php the_time('d F Y') ?></TIME>
 </EM></H5></TD><TD align="right"><DIV class="fa-4x text-muted"><SPAN class="fa-layers fa-fw"><I class="fas fa-comment"></I><SPAN class="fa-layers-text fa-inverse" data-fa-transform="shrink-8" style="font-weight:900"><?php comments_number('0', '1', '%'); ?></SPAN></SPAN></DIV></P>
 </TD></TR></TABLE>
 <HR>
@@ -36,6 +36,7 @@ document.write('<A href="whatsapp://send?text=<?php echo get_permalink($post->ID
       <?php the_content()?>
       <?php wp_link_pages(); ?>
     </SECTION>
+<?php the_terms( $post->ID, 'post_tag', '<HR><i class="fas fa-tags"></i> ', ' / ' ); ?>
 <HR>
 <TABLE><TR><TD with="90" align="center"><?php echo get_avatar(get_the_author_meta('ID'),80);?></TD><TD valign="top"><H5><?php echo _e('About', 'ptibogxivtheme'); echo " "; the_author() ?></H5><H6><?php the_author_meta( 'description' ); ?></H6></TD></TR></TABLE>
 </DIV></DIV></ARTICLE>

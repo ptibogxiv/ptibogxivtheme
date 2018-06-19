@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-18 20:13+0200\n"
-"PO-Revision-Date: 2018-06-18 20:13+0200\n"
+"POT-Creation-Date: 2018-06-19 12:32+0200\n"
+"PO-Revision-Date: 2018-06-19 12:32+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -458,15 +458,19 @@ msgstr "Partager"
 msgid "About"
 msgstr "À propos de"
 
-#: loops/content.php:23
+#: loops/content.php:23 loops/content.php:31
 msgid "Post on"
 msgstr "Publié le"
 
-#: loops/content.php:29
+#: loops/content.php:33
+msgid "Continue reading"
+msgstr "Continuer la lecture"
+
+#: loops/content.php:41
 msgid "Previous"
 msgstr "Précédent"
 
-#: loops/content.php:31
+#: loops/content.php:43
 msgid "Next"
 msgstr "Suivant"
 

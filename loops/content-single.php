@@ -21,14 +21,14 @@ The Single Posts Loop
         <?php the_category(', ') ?></P>
         <DIV class="btn-group" role="group" aria-label="First group">
 <A href="#" class="btn btn-outline-dark disabled" role="button" aria-disabled="true"><?php _e('Share', 'ptibogxivtheme'); ?></A>
-<A href="mailto:?subject=[<?php bloginfo('name'); ?>] Informations intéressante&body=Bonjour,<?php echo get_permalink($post->ID);?>" type="button" class="btn btn-dark" target="_blank"><I class="fas fa-envelope fa-fw"></I></A> 
-<A href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink($post->ID);?>&t=<?php the_title()?>" type="button" class="btn btn-facebook" target="_blank"><I class="fab fa-facebook-f fa-fw"></I></A>
-<A href="https://twitter.com/intent/tweet?text=<?php the_title()?>&url=<?php echo get_permalink($post->ID);?>&via=<?php echo get_option('doliconnect_social_twitter');?>" type="button" class="btn btn-twitter" target="_blank"><I class="fab fa-twitter fa-fw"></I></A>
+<A href="mailto:?subject=[<?php bloginfo('name'); ?>] Informations intéressante&body=Bonjour,<?php echo get_permalink($post->ID);?>" role="button" class="btn btn-dark" target="_blank"><I class="fas fa-envelope fa-fw"></I></A> 
+<A href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink($post->ID);?>&t=<?php the_title()?>" role="button" class="btn btn-facebook" target="_blank"><I class="fab fa-facebook-f fa-fw"></I></A>
+<A href="https://twitter.com/intent/tweet?text=<?php the_title()?>&url=<?php echo get_permalink($post->ID);?>&via=<?php echo get_option('doliconnect_social_twitter');?>" role="button" class="btn btn-twitter" target="_blank"><I class="fab fa-twitter fa-fw"></I></A>
 <A href="https://www.linkedin.com/shareArticle?mini=true&url=url=<?php echo get_permalink($post->ID);?>&title=<?php the_title()?>&source=<?php echo get_option('doliconnect_social_linkedin');?>" type="button" class="btn btn-linkedin" target="_blank"><I class="fab fa-linkedin-in fa-fw"></I></A>
-<A href="https://plus.google.com/share?url=<?php echo get_permalink($post->ID);?>&t=<?php the_title()?>" type="button" class="btn btn-google" target="_blank"><I class="fab fa-google-plus-g fa-fw"></I></A>
-<A href="https://pinterest.com/pin/create/button/?url=<?php echo get_permalink($post->ID);?>&media=&description=s<?php the_title()?>" type="button" class="btn btn-pinterest" target="_blank"><I class="fab fa-pinterest fa-fw"></I></A>
+<A href="https://plus.google.com/share?url=<?php echo get_permalink($post->ID);?>&t=<?php the_title()?>" role="button" class="btn btn-google" target="_blank"><I class="fab fa-google-plus-g fa-fw"></I></A>
+<A href="https://pinterest.com/pin/create/button/?url=<?php echo get_permalink($post->ID);?>&media=&description=s<?php the_title()?>" role="button" class="btn btn-pinterest" target="_blank"><I class="fab fa-pinterest fa-fw"></I></A>
 <SCRIPT>if (navigator.userAgent.match(/iPhone|Android/i)) {
-document.write('<A href="whatsapp://send?text=<?php echo get_permalink($post->ID);?>" data-action="share/whatsapp/share" type="button" class="btn btn-whatsapp" target="_blank"><I class="fab fa-whatsapp fa-fw"></I></A>');
+document.write('<A href="whatsapp://send?text=<?php echo get_permalink($post->ID);?>" data-action="share/whatsapp/share" role="button" class="btn btn-whatsapp" target="_blank"><I class="fab fa-whatsapp fa-fw"></I></A>');
 }</SCRIPT>
 </DIV>     
     </HEADER>

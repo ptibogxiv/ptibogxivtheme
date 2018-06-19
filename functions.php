@@ -142,7 +142,7 @@ setup_postdata( $post );
 $count = $count+1;
 echo '<div class="carousel-item ';
 if ($count =='1') {echo 'active'; }
-echo '"><img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'large' ).'" alt="'.$post->post_title.'">
+echo '"><a href="'.get_permalink($post->ID).'" ><img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'large' ).'" alt="'.$post->post_title.'"></a>
   <div class="carousel-caption d-none d-md-block">
     <h3><a href="'.get_permalink($post->ID).'" class="badge badge-light">'.$post->post_title.'</a></h3>
     <p class="badge badge-light">'.get_the_date( '', $post->ID).'</p>
@@ -151,11 +151,11 @@ echo '"><img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(
 wp_reset_postdata();    
 echo '</div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
 </div>';

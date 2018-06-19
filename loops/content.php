@@ -18,7 +18,7 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
               <H3 class="mb-0"><A href="<?php the_permalink(); ?>"><?php the_title()?></A></H3>
               <DIV class="mb-1 text-muted small"><i class="fas fa-calendar fa-fw"></I> <?php _e('Post on', 'ptibogxivtheme'); ?> <?php the_time('d F Y') ?> <i class="fas fa-comment fa-fw"></I> <?php comments_popup_link( 'No comments yet', '1 comment', '% comments', 'comments-link', 'Comments are off'); ?></DIV>
               <P class="mb-auto text-justify"><?php the_excerpt(); ?></P>
-            </DIV><?php if ( has_post_thumbnail() ){ ?><A href="<?php the_permalink(); ?>"><IMG  class="card-img-right img-fluid flex-auto d-none d-md-block" src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv' ); ?>" alt="<?php the_title()?>"></A><?php } ?>
+            </DIV><?php if ( has_post_thumbnail() ){ ?><A href="<?php the_permalink(); ?>"><IMG  class="card-img-right flex-auto d-none d-md-block" src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv' ); ?>" alt="<?php the_title()?>"></A><?php } ?>
           </DIV>
 </ARTICLE><?php endwhile; ?>
 

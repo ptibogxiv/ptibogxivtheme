@@ -18,7 +18,7 @@ bloginfo('name'); echo " - "; bloginfo('description');
 	<?php wp_head(); ?>
 </HEAD>
 
-<BODY <?php body_class();?>><?php if (is_multisite() && get_current_blog_id()=='1') { ?>
+<BODY <?php body_class();?>><?php if (is_multisite() && get_site_option('ptibogxivtheme_networkbar')=='1') { ?>
 <DIV class="bg-dark">
 <DIV class="container d-none d-md-block"><ul class="nav nav-pills">
 <li class="nav-item"><small><a class="nav-link disabled" href="#"><i class="fas fa-globe fa-fw"></i> <?php _e('Our websites', 'ptibogxivtheme'); ?></a></small></li><?php

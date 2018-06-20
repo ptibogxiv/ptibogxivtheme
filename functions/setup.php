@@ -203,8 +203,32 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
     'section'  => 'ptibogxivtheme_theme_layout_options',
     'type'     => 'checkbox',
     'priority'    => '50',
+) );
+ 
+if (is_multisite()) {
+    $wp_customize->add_setting( 'ptibogxivtheme_networkbar', array(
+    'default'        => false,
+    'capability'     => 'manage_sites'
+    ) );
+
+    $wp_customize->add_control( 'ptibogxivtheme_networkbar', array(
+    'settings' => 'ptibogxivtheme_networkbar',
+    'label'    => __( 'Restore the native admin bar', 'ptibogxivtheme' ),
+    'section'  => 'ptibogxivtheme_theme_layout_options',
+    'type'     => 'checkbox',
+    'priority'    => '50',
 ) );    
+}
 
 	}
 } // endif function_exists( 'understrap_theme_customize_register' ).
 add_action( 'customize_register', 'ptibogxivtheme_theme_customize_register' );
+
+function ptibogxivtheme_admin_page() {
+add_menu_page(__( 'ptibogxivtheme', 'ptibogxivtheme' ), __( 'ptibogxivtheme', 'ptibogxivtheme' ), 'manage_options', 'ptibogxivtheme_network_page', 'ptibogxivtheme_network_page', 'dashicons-admin-appearance');
+add_submenu_page('ptibogxivtheme_network_page', "Management", "Management", 'manage_options', 'ptibogxivtheme_network_page', 'ptibogxivtheme_network_page');
+}
+
+if ( is_multisite() ) {
+add_action( 'network_admin_menu', 'ptibogxivtheme_admin_page' );
+}

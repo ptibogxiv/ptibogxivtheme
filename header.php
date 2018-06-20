@@ -81,7 +81,7 @@ if ( is_user_logged_in() ) { ?><A href="<?php echo doliconnecturl('doliaccount')
 if (get_site_option('doliconnect_mode')=='one') {
 restore_current_blog();
 }
-if (current_user_can( 'edit_posts' ) && !get_theme_mod( 'ptibogxivtheme_adminbar') && wp_get_current_user()->show_admin_bar_front!='true') { ?><A href="<?php echo admin_url(); ?>" title="Zone admin"><I class="fas fa-cogs fa-fw fa-2x"></I></A>&nbsp;<?php } ?><A href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><I class="fas fa-sign-out-alt fa-fw fa-2x"></I></A> 
+if (current_user_can( 'edit_posts' ) or (get_theme_mod( 'ptibogxivtheme_adminbar') && !isset(wp_get_current_user()->show_admin_bar_front))) { ?><A href="<?php echo admin_url(); ?>" title="Zone admin"><I class="fas fa-cogs fa-fw fa-2x"></I></A>&nbsp;<?php } ?><A href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><I class="fas fa-sign-out-alt fa-fw fa-2x"></I></A> 
 <?php } else {
 if (get_site_option('doliconnect_mode')=='one') {
 restore_current_blog();
@@ -89,7 +89,7 @@ restore_current_blog();
 if (get_option('doliloginmodal')=='1') {       
 ?><A href="#" data-toggle="modal" data-target="#DoliconnectLogin" data-dismiss="modal" title="<?php _e('Login', 'ptibogxivtheme'); ?>"><?php _e('Login', 'ptibogxivtheme'); ?></A><?php //<I class="fas fa-sign-in-alt fa-fw fa-2x"></I>
 } else {?>
-<A href="<?php echo wp_login_url( get_permalink() ); ?>?redirect_to=<?php echo get_permalink(); ?>" title="<?php _e('Login', 'ptibogxivtheme'); ?>"><?php _e('Login', 'ptibogxivtheme'); ?></A>
+<A href="<?php echo wp_login_url( get_permalink() ); ?>&redirect_to=<?php echo get_permalink(); ?>" title="<?php _e('Login', 'ptibogxivtheme'); ?>"><?php _e('Login', 'ptibogxivtheme'); ?></A>
 <?php  } 
 if (((!is_multisite() && get_option( 'users_can_register' )) or (get_option('users_can_register')=='1' && (get_site_option( 'registration' ) == 'user' or get_site_option( 'registration' ) == 'all')))) 
 { ?>&nbsp;|&nbsp;<A href="<?php echo wp_registration_url(get_permalink()); ?>" title="<?php _e('Signup', 'ptibogxivtheme'); ?>"><?php _e('Signup', 'ptibogxivtheme'); ?></A>

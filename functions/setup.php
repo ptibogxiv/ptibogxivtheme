@@ -232,3 +232,25 @@ add_submenu_page('ptibogxivtheme_network_page', "Management", "Management", 'man
 if ( is_multisite() ) {
 add_action( 'network_admin_menu', 'ptibogxivtheme_admin_page' );
 }
+function ptibogxivtheme_network_page() {
+    echo '<DIV class="wrap">';
+    echo '<H2>Customization network ptibogxivtheme</H2>';
+        /*** End of license activation ***/
+    
+    /*** End of sample license deactivation ***/    
+		?>       
+<DIV id="<?php echo $id; ?>" class="postbox">
+<DIV class="inside">
+    <P>Force some customization for the network</P>
+    <FORM action="" method="post">
+        <TABLE class="form-table" width="100%">
+            
+        </TABLE>
+        <P class="submit">
+            <INPUT type="submit" name="activate_license" value="Activate" class="button-primary" />
+        </P>
+    </FORM>     				
+    </DIV>
+</DIV>
+<?php    
+}

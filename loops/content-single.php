@@ -20,7 +20,7 @@ The Single Posts Loop
         <I class="fas fa-folder"></I>&nbsp;
         <?php the_category(', ') ?></P>
         <DIV class="btn-group" role="group" aria-label="First group">
-<A href="#" class="btn btn-outline-dark disabled" role="button" aria-disabled="true"><?php _e('Share', 'ptibogxivtheme'); ?></A>
+<A href="#" class="btn btn-outline-dark disabled" role="button" aria-disabled="true"><I class="fas fa-share-alt fa-fw"></I></A>
 <A href="mailto:?subject=[<?php bloginfo('name'); ?>] Informations intéressante&body=Bonjour,<?php echo get_permalink($post->ID);?>" role="button" class="btn btn-dark" target="_blank"><I class="fas fa-envelope fa-fw"></I></A> 
 <A href="https://www.facebook.com/sharer/sharer.php?u=<?php echo get_permalink($post->ID);?>&t=<?php the_title()?>" role="button" class="btn btn-facebook" target="_blank"><I class="fab fa-facebook-f fa-fw"></I></A>
 <A href="https://twitter.com/intent/tweet?text=<?php the_title()?>&url=<?php echo get_permalink($post->ID);?>&via=<?php echo get_option('doliconnect_social_twitter');?>" role="button" class="btn btn-twitter" target="_blank"><I class="fab fa-twitter fa-fw"></I></A>

@@ -19,11 +19,11 @@ bloginfo('name'); echo " - "; bloginfo('description');
 </HEAD>
 
 <BODY <?php body_class();?>><?php if (is_multisite() && get_site_option('ptibogxivtheme_networkbar')=='1') { ?>
-<DIV class="bg-dark">
+<DIV class="text-dark bg-<?php echo "dark"; //echo esc_attr(get_theme_mod( 'ptibogxivtheme_networkbar_color' )); ?>">
 <DIV class="container d-none d-md-block"><ul class="nav nav-pills">
-<li class="nav-item"><small><a class="nav-link disabled" href="#"><i class="fas fa-globe fa-fw"></i> <?php _e('Our websites', 'ptibogxivtheme'); ?></a></small></li><?php
+<li class="nav-item"><small><a class="nav-link text-white disabled" href="#"><i class="fas fa-globe fa-fw"></i> <?php _e('Our websites', 'ptibogxivtheme'); ?></a></small></li><?php
 $defaults = array(
-//'site__not_in'=>get_current_blog_id(),
+'site__in'=>(1),
 'public'=>'1'
 	);
 $subsites = get_sites($defaults);
@@ -31,7 +31,7 @@ foreach( $subsites as $subsite ) {
   $subsite_id = get_object_vars($subsite)["blog_id"];
   $subsite_name = get_blog_details($subsite_id)->blogname;
   $subsite_url = get_blog_details($subsite_id)->siteurl; ?>
-<li class="nav-item"><small><a class="nav-link <?php if (get_current_blog_id()==$subsite_id){ echo "active"; } ?>" href="<?php echo $subsite_url; ?>"><?php echo $subsite_name; ?></a></small></li>
+<li class="nav-item"><small><a class="nav-link text-white <?php if (get_current_blog_id()==$subsite_id){ echo "active"; } ?>" href="<?php echo $subsite_url; ?>"><?php echo $subsite_name; ?></a></small></li>
 <?php } ?>
 </ul>
 </DIV>

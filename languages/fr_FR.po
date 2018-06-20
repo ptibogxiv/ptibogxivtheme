@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-20 00:02+0200\n"
-"PO-Revision-Date: 2018-06-20 00:03+0200\n"
+"POT-Creation-Date: 2018-06-20 22:07+0200\n"
+"PO-Revision-Date: 2018-06-20 22:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -122,7 +122,7 @@ msgstr "Container pleine largeur"
 msgid "Css scheme"
 msgstr "Schéma CSS"
 
-#: functions/setup.php:80 functions/setup.php:124
+#: functions/setup.php:80 functions/setup.php:124 functions/setup.php:221
 msgid "Choose between scheme"
 msgstr "Choisissez un jeu de couleurs"
 
@@ -218,35 +218,35 @@ msgstr ""
 msgid "Navbar Color scheme"
 msgstr "Barre de navigation"
 
-#: functions/setup.php:130
+#: functions/setup.php:130 functions/setup.php:227
 msgid "Light scheme"
 msgstr ""
 
-#: functions/setup.php:131
+#: functions/setup.php:131 functions/setup.php:228
 msgid "Dark scheme"
 msgstr ""
 
-#: functions/setup.php:132
+#: functions/setup.php:132 functions/setup.php:229
 msgid "Primary scheme"
 msgstr ""
 
-#: functions/setup.php:133
+#: functions/setup.php:133 functions/setup.php:230
 msgid "Secondary scheme"
 msgstr ""
 
-#: functions/setup.php:134
+#: functions/setup.php:134 functions/setup.php:231
 msgid "Info scheme"
 msgstr ""
 
-#: functions/setup.php:135
+#: functions/setup.php:135 functions/setup.php:232
 msgid "Success scheme"
 msgstr ""
 
-#: functions/setup.php:136
+#: functions/setup.php:136 functions/setup.php:233
 msgid "Warning scheme"
 msgstr ""
 
-#: functions/setup.php:137
+#: functions/setup.php:137 functions/setup.php:234
 msgid "Danger scheme"
 msgstr ""
 
@@ -304,6 +304,14 @@ msgstr "Pas de barre latérale"
 #: functions/setup.php:202
 msgid "Restore the native admin bar"
 msgstr "Restaurer la barre admin native"
+
+#: functions/setup.php:220
+msgid "Networkbar Color scheme"
+msgstr "Jeu de couleurs de la barre de réseau"
+
+#: functions/setup.php:246
+msgid "ptibogxivtheme"
+msgstr "ptibogxivtheme"
 
 #: functions/widgets.php:11
 msgid "The left sidebar widget area"

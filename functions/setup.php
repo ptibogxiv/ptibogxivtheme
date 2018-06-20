@@ -206,18 +206,36 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 ) );
  
 if (is_multisite()) {
-    $wp_customize->add_setting( 'ptibogxivtheme_networkbar', array(
-    'default'        => false,
-    'capability'     => 'manage_sites'
-    ) );
-
-    $wp_customize->add_control( 'ptibogxivtheme_networkbar', array(
-    'settings' => 'ptibogxivtheme_networkbar',
-    'label'    => __( 'Restore the native admin bar', 'ptibogxivtheme' ),
-    'section'  => 'ptibogxivtheme_theme_layout_options',
-    'type'     => 'checkbox',
-    'priority'    => '50',
-) );    
+    $wp_customize->add_setting( 'ptibogxivtheme_networkbar_color', array(
+			'default'           => 'navbar-dark bg-dark',
+			'type'              => 'theme_mod',
+			'sanitize_callback' => 'esc_textarea',
+			'capability'        => 'edit_theme_options',
+		) ); 
+      
+   	$wp_customize->add_control(
+			new WP_Customize_Control(
+				$wp_customize,
+				'ptibogxivtheme_networkbar_color', array(
+					'label'       => __( 'Networkbar Color scheme', 'ptibogxivtheme' ),
+					'description' => __( "Choose between scheme", 'ptibogxivtheme' ),
+					'section'     => 'ptibogxivtheme_theme_layout_options',
+					'settings'    => 'ptibogxivtheme_networkbar_color',
+					'type'        => 'select',
+          'default'     => 'navbar-dark bg-dark',
+					'choices'     => array(
+						'navbar-light bg-light' => __( 'Light scheme', 'ptibogxivtheme' ),
+						'navbar-dark bg-dark' => __( 'Dark scheme', 'ptibogxivtheme' ),
+						'navbar-dark bg-primary' => __( 'Primary scheme', 'ptibogxivtheme' ),
+            'navbar-dark bg-secondary' => __( 'Secondary scheme', 'ptibogxivtheme' ),
+            'navbar-dark bg-info' => __( 'Info scheme', 'ptibogxivtheme' ),
+            'navbar-dark bg-success' => __( 'Success scheme', 'ptibogxivtheme' ),
+						'navbar-dark bg-warning' => __( 'Warning scheme', 'ptibogxivtheme' ),
+            'navbar-dark bg-danger' => __( 'Danger scheme', 'ptibogxivtheme' ),            
+					),
+					'priority'    => '60',
+				)
+			) );    
 }
 
 	}
@@ -235,8 +253,13 @@ add_action( 'network_admin_menu', 'ptibogxivtheme_admin_page' );
 function ptibogxivtheme_network_page() {
     echo '<DIV class="wrap">';
     echo '<H2>Customization network ptibogxivtheme</H2>';
-        /*** End of license activation ***/
-    
+/*** License activate button was clicked ***/
+if (isset($_REQUEST['activate_ptibogxivtheme'])) {     
+if ( add_site_option( 'ptibogxivtheme_networkbar', $_REQUEST['ptibogxivtheme_networkbar']) ) {
+} else {
+delete_site_option('ptibogxivtheme_networkbar');
+}
+    }    
     /*** End of sample license deactivation ***/    
 		?>       
 <DIV id="<?php echo $id; ?>" class="postbox">
@@ -244,10 +267,13 @@ function ptibogxivtheme_network_page() {
     <P>Force some customization for the network</P>
     <FORM action="" method="post">
         <TABLE class="form-table" width="100%">
-            
+            <TR>
+                <TH style="width:150px;"><LABEL for="ptibogxivtheme_networkbar">ptibogxivtheme_networkbar</LABEL></TH>
+                <TD ><INPUT name="ptibogxivtheme_networkbar" type="checkbox" id="ptibogxivtheme_networkbar" value="1" <?php checked('1', get_site_option('ptibogxivtheme_networkbar')); ?> /> ptibogxivtheme_networkbar</TD>
+            </TR>            
         </TABLE>
         <P class="submit">
-            <INPUT type="submit" name="activate_license" value="Activate" class="button-primary" />
+            <INPUT type="submit" name="activate_ptibogxivtheme" value="Activate" class="button-primary" />
         </P>
     </FORM>     				
     </DIV>

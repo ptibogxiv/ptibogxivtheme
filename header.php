@@ -23,7 +23,7 @@ bloginfo('name'); echo " - "; bloginfo('description');
 <DIV class="container d-none d-md-block"><ul class="nav nav-pills">
 <li class="nav-item"><small><a class="nav-link text-white disabled" href="#"><i class="fas fa-globe fa-fw"></i> <?php _e('Our websites', 'ptibogxivtheme'); ?></a></small></li><?php
 $defaults = array(
-'site__in'=>(1),
+//'site__in'=>(1),
 'public'=>'1'
 	);
 $subsites = get_sites($defaults);

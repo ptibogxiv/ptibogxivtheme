@@ -91,12 +91,12 @@ if (get_option('doliloginmodal')=='1') {
 <A href="#" data-toggle="modal" data-target="#DoliconnectLogin" data-dismiss="modal" title="<?php _e('Login', 'ptibogxivtheme'); ?>" class="btn btn-outline-primary my-2 my-sm-0" role="button"><?php _e('Login', 'ptibogxivtheme'); ?></A>
 <?php } else {?>
 <A href="<?php echo wp_login_url( get_permalink() ); ?>&redirect_to=<?php echo get_permalink(); ?>" title="<?php _e('Login', 'ptibogxivtheme'); ?>"><?php _e('Login', 'ptibogxivtheme'); ?></A>
-<?php  } 
-if (((!is_multisite() && get_option( 'users_can_register' )) or (get_option('users_can_register')=='1' && (get_site_option( 'registration' ) == 'user' or get_site_option( 'registration' ) == 'all')))) 
+<?php if (((!is_multisite() && get_option( 'users_can_register' )) or (get_option('users_can_register')=='1' && (get_site_option( 'registration' ) == 'user' or get_site_option( 'registration' ) == 'all')))) 
 { ?>&nbsp;|&nbsp;<A href="<?php echo wp_registration_url(get_permalink()); ?>" title="<?php _e('Signup', 'ptibogxivtheme'); ?>"><?php _e('Signup', 'ptibogxivtheme'); ?></A>
 <?php } 
-} 
-}     ?>      
+  } 
+}
+}      ?>      
 <!--  <?php get_template_part('navbar-search'); ?> -->
   </DIV>
   </DIV>

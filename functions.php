@@ -116,52 +116,38 @@ global $post,$wpdb;
 echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
 
-echo "<SCRIPT type='text/javascript'>";
- ?>
-$('.carousel.').carousel({
-  interval: 1000
-})
-<?php 
-
 $args = array( 'posts_per_page' => 5);
 $myposts = get_posts( $args );
 
-echo '</script><div><div id="carouselExampleIndicators" class="carousel slide"><ol class="carousel-indicators">';
+echo '<DIV><DIV id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="4000" data-ride="carousel"><OL class="carousel-indicators">';
 $count=-1;
 foreach ( $myposts as $post ) {
 setup_postdata( $post );
 $count = $count+1;
-echo '<li data-target="#carouselExampleIndicators" data-slide-to="'.$count.'"';
+echo '<LI data-target="#carouselExampleIndicators" data-slide-to="'.$count.'"';
 if ($count=='0') {echo 'class="active"';}
-echo '></li>'; 
+echo '></LI>'; 
 }
-echo '</ol>';
-echo '<div class="carousel-inner">';
+echo '</OL>';
+echo '<DIV class="carousel-inner">';
 $count=0;
 foreach ( $myposts as $post ) {
 setup_postdata( $post );
 $count = $count+1;
-echo '<div class="carousel-item ';
+echo '<DIV class="carousel-item ';
 if ($count =='1') {echo 'active'; }
-echo '"><a href="'.get_permalink($post->ID).'" ><img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'large' ).'" alt="'.$post->post_title.'"></a>
-  <div class="carousel-caption d-none d-md-block">
-    <h3><a href="'.get_permalink($post->ID).'" class="badge badge-light">'.$post->post_title.'</a></h3>
-    <p class="badge badge-light">'.get_the_date( '', $post->ID).'</p>
-  </div></div>'; 
+echo '"><A href="'.get_permalink($post->ID).'" ><IMG class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'large' ).'" alt="'.$post->post_title.'"></A>
+  <DIV class="carousel-caption">
+    <H4><A href="'.get_permalink($post->ID).'" class="text-white">'.$post->post_title.'</A></H4>
+    <SMALL class="text-white"><I class="fas fa-calendar fa-fw"></I> '.__('Post on', 'ptibogxivtheme').' '.get_the_date( '', $post->ID).'</SMALL>
+  </DIV></DIV>'; 
 }
 wp_reset_postdata();    
-echo '</div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>';
+echo '</DIV>
 
-echo '</div></div>';
+</DIV>';
+
+echo '</DIV></DIV>';
 
 echo $args['after_widget'];  
     
@@ -220,8 +206,8 @@ function caroussel_metabox(){
 
 function url_crea($post){
   $url = get_post_meta($post->ID,'_displaycaroussel',true);
-  echo '<label for="url_meta">Afficher dans le carrousel</label>';
-  echo '<input id="url_meta" type="text" name="url_site" value="'.$url.'" />';
+  echo '<LABEL for="url_meta">Afficher dans le carrousel</LABEL>';
+  echo '<INPUT id="url_meta" type="text" name="url_site" value="'.$url.'" />';
 }
 
 add_action('save_post','save_metabox');

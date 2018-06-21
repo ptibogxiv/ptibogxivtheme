@@ -73,6 +73,11 @@ function theme_prefix_setup() {
 
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
+
+function custom_excerpt_length( $length ) {
+	return 25;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
  
 function wpc_show_admin_bar() { 
 global $current_user;

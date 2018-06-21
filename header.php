@@ -97,7 +97,7 @@ if (get_option('doliloginmodal')=='1') {
   } 
 }
 }      ?>      
-<!--  <?php get_template_part('navbar-search'); ?> -->
+<!--  <?php //get_template_part('navbar-search'); ?> -->
   </DIV>
   </DIV>
 </NAV>

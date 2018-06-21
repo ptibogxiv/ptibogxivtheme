@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-21 12:24+0200\n"
-"PO-Revision-Date: 2018-06-21 12:25+0200\n"
+"POT-Creation-Date: 2018-06-21 14:15+0200\n"
+"PO-Revision-Date: 2018-06-21 14:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -91,8 +91,8 @@ msgid "Navbar"
 msgstr "Barre de navigation"
 
 #: functions/search-widget.php:6
-msgid "Search"
-msgstr "Chercher"
+msgid "Your search"
+msgstr "Votre recherche"
 
 #: functions/setup.php:21
 msgid "Read more"
@@ -537,6 +537,9 @@ msgstr "https://www.ptibogxiv.net/fr"
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
 
+#~ msgid "Search"
+#~ msgstr "Chercher"
+
 #~ msgid "Login"
 #~ msgstr "Connexion"
 
@@ -560,9 +563,6 @@ msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
 
 #~ msgid "None"
 #~ msgstr "Aucun"
-
-#~ msgid "Your feedback"
-#~ msgstr "Vos retours"
 
 #~ msgid "Filed under"
 #~ msgstr "Catégorie(s)"

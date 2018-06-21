@@ -3,7 +3,7 @@
 function ptibogxivtheme_search_form( $form ) {
     $form = '<form role="search" method="get" id="searchform" action="' . home_url('/') . '" >
   <div class="input-group mb-3">
-  <input type="text" class="form-control" name="s" id="s" placeholder="' . esc_attr__('Search', 'ptibogxivtheme') . '..." aria-label="Search for..." aria-describedby="search-widget">
+  <input type="text" class="form-control" name="s" id="s" placeholder="' . esc_attr__('Your search', 'ptibogxivtheme') . '" aria-label="Search for..." aria-describedby="search-widget">
   <div class="input-group-append">
     <button class="btn btn-primary" type="submit" id="searchsubmit" >Go!</button>
   </div>

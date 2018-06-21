@@ -36,10 +36,10 @@ document.write('<A href="whatsapp://send?text=<?php echo get_permalink($post->ID
       <?php the_content()?>
       <?php wp_link_pages(); ?>
     </SECTION>
-<?php the_terms( $post->ID, 'post_tag', '<HR><i class="fas fa-tags"></i> ', ' '); ?>
-<HR>
-<TABLE><TR><TD with="90" align="center"><?php echo get_avatar(get_the_author_meta('ID'),80);?></TD><TD valign="top"><H5><?php echo _e('About', 'ptibogxivtheme'); echo " "; the_author() ?></H5><H6><?php the_author_meta( 'description' ); ?></H6></TD></TR></TABLE>
-</DIV></DIV></ARTICLE>
+<?php the_terms( $post->ID, 'post_tag', '<HR><I class="fas fa-tags"></I> ', ' ', '<BR><BR>'); ?>
+<DIV class="jumbotron"><DIV class="row">
+<DIV class="col-2 text-center"><?php echo get_avatar(get_the_author_meta('ID'),80);?></DIV><DIV class="col-10"><H5><?php echo _e('About', 'ptibogxivtheme'); echo " "; the_author() ?></H5><H6><?php the_author_meta( 'description' ); ?></H6></DIV>
+</DIV></DIV></DIV></DIV></ARTICLE>
   <?php comments_template('/loops/comments.php'); ?>
   <?php endwhile; ?>
   <?php else: ?>

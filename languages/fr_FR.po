@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-20 22:07+0200\n"
-"PO-Revision-Date: 2018-06-20 22:08+0200\n"
+"POT-Creation-Date: 2018-06-21 12:24+0200\n"
+"PO-Revision-Date: 2018-06-21 12:25+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -54,11 +54,15 @@ msgstr "Changer de langue"
 msgid "Loading"
 msgstr "Chargement"
 
-#: functions.php:176 functions/widgets.php:61
+#: functions.php:142 loops/content.php:19
+msgid "Post on"
+msgstr "Publié le"
+
+#: functions.php:162 functions/widgets.php:61
 msgid "Caroussel"
 msgstr "Carousel"
 
-#: functions.php:179
+#: functions.php:165
 msgid "Title:"
 msgstr "Titre:"
 
@@ -361,13 +365,13 @@ msgstr "Panier"
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: header.php:90 header.php:92
-msgid "Login"
+#: header.php:91 header.php:93
+msgid "Sign in"
 msgstr "Connexion"
 
 #: header.php:95
-msgid "Signup"
-msgstr "S'inscrire"
+msgid "Sign up"
+msgstr "Inscription"
 
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
@@ -462,10 +466,6 @@ msgstr "le"
 msgid "About"
 msgstr "À propos de"
 
-#: loops/content.php:19
-msgid "Post on"
-msgstr "Publié le"
-
 #: loops/content.php:28
 msgid "Previous"
 msgstr "Précédent"
@@ -536,6 +536,9 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Login"
+#~ msgstr "Connexion"
 
 #~ msgid "Share"
 #~ msgstr "Partager"

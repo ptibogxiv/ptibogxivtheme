@@ -221,4 +221,72 @@ if(isset($_POST['url_site']))
 update_post_meta($post_id, '_url_crea', esc_url($_POST['url_site']));
 }
 
+function ptibogxivtheme_time_ago() {
+global $post;
+	
+	$date = get_post_time('G', true, $post);
+	
+	/**
+	 * Where you see 'ptibogxivtheme' below, you'd
+	 * want to replace those with whatever term
+	 * you're using in your theme to provide
+	 * support for localization.
+	 */ 
+	
+	// Array of time period chunks
+	$chunks = array(
+		array( 60 * 60 * 24 * 365 , __( 'year', 'ptibogxivtheme' ), __( 'years', 'ptibogxivtheme' ) ),
+		array( 60 * 60 * 24 * 30 , __( 'month', 'ptibogxivtheme' ), __( 'months', 'ptibogxivtheme' ) ),
+		array( 60 * 60 * 24 * 7, __( 'week', 'ptibogxivtheme' ), __( 'weeks', 'ptibogxivtheme' ) ),
+		array( 60 * 60 * 24 , __( 'day', 'ptibogxivtheme' ), __( 'days', 'ptibogxivtheme' ) ),
+		array( 60 * 60 , __( 'hour', 'ptibogxivtheme' ), __( 'hours', 'ptibogxivtheme' ) ),
+		array( 60 , __( 'minute', 'ptibogxivtheme' ), __( 'minutes', 'ptibogxivtheme' ) ),
+		array( 1, __( 'second', 'ptibogxivtheme' ), __( 'seconds', 'ptibogxivtheme' ) )
+	);
+
+	if ( !is_numeric( $date ) ) {
+		$time_chunks = explode( ':', str_replace( ' ', ':', $date ) );
+		$date_chunks = explode( '-', str_replace( ' ', '-', $date ) );
+		$date = gmmktime( (int)$time_chunks[1], (int)$time_chunks[2], (int)$time_chunks[3], (int)$date_chunks[1], (int)$date_chunks[2], (int)$date_chunks[0] );
+	}
+	
+	$current_time = current_time( 'mysql', $gmt = 0 );
+	$newer_date = strtotime( $current_time );
+
+	// Difference in seconds
+	$since = $newer_date - $date;
+
+	// Something went wrong with date calculation and we ended up with a negative date.
+	if ( 0 > $since )
+		return __( 'sometime', 'ptibogxivtheme' );
+
+	/**
+	 * We only want to output one chunks of time here, eg:
+	 * x years
+	 * xx months
+	 * so there's only one bit of calculation below:
+	 */
+
+	//Step one: the first chunk
+	for ( $i = 0, $j = count($chunks); $i < $j; $i++) {
+		$seconds = $chunks[$i][0];
+
+		// Finding the biggest chunk (if the chunk fits, break)
+		if ( ( $count = floor($since / $seconds) ) != 0 )
+			break;
+	}
+
+	// Set output var
+	$duration = ( 1 == $count ) ? '1 '. $chunks[$i][1] : $count . ' ' . $chunks[$i][2];
+	
+
+	if ( !(int)trim($duration) ){
+		$duration = '0 ' . __( 'seconds', 'ptibogxivtheme' );
+	}
+	
+	return sprintf( esc_html__( '%s %s ago', 'ptibogxivtheme' ), $duration, $unit);
+}
+
+// Filter our ptibogxivtheme_time_ago() function into WP's the_time() function
+add_filter('the_time', 'ptibogxivtheme_time_ago');
 

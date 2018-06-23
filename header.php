@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <HTML class="no-js">
+<HTML lang="fr">
 <HEAD>
 <TITLE><?php wp_title('•', true, 'right'); bloginfo('name'); ?></TITLE>
 <META name="description" content="<?php if ( is_single() ) {
@@ -11,9 +12,9 @@ bloginfo('name'); echo " - "; bloginfo('description');
   <META charset="utf-8">
   <META name="theme-color" content="#<? echo get_background_color(); ?>">
 	<META http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="language" content="French">
   <LINK rel="icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon" />
   <LINK rel="shortcut icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon" />
- 
   <META name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 </HEAD>
@@ -75,8 +76,7 @@ if (get_site_option('doliconnect_mode')=='one') {
 switch_to_blog(1);
 }  
 if ( is_user_logged_in() ) { ?><A href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><I class="fas fa-user-circle fa-fw fa-2x"></I></A>&nbsp;<A href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>"><SPAN class="fa-layers fa-fw fa-2x">
-<I class="fas fa-shopping-basket"></I>
-<?php if (basket_count()>0) { ?><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo basket_count(); ?></SPAN></SPAN><?php } ?></A>&nbsp;  
+<I class="fas fa-shopping-basket"></I><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo basket_count(); ?></SPAN></SPAN></A>&nbsp;  
 <?php 
 if (get_site_option('doliconnect_mode')=='one') {
 restore_current_blog();
@@ -88,7 +88,7 @@ restore_current_blog();
 } 
 if (get_option('doliloginmodal')=='1') {       
 ?>
-<A href="#" data-toggle="modal" data-target="#DoliconnectLogin" data-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-primary my-2 my-sm-0" role="button"><?php _e('Sign in', 'ptibogxivtheme'); ?></A>
+<A href="#" id="login-<?php echo current_time('timestamp'); ?>" data-toggle="modal" data-target="#DoliconnectLogin" data-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-primary my-2 my-sm-0" role="button"><?php _e('Sign in', 'ptibogxivtheme'); ?></A>
 <?php } else {?>
 <A href="<?php echo wp_login_url( get_permalink() ); ?>&redirect_to=<?php echo get_permalink(); ?>" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>"><?php _e('Sign in', 'ptibogxivtheme'); ?></A>
 <?php if (((!is_multisite() && get_option( 'users_can_register' )) or (get_option('users_can_register')=='1' && (get_site_option( 'registration' ) == 'user' or get_site_option( 'registration' ) == 'all')))) 
@@ -97,7 +97,7 @@ if (get_option('doliloginmodal')=='1') {
   } 
 }
 }      ?>      
-<!--  <?php //get_template_part('navbar-search'); ?> -->
+<!-- <?php //get_template_part('navbar-search'); ?> --> 
   </DIV>
   </DIV>
 </NAV>

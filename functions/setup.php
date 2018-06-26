@@ -206,6 +206,19 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
     'type'     => 'checkbox',
     'priority'    => '50',
 ) );
+
+    $wp_customize->add_setting( 'ptibogxivtheme_shadowcontent', array(
+    'default'        => false,
+    'capability'     => 'edit_theme_options'
+    ) );
+
+    $wp_customize->add_control( 'ptibogxivtheme_shadowcontent', array(
+    'settings' => 'ptibogxivtheme_shadowcontent',
+    'label'    => __( 'Remove the shadow of content box', 'ptibogxivtheme' ),
+    'section'  => 'ptibogxivtheme_theme_layout_options',
+    'type'     => 'checkbox',
+    'priority'    => '60',
+) );
  
 if (is_multisite()) {
     $wp_customize->add_setting( 'ptibogxivtheme_networkbar_color', array(
@@ -235,7 +248,7 @@ if (is_multisite()) {
 						'navbar-dark bg-warning' => __( 'Warning scheme', 'ptibogxivtheme' ),
             'navbar-dark bg-danger' => __( 'Danger scheme', 'ptibogxivtheme' ),            
 					),
-					'priority'    => '60',
+					'priority'    => '100',
 				)
 			) );    
 }

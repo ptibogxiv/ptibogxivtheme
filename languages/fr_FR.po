@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-22 09:36+0200\n"
-"PO-Revision-Date: 2018-06-22 09:37+0200\n"
+"POT-Creation-Date: 2018-06-26 14:16+0200\n"
+"PO-Revision-Date: 2018-06-26 14:16+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -159,226 +159,230 @@ msgstr "Barre de navigation"
 msgid "Your search"
 msgstr "Votre recherche"
 
-#: functions/setup.php:22
+#: functions/setup.php:23
 msgid "Read more"
 msgstr "Lire plus"
 
-#: functions/setup.php:39
+#: functions/setup.php:40
 msgid "Theme Layout Settings"
 msgstr "Paramètres de mise en page"
 
-#: functions/setup.php:41
+#: functions/setup.php:42
 msgid "Container width and sidebar defaults"
 msgstr "Largeur du site (avec widget latéraux)"
 
-#: functions/setup.php:56
+#: functions/setup.php:57
 msgid "Container Width"
 msgstr "Largeur de conteneur"
 
-#: functions/setup.php:57
+#: functions/setup.php:58
 msgid "Choose between Bootstrap's container and container-fluid"
 msgstr "Choisissez entre conteneur Bootstrap ou conteneur-fluide"
 
-#: functions/setup.php:62
+#: functions/setup.php:63
 msgid "Fixed width container"
 msgstr "Conteneur à largeur fixe"
 
-#: functions/setup.php:63
+#: functions/setup.php:64
 msgid "Full width container"
 msgstr "Container pleine largeur"
 
-#: functions/setup.php:80
+#: functions/setup.php:81
 msgid "Css scheme"
 msgstr "Schéma CSS"
 
-#: functions/setup.php:81 functions/setup.php:125 functions/setup.php:222
+#: functions/setup.php:82 functions/setup.php:126 functions/setup.php:236
 msgid "Choose between scheme"
 msgstr "Choisissez un jeu de couleurs"
 
-#: functions/setup.php:86
+#: functions/setup.php:87
 msgid "Default"
 msgstr ""
 
-#: functions/setup.php:87
+#: functions/setup.php:88
 msgid "Cerulean"
 msgstr ""
 
-#: functions/setup.php:88
+#: functions/setup.php:89
 msgid "Cosmo"
 msgstr ""
 
-#: functions/setup.php:89
+#: functions/setup.php:90
 msgid "Cyborg"
 msgstr ""
 
-#: functions/setup.php:90
+#: functions/setup.php:91
 msgid "Darkly"
 msgstr ""
 
-#: functions/setup.php:91
+#: functions/setup.php:92
 msgid "Flatly"
 msgstr ""
 
-#: functions/setup.php:92
+#: functions/setup.php:93
 msgid "Journal"
 msgstr ""
 
-#: functions/setup.php:93
+#: functions/setup.php:94
 msgid "Litera"
 msgstr ""
 
-#: functions/setup.php:94
+#: functions/setup.php:95
 msgid "Lumen"
 msgstr ""
 
-#: functions/setup.php:95
+#: functions/setup.php:96
 msgid "Lux"
 msgstr ""
 
-#: functions/setup.php:96
+#: functions/setup.php:97
 msgid "Materia"
 msgstr ""
 
-#: functions/setup.php:97
+#: functions/setup.php:98
 msgid "Minty"
 msgstr ""
 
-#: functions/setup.php:98
+#: functions/setup.php:99
 msgid "Pulse"
 msgstr ""
 
-#: functions/setup.php:99
+#: functions/setup.php:100
 msgid "Sandstone"
 msgstr ""
 
-#: functions/setup.php:100
+#: functions/setup.php:101
 msgid "Simplex"
 msgstr ""
 
-#: functions/setup.php:101
+#: functions/setup.php:102
 msgid "Sketchy"
 msgstr ""
 
-#: functions/setup.php:102
+#: functions/setup.php:103
 msgid "Slate"
 msgstr ""
 
-#: functions/setup.php:103
+#: functions/setup.php:104
 msgid "Solar"
 msgstr ""
 
-#: functions/setup.php:104
+#: functions/setup.php:105
 msgid "Spacelab"
 msgstr ""
 
-#: functions/setup.php:105
+#: functions/setup.php:106
 msgid "Superhero"
 msgstr ""
 
-#: functions/setup.php:106
+#: functions/setup.php:107
 msgid "United"
 msgstr ""
 
-#: functions/setup.php:107
+#: functions/setup.php:108
 msgid "Yeti"
 msgstr ""
 
-#: functions/setup.php:124
+#: functions/setup.php:125
 msgid "Navbar Color scheme"
 msgstr "Barre de navigation"
 
-#: functions/setup.php:131 functions/setup.php:228
+#: functions/setup.php:132 functions/setup.php:242
 msgid "Light scheme"
 msgstr ""
 
-#: functions/setup.php:132 functions/setup.php:229
+#: functions/setup.php:133 functions/setup.php:243
 msgid "Dark scheme"
 msgstr ""
 
-#: functions/setup.php:133 functions/setup.php:230
+#: functions/setup.php:134 functions/setup.php:244
 msgid "Primary scheme"
 msgstr ""
 
-#: functions/setup.php:134 functions/setup.php:231
+#: functions/setup.php:135 functions/setup.php:245
 msgid "Secondary scheme"
 msgstr ""
 
-#: functions/setup.php:135 functions/setup.php:232
+#: functions/setup.php:136 functions/setup.php:246
 msgid "Info scheme"
 msgstr ""
 
-#: functions/setup.php:136 functions/setup.php:233
+#: functions/setup.php:137 functions/setup.php:247
 msgid "Success scheme"
 msgstr ""
 
-#: functions/setup.php:137 functions/setup.php:234
+#: functions/setup.php:138 functions/setup.php:248
 msgid "Warning scheme"
 msgstr ""
 
-#: functions/setup.php:138 functions/setup.php:235
+#: functions/setup.php:139 functions/setup.php:249
 msgid "Danger scheme"
 msgstr ""
 
-#: functions/setup.php:155
+#: functions/setup.php:156
 msgid "Home brand style"
 msgstr "Style du bouton d'acceuil"
 
-#: functions/setup.php:156
+#: functions/setup.php:157
 msgid "Choose between style of home button"
 msgstr "Choisissez un style pour le bouton d'accueil"
 
-#: functions/setup.php:161
+#: functions/setup.php:162
 msgid "Brand only"
 msgstr "Marque seulement"
 
-#: functions/setup.php:162
+#: functions/setup.php:163
 msgid "Logo only"
 msgstr "Logo seulement"
 
-#: functions/setup.php:163
+#: functions/setup.php:164
 msgid "Brand & logo"
 msgstr "Marque et logo"
 
-#: functions/setup.php:164
+#: functions/setup.php:165
 msgid "Generic Home"
 msgstr "Maison générique"
 
-#: functions/setup.php:181
+#: functions/setup.php:182
 msgid "Sidebar Positioning"
 msgstr "Positionnement de la barre latérale"
 
-#: functions/setup.php:182
+#: functions/setup.php:183
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
 "Définissez la position par défaut de la barre latérale. Peut être : droite, "
 "gauche, tous les deux ou aucun."
 
-#: functions/setup.php:187 functions/widgets.php:22
+#: functions/setup.php:188 functions/widgets.php:22
 msgid "Right sidebar"
 msgstr "Barre latérale à droite"
 
-#: functions/setup.php:188 functions/widgets.php:9
+#: functions/setup.php:189 functions/widgets.php:9
 msgid "Left sidebar"
 msgstr "Barre latérale à gauche"
 
-#: functions/setup.php:189
+#: functions/setup.php:190
 msgid "Left & Right sidebars"
 msgstr "Barres latérales gauche et droite"
 
-#: functions/setup.php:190
+#: functions/setup.php:191
 msgid "No sidebar"
 msgstr "Pas de barre latérale"
 
-#: functions/setup.php:203
+#: functions/setup.php:204
 msgid "Restore the native admin bar"
 msgstr "Restaurer la barre admin native"
 
-#: functions/setup.php:221
+#: functions/setup.php:217
+msgid "Remove the shadow of content box"
+msgstr "Supprimer l'ombre de la boîte de contenu"
+
+#: functions/setup.php:235
 msgid "Networkbar Color scheme"
 msgstr "Jeu de couleurs de la barre de réseau"
 
-#: functions/setup.php:247
+#: functions/setup.php:261
 msgid "ptibogxivtheme"
 msgstr "ptibogxivtheme"
 
@@ -410,19 +414,19 @@ msgstr "Zone du widget d'entête"
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
-#: header.php:24
+#: header.php:25
 msgid "Our websites"
 msgstr "Nos sites web"
 
-#: header.php:71
+#: header.php:72
 msgid "Choose language"
 msgstr "Choisissez une langue"
 
-#: header.php:77
+#: header.php:78
 msgid "My account"
 msgstr "Mon compte"
 
-#: header.php:77
+#: header.php:78
 msgid "Basket"
 msgstr "Panier"
 

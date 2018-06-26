@@ -12,7 +12,7 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
 ?>
 
 <?php if(have_posts()): while(have_posts()): the_post();?><ARTICLE role="article" id="post_<?php the_ID()?>">
-<DIV class="card flex-md-row mb-4 h-md-250 border-light shadow-lg" style="background-color: rgba(256, 256, 256, 0.8)">
+<DIV class="card flex-md-row mb-4 h-md-250 border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="background-color: rgba(256, 256, 256, 0.8)">
             <DIV class="card-body d-flex flex-column align-items-start">
               <STRONG class="d-inline-block mb-2 text-primary small"><?php the_category(', ') ?></STRONG>
               <H3 class="mb-0"><A href="<?php the_permalink(); ?>"><?php the_title()?></A></H3>

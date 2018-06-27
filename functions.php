@@ -27,6 +27,11 @@ load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages'
 }
 add_action( 'after_setup_theme', 'ptibogxivtheme_load_theme_textdomain' );
 
+function ptibogxivtheme_slug_setup() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'ptibogxivtheme_slug_setup' );
+
 add_theme_support( 'custom-background',array(
 	'default-color'          => '',
 	'default-image'          => '',

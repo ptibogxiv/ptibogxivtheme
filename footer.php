@@ -2,9 +2,9 @@
 <DIV class="container">
 <BR>
 <DIV class="row">
-<DIV class="col-12 col-md-3">
+<DIV class="col-6 col-md-3">
 <STRONG>Modes de paiements acceptés</STRONG><CENTER><I class="fab fa-cc-visa fa-fw fa-3x"></I><I class="fab fa-cc-mastercard fa-fw fa-3x"></I><I class="fab fa-cc-amex fa-fw fa-3x"></I><I class="fab fa-cc-apple-pay fa-fw fa-3x"></I></CENTER>
-<BR></DIV><DIV class="col-12 col-md-3">
+<BR></DIV><DIV class="col-6 col-md-3">
 <STRONG>Réseaux sociaux</STRONG><CENTER>
 <?php if (get_option('doliconnect_social_facebook')) { ?><A href="https://www.facebook.com/<?php echo get_option('doliconnect_social_facebook');?>" class="btn btn-facebook btn-circle btn-lg"target="_blank"><I class="fab fa-facebook-f fa-fw"></I></A> <?php } ?>
 <?php if (get_option('doliconnect_social_twitter')) { ?><A href="https://www.twitter.com/<?php echo get_option('doliconnect_social_twitter');?>" class="btn btn-twitter btn-circle btn-lg" target="_blank"><I class="fab fa-twitter fa-fw"></I></A> <?php } ?>

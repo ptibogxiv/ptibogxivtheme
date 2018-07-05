@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-06-26 14:16+0200\n"
-"PO-Revision-Date: 2018-06-26 14:16+0200\n"
+"POT-Creation-Date: 2018-07-05 14:09+0200\n"
+"PO-Revision-Date: 2018-07-05 14:10+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -54,79 +54,79 @@ msgstr "Changer de langue"
 msgid "Loading"
 msgstr "Chargement"
 
-#: functions.php:147
+#: functions.php:152
 msgid "Post on"
 msgstr "Publié le"
 
-#: functions.php:167 functions/widgets.php:61
+#: functions.php:172 functions/widgets.php:61
 msgid "Caroussel"
 msgstr "Carousel"
 
-#: functions.php:170
+#: functions.php:175
 msgid "Title:"
 msgstr "Titre:"
 
-#: functions.php:238
+#: functions.php:243
 msgid "year"
 msgstr "an"
 
-#: functions.php:238
+#: functions.php:243
 msgid "years"
 msgstr "ans"
 
-#: functions.php:239
+#: functions.php:244
 msgid "month"
 msgstr "mois"
 
-#: functions.php:239
+#: functions.php:244
 msgid "months"
 msgstr "mois"
 
-#: functions.php:240
+#: functions.php:245
 msgid "week"
 msgstr "semaine"
 
-#: functions.php:240
+#: functions.php:245
 msgid "weeks"
 msgstr "semaines"
 
-#: functions.php:241
+#: functions.php:246
 msgid "day"
 msgstr "jour"
 
-#: functions.php:241
+#: functions.php:246
 msgid "days"
 msgstr "jours"
 
-#: functions.php:242
+#: functions.php:247
 msgid "hour"
 msgstr "heure"
 
-#: functions.php:242
+#: functions.php:247
 msgid "hours"
 msgstr "Heures"
 
-#: functions.php:243
+#: functions.php:248
 msgid "minute"
 msgstr "minute"
 
-#: functions.php:243
+#: functions.php:248
 msgid "minutes"
 msgstr "minutes"
 
-#: functions.php:244
+#: functions.php:249
 msgid "second"
 msgstr "seconde"
 
-#: functions.php:244 functions.php:284
+#: functions.php:249 functions.php:289
 msgid "seconds"
 msgstr "secondes"
 
-#: functions.php:261
+#: functions.php:266
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:287
+#: functions.php:292
 #, php-format
 msgid "%s %s ago"
 msgstr "il y a %s %s"
@@ -414,10 +414,6 @@ msgstr "Zone du widget d'entête"
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
-#: header.php:25
-msgid "Our websites"
-msgstr "Nos sites web"
-
 #: header.php:72
 msgid "Choose language"
 msgstr "Choisissez une langue"
@@ -617,6 +613,9 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Our websites"
+#~ msgstr "Nos sites web"
 
 #~ msgid "on"
 #~ msgstr "le"

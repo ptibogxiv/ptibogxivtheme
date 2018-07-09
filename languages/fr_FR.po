@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-07-05 14:09+0200\n"
-"PO-Revision-Date: 2018-07-05 14:10+0200\n"
+"POT-Creation-Date: 2018-07-09 11:25+0200\n"
+"PO-Revision-Date: 2018-07-09 11:26+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -450,7 +450,7 @@ msgstr "Soyez le premier à commenter."
 
 #: loops/comments.php:30
 msgid "Comments are closed for this post."
-msgstr "Les commentaires sont fermés pour cet article."
+msgstr "Commentaires désactivés"
 
 #: loops/comments.php:37 loops/comments.php:66 loops/comments.php:67
 msgid "Your comment"
@@ -533,7 +533,7 @@ msgstr "Publié"
 
 #: loops/content.php:19
 msgid "No comments yet"
-msgstr "Pas encore de commentaires"
+msgstr "Pas de commentaires"
 
 #: loops/content.php:19
 msgid "1 comment"
@@ -541,7 +541,7 @@ msgstr "1 commentaire"
 
 #: loops/content.php:19
 msgid "Comments are off"
-msgstr "Les commentaires sont désactivés"
+msgstr "Commentaires désactivés"
 
 #: loops/content.php:28
 msgid "Previous"

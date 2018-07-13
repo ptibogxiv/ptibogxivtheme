@@ -5,13 +5,15 @@ function ptibogxivtheme_enqueues() {
 /* Styles */
 if (get_theme_mod( 'ptibogxivtheme_css') == '' or get_theme_mod( 'ptibogxivtheme_css') == 'css') {
 $type='bootstrap';
-$css='css'; 
+$css='css';
+$version='4.1.2'; 
 } else {
 $type='bootswatch';
-$css=get_theme_mod( 'ptibogxivtheme_css'); 
+$css=get_theme_mod( 'ptibogxivtheme_css');
+$version='4.1.1';  
 }
  
-	wp_register_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/'.$type.'/4.1.1/'.$css.'/bootstrap.min.css', false, '4.1.1', null);
+	wp_register_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/'.$type.'/'.$version.'/'.$css.'/bootstrap.min.css', false, $version, null);
 	wp_enqueue_style('bootstrap-css');
    
   wp_register_style('ptibogxivtheme-css', get_template_directory_uri() . '/theme/css/ptibogxivtheme.css', false, null);

@@ -33,7 +33,7 @@ $version='4.1.2';
 	wp_register_script('popper',  'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', false, '1.14.3', true);
 	wp_enqueue_script('popper');
    
-  wp_register_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js', false, '4.1.2', true);
+  wp_register_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/'.$version.'/js/bootstrap.min.js', false, $version, true);
 	wp_enqueue_script('bootstrap-js');
 
 	wp_register_script('ptibogxivtheme-js', get_template_directory_uri() . '/theme/js/ptibogxivtheme.js', false, null, true);

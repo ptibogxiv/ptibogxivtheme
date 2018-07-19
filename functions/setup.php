@@ -5,7 +5,7 @@ function ptibogxivtheme_setup() {
 	add_theme_support('post-thumbnails');
   add_image_size('ptibogxiv_small', 200, 250, true );
   add_image_size('ptibogxiv', 380, 200, true );
-  add_image_size('ptibogxiv_square', 380, 380, true );
+  add_image_size('ptibogxiv_square', 512, 512, true );
   add_image_size('ptibogxiv_large', 760, 400, true );
 	update_option('thumbnail_size_w', 170);
 	update_option('medium_size_w', 380);

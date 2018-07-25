@@ -34,7 +34,13 @@ dynamic_sidebar('footer-widget-area'); }?></DIV>
 <LI><SPAN class="fa-li"><I class="fas fa-info-circle"></I></SPAN><A href="#" class="text-info" data-toggle="modal" data-target="#cgvumention">C.G.U.</A></LI>
 </UL><BR></DIV></DIV></DIV></DIV>
 <DIV class="row">
-<DIV class="col"><P class="text-center"><SPAN class="fas fa-copyright"></SPAN> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><BR><SMALL><?php _e('Theme by', 'ptibogxivtheme'); ?> <A href="https://www.ptibogxiv.net" class="text-info">ptibogxiv.net</A></SMALL></P></DIV>
+<DIV class="col"><P class="text-center"><SPAN class="fas fa-copyright"></SPAN> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><BR><SMALL><?php 
+$internal=PTIBOGXIV.NET;
+if ($internal) {
+_e('Hosting & Theme by', 'ptibogxivtheme');
+} else {
+_e('Theme by', 'ptibogxivtheme');
+} ?> <A href="https://www.ptibogxiv.net" class="text-info">ptibogxiv.net</A></SMALL></P></DIV>
 </DIV></DIV></FOOTER>
 <?php wp_footer();
 if(function_exists('doliconst')){ ?>

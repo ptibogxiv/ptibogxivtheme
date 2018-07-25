@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-07-09 11:25+0200\n"
-"PO-Revision-Date: 2018-07-09 11:26+0200\n"
+"POT-Creation-Date: 2018-07-25 13:29+0200\n"
+"PO-Revision-Date: 2018-07-25 13:29+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -34,7 +34,7 @@ msgstr "La page que vous recherchez n’existe pas."
 msgid "Author %s"
 msgstr "Auteur %s"
 
-#: footer.php:33 footer.php:42
+#: footer.php:33 footer.php:48
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
 
@@ -42,15 +42,19 @@ msgstr "Politique de confidentialité"
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:37
+#: footer.php:40
+msgid "Hosting & Theme by"
+msgstr "Hébergement & Thème par"
+
+#: footer.php:42
 msgid "Theme by"
 msgstr "Thème par"
 
-#: footer.php:63
+#: footer.php:69
 msgid "Change language"
 msgstr "Changer de langue"
 
-#: footer.php:84
+#: footer.php:90
 msgid "Loading"
 msgstr "Chargement"
 

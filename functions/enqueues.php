@@ -6,7 +6,7 @@ function ptibogxivtheme_enqueues() {
 if (get_theme_mod( 'ptibogxivtheme_css') == '' or get_theme_mod( 'ptibogxivtheme_css') == 'css') {
 $type='bootstrap';
 $css='css';
-$version='4.1.2'; 
+$version='4.1.3'; 
 } else {
 $type='bootswatch';
 $css=get_theme_mod( 'ptibogxivtheme_css');

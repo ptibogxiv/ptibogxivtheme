@@ -22,6 +22,9 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 );
 $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 
+//deactivate theme-color for superpwa
+add_filter( 'superpwa_add_theme_color', '__return_false' );
+
 function ptibogxivtheme_load_theme_textdomain() {
 load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages' );
 }

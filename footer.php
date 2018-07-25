@@ -35,8 +35,7 @@ dynamic_sidebar('footer-widget-area'); }?></DIV>
 </UL><BR></DIV></DIV></DIV></DIV>
 <DIV class="row">
 <DIV class="col"><P class="text-center"><SPAN class="fas fa-copyright"></SPAN> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><BR><SMALL><?php 
-$internal=PTIBOGXIV.NET;
-if ($internal) {
+if (PTIBOGXIV_NET==1) {
 _e('Hosting & Theme by', 'ptibogxivtheme');
 } else {
 _e('Theme by', 'ptibogxivtheme');

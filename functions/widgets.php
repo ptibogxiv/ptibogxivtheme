@@ -10,7 +10,7 @@ function ptibogxivtheme_widgets_init() {
     'id'              => 'sidebar-left-widget-area',
     'description'     => __( 'The left sidebar widget area', 'ptibogxivtheme' ),
     'before_widget'   => '<section class="%1$s %2$s">',
-    'after_widget'    => '</section>',
+    'after_widget'    => '</section><BR/>',
     'before_title'    => '<h4>',
     'after_title'     => '</h4>',
   ) );
@@ -23,7 +23,7 @@ function ptibogxivtheme_widgets_init() {
     'id'              => 'sidebar-right-widget-area',
     'description'     => __( 'The right sidebar widget area', 'ptibogxivtheme' ),
     'before_widget'   => '<section class="%1$s %2$s">',
-    'after_widget'    => '</section>',
+    'after_widget'    => '</section><BR/>',
     'before_title'    => '<h4>',
     'after_title'     => '</h4>',
   ) );

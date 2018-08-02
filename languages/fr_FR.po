@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-07-25 13:29+0200\n"
-"PO-Revision-Date: 2018-07-25 13:29+0200\n"
+"POT-Creation-Date: 2018-08-02 13:33+0200\n"
+"PO-Revision-Date: 2018-08-02 13:33+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -34,7 +34,15 @@ msgstr "La page que vous recherchez n’existe pas."
 msgid "Author %s"
 msgstr "Auteur %s"
 
-#: footer.php:33 footer.php:48
+#: footer.php:6
+msgid "Payment modes"
+msgstr "Modes de paiement"
+
+#: footer.php:8
+msgid "Social networks"
+msgstr "Réseaux sociaux"
+
+#: footer.php:33 footer.php:47
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
 
@@ -42,95 +50,95 @@ msgstr "Politique de confidentialité"
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:40
+#: footer.php:39
 msgid "Hosting & Theme by"
 msgstr "Hébergement & Thème par"
 
-#: footer.php:42
+#: footer.php:41
 msgid "Theme by"
 msgstr "Thème par"
 
-#: footer.php:69
+#: footer.php:68
 msgid "Change language"
 msgstr "Changer de langue"
 
-#: footer.php:90
+#: footer.php:89
 msgid "Loading"
 msgstr "Chargement"
 
-#: functions.php:152
+#: functions.php:155
 msgid "Post on"
 msgstr "Publié le"
 
-#: functions.php:172 functions/widgets.php:61
+#: functions.php:175 functions/widgets.php:61
 msgid "Caroussel"
 msgstr "Carousel"
 
-#: functions.php:175
+#: functions.php:178
 msgid "Title:"
 msgstr "Titre:"
 
-#: functions.php:243
+#: functions.php:246
 msgid "year"
 msgstr "an"
 
-#: functions.php:243
+#: functions.php:246
 msgid "years"
 msgstr "ans"
 
-#: functions.php:244
+#: functions.php:247
 msgid "month"
 msgstr "mois"
 
-#: functions.php:244
+#: functions.php:247
 msgid "months"
 msgstr "mois"
 
-#: functions.php:245
+#: functions.php:248
 msgid "week"
 msgstr "semaine"
 
-#: functions.php:245
+#: functions.php:248
 msgid "weeks"
 msgstr "semaines"
 
-#: functions.php:246
+#: functions.php:249
 msgid "day"
 msgstr "jour"
 
-#: functions.php:246
+#: functions.php:249
 msgid "days"
 msgstr "jours"
 
-#: functions.php:247
+#: functions.php:250
 msgid "hour"
 msgstr "heure"
 
-#: functions.php:247
+#: functions.php:250
 msgid "hours"
-msgstr "Heures"
+msgstr "heures"
 
-#: functions.php:248
+#: functions.php:251
 msgid "minute"
 msgstr "minute"
 
-#: functions.php:248
+#: functions.php:251
 msgid "minutes"
 msgstr "minutes"
 
-#: functions.php:249
+#: functions.php:252
 msgid "second"
 msgstr "seconde"
 
-#: functions.php:249 functions.php:289
+#: functions.php:252 functions.php:292
 msgid "seconds"
 msgstr "secondes"
 
-#: functions.php:266
+#: functions.php:269
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:292
+#: functions.php:295
 #, php-format
 msgid "%s %s ago"
 msgstr "il y a %s %s"
@@ -201,19 +209,19 @@ msgstr "Choisissez un jeu de couleurs"
 
 #: functions/setup.php:87
 msgid "Default"
-msgstr ""
+msgstr "Par défaut"
 
 #: functions/setup.php:88
 msgid "Cerulean"
-msgstr ""
+msgstr "Cæruléum"
 
 #: functions/setup.php:89
 msgid "Cosmo"
-msgstr ""
+msgstr "Cosmo"
 
 #: functions/setup.php:90
 msgid "Cyborg"
-msgstr ""
+msgstr "Cyborg"
 
 #: functions/setup.php:91
 msgid "Darkly"
@@ -225,7 +233,7 @@ msgstr ""
 
 #: functions/setup.php:93
 msgid "Journal"
-msgstr ""
+msgstr "Journal"
 
 #: functions/setup.php:94
 msgid "Litera"
@@ -233,11 +241,11 @@ msgstr ""
 
 #: functions/setup.php:95
 msgid "Lumen"
-msgstr ""
+msgstr "Lumen"
 
 #: functions/setup.php:96
 msgid "Lux"
-msgstr ""
+msgstr "Lux"
 
 #: functions/setup.php:97
 msgid "Materia"
@@ -249,15 +257,15 @@ msgstr ""
 
 #: functions/setup.php:99
 msgid "Pulse"
-msgstr ""
+msgstr "Pulsation"
 
 #: functions/setup.php:100
 msgid "Sandstone"
-msgstr ""
+msgstr "Grès"
 
 #: functions/setup.php:101
 msgid "Simplex"
-msgstr ""
+msgstr "Simplex"
 
 #: functions/setup.php:102
 msgid "Sketchy"
@@ -265,27 +273,27 @@ msgstr ""
 
 #: functions/setup.php:103
 msgid "Slate"
-msgstr ""
+msgstr "Ardoise"
 
 #: functions/setup.php:104
 msgid "Solar"
-msgstr ""
+msgstr "Solar"
 
 #: functions/setup.php:105
 msgid "Spacelab"
-msgstr ""
+msgstr "Spacelab"
 
 #: functions/setup.php:106
 msgid "Superhero"
-msgstr ""
+msgstr "Super-héros"
 
 #: functions/setup.php:107
 msgid "United"
-msgstr ""
+msgstr "Fusionné"
 
 #: functions/setup.php:108
 msgid "Yeti"
-msgstr ""
+msgstr "Yéti"
 
 #: functions/setup.php:125
 msgid "Navbar Color scheme"
@@ -293,7 +301,7 @@ msgstr "Barre de navigation"
 
 #: functions/setup.php:132 functions/setup.php:242
 msgid "Light scheme"
-msgstr ""
+msgstr "Jeu de couleurs clairs"
 
 #: functions/setup.php:133 functions/setup.php:243
 msgid "Dark scheme"
@@ -454,7 +462,7 @@ msgstr "Soyez le premier à commenter."
 
 #: loops/comments.php:30
 msgid "Comments are closed for this post."
-msgstr "Commentaires désactivés"
+msgstr "Les commentaires sont fermés pour ce post."
 
 #: loops/comments.php:37 loops/comments.php:66 loops/comments.php:67
 msgid "Your comment"

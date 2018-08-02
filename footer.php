@@ -32,7 +32,14 @@ dynamic_sidebar('footer-widget-area'); }?></DIV>
 <LI><SPAN class="fa-li"><I class="fas fa-lock"></I></SPAN><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><A href="https://my.ptibogxiv.net" class="text-info" target="_blank"><?php } ?>Serveur/Cloud<?php if (current_user_can( 'administrator' )) { ?></A><?php } ?></LI>
 <LI><SPAN class="fa-li"><I class="fas fa-info-circle"></I></SPAN><A href="#" class="text-info" data-toggle="modal" data-target="#legacymention"><?php _e('Privacy Policy', 'ptibogxivtheme'); ?></A></LI>
 <LI><SPAN class="fa-li"><I class="fas fa-info-circle"></I></SPAN><A href="#" class="text-info" data-toggle="modal" data-target="#cgvumention">C.G.U.</A></LI>
-</UL><BR></DIV></DIV></DIV></DIV>
+</UL><BR></DIV></DIV></DIV>
+<DIV class="col-6">
+<?php
+if (function_exists('pll_the_languages')) {       
+?><A href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><I class='fas fa-language fa-fw fa-2x'></I> <?php echo pll_current_language('name');?></A><?php
+}
+?>
+</DIV></DIV>
 <DIV class="row">
 <DIV class="col"><P class="text-center"><SPAN class="fas fa-copyright"></SPAN> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><BR><SMALL><?php 
 if (PTIBOGXIV_NET==1) {

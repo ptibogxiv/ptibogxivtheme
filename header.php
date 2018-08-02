@@ -76,7 +76,7 @@ if (get_site_option('doliconnect_mode')=='one' && function_exists('switch_to_blo
 switch_to_blog(1);
 }  
 if ( is_user_logged_in() ) { ?><A href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><I class="fas fa-user-circle fa-fw fa-2x"></I></A>&nbsp;<A href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>"><SPAN class="fa-layers fa-fw fa-2x">
-<I class="fas fa-shopping-basket"></I><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo basket_count(); ?></SPAN></SPAN></A>&nbsp;  
+<I class="fas fa-shopping-bag"></I><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo basket_count(); ?></SPAN></SPAN></A>&nbsp;  
 <?php 
 if (get_site_option('doliconnect_mode')=='one') {
 restore_current_blog();

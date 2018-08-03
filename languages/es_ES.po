@@ -1,0 +1,667 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: ptibogxiv\n"
+"POT-Creation-Date: 2018-08-02 13:33+0200\n"
+"PO-Revision-Date: 2018-08-03 20:51+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: es_ES\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:10
+msgid "Error"
+msgstr "Error"
+
+#: 404.php:11
+msgid "The page you were looking for does not exist."
+msgstr "La página que estás buscando no existe."
+
+#: author.php:24
+#, php-format
+msgid "Author %s"
+msgstr "Autor %s"
+
+#: footer.php:6
+msgid "Payment modes"
+msgstr "Formas de pago"
+
+#: footer.php:8
+msgid "Social networks"
+msgstr "Redes sociales"
+
+#: footer.php:33 footer.php:47
+msgid "Privacy Policy"
+msgstr "Política de privacidad"
+
+#: footer.php:37
+msgid "All rights reserved"
+msgstr "Todos los derechos reservados"
+
+#: footer.php:39
+msgid "Hosting & Theme by"
+msgstr "Hosting & Theme por"
+
+#: footer.php:41
+msgid "Theme by"
+msgstr "Tema por"
+
+#: footer.php:68
+msgid "Change language"
+msgstr "Cambiar lenguaje"
+
+#: footer.php:89
+msgid "Loading"
+msgstr "Cargando"
+
+#: functions.php:155
+msgid "Post on"
+msgstr "Publicar en"
+
+#: functions.php:175 functions/widgets.php:61
+msgid "Caroussel"
+msgstr "Caroussel"
+
+#: functions.php:178
+msgid "Title:"
+msgstr "Título:"
+
+#: functions.php:246
+msgid "year"
+msgstr "año"
+
+#: functions.php:246
+msgid "years"
+msgstr "años"
+
+#: functions.php:247
+msgid "month"
+msgstr "mes"
+
+#: functions.php:247
+msgid "months"
+msgstr "meses"
+
+#: functions.php:248
+msgid "week"
+msgstr "semana"
+
+#: functions.php:248
+msgid "weeks"
+msgstr "semanas"
+
+#: functions.php:249
+msgid "day"
+msgstr "día"
+
+#: functions.php:249
+msgid "days"
+msgstr "días"
+
+#: functions.php:250
+msgid "hour"
+msgstr "hora"
+
+#: functions.php:250
+msgid "hours"
+msgstr "horas"
+
+#: functions.php:251
+msgid "minute"
+msgstr "minuto"
+
+#: functions.php:251
+msgid "minutes"
+msgstr "minutos"
+
+#: functions.php:252
+msgid "second"
+msgstr "segundo"
+
+#: functions.php:252 functions.php:292
+msgid "seconds"
+msgstr "segundos"
+
+#: functions.php:269
+msgid "sometime"
+msgstr "algun tiempo"
+
+#: functions.php:295
+#, php-format
+msgid "%s %s ago"
+msgstr "hace %s %s"
+
+#: functions/feedback.php:28
+msgid "at"
+msgstr "en"
+
+#: functions/feedback.php:30
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario está esperando ser moderado."
+
+#: functions/feedback.php:41
+msgid "Edit"
+msgstr "Editar"
+
+#: functions/index-pagination.php:29
+msgid "<i class=\"fas fa-angle-left\"></i> Newer"
+msgstr "< i class = \"fas fa-angulo-izquierda\" > </i> más reciente"
+
+#: functions/index-pagination.php:31
+msgid "Older <i class=\"fas fa-angle-right\"></i>"
+msgstr "< i class = \"fas fa-angulo-derecha\" > </i>"
+
+#: functions/navbar.php:59
+msgid "Navbar"
+msgstr "Navbar"
+
+#: functions/search-widget.php:6
+msgid "Your search"
+msgstr "Tu búsqueda"
+
+#: functions/setup.php:23
+msgid "Read more"
+msgstr "Leer más"
+
+#: functions/setup.php:40
+msgid "Theme Layout Settings"
+msgstr "Configuración de diseño de tema"
+
+#: functions/setup.php:42
+msgid "Container width and sidebar defaults"
+msgstr "Valores por defecto de ancho y SideBar del contenedor"
+
+#: functions/setup.php:57
+msgid "Container Width"
+msgstr "Ancho del Contenedor"
+
+#: functions/setup.php:58
+msgid "Choose between Bootstrap's container and container-fluid"
+msgstr "Elija entre el envase del bootstrap y el líquido del contenedor"
+
+#: functions/setup.php:63
+msgid "Fixed width container"
+msgstr "Contenedor de ancho fijo"
+
+#: functions/setup.php:64
+msgid "Full width container"
+msgstr "Contenedor de ancho completo"
+
+#: functions/setup.php:81
+msgid "Css scheme"
+msgstr "Esquema CSS"
+
+#: functions/setup.php:82 functions/setup.php:126 functions/setup.php:236
+msgid "Choose between scheme"
+msgstr "Elegir entre esquema"
+
+#: functions/setup.php:87
+msgid "Default"
+msgstr "Por defecto"
+
+#: functions/setup.php:88
+msgid "Cerulean"
+msgstr "Cerúleo"
+
+#: functions/setup.php:89
+msgid "Cosmo"
+msgstr "Cosmo"
+
+#: functions/setup.php:90
+msgid "Cyborg"
+msgstr "Cyborg"
+
+#: functions/setup.php:91
+msgid "Darkly"
+msgstr "Darkly"
+
+#: functions/setup.php:92
+msgid "Flatly"
+msgstr "Flatly"
+
+#: functions/setup.php:93
+msgid "Journal"
+msgstr "Diario"
+
+#: functions/setup.php:94
+msgid "Litera"
+msgstr "Litera"
+
+#: functions/setup.php:95
+msgid "Lumen"
+msgstr "Lumen"
+
+#: functions/setup.php:96
+msgid "Lux"
+msgstr "Lux"
+
+#: functions/setup.php:97
+msgid "Materia"
+msgstr "Materia"
+
+#: functions/setup.php:98
+msgid "Minty"
+msgstr "Minty"
+
+#: functions/setup.php:99
+msgid "Pulse"
+msgstr "Pulso"
+
+#: functions/setup.php:100
+msgid "Sandstone"
+msgstr "Arenisca"
+
+#: functions/setup.php:101
+msgid "Simplex"
+msgstr "Simplex"
+
+#: functions/setup.php:102
+msgid "Sketchy"
+msgstr "Incompleto"
+
+#: functions/setup.php:103
+msgid "Slate"
+msgstr "Pizarra"
+
+#: functions/setup.php:104
+msgid "Solar"
+msgstr "Solar"
+
+#: functions/setup.php:105
+msgid "Spacelab"
+msgstr ""
+
+#: functions/setup.php:106
+msgid "Superhero"
+msgstr "Superhéroe"
+
+#: functions/setup.php:107
+msgid "United"
+msgstr "Comisionado de Educación"
+
+#: functions/setup.php:108
+msgid "Yeti"
+msgstr "Yeti"
+
+#: functions/setup.php:125
+msgid "Navbar Color scheme"
+msgstr ""
+
+#: functions/setup.php:132 functions/setup.php:242
+msgid "Light scheme"
+msgstr ""
+
+#: functions/setup.php:133 functions/setup.php:243
+msgid "Dark scheme"
+msgstr ""
+
+#: functions/setup.php:134 functions/setup.php:244
+msgid "Primary scheme"
+msgstr ""
+
+#: functions/setup.php:135 functions/setup.php:245
+msgid "Secondary scheme"
+msgstr ""
+
+#: functions/setup.php:136 functions/setup.php:246
+msgid "Info scheme"
+msgstr ""
+
+#: functions/setup.php:137 functions/setup.php:247
+msgid "Success scheme"
+msgstr ""
+
+#: functions/setup.php:138 functions/setup.php:248
+msgid "Warning scheme"
+msgstr ""
+
+#: functions/setup.php:139 functions/setup.php:249
+msgid "Danger scheme"
+msgstr ""
+
+#: functions/setup.php:156
+msgid "Home brand style"
+msgstr ""
+
+#: functions/setup.php:157
+msgid "Choose between style of home button"
+msgstr ""
+
+#: functions/setup.php:162
+msgid "Brand only"
+msgstr ""
+
+#: functions/setup.php:163
+msgid "Logo only"
+msgstr ""
+
+#: functions/setup.php:164
+msgid "Brand & logo"
+msgstr ""
+
+#: functions/setup.php:165
+msgid "Generic Home"
+msgstr ""
+
+#: functions/setup.php:182
+msgid "Sidebar Positioning"
+msgstr ""
+
+#: functions/setup.php:183
+msgid ""
+"Set sidebar's default position. Can either be: right, left, both or none."
+msgstr ""
+
+#: functions/setup.php:188 functions/widgets.php:22
+msgid "Right sidebar"
+msgstr "Barra lateral derecha"
+
+#: functions/setup.php:189 functions/widgets.php:9
+msgid "Left sidebar"
+msgstr "Barra lateral izquierda"
+
+#: functions/setup.php:190
+msgid "Left & Right sidebars"
+msgstr ""
+
+#: functions/setup.php:191
+msgid "No sidebar"
+msgstr "Sin barra lateral"
+
+#: functions/setup.php:204
+msgid "Restore the native admin bar"
+msgstr ""
+
+#: functions/setup.php:217
+msgid "Remove the shadow of content box"
+msgstr ""
+
+#: functions/setup.php:235
+msgid "Networkbar Color scheme"
+msgstr ""
+
+#: functions/setup.php:261
+msgid "ptibogxivtheme"
+msgstr "ptibogxivtheme"
+
+#: functions/widgets.php:11
+msgid "The left sidebar widget area"
+msgstr ""
+
+#: functions/widgets.php:24
+msgid "The right sidebar widget area"
+msgstr ""
+
+#: functions/widgets.php:35
+msgid "Footer"
+msgstr "Pie de página"
+
+#: functions/widgets.php:37
+msgid "The footer widget area"
+msgstr "El área de widgets del pie de página"
+
+#: functions/widgets.php:48
+msgid "Top"
+msgstr "Arriba"
+
+#: functions/widgets.php:50
+msgid "The top widget area"
+msgstr "El área de widgets superior"
+
+#: functions/widgets.php:63
+msgid "The caroussel widget area"
+msgstr "El área del widget Caroussel"
+
+#: header.php:72
+msgid "Choose language"
+msgstr "Elija el idioma"
+
+#: header.php:78
+msgid "My account"
+msgstr "Mi cuenta"
+
+#: header.php:78
+msgid "Basket"
+msgstr "Cesta"
+
+#: header.php:84 loops/comments.php:49
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: header.php:91 header.php:93
+msgid "Sign in"
+msgstr "Registrarse"
+
+#: header.php:95
+msgid "Sign up"
+msgstr "Regístrate"
+
+#: loops/comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+"Este mensaje está protegido con contraseña. Introduzca la contraseña para "
+"ver los comentarios."
+
+#: loops/comments.php:28
+msgid "Be the first to write a comment."
+msgstr "Se el primero en escribir un comentario."
+
+#: loops/comments.php:30
+msgid "Comments are closed for this post."
+msgstr "Los comentarios están cerrados para este post."
+
+#: loops/comments.php:37 loops/comments.php:66 loops/comments.php:67
+msgid "Your comment"
+msgstr "Tu comentario"
+
+#: loops/comments.php:37
+#, php-format
+msgid "Responses to %s"
+msgstr "Respuestas a %s"
+
+#: loops/comments.php:41
+msgid ""
+"You must be <a href=\"#\" data-toggle=\"modal\" data-target="
+"\"#DoliconnectLogin\">logged in</a> to post a comment."
+msgstr ""
+"Debe ser < a href = \"#\" data-toggle = \"modal\" data-target = "
+"\"#DoliconnectLogin\" > logueado en </a> para publicar un comentario."
+
+#: loops/comments.php:42
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+"Debe estar <a href=\"%s\"> conectado </a> para publicar un comentario."
+
+#: loops/comments.php:47 loops/comments.php:48
+msgid "Logged in as"
+msgstr "Conectado como"
+
+#: loops/comments.php:49
+msgid "Log out of this account"
+msgstr "Salir de esta cuenta"
+
+#: loops/comments.php:53 loops/comments.php:54
+msgid "Your name"
+msgstr "Tu nombre"
+
+#: loops/comments.php:53
+msgid "(required)"
+msgstr "(requerido)"
+
+#: loops/comments.php:57 loops/comments.php:58
+msgid "Your email address"
+msgstr "Tu correo electrónico"
+
+#: loops/comments.php:57
+msgid "(required, but will not be published)"
+msgstr "(obligatorio, pero no será publicado)"
+
+#: loops/comments.php:61
+msgid "Your website"
+msgstr "Tu Sitio WEB"
+
+#: loops/comments.php:61
+msgid "if you have one (not required)"
+msgstr "si tienes uno (no obligatorio)"
+
+#: loops/comments.php:62
+msgid "Your website url"
+msgstr "La dirección de tu web"
+
+#: loops/comments.php:69
+msgid "Submit comment"
+msgstr "Enviar comentario"
+
+#: loops/content-search.php:18
+msgid "Sorry, your search yielded no results."
+msgstr "Disculpa, tu búsqueda no tenido ningún resultado."
+
+#: loops/content-single.php:14
+msgid "By"
+msgstr "Por"
+
+#: loops/content-single.php:41
+msgid "About"
+msgstr "Acerca de"
+
+#: loops/content.php:19
+msgid "Post"
+msgstr "Entrada"
+
+#: loops/content.php:19
+msgid "No comments yet"
+msgstr "No hay comentarios aún"
+
+#: loops/content.php:19
+msgid "1 comment"
+msgstr "1 comentario"
+
+#: loops/content.php:19
+msgid "Comments are off"
+msgstr "Los comentarios están deshabilitados"
+
+#: loops/content.php:28
+msgid "Previous"
+msgstr "Anterior"
+
+#: loops/content.php:30
+msgid "Next"
+msgstr "Siguiente"
+
+#: navbar-search.php:12
+msgctxt "ptibogxivtheme"
+msgid "Search"
+msgstr "Buscar"
+
+#: search.php:11
+msgid "Search Results for"
+msgstr "Resultados de búsqueda para"
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:395
+msgid "Check for updates"
+msgstr "Buscar actualizaciones"
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:432
+msgid "View details"
+msgstr "Ver detalles"
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:455
+#, php-format
+msgid "More information about %s"
+msgstr "Mas información sobre %s"
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:548
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "El plugin %s está actualizado."
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:550
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Una nueva versión del %s plugin está disponible."
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:552
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "No podemos determinar si existen actualizaciones de %s."
+
+#: update/Puc/v4p4/Plugin/UpdateChecker.php:558
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Estado de actualización desconocido \"%s\""
+
+#: update/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr "No hay changelog disponible."
+
+#. Theme Name of the plugin/theme
+#. Author of the plugin/theme
+msgid "ptibogxiv"
+msgstr "ptibogxiv"
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.ptibogxiv.net/en"
+msgstr "https://www.ptibogxiv.net/es"
+
+#. Description of the plugin/theme
+msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
+msgstr "Bootstrap Starter Theme para WordPress & Doliconnect"
+
+msgid "Our websites"
+msgstr "Nuestros sitios web"
+
+msgid "on"
+msgstr "En"
+
+msgid "Search"
+msgstr "Búsqueda"
+
+msgid "Login"
+msgstr "Login"
+
+msgid "Share"
+msgstr "Compartir"
+
+msgid "Continue reading"
+msgstr "Continuar leyendo"
+
+msgid "Cart"
+msgstr "Carro"
+
+msgid "Log out"
+msgstr "Cerrar sesión"
+
+msgid "Feedback"
+msgstr "Comentarios"
+
+msgid "None"
+msgstr "Ninguno"
+
+msgid "Filed under"
+msgstr "Archivado en"
+
+msgid "post on"
+msgstr "publicar en"
+
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+msgid "Choose between color scheme"
+msgstr "Elegir entre combinación de colores"

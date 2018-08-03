@@ -36,7 +36,7 @@ dynamic_sidebar('footer-widget-area'); }?></DIV>
 <DIV class="col-12 align-middle">
 <?php
 if (function_exists('pll_the_languages')) {       
-?><A href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><I class='fas fa-language fa-fw fa-2x'></I> <?php echo pll_current_language('name');?></A><?php
+?><A href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><?php echo pll_current_language('flag');?> <?php echo pll_current_language('name');?></A><?php
 }
 ?>
 </DIV></DIV>

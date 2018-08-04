@@ -7,7 +7,7 @@ You can view it in on our website https://www.ptibogxiv.net
 
 * Bootstrap, theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.1.3** CSS and JS enqueued with several color scheme.
+* **Bootstrap 4.1.3** CSS and JS enqueued with several color scheme with Bootswatch
 
 * **Popper 1.14.3** JS enqueued. Because Bootstrap popovers and tooltips need it.
 

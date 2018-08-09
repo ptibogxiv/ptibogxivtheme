@@ -100,6 +100,22 @@ return false;
  }
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 
+function ptibogxiv_social() {
+$return = "<DIV class='btn-group d-flex' role='group' aria-label='First group'>
+<A href='#' class='btn btn-outline-dark disabled w-100' role='button' aria-disabled='true'><I class='fas fa-share-alt fa-fw'></I></A>
+<A href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><I class='fas fa-envelope fa-fw'></I></A>"; 
+//<SCRIPT>//if (navigator.userAgent.match(/iPhone|Android/i)) {
+//document.write('<A href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><I class='fab fa-whatsapp fa-fw'></I></A>');
+//}</SCRIPT>
+$return .= "<A href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><I class='fab fa-facebook-f fa-fw'></I></A>
+<A href='https://twitter.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><I class='fab fa-twitter fa-fw'></I></A>
+<A href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><I class='fab fa-linkedin-in fa-fw'></I></A>
+<A href='https://plus.google.com/share?url=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-google w-100' target='_blank'><I class='fab fa-google-plus-g fa-fw'></I></A>
+<A href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><I class='fab fa-pinterest fa-fw'></I></A>
+</DIV>";
+return $return;
+}
+
 class My_Caroussel extends WP_Widget {
 
 	/**

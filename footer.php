@@ -33,13 +33,12 @@ dynamic_sidebar('footer-widget-area'); }?></DIV>
 <LI><SPAN class="fa-li"><I class="fas fa-info-circle"></I></SPAN><A href="#" class="text-info" data-toggle="modal" data-target="#legacymention"><?php _e('Privacy Policy', 'ptibogxivtheme'); ?></A></LI>
 <LI><SPAN class="fa-li"><I class="fas fa-info-circle"></I></SPAN><A href="#" class="text-info" data-toggle="modal" data-target="#cgvumention">C.G.U.</A></LI>
 </UL></DIV></DIV></DIV>
-<DIV class="col-12 align-middle">
-<?php
-if (function_exists('pll_the_languages')) {       
-?><A href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><?php echo pll_current_language('flag');?> <?php echo pll_current_language('name');?></A><?php
-}
-?>
-</DIV></DIV>
+<?php if (function_exists('pll_the_languages')) { ?>
+<DIV class="col-12 align-middle">       
+<A href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><?php echo pll_current_language('flag');?> <?php echo pll_current_language('name');?></A>
+</DIV>
+<?php } ?>
+</DIV>
 <DIV class="row">
 <DIV class="col"><P class="text-center"><SPAN class="fas fa-copyright"></SPAN> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><BR><SMALL><?php 
 if (PTIBOGXIV_NET==1) {
@@ -47,7 +46,13 @@ _e('Hosting & Theme by', 'ptibogxivtheme');
 } else {
 _e('Theme by', 'ptibogxivtheme');
 } ?> <A href="https://www.ptibogxiv.net" class="text-info">ptibogxiv.net</A></SMALL></P></DIV>
-</DIV></DIV></FOOTER>
+</DIV></DIV><DIV class="d-block d-md-none"><nav class="fixed-bottom navbar-light bg-light">
+<div class="btn-group d-flex" role="group" aria-label="Basic example">
+  <A href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><I class="fas fa-user-circle fa-fw fa-2x"></I></A>
+  <A href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><SPAN class="fa-layers fa-fw fa-2x"><I class="fas fa-shopping-bag"></I><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo basket_count(); ?></SPAN></SPAN></A>
+  <A href="#" class="btn btn-light w-100"><I class="fas fa-info-circle fa-fw fa-2x"></I></A>
+</div>
+</nav></DIV></FOOTER>
 <?php wp_footer();
 if(function_exists('doliconst')){ ?>
 <DIV class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><DIV class="modal-dialog modal-dialog-centered modal-lg" role="document"><DIV class="modal-content"><DIV class="modal-header">

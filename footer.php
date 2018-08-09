@@ -1,5 +1,5 @@
 <FOOTER class="bg-dark text-white">
-<DIV class="container">
+<DIV class="container d-none d-md-block">
 <BR>
 <DIV class="row">
 <DIV class="col-6 col-md-3">
@@ -48,7 +48,7 @@ _e('Theme by', 'ptibogxivtheme');
 } ?> <A href="https://www.ptibogxiv.net" class="text-info">ptibogxiv.net</A></SMALL></P></DIV>
 </DIV></DIV>
 <?php if (get_current_blog_id()==1) { ?>
-<DIV class="d-block d-md-none"><nav class="fixed-bottom navbar-light bg-light">
+<DIV class="d-block d-md-none"><BR /><BR /><nav class="fixed-bottom navbar-light bg-light">
 <DIV class="btn-group d-flex" role="group" aria-label="Basic example">
   <A href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><I class="fas fa-user-circle fa-fw fa-2x"></I></A>
   <A href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><SPAN class="fa-layers fa-fw fa-2x"><I class="fas fa-shopping-bag"></I><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo basket_count(); ?></SPAN></SPAN></A>

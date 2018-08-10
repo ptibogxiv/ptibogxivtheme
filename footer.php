@@ -54,7 +54,7 @@ _e('Theme by', 'ptibogxivtheme');
   <A href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" class="btn btn-light w-100" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><I class='fas fa-language fa-fw fa-2x'></I></A>
 <?php } ?>
   <A href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><I class="fas fa-user-circle fa-fw fa-2x"></I></A>
-  <A href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><SPAN class="fa-layers fa-fw fa-2x"><I class="fas fa-shopping-bag"></I><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo basket_count(); ?></SPAN></SPAN></A>
+  <A href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><SPAN class="fa-layers fa-fw fa-2x"><I class="fas fa-shopping-bag"></I><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo constant("DOLICONNECT_CART_ITEM"); ?></SPAN></SPAN></A>
   <A href="#" class="btn btn-light w-100"><I class="fas fa-info-circle fa-fw fa-2x"></I></A>
 </div>
 </nav></DIV>

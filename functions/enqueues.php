@@ -10,7 +10,7 @@ $version='4.1.3';
 } else {
 $type='bootswatch';
 $css=get_theme_mod( 'ptibogxivtheme_css');
-$version='4.1.2';  
+$version='4.1.3';  
 }
  
 	wp_register_style('bootstrap-css', 'https://stackpath.bootstrapcdn.com/'.$type.'/'.$version.'/'.$css.'/bootstrap.min.css', false, $version, null);

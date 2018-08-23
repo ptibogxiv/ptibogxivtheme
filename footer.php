@@ -1,5 +1,5 @@
 <FOOTER class="bg-dark text-white">
-<DIV class="container d-none d-md-block">
+<DIV class="container">
 <BR>
 <DIV class="row">
 <DIV class="col-6 col-md-3">

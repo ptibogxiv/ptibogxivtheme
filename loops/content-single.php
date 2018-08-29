@@ -26,7 +26,7 @@ The Single Posts Loop
 <?php the_terms( $post->ID, 'post_tag', '<HR><I class="fas fa-tags"></I> ', ' ', '<BR><BR>'); ?>
 <?php echo ptibogxiv_social()."<BR>"; ?> 
 <DIV class="jumbotron"><DIV class="row">
-<DIV class="col-2 text-center"><?php echo get_avatar(get_the_author_meta('ID'),80);?></DIV><DIV class="col-10"><H5><?php echo _e('About', 'ptibogxivtheme'); echo " "; the_author() ?></H5><H6><?php the_author_meta( 'description' ); ?></H6></DIV>
+<DIV class="col-1 col-md-2 text-center"><?php echo get_avatar(get_the_author_meta('ID'));?></DIV><DIV class="col-11 col-md-10"><H5><?php echo _e('About', 'ptibogxivtheme'); echo ": "; the_author() ?></H5><H6><?php the_author_meta( 'description' ); ?></H6></DIV>
 </DIV></DIV></DIV></DIV></ARTICLE>
   <?php comments_template('/loops/comments.php'); ?>
   <?php endwhile; ?>

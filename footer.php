@@ -47,7 +47,7 @@ _e('Hosting & Theme by', 'ptibogxivtheme');
 _e('Theme by', 'ptibogxivtheme');
 } ?> <A href="https://www.ptibogxiv.net" class="text-info">ptibogxiv.net</A></SMALL></P></DIV>
 </DIV></DIV>
-<?php if (get_current_blog_id()==1 && PTIBOGXIV_NET==1) { ?>
+<?php if (get_theme_mod( 'ptibogxivtheme_mobileapp')) { ?>
 <DIV class="d-block d-md-none"><BR /><BR /><nav class="fixed-bottom navbar-light bg-light">
 <DIV class="btn-group d-flex" role="group" aria-label="Basic example">
 <?php if (function_exists('pll_the_languages')) { ?>

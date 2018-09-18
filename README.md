@@ -13,7 +13,7 @@ You can view it in on our website https://www.ptibogxiv.net
 
 * **jQuery 3.3.1** enqueued.
 
-* **Font Awesome 5.3.1** enqueued.
+* **Font Awesome 5.2.0** enqueued.
 
 * **Modernizr 2.8.3** enqueued.
 

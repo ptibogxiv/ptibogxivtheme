@@ -37,9 +37,9 @@ dynamic_sidebar('footer-widget-area'); }?></div>
 <a href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><?php echo pll_current_language('flag');?> <?php echo pll_current_language('name');?></a>
 <?php } ?>
 </div><div class="col-6">
-<?php if (get_option('doliconnect_ipkiosk')==$_SERVER['REMOTE_ADDR']) { ?>       
-<div class="text-right">Mode kiosque activé <i class="fas fa-desktop"></i></div>
-<?php } ?>
+<?php //if (get_option('doliconnect_ipkiosk')==$_SERVER['REMOTE_ADDR']) { ?>       
+<div class="text-right" id="dolikiosk" style="display: none">Mode kiosque activé <i class="fas fa-desktop"></i></div>
+
 </div></div>
 <div class="row">
 <div class="col"><p class="text-center"><span class="fas fa-copyright"></span> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><br><small><?php 

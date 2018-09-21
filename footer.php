@@ -6,7 +6,7 @@
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center><i class="fab fa-cc-visa fa-fw fa-3x"></i><i class="fab fa-cc-mastercard fa-fw fa-3x"></i><i class="fab fa-cc-amex fa-fw fa-3x"></i><i class="fab fa-cc-apple-pay fa-fw fa-3x"></i></center>
 <br></div><div class="col-6 col-md-3">
 <strong><?php _e('Social networks', 'ptibogxivtheme'); ?></strong><center>
-<?php if (get_option('doliconnect_social_facebook')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_facebook');?>" class="btn btn-facebook btn-circle btn-lg"target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a> <?php } ?>
+<?php if (get_option('doliconnect_social_facebook')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_facebook');?>" class="btn btn-facebook btn-circle btn-lg" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a> <?php } ?>
 <?php if (get_option('doliconnect_social_twitter')) { ?><a href="https://www.twitter.com/<?php echo get_option('doliconnect_social_twitter');?>" class="btn btn-twitter btn-circle btn-lg" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> <?php } ?>
 <?php if (get_option('doliconnect_social_googleplus')) { ?><a href="https://plus.google.com/<?php echo get_option('doliconnect_social_googleplus');?>" class="btn btn-google btn-circle btn-lg" target="_blank"><i class="fab fa-google-plus-g fa-fw"></i></a> <?php } ?>
 <?php if (get_option('doliconnect_social_instagram')) { ?><a href="https://www.instagram.com/<?php echo get_option('doliconnect_social_instagram');?>" class="btn btn-instagram btn-circle btn-lg" target="_blank"><i class="fab fa-instagram fa-fw"></i></a> <?php } ?>
@@ -14,7 +14,7 @@
 <?php if (get_option('doliconnect_social_github')) { ?><a href="https://github.com/<?php echo get_option('doliconnect_social_github');?>" class="btn btn-github btn-circle btn-lg" target="_blank"><i class="fab fa-github fa-fw"></i></a> <?php } ?>
 <?php if (get_option('doliconnect_social_linkedin')) { ?><a href="https://www.linkedin.com/<?php echo get_option('doliconnect_social_linkedin');?>" class="btn btn-linkedin btn-circle btn-lg" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a> <?php } ?>
 <?php if (get_option('doliconnect_social_skype')) { ?><div class="skype-button bubble" data-contact-id="<?php echo get_option('doliconnect_social_skype');?>"></div><script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script><?php } ?>
-<?php if (get_option('doliconnect_social_whatsapp')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_whatsapp');?>" class="btn btn-whatsapp btn-circle btn-lg"target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a> <?php } ?>
+<?php if (get_option('doliconnect_social_whatsapp')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_whatsapp');?>" class="btn btn-whatsapp btn-circle btn-lg" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a> <?php } ?>
 </center><br></div><div class="col-12 col-md-6">
 <strong><?php bloginfo('description'); ?></strong>
 <div class="row"><div class="col-6">

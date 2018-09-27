@@ -95,6 +95,12 @@ if (get_option('doliloginmodal')=='1') {
 { ?>&nbsp;|&nbsp;<A href="<?php echo wp_registration_url(get_permalink()); ?>" title="<?php _e('Sign up', 'ptibogxivtheme'); ?>"><?php _e('Sign up', 'ptibogxivtheme'); ?></A>
 <?php } 
   } 
+if (((!is_multisite() && get_option( 'users_can_register' )) or (get_option('users_can_register')=='1' && (get_site_option( 'registration' ) == 'user' or get_site_option( 'registration' ) == 'all')))) 
+{     
+?>
+&nbsp;<A href="<?php echo wp_registration_url(get_permalink()); ?>" id="signup" title="<?php _e('Sign up', 'ptibogxivtheme'); ?>" class="btn btn-primary my-2 my-sm-0" role="button"><?php _e('Sign up', 'ptibogxivtheme'); ?></A>
+<?php } 
+  
 }
 }      ?>      
 <!-- <?php //get_template_part('navbar-search'); ?> --> 

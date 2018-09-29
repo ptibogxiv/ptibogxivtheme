@@ -145,7 +145,9 @@ global $post,$wpdb;
 echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
 
-$args = array( 'posts_per_page' => 5);
+$args = array( 'posts_per_page' => 5, 'meta_query' => array(
+
+    ));
 $myposts = get_posts( $args );
 
 echo '<DIV><DIV id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="4000" data-ride="carousel"><OL class="carousel-indicators">';
@@ -165,8 +167,8 @@ setup_postdata( $post );
 $count = $count+1;
 echo '<DIV class="carousel-item ';
 if ($count =='1') {echo 'active'; }
-echo '"><A href="'.get_permalink($post->ID).'" ><IMG class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'large' ).'" alt="'.$post->post_title.'"></A>
-  <DIV class="carousel-caption">
+echo '" ><A href="'.get_permalink($post->ID).'" ><IMG  class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'"></A>
+  <DIV class="carousel-caption"  style="background-color: rgba(0, 0, 0, 0.5)">
     <H4><A href="'.get_permalink($post->ID).'" class="text-white">'.$post->post_title.'</A></H4>
     <SMALL class="text-white"><I class="fas fa-calendar fa-fw"></I> '.__('Post on', 'ptibogxivtheme').' '.get_the_date( '', $post->ID).'</SMALL>
   </DIV></DIV>'; 

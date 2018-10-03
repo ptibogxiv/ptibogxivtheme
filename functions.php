@@ -101,19 +101,37 @@ return false;
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 
 function ptibogxiv_social() {
-$return = "<DIV class='btn-group d-flex' role='group' aria-label='First group'>
-<A href='#' class='btn btn-outline-dark disabled w-100' role='button' aria-disabled='true'><I class='fas fa-share-alt fa-fw'></I></A>
-<A href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><I class='fas fa-envelope fa-fw'></I></A>"; 
-//<SCRIPT>//if (navigator.userAgent.match(/iPhone|Android/i)) {
-//document.write('<A href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><I class='fab fa-whatsapp fa-fw'></I></A>');
-//}</SCRIPT>
-$return .= "<A href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><I class='fab fa-facebook-f fa-fw'></I></A>
-<A href='https://twitter.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><I class='fab fa-twitter fa-fw'></I></A>
-<A href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><I class='fab fa-linkedin-in fa-fw'></I></A>
-<A href='https://plus.google.com/share?url=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-google w-100' target='_blank'><I class='fab fa-google-plus-g fa-fw'></I></A>
-<A href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><I class='fab fa-pinterest fa-fw'></I></A>
-</DIV>";
+$return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
+<a href='#' class='btn btn-outline-dark disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
+<a href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><i class='fas fa-envelope fa-fw'></i></a>"; 
+//<script>//if (navigator.userAgent.match(/iPhone|Android/i)) {
+//document.write('<a href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><i class='fab fa-whatsapp fa-fw'></i></a>');
+//}</script>
+$return .= "<a href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><i class='fab fa-facebook-f fa-fw'></i></a>
+<a href='https://twitter.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><i class='fab fa-twitter fa-fw'></i></a>
+<a href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><i class='fab fa-linkedin-in fa-fw'></i></a>
+<a href='https://plus.google.com/share?url=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-google w-100' target='_blank'><i class='fab fa-google-plus-g fa-fw'></i></a>
+<a href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><i class='fab fa-pinterest fa-fw'></i></a>
+</div>";
 return $return;
+}
+
+function ptibogxiv_alert() {
+if (is_user_logged_in() && function_exists('callAPI')){ 
+$time = current_time( 'timestamp',1);
+if (constant("DOLIBARR_MEMBER") > 0) {
+$adherent = CallAPI("GET", "/adherentsplus/".constant("DOLIBARR_MEMBER"), "");
+if ($time>$adherent[datefin] && $adherent[statut] == '1' && !empty($adherent[datefin])) {
+$alert = "<br><div class='alert alert-danger' role='alert-membership'>Il semble que votre adhésion a expiré le ".date_i18n('d/m/Y', $adherent[datefin]).". Afin de ne pas perdre vos avantages, renouvelez <a href='".doliconnecturl('doliaccount')."?module=membership' class='alert-link'>en cliquant -ici-</a>.</div>";
+} elseif ($time>$adherent[datefin] && $adherent[statut] == '1' && empty($adherent[datefin]!=null)) {
+$alert = "<br><div class='alert alert-danger' role='alert-membership'>Il semble que vous n'avez pas encore réglé votre adhésion. Afin de bénéficier de vos avantages, finalisez <a href='".doliconnecturl('doliaccount')."?module=membership' class='alert-link'>en cliquant -ici-</a>.</div>";
+} elseif ($time>$adherent[next_subscription_renew] && $time<$adherent[datefin] && $adherent[statut] == '1') {
+$alert = "<BR><div class='alert alert-info' role='alert-membership'>Il semble que votre adhésion expire le ".date_i18n('d/m/Y', $adherent[datefin]).". Afin de ne pas perdre vos avantages, renouvelez <a href='".doliconnecturl('doliaccount')."?module=membership' class='alert-link'>en cliquant -ici-</a>.</div>";
+}
+
+return $alert;
+
+}}
 }
 
 class My_Caroussel extends WP_Widget {
@@ -150,35 +168,35 @@ $args = array( 'posts_per_page' => 5, 'meta_query' => array(
     ));
 $myposts = get_posts( $args );
 
-echo '<DIV><DIV id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="4000" data-ride="carousel"><OL class="carousel-indicators">';
+echo '<div><div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="4000" data-ride="carousel"><ol class="carousel-indicators">';
 $count=-1;
 foreach ( $myposts as $post ) {
 setup_postdata( $post );
 $count = $count+1;
-echo '<LI data-target="#carouselExampleIndicators" data-slide-to="'.$count.'"';
+echo '<li data-target="#carouselExampleIndicators" data-slide-to="'.$count.'"';
 if ($count=='0') {echo 'class="active"';}
-echo '></LI>'; 
+echo '></li>'; 
 }
-echo '</OL>';
-echo '<DIV class="carousel-inner">';
+echo '</ol>';
+echo '<div class="carousel-inner">';
 $count=0;
 foreach ( $myposts as $post ) {
 setup_postdata( $post );
 $count = $count+1;
-echo '<DIV class="carousel-item ';
+echo '<div class="carousel-item ';
 if ($count =='1') {echo 'active'; }
-echo '" ><A href="'.get_permalink($post->ID).'" ><IMG  class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'"></A>
-  <DIV class="carousel-caption"  style="background-color: rgba(0, 0, 0, 0.5)">
-    <H4><A href="'.get_permalink($post->ID).'" class="text-white">'.$post->post_title.'</A></H4>
-    <SMALL class="text-white"><I class="fas fa-calendar fa-fw"></I> '.__('Post on', 'ptibogxivtheme').' '.get_the_date( '', $post->ID).'</SMALL>
-  </DIV></DIV>'; 
+echo '" ><a href="'.get_permalink($post->ID).'" ><img  class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'"></a>
+  <div class="carousel-caption"  style="background-color: rgba(0, 0, 0, 0.5)">
+    <h4><a href="'.get_permalink($post->ID).'" class="text-white">'.$post->post_title.'</a></h4>
+    <small class="text-white"><i class="fas fa-calendar fa-fw"></i> '.__('Post on', 'ptibogxivtheme').' '.get_the_date( '', $post->ID).'</small>
+  </div></div>'; 
 }
 wp_reset_postdata();    
-echo '</DIV>
+echo '</div>
 
-</DIV>';
+</div>';
 
-echo '</DIV></DIV>';
+echo '</div></div>';
 
 echo $args['after_widget'];  
     
@@ -192,10 +210,10 @@ echo $args['after_widget'];
 	public function form( $instance ) {
 		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Caroussel', 'text_domain' );
 		?>
-		<P>
-		<LABEL for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></LABEL> 
-		<INPUT class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
-		</P>
+		<p>
+		<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label> 
+		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+		</p>
 		<?php 
 	}
 
@@ -237,8 +255,8 @@ function caroussel_metabox(){
 
 function url_crea($post){
   $url = get_post_meta($post->ID,'_displaycaroussel',true);
-  echo '<LABEL for="url_meta">Afficher dans le carrousel</LABEL>';
-  echo '<INPUT id="url_meta" type="text" name="url_site" value="'.$url.'" />';
+  echo '<label for="url_meta">Afficher dans le carrousel</label>';
+  echo '<input id="url_meta" type="text" name="url_site" value="'.$url.'" />';
 }
 
 add_action('save_post','save_metabox');

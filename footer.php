@@ -38,7 +38,8 @@ dynamic_sidebar('footer-widget-area'); }?></div>
 <?php } ?>
 </div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none">Mode kiosque activé <i class="fas fa-desktop"></i></div>
 <?php 
-if (in_array($_SERVER['REMOTE_ADDR'],array(get_option('doliconnect_ipkiosk')))) {
+$array = get_option('doliconnect_ipkiosk');
+if (is_array($array) && in_array($_SERVER['REMOTE_ADDR'], $array)) {
 echo "<script>";
 ?>
 var kioskip = '<?php echo $_SERVER['REMOTE_ADDR']; ?>';

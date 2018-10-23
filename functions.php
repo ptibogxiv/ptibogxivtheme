@@ -119,6 +119,9 @@ return $return;
 function ptibogxiv_alert() {
 if (is_user_logged_in() && function_exists('callAPI')){ 
 $time = current_time( 'timestamp',1);
+if (get_site_option('doliconnect_mode')=='one' && function_exists('switch_to_blog')) {
+switch_to_blog(1);
+}
 if (constant("DOLIBARR_MEMBER") > 0) {
 $adherent = CallAPI("GET", "/adherentsplus/".constant("DOLIBARR_MEMBER"), "");
 if ($time>$adherent[datefin] && $adherent[statut] == '1' && !empty($adherent[datefin])) {
@@ -130,8 +133,11 @@ $alert = "<BR><div class='alert alert-info' role='alert-membership'>Il semble qu
 }
 
 return $alert;
-
-}}
+}
+if (get_site_option('doliconnect_mode')=='one'  && function_exists('switch_to_blog')) {
+restore_current_blog();
+}
+}
 }
 
 class My_Caroussel extends WP_Widget {

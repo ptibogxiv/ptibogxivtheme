@@ -36,7 +36,7 @@ dynamic_sidebar('footer-widget-area'); }?></div>
 <?php if (function_exists('pll_the_languages')) { ?>       
 <a href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><?php echo pll_current_language('flag');?> <?php echo pll_current_language('name');?></a>
 <?php } ?>
-</div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none">Mode kiosque activé <i class="fas fa-desktop"></i></div>
+</div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none">Mode kiosque activé <i class="fas fa-gamepad"></i></div>
 <?php 
 $array = get_option('doliconnect_ipkiosk');
 if (is_array($array) && in_array($_SERVER['REMOTE_ADDR'], $array)) {

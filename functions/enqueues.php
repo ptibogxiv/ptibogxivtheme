@@ -21,7 +21,7 @@ $version='4.1.3';
 
 	/* Scripts */
   
-	wp_register_script('font-awesome-css', 'https://use.fontawesome.com/releases/v5.4.1/js/all.js', false, '5.4.1', true);
+	wp_register_script('font-awesome-css', 'https://use.fontawesome.com/releases/v5.4.2/js/all.js', false, '5.4.2', true);
 	wp_enqueue_script('font-awesome-css');
 
   wp_register_script('modernizr',  'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', false, '2.8.3', true);

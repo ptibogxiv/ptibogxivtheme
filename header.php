@@ -22,7 +22,15 @@ bloginfo('name'); echo " - "; bloginfo('description');
 <BODY <?php body_class();?>><?php if (is_multisite() && get_site_option('ptibogxivtheme_networkbar')=='1') { ?>
 <DIV class="text-dark bg-<?php echo "dark"; //echo esc_attr(get_theme_mod( 'ptibogxivtheme_networkbar_color' )); ?>">
 <DIV class="container d-none d-md-block"><ul class="nav nav-pills">
-<li class="nav-item"><small><a class="nav-link text-white disabled" href="#"><i class="fas fa-globe fa-fw"></i> <?php echo esc_attr( get_network()->site_name ); ?></a></small></li><?php
+<li class="nav-item"><small><a class="nav-link text-white disabled" href="#"><i class="fas fa-globe fa-fw"></i> <?php 
+if (get_site_option('doliconnect_mode')=='one' && function_exists('switch_to_blog')) {
+switch_to_blog(1);
+}  
+echo esc_attr( get_network()->site_name ); 
+if (get_site_option('doliconnect_mode')=='one') {
+restore_current_blog();
+}
+?></a></small></li><?php
 $defaults = array(
 //'site__in'=>(1),
 'public'=>'1'

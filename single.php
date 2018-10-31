@@ -2,7 +2,7 @@
 
 <DIV class="<?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_container_type')); ?> site-content">
 <DIV class="row"> 
-    <DIV class="<?php if(is_active_sidebar('sidebar-right-widget-area')): ?>col-12 col-md-8<?php else: ?>col-12<?php endif; ?>">
+    <DIV class="<?php if(is_active_sidebar('sidebar-right-widget-area') && (get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='right' or get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both')): ?>col-12 col-md-8<?php else: ?>col-12<?php endif; ?>">
       <DIV id="content" role="main">
         <?php get_template_part('loops/content', 'single'); ?>
       </DIV><!-- /#content -->

@@ -123,7 +123,7 @@ if (get_site_option('doliconnect_mode')=='one' && function_exists('switch_to_blo
 switch_to_blog(1);
 }
 if (constant("DOLIBARR_MEMBER") > 0) {
-$adherent = CallAPI("GET", "/adherentsplus/".constant("DOLIBARR_MEMBER"), "");
+$adherent = CallAPI("GET", "/adherentsplus/".constant("DOLIBARR_MEMBER"), "", DAY_IN_SECONDS);
 if ($time>$adherent[datefin] && $adherent[statut] == '1' && !empty($adherent[datefin])) {
 $alert = "<br><div class='alert alert-danger' role='alert-membership'>Il semble que votre adhésion a expiré le ".date_i18n('d/m/Y', $adherent[datefin]).". Afin de ne pas perdre vos avantages, renouvelez <a href='".doliconnecturl('doliaccount')."?module=membership' class='alert-link'>en cliquant -ici-</a>.</div>";
 } elseif ($time>$adherent[datefin] && $adherent[statut] == '1' && empty($adherent[datefin]!=null)) {

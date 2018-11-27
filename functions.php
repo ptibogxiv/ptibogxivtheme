@@ -132,12 +132,13 @@ $alert = "<br><div class='alert alert-danger' role='alert-membership'>Il semble 
 $alert = "<BR><div class='alert alert-info' role='alert-membership'>Il semble que votre adhésion expire le ".date_i18n('d/m/Y', $adherent[datefin]).". Afin de ne pas perdre vos avantages, renouvelez <a href='".doliconnecturl('doliaccount')."?module=membership' class='alert-link'>en cliquant -ici-</a>.</div>";
 }
 
-return $alert;
+
 }
 if (get_site_option('doliconnect_mode')=='one'  && function_exists('switch_to_blog')) {
 restore_current_blog();
 }
-}
+} 
+return $alert;
 }
 
 class My_Caroussel extends WP_Widget {

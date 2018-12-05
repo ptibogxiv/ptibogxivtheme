@@ -71,16 +71,21 @@ the_custom_logo(); ?>
         'depth'			      => 2,
 	      'walker'  	      => new ptibogxivtheme_walker_nav_menu()
       ) );
-if (function_exists('pll_the_languages')) {       
+if ( function_exists('pll_the_languages') ) {       
 ?><A href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><I class='fas fa-language fa-fw fa-2x'></I></A>&nbsp;<?php
 }
-if (function_exists('doliconnecturl')) { 
-if (get_site_option('doliconnect_mode')=='one' && function_exists('switch_to_blog')) {
+if ( function_exists('doliconnecturl') ) { 
+if ( get_site_option('doliconnect_mode') == 'one' && function_exists('switch_to_blog') ) {
 switch_to_blog(1);
 }  
-if ( is_user_logged_in() ) { ?><A href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><I class="fas fa-user-circle fa-fw fa-2x"></I></A>&nbsp;<A href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>"><SPAN class="fa-layers fa-fw fa-2x">
+if ( is_user_logged_in() ) { ?><A href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><I class="fas fa-user-circle fa-fw fa-2x"></I></A>&nbsp;
+<?php
+if ( function_exists('dolicart_shortcode') ) { 
+?>
+<A href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>"><SPAN class="fa-layers fa-fw fa-2x">
 <I class="fas fa-shopping-bag"></I><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo constant("DOLICONNECT_CART_ITEM"); ?></SPAN></SPAN></A>&nbsp;  
-<?php 
+<?php
+} 
 if (get_site_option('doliconnect_mode')=='one') {
 restore_current_blog();
 }
@@ -89,7 +94,7 @@ if (current_user_can( 'edit_posts' ) or (get_theme_mod( 'ptibogxivtheme_adminbar
 if (get_site_option('doliconnect_mode')=='one'  && function_exists('switch_to_blog')) {
 restore_current_blog();
 } 
-if (get_option('doliloginmodal')=='1') {       
+if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1' ) {      
 ?>
 <A href="#" id="login-<?php echo current_time('timestamp'); ?>" data-toggle="modal" data-target="#DoliconnectLogin" data-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-primary my-2 my-sm-0" role="button"><?php _e('Sign in', 'ptibogxivtheme'); ?></A>
 <?php } else {?>

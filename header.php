@@ -89,9 +89,9 @@ if ( function_exists('dolicart_shortcode') ) {
 if (get_site_option('doliconnect_mode')=='one') {
 restore_current_blog();
 }
-if (current_user_can( 'edit_posts' ) or (get_theme_mod( 'ptibogxivtheme_adminbar') && (wp_get_current_user()->show_admin_bar_front!=true))) { ?><A href="<?php echo admin_url(); ?>" title="Zone admin"><I class="fas fa-cogs fa-fw fa-2x"></I></A>&nbsp;<?php } ?><A href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><I class="fas fa-sign-out-alt fa-fw fa-2x"></I></A> 
+if ( current_user_can( 'edit_posts' ) or (get_theme_mod( 'ptibogxivtheme_adminbar') && (wp_get_current_user()->show_admin_bar_front!=true))) { ?><A href="<?php echo admin_url(); ?>" title="Zone admin"><I class="fas fa-cogs fa-fw fa-2x"></I></A>&nbsp;<?php } ?><A href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><I class="fas fa-sign-out-alt fa-fw fa-2x"></I></A> 
 <?php } else {
-if (get_site_option('doliconnect_mode')=='one'  && function_exists('switch_to_blog')) {
+if ( get_site_option('doliconnect_mode')=='one'  && function_exists('switch_to_blog') ) {
 restore_current_blog();
 } 
 if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1' ) {      
@@ -101,7 +101,7 @@ if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1'
 <A href="<?php echo wp_login_url( get_permalink() ); ?>?redirect_to=<?php echo get_permalink(); ?>" class="btn btn-primary my-2 my-sm-0" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>"><?php _e('Sign in', 'ptibogxivtheme'); ?></A>
 <?php
   } 
-if (((!is_multisite() && get_option( 'users_can_register' )) or (get_option('users_can_register')=='1' && (get_site_option( 'registration' ) == 'user' or get_site_option( 'registration' ) == 'all')))) 
+if ( (!is_multisite() && get_option( 'users_can_register' )) or (get_option('users_can_register')=='1' && (get_site_option( 'registration' ) == 'user' or get_site_option( 'registration' ) == 'all')) ) 
 {     
 ?>
 &nbsp;<A href="<?php echo wp_registration_url(get_permalink()); ?>" id="signup" title="<?php _e('Sign up', 'ptibogxivtheme'); ?>" class="btn btn-primary my-2 my-sm-0" role="button"><?php _e('Sign up', 'ptibogxivtheme'); ?></A>

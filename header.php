@@ -21,7 +21,7 @@ bloginfo('name'); echo " - "; bloginfo('description');
 
 <BODY <?php body_class();?>><?php if (is_multisite() && get_site_option('ptibogxivtheme_networkbar')=='1') { ?>
 <DIV class="text-dark bg-<?php echo "dark"; //echo esc_attr(get_theme_mod( 'ptibogxivtheme_networkbar_color' )); ?>">
-<DIV class="container d-none d-md-block"><ul class="nav nav-pills">
+<DIV class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?> d-none d-md-block"><ul class="nav nav-pills">
 <li class="nav-item"><small> <?php   
 echo '<div class="nav-link text-white disabled"><i class="fas fa-globe fa-fw"></i>';
 echo esc_attr( get_network()->site_name ); 
@@ -44,7 +44,7 @@ foreach( $subsites as $subsite ) {
 <IMG class="d-block w-100 img-fluid" src="<?php header_image(); ?>" alt="banner logo">
 <?php } ?>
 <NAV class="navbar sticky-top navbar-expand-md <?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )); ?>"> 
-  <DIV class="container"><?php
+<DIV class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>"><?php
   if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode') {
 ?><A class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><SPAN class="fas fa-home fa-fw fa-1x"></SPAN></A> 
 <?php } 

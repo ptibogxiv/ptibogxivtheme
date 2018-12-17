@@ -110,7 +110,6 @@ $return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
 $return .= "<a href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><i class='fab fa-facebook-f fa-fw'></i></a>
 <a href='https://twitter.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><i class='fab fa-twitter fa-fw'></i></a>
 <a href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><i class='fab fa-linkedin-in fa-fw'></i></a>
-<a href='https://plus.google.com/share?url=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-google w-100' target='_blank'><i class='fab fa-google-plus-g fa-fw'></i></a>
 <a href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><i class='fab fa-pinterest fa-fw'></i></a>
 </div>";
 return $return;

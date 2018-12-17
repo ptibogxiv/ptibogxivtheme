@@ -60,18 +60,23 @@ _e('Hosting & Theme by', 'ptibogxivtheme');
 _e('Theme by', 'ptibogxivtheme');
 } ?> <a href="https://www.ptibogxiv.net" class="text-info">ptibogxiv.net</a></small></p></div>
 </div></div>
-<?php if (get_theme_mod( 'ptibogxivtheme_mobileapp')) { ?>
+<?php //if (get_theme_mod( 'ptibogxivtheme_mobileapp')) { ?>
 <div class="d-block d-md-none"><br /><br /><nav class="fixed-bottom navbar-light bg-light">
 <div class="btn-group d-flex" role="group" aria-label="Basic example">
 <?php if (function_exists('pll_the_languages')) { ?>
   <a href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" class="btn btn-light w-100" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><i class='fas fa-language fa-fw fa-2x'></i></a>
+<?php }
+if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1' ) {      
+?>
+<A href="#" id="login-<?php echo current_time('timestamp'); ?>" data-toggle="modal" data-target="#DoliconnectLogin" data-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-light w-100" role="button"><i class="fas fa-user-circle fa-fw fa-2x"></i></A>
+<?php } else { ?>
+<a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fas fa-user-circle fa-fw fa-2x"></i></a>
 <?php } ?>
-  <a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fas fa-user-circle fa-fw fa-2x"></i></a>
   <a href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><span class="fa-layers fa-fw fa-2x"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo constant("DOLICONNECT_CART_ITEM"); ?></span></span></a>
   <a href="#" class="btn btn-light w-100"><i class="fas fa-info-circle fa-fw fa-2x"></i></a>
 </div>
 </nav></div>
-<?php } ?>
+<?php //} ?>
 </footer>
 <?php wp_footer();
 if(function_exists('doliconst')){ ?>

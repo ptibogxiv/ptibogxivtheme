@@ -18,16 +18,18 @@ $version='4.1.3';
    
   wp_register_style('ptibogxivtheme-css', get_template_directory_uri() . '/theme/css/ptibogxivtheme.css', false, null);
 	wp_enqueue_style('ptibogxivtheme-css');
-
+  
+  wp_register_style('font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/js/all.jss', false, '5.6.1', true);
+	wp_enqueue_style('font-awesome');    
 	/* Scripts */
 
-  wp_register_script('modernizr',  'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', false, '2.8.3', true);
+  wp_register_script('modernizr', 'https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', false, '2.8.3', true);
 	wp_enqueue_script('modernizr');
   
   wp_register_script('jquery-min', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, '3.3.1', true);
 	wp_enqueue_script('jquery-min');
   
-	wp_register_script('popper',  'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', false, '1.14.3', true);
+	wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', false, '1.14.3', true);
 	wp_enqueue_script('popper');
    
   wp_register_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/'.$version.'/js/bootstrap.min.js', false, $version, true);

@@ -66,7 +66,7 @@ _e('Theme by', 'ptibogxivtheme');
 <?php if (function_exists('pll_the_languages')) { ?>
   <a href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" class="btn btn-light w-100" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><i class='fas fa-language fa-fw fa-2x'></i></a>
 <?php }
-if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1' ) {      
+if ( !is_user_logged_in() && function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1' ) {      
 ?>
 <A href="#" id="login-<?php echo current_time('timestamp'); ?>" data-toggle="modal" data-target="#DoliconnectLogin" data-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-light w-100" role="button"><i class="fas fa-user-circle fa-fw fa-2x"></i></A>
 <?php } else { ?>

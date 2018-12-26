@@ -18,11 +18,8 @@ $version='4.1.3';
    
   wp_register_script('jquery-slim-min', 'https://code.jquery.com/jquery-3.3.1.slim.min.js', false, '3.3.1', false);
 	wp_enqueue_script('jquery-slim-min');
-  
-	wp_register_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js', false, '1.14.6', false);
-	wp_enqueue_script('popper');
    
-  wp_register_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', false, '4.1.3', false);
+  wp_register_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/'.$version.'/js/bootstrap.min.js', false, $version, false);
 	wp_enqueue_script('bootstrap-js'); 
   
   wp_register_style('font-awesome', 'https://use.fontawesome.com/releases/v5.6.3/js/all.jss', false, '5.6.3', false);

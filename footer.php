@@ -123,7 +123,7 @@ foreach ($translations as $key => $value) {
 }      
 ?>
 </ul></div>
-<div id="loadingSelectLang" style="display:none"><br><br><br><br><center><div class="align-middle"><i class="fas fa-spinner fa-pulse fa-3x fa-fw"></i><h4><?php _e('Loading', 'ptibogxivtheme'); ?></h4></div></center><br><br><br><br></div>
+<div id="loadingSelectLang" style="display:none"><br><br><br><br><center><div class="align-middle"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div><h4><?php _e('Loading', 'ptibogxivtheme'); ?></h4></div></center><br><br><br><br></div>
 </div></div></div></div>
 <?php
 }      

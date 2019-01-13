@@ -75,7 +75,7 @@ if ( function_exists('pll_the_languages') ) {
 ?><A href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><I class='fas fa-language fa-fw fa-2x'></I></A>&nbsp;<?php
 }
 if ( function_exists('doliconnecturl') ) { 
-if ( get_site_option('doliconnect_mode') == 'one' && function_exists('switch_to_blog') ) {
+if ( get_site_option('doliconnect_mode') == 'one' && is_multisite() ) {
 switch_to_blog(1);
 }  
 if ( is_user_logged_in() ) { ?><A href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><I class="fas fa-user-circle fa-fw fa-2x"></I></A>&nbsp;
@@ -86,12 +86,12 @@ if ( function_exists('dolicart_shortcode') ) {
 <I class="fas fa-shopping-bag"></I><SPAN class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo constant("DOLICONNECT_CART_ITEM"); ?></SPAN></SPAN></A>&nbsp;  
 <?php
 } 
-if (get_site_option('doliconnect_mode')=='one') {
+if ( get_site_option('doliconnect_mode')=='one' && is_multisite() && is_multisite() ) {
 restore_current_blog();
 }
 if ( current_user_can( 'edit_posts' ) or (get_theme_mod( 'ptibogxivtheme_adminbar') && (wp_get_current_user()->show_admin_bar_front!=true))) { ?><A href="<?php echo admin_url(); ?>" title="Zone admin"><I class="fas fa-cogs fa-fw fa-2x"></I></A>&nbsp;<?php } ?><A href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><I class="fas fa-sign-out-alt fa-fw fa-2x"></I></A> 
 <?php } else {
-if ( get_site_option('doliconnect_mode')=='one'  && function_exists('switch_to_blog') ) {
+if ( get_site_option('doliconnect_mode')=='one' && is_multisite() ) {
 restore_current_blog();
 } 
 if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1' ) {      

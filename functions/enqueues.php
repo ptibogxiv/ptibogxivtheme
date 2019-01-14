@@ -3,7 +3,7 @@
 function ptibogxivtheme_enqueues() {
 
 /* Styles */
-if (get_theme_mod( 'ptibogxivtheme_css') == '' or get_theme_mod( 'ptibogxivtheme_css') == 'css') {
+if ( empty(get_theme_mod( 'ptibogxivtheme_css')) || get_theme_mod( 'ptibogxivtheme_css') == 'css') {
 $type='bootstrap';
 $css='css';
 $version='4.2.1'; 

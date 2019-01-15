@@ -89,9 +89,9 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
  
 function wpc_show_admin_bar() { 
 global $current_user;
-if (current_user_can( 'edit_posts' ) && !get_theme_mod( 'ptibogxivtheme_adminbar') ) {  
+if ( current_user_can( 'edit_posts' ) && !get_theme_mod( 'ptibogxivtheme_adminbar') ) {  
 return false;
-} elseif (current_user_can( 'edit_posts' ) && is_user_logged_in() && $current_user->show_admin_bar_front=='true') {
+} elseif ( current_user_can( 'edit_posts' ) && is_user_logged_in() && $current_user->show_admin_bar_front == 'true' ) {
 return true;
 }
 else {
@@ -189,7 +189,7 @@ foreach ( $myposts as $post ) {
 setup_postdata( $post );
 $count = $count+1;
 echo '<div class="carousel-item ';
-if ($count =='1') {echo 'active'; }
+if ( $count == '1' ) { echo 'active'; }
 echo '" ><a href="'.get_permalink($post->ID).'" ><img  class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'"></a>
   <div class="carousel-caption"  style="background-color: rgba(0, 0, 0, 0.5)">
     <h4><a href="'.get_permalink($post->ID).'" class="text-white">'.$post->post_title.'</a></h4>

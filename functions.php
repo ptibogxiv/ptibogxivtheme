@@ -15,7 +15,7 @@ require_once get_stylesheet_directory() . '/functions/feedback.php';
 require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
 require_once get_stylesheet_directory() . '/lib/wp-package-updater/class-wp-package-updater.php';
 
- $prefix_updater = new WP_Package_Updater(
+ $ptibogxivtheme_updater = new WP_Package_Updater(
  	'https://www.ptibogxiv.net',
  	wp_normalize_path( __FILE__ ),
  	get_stylesheet_directory()

@@ -3,24 +3,23 @@
 All the functions are in the PHP pages in the `functions/` folder.
 */
   
-  require get_template_directory() . '/update/plugin-update-checker.php';
-	require get_template_directory() . '/functions/cleanup.php';
-	require get_template_directory() . '/functions/setup.php';
-	require get_template_directory() . '/functions/enqueues.php';
-	require get_template_directory() . '/functions/navbar.php';
-	require get_template_directory() . '/functions/widgets.php';
-	require get_template_directory() . '/functions/search-widget.php';
-	require get_template_directory() . '/functions/index-pagination.php';
-	require get_template_directory() . '/functions/split-post-pagination.php';
-	require get_template_directory() . '/functions/feedback.php';
-	require get_template_directory() . '/functions/remove-query-string.php';
+require_once get_stylesheet_directory() . '/functions/cleanup.php';
+require_once get_stylesheet_directory() . '/functions/setup.php';
+require_once get_stylesheet_directory() . '/functions/enqueues.php';
+require_once get_stylesheet_directory() . '/functions/navbar.php';
+require_once get_stylesheet_directory() . '/functions/widgets.php';
+require_once get_stylesheet_directory() . '/functions/search-widget.php';
+require_once get_stylesheet_directory() . '/functions/index-pagination.php';
+require_once get_stylesheet_directory() . '/functions/split-post-pagination.php';
+require_once get_stylesheet_directory() . '/functions/feedback.php';
+require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
+require_once get_stylesheet_directory() . '/lib/wp-package-updater/class-wp-package-updater.php';
 
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/ptibogxiv/ptibogxivtheme/',
-	__FILE__,
-	'ptibogxivtheme'
-);
-$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+ $prefix_updater = new WP_Package_Updater(
+ 	'https://www.ptibogxiv.net',
+ 	wp_normalize_path( __FILE__ ),
+ 	get_stylesheet_directory()
+ );
 
 //deactivate theme-color for superpwa
 add_filter( 'superpwa_add_theme_color', '__return_false' );

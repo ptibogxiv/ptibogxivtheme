@@ -54,7 +54,7 @@ echo "</script>";
 </div></div>
 <div class="row">
 <div class="col"><p class="text-center"><span class="fas fa-copyright"></span> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><br><small><?php 
-if (PTIBOGXIV_NET==1) {
+if ( 'PTIBOGXIV_NET' == 1 ) {
 _e('Hosting & Theme by', 'ptibogxivtheme');
 } else {
 _e('Theme by', 'ptibogxivtheme');
@@ -116,8 +116,8 @@ jQuery('#loadingSelectLang').show();
 $translations = pll_the_languages( array( 'raw' => 1 ) );
 foreach ($translations as $key => $value) {
 ?>
-<a href='<?php echo $value[url]; ?>' onclick='loadingSelectLangModal()' class='list-group-item list-group-item-action list-group-item-light'>
-<img src='<?php echo $value[flag]; ?>' class='img-fluid' alt='<?php echo $value[name]; ?>'> <?php echo $value[name]; ?> <?php if ($value[current_lang] == true) {?><i class='fas fa-language fa-fw'></i><?php } ?>
+<a href='<?php echo $value['url']; ?>' onclick='loadingSelectLangModal()' class='list-group-item list-group-item-action list-group-item-light'>
+<img src='<?php echo $value['flag']; ?>' class='img-fluid' alt='<?php echo $value['name']; ?>'> <?php echo $value['name']; ?> <?php if ( $value['current_lang'] == true ) { ?><i class='fas fa-language fa-fw'></i><?php } ?>
 </a>
 <?php
 }      

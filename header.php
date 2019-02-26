@@ -13,6 +13,7 @@ bloginfo('name'); echo " - "; bloginfo('description');
   <META name="theme-color" content="#<? echo get_background_color(); ?>">
 	<META http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="language" content="French">
+  <meta http-equiv="Cache-control" content="public">
   <LINK rel="icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon" />
   <LINK rel="shortcut icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon" />
   <META name="viewport" content="width=device-width, initial-scale=1.0">

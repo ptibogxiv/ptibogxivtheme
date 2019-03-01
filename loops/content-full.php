@@ -12,9 +12,8 @@ The Page Loop
 <HEADER><H1><?php the_title()?> <?php edit_post_link('<I class="fas fa-edit"></I>', '<span class="edit-link">', '</SPAN>' ); ?></H1></HEADER> 
 <?php the_content()?>
 <?php wp_link_pages(); ?>
-</DIV></DIV>
-<?php comments_template(); ?>
-</ARTICLE>
+</DIV></DIV></ARTICLE>
+<?php comments_template('/loops/comments.php'); ?>
 <?php endwhile; else: ?>
 <?php wp_redirect(get_bloginfo('url').'/404', 404); ?>
 <?php exit; ?>

@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-12-21 11:57+0100\n"
-"PO-Revision-Date: 2018-12-21 11:59+0100\n"
+"POT-Creation-Date: 2019-03-01 16:12+0100\n"
+"PO-Revision-Date: 2019-03-01 16:13+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -46,7 +46,7 @@ msgstr "Réseaux sociaux"
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
 
-#: footer.php:37 footer.php:67 header.php:75
+#: footer.php:37 footer.php:67 header.php:76
 msgid "Choose language"
 msgstr "Choisissez une langue"
 
@@ -66,15 +66,15 @@ msgstr "Hébergement & Thème par"
 msgid "Theme by"
 msgstr "Thème par"
 
-#: footer.php:71 header.php:99 header.php:101
+#: footer.php:71 header.php:105 header.php:107
 msgid "Sign in"
 msgstr "Connexion"
 
-#: footer.php:73 header.php:81
+#: footer.php:73 header.php:82
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:75 header.php:85
+#: footer.php:75 header.php:86
 msgid "Basket"
 msgstr "Panier"
 
@@ -446,13 +446,145 @@ msgstr "Zone du widget d'entête"
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
-#: header.php:92 loops/comments.php:49
+#: header.php:93 loops/comments.php:49
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: header.php:107
+#: header.php:101
 msgid "Sign up"
 msgstr "Inscription"
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:395
+msgid "Check for updates"
+msgstr "Vérifier les mises à jour"
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:432
+msgid "View details"
+msgstr "Voir les détails"
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:455
+#, php-format
+msgid "More information about %s"
+msgstr "Informations à propos de %s"
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:548
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "L'extension %s est à jour."
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:550
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Une nouvelle version de %s est disponible."
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:552
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:558
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Statut des mises à jour inconnu \"%s\""
+
+#: lib/plugin-update-checker/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr "Aucun registre de modifications disponible."
+
+#: lib/wp-package-updater/class-wp-package-updater.php:204
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:251
+msgid "Theme License - "
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:406
+msgid ""
+"Unexpected Error! The query to retrieve the license data returned a "
+"malformed response."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:424
+msgid "The license is already in use for this domain."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:427
+msgid ""
+"The license has reached the maximum number of activations and cannot be "
+"activated for this domain."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:433
+msgid "The license is already inactive for this domain."
+msgstr ""
+
+#. translators: the license expiry date
+#: lib/wp-package-updater/class-wp-package-updater.php:444
+#, php-format
+msgid "The license expired on %s and needs to be renewed to be updated."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:448
+msgid "The license expired and needs to be renewed to be updated."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:454
+msgid ""
+"The license is blocked and cannot be updated anymore. Please use another "
+"license key."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:460
+msgid ""
+"The license has not been activated and its status is stil pending. Please "
+"try again or use another license key."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:466
+msgid "The provided license key is invalid. Please use another license key."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:469
+msgid ""
+"The provided license key does not appear to be valid. Please use another "
+"license key."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:473
+msgid ""
+"An active license is required to update the plugin. Please provide a valid "
+"license key in Plugins > Installed Plugins."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:475
+msgid ""
+"An active license is required to update the theme. Please provide a valid "
+"license key in Appearence > Theme License."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:481
+msgid ""
+"An unexpected error has occured. Please try again. If the problem persists, "
+"please contact the author of the plugin."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:483
+msgid ""
+"An unexpected error has occured. Please try again. If the problem persists, "
+"please contact the author of the theme."
+msgstr ""
+
+#: lib/wp-package-updater/templates/license-form.php:6
+msgid "Current license key:"
+msgstr ""
+
+#: lib/wp-package-updater/templates/license-form.php:9
+msgid "License key to change:"
+msgstr ""
 
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
@@ -465,8 +597,8 @@ msgid "Be the first to write a comment."
 msgstr "Soyez le premier à commenter."
 
 #: loops/comments.php:30
-msgid "Comments are closed for this post."
-msgstr "Les commentaires sont fermés pour ce post."
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
 
 #: loops/comments.php:37 loops/comments.php:66 loops/comments.php:67
 msgid "Your comment"
@@ -572,46 +704,6 @@ msgstr "Chercher"
 msgid "Search Results for"
 msgstr "Résultats de la recherche pour"
 
-#: update/Puc/v4p4/Plugin/Ui.php:54
-msgid "View details"
-msgstr "Voir les détails"
-
-#: update/Puc/v4p4/Plugin/Ui.php:77
-#, php-format
-msgid "More information about %s"
-msgstr "Informations à propos de %s"
-
-#: update/Puc/v4p4/Plugin/Ui.php:128
-msgid "Check for updates"
-msgstr "Vérifier les mises à jour"
-
-#: update/Puc/v4p4/Plugin/Ui.php:213
-#, php-format
-msgctxt "the plugin title"
-msgid "The %s plugin is up to date."
-msgstr "L'extension %s est à jour."
-
-#: update/Puc/v4p4/Plugin/Ui.php:215
-#, php-format
-msgctxt "the plugin title"
-msgid "A new version of the %s plugin is available."
-msgstr "Une nouvelle version de %s est disponible."
-
-#: update/Puc/v4p4/Plugin/Ui.php:217
-#, php-format
-msgctxt "the plugin title"
-msgid "Could not determine if updates are available for %s."
-msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
-
-#: update/Puc/v4p4/Plugin/Ui.php:223
-#, php-format
-msgid "Unknown update checker status \"%s\""
-msgstr "Statut des mises à jour inconnu \"%s\""
-
-#: update/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
-msgid "There is no changelog available."
-msgstr "Aucun registre de modifications disponible."
-
 #. Theme Name of the plugin/theme
 #. Author of the plugin/theme
 msgid "ptibogxiv"
@@ -625,6 +717,9 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Comments are closed for this post."
+#~ msgstr "Les commentaires sont fermés pour ce post."
 
 #~ msgid "About"
 #~ msgstr "À propos"

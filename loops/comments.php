@@ -27,7 +27,7 @@ if (have_comments()) : ?>
 	  if (comments_open()) :
   echo "<p class='alert alert-info shadow-lg'>" . __('Be the first to write a comment.', 'ptibogxivtheme') . "</p>";
 		else :
-			echo "<p class='alert alert-warning shadow-lg'>" . __('Comments are closed.', 'ptibogxivtheme') . "</p>";
+			//echo "<p class='alert alert-warning shadow-lg'>" . __('Comments are closed.', 'ptibogxivtheme') . "</p>";
 		endif;
 	endif;
 ?>

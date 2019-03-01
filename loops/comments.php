@@ -33,7 +33,7 @@ if (have_comments()) : ?>
 ?>
 
 <?php if (comments_open()) : ?>
-<section id="respond"><DIV class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="background-color: rgba(256, 256, 256, 0.8)"><DIV class="card-body">
+<section id="respond"><div class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="background-color: rgba(256, 256, 256, 0.8)"><div class="card-body">
   <h3><?php comment_form_title(__('Your comment', 'ptibogxivtheme'), __('Responses to %s', 'ptibogxivtheme')); ?></h3>
   <p><?php cancel_comment_reply_link(); ?></p>
   <?php if (get_option('comment_registration') && !is_user_logged_in()) : ?>
@@ -44,7 +44,7 @@ printf(__('You must be <a href="#" data-toggle="modal" data-target="#Doliconnect
   <form action="<?php echo site_url('/wp-comments-post.php') ?>" method="post" id="commentform"> 
     <?php if (is_user_logged_in()) : ?>
     <p>
-      <?php if (function_exists('doliconnecturl')) {printf(__('Logged in as', 'ptibogxivtheme') . ' <A href="'.doliconnecturl('doliaccount').'" >'.$user_identity.'</a>.'); } 
+      <?php if (function_exists('doliconnecturl')) {printf(__('Logged in as', 'ptibogxivtheme') . ' <a href="'.doliconnecturl('doliaccount').'" >'.$user_identity.'</a>.'); } 
       else {printf(__('Logged in as', 'ptibogxivtheme') . ' <a href="%s/wp-admin/profile.php">%s</a>.', get_option('url'), $user_identity);} ?>
     <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php __('Log out of this account', 'ptibogxivtheme'); ?>"><?php echo __('Logout', 'ptibogxivtheme') . ' <i class="fas fa-sign-out-alt fa-fw"></i>'; ?></a>
     </p>
@@ -70,6 +70,6 @@ printf(__('You must be <a href="#" data-toggle="modal" data-target="#Doliconnect
     <?php comment_id_fields(); ?>
     <?php do_action('comment_form', $post->ID); ?>
   </form>
-  <?php endif; ?></DIV></DIV>
+  <?php endif; ?></div></div>
 </section>
 <?php endif; ?>

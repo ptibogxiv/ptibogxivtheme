@@ -15,10 +15,8 @@ function ptibogxivtheme_comment($comment, $args, $depth) {
     $add_below = 'div-comment';
   }
 ?>
-<<?php echo $tag ?> <?php comment_class(empty( $args['has_children'] ) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>">
-  <?php if ( 'div' != $args['style'] ) : ?>
-    <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-  <?php endif; ?>
+
+<div id="comment-<?php comment_ID() ?>" class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="background-color: rgba(256, 256, 256, 0.8)"><div class="card-body">
     <div class="comment-author vcard">
       <div style="width: 60px; float: left;">
         <?php echo get_avatar( $comment->comment_author_email, $size = '40'); ?>
@@ -33,7 +31,7 @@ function ptibogxivtheme_comment($comment, $args, $depth) {
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <hr/>
+        <hr>
       	<?php comment_text() ?>
       </div>  
     </div>

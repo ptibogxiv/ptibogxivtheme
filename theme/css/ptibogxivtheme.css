@@ -52,6 +52,15 @@ This may but be necessary when Bootstrap 4 is improved after alpha. */
 #content footer {
   padding-bottom: 20px
 }
+
+#content blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
 .page-header {
   background: #f9f9f9 none repeat scroll 0 0;
   border-bottom: 1px solid #eee;

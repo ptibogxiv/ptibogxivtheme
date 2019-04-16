@@ -72,7 +72,7 @@ if ( !is_user_logged_in() && function_exists('doliconnect_modal') && get_option(
 <?php } else { ?>
 <a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fas fa-user-circle fa-fw fa-2x"></i></a>
 <?php } ?>
-  <a href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><span class="fa-layers fa-fw fa-2x"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo echo doliconnector( null, 'fk_order_nb_item'); ?></span></span></a>
+  <a href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><span class="fa-layers fa-fw fa-2x"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo doliconnector( null, 'fk_order_nb_item'); ?></span></span></a>
   <a href="#" class="btn btn-light w-100"><i class="fas fa-info-circle fa-fw fa-2x"></i></a>
 </div>
 </nav></div>

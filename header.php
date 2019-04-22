@@ -90,7 +90,7 @@ if ( function_exists('dolicart_shortcode') ) {
 if ( get_site_option('doliconnect_mode')=='one' && is_multisite() && is_multisite() ) {
 restore_current_blog();
 }
-if ( current_user_can( 'edit_posts' ) || ( null !== get_theme_mod( 'ptibogxivtheme_adminbar') && (wp_get_current_user()->show_admin_bar_front != true)) ) { ?><a href="<?php echo admin_url('index.php'); ?>" title="Zone admin"><i class="fas fa-cogs fa-fw fa-2x"></i></a>&nbsp;<?php } ?><a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><i class="fas fa-sign-out-alt fa-fw fa-2x"></i></a> 
+if ( current_user_can( 'edit_posts' ) || ( null !== get_theme_mod( 'ptibogxivtheme_adminbar') && ( wp_get_current_user()->show_admin_bar_front != true)) ) { ?><a href="<?php echo admin_url('index.php'); ?>" title="Zone admin"><i class="fas fa-cogs fa-fw fa-2x"></i></a>&nbsp;<?php } ?><a href="<?php echo wp_logout_url( get_permalink() ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><i class="fas fa-sign-out-alt fa-fw fa-2x"></i></a> 
 <?php } else {
 if ( get_site_option('doliconnect_mode') =='one' && is_multisite() ) {
 restore_current_blog();

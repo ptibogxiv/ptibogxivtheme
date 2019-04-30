@@ -20,7 +20,14 @@ bloginfo('name'); echo " - "; bloginfo('description');
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class();?>><?php if (is_multisite() && get_site_option('ptibogxivtheme_networkbar')=='1') { ?>
+<body <?php echo body_class(); ?>>
+<?php
+if ( function_exists( 'wp_body_open' ) ) {
+    wp_body_open();
+} else {
+    do_action( 'wp_body_open' );
+}
+if (is_multisite() && get_site_option('ptibogxivtheme_networkbar')=='1') { ?>
 <div class="text-dark bg-<?php echo "dark"; //echo esc_attr(get_theme_mod( 'ptibogxivtheme_networkbar_color' )); ?>">
 <div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?> d-none d-md-block"><ul class="nav nav-pills">
 <li class="nav-item"><small> <?php   

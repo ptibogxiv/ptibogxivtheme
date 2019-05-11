@@ -100,6 +100,7 @@ return false;
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 
 function ptibogxiv_social() {
+global $post;
 $return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
 <a href='#' class='btn btn-outline-dark disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
 <a href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><i class='fas fa-envelope fa-fw'></i></a>"; 
@@ -335,8 +336,8 @@ global $post;
 	if ( !(int)trim($duration) ){
 		$duration = '0 ' . __( 'seconds', 'ptibogxivtheme' );
 	}
-	
-	return sprintf( esc_html__( '%s %s ago', 'ptibogxivtheme' ), $duration, $unit);
+
+	return sprintf( esc_html__( '%s ago', 'ptibogxivtheme' ), $duration);
 }
 
 // Filter our ptibogxivtheme_time_ago() function into WP's the_time() function

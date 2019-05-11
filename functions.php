@@ -129,13 +129,15 @@ $alert = "<br><div class='card text-white bg-info'><div class='card-body'>Il sem
 } elseif ( $time>$adherent->next_subscription_renew && $time<$adherent->datefin && $adherent->statut == '1' ) {
 $alert = "<BR><div class='card text-white bg-info'><div class='card-body'>Il semble que votre adhésion expire le ".date_i18n('d/m/Y', $adherent->datefin).". Afin de ne pas perdre vos avantages, renouvelez <a href='".esc_url( add_query_arg( 'module', 'membership', doliconnecturl('doliaccount')) )."' class='alert-link'>en cliquant -ici-</a>.</div></div>";
 } else {
-$alert="";
+$alert = null;
 }
 
 }
 if ( get_site_option('doliconnect_mode')=='one'  && function_exists('switch_to_blog') ) {
 restore_current_blog();
 }
+} else {
+$alert = null;
 } 
 return $alert;
 }

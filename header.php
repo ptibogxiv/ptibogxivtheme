@@ -111,7 +111,7 @@ if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1'
 ?>
 <a href="#" id="login-<?php echo current_time('timestamp'); ?>" data-toggle="modal" data-target="#DoliconnectLogin" data-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-primary my-2 my-sm-0" role="button"><?php _e('Sign in', 'ptibogxivtheme'); ?></a>
 <?php } else {?>
-<a href="<?php echo wp_login_url( get_permalink() ); ?>?redirect_to=<?php echo get_permalink(); ?>" class="btn btn-primary my-2 my-sm-0" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>"><?php _e('Sign in', 'ptibogxivtheme'); ?></a>
+<a href="<?php echo wp_login_url(); ?>?redirect_to=<?php echo get_permalink(); ?>" class="btn btn-primary my-2 my-sm-0" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>"><?php _e('Sign in', 'ptibogxivtheme'); ?></a>
 <?php
   } 
 }

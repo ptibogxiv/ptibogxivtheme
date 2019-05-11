@@ -54,7 +54,7 @@ echo "</script>";
 </div></div>
 <div class="row">
 <div class="col"><p class="text-center"><span class="fas fa-copyright"></span> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><br><small><?php 
-if ( PTIBOGXIV_NET == 1 ) {
+if ( defined('PTIBOGXIV_NET') ) {
 _e('Hosting & Theme by', 'ptibogxivtheme');
 } else {
 _e('Theme by', 'ptibogxivtheme');

@@ -19,11 +19,11 @@
 <strong><?php bloginfo('description'); ?></strong>
 <div class="row"><div class="col-6">
 <?php if(! is_active_sidebar('footer-widget-area') && function_exists('doliconst')){
-echo doliconst(MAIN_INFO_SOCIETE_ADDRESS);
+echo doliconst('MAIN_INFO_SOCIETE_ADDRESS');
 echo "<BR />";
-echo doliconst(MAIN_INFO_SOCIETE_ZIP);
+echo doliconst('MAIN_INFO_SOCIETE_ZIP');
 echo " ";
-echo doliconst(MAIN_INFO_SOCIETE_TOWN);
+echo doliconst('MAIN_INFO_SOCIETE_TOWN');
 } else { 
 dynamic_sidebar('footer-widget-area'); }?></div>
 <div class="col-6"><ul class="fa-ul">

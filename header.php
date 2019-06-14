@@ -79,14 +79,15 @@ the_custom_logo(); ?>
         'depth'			      => 2,
 	      'walker'  	      => new ptibogxivtheme_walker_nav_menu()
       ) );
+
 if ( function_exists('pll_the_languages') ) {       
 ?><a href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><i class='fas fa-language fa-fw fa-2x'></i></a>&nbsp;<?php
 }
-if ( function_exists('doliconnecturl') ) { 
+
 if ( get_site_option('doliconnect_mode') == 'one' && is_multisite() ) {
 switch_to_blog(1);
 }  
-if ( is_user_logged_in() && doliconnectid('doliaccount') > 0 ) { ?><a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fas fa-user-circle fa-fw fa-2x"></i></a>&nbsp;
+if ( is_user_logged_in() && function_exists('doliconnecturl') && doliconnectid('doliaccount') > 0 ) { ?><a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fas fa-user-circle fa-fw fa-2x"></i></a>&nbsp;
 <?php
 if ( function_exists('doliconnectid') && doliconnectid('dolicart') > 0 ) { 
 ?>
@@ -115,7 +116,7 @@ if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1'
 <?php
   } 
 }
-} ?>      
+?>      
 <!-- <?php //get_template_part('navbar-search'); ?> --> 
   </div>
   </div>

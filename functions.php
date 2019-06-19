@@ -143,133 +143,6 @@ $alert = null;
 return $alert;
 }
 
-class My_Caroussel extends WP_Widget {
-
-	/**
-	 * Sets up the widgets name etc
-	 */
-	public function __construct() {
-		$widget_ops = array( 
-			'classname' => 'my_caroussel',                               
-			'description' => 'Articles à la une',
-      'customize_selective_refresh' => true,
-		);
-		parent::__construct( 'my_caroussel', 'Caroussel', $widget_ops );
-	}
-
-	/**
-	 * Outputs the content of the widget
-	 *
-	 * @param array $args
-	 * @param array $instance
-	 */
-	public function widget( $args, $instance ) {
-global $post,$wpdb;
-		// outputs the content of the widget
-    
-  		echo $args['before_widget'];
-		if ( ! empty( $instance['title'] ) ) {
-echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
-		}
-
-$args = array( 
-            'posts_per_page' => 5,
-            'post_status'    => 'publish',
-            'meta_key'       => '_thumbnail_id',
-            'meta_value'     => ' ',
-            'meta_compare'   => '!=',
-            'meta_query' => array()
-);
-$myposts = get_posts( $args );
-
-echo '<div><div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="4000" data-ride="carousel"><ol class="carousel-indicators">';
-$count=-1;
-foreach ( $myposts as $post ) {
-setup_postdata( $post );
-$count = $count+1;
-echo '<li data-target="#carouselExampleIndicators" data-slide-to="'.$count.'"';
-if ($count=='0') {echo 'class="active"';}
-echo '></li>'; 
-}
-echo '</ol>';
-echo '<div class="carousel-inner">';
-$count=0;
-foreach ( $myposts as $post ) {
-
-setup_postdata( $post );
-$count = $count+1;
-echo '<div class="carousel-item ';
-if ( $count == '1' ) { echo 'active'; }
-echo '" data-interval="5000" ><a href="'.get_permalink($post->ID).'" ><img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'"></a>
-  <div class="carousel-caption"  style="background-color: rgba(0, 0, 0, 0.5)">
-    <h4><a href="'.get_permalink($post->ID).'" class="text-white">'.$post->post_title.'</a></h4>
-    <small class="text-white"><i class="fas fa-calendar fa-fw"></i> '.__('Post on', 'ptibogxivtheme').' '.get_the_date( '', $post->ID).'</small>
-  </div></div>'; 
-}
-wp_reset_postdata();    
-echo '</div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>';
-
-echo '</div></div>';
-
-echo $args['after_widget'];  
-    
-	}
-
-	/**
-	 * Outputs the options form on admin
-	 *
-	 * @param array $instance The widget options
-	 */
-	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Caroussel', 'text_domain' );
-		?>
-		<p>
-		<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label> 
-		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
-		</p>
-		<?php 
-	}
-
-	/**
-	 * Processing widget options on save
-	 *
-	 * @param array $new_instance The new options
-	 * @param array $old_instance The previous options
-	 *
-	 * @return array
-	 */
-/**
-	 * Sanitize widget form values as they are saved.
-	 *
-	 * @see WP_Widget::update()
-	 *
-	 * @param array $new_instance Values just sent to be saved.
-	 * @param array $old_instance Previously saved values from database.
-	 *
-	 * @return array Updated safe values to be saved.
-	 */
-	public function update( $new_instance, $old_instance ) {
-		$instance = array();
-		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
-
-		return $instance;
-	}
-
-}
-
-add_action( 'widgets_init', function(){
-	register_widget( 'My_Caroussel' );
-});
-
 add_action('add_meta_boxes','caroussel_metabox');
 function caroussel_metabox(){
   add_meta_box('url_crea', 'Caroussel', 'url_crea', 'post', 'side');
@@ -282,6 +155,7 @@ function url_crea($post){
 }
 
 add_action('save_post','save_metabox');
+
 function save_metabox($post_id){
 if(isset($_POST['url_site']))
 update_post_meta($post_id, '_url_crea', esc_url($_POST['url_site']));

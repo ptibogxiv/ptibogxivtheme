@@ -172,9 +172,14 @@ global $post,$wpdb;
 echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
 
-$args = array( 'posts_per_page' => 5, 'meta_query' => array(
-
-    ));
+$args = array( 
+            'posts_per_page' => 5,
+            'post_status'    => 'publish',
+            'meta_key'       => '_thumbnail_id',
+            'meta_value'     => ' ',
+            'meta_compare'   => '!=',
+            'meta_query' => array()
+);
 $myposts = get_posts( $args );
 
 echo '<div><div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="4000" data-ride="carousel"><ol class="carousel-indicators">';
@@ -190,11 +195,12 @@ echo '</ol>';
 echo '<div class="carousel-inner">';
 $count=0;
 foreach ( $myposts as $post ) {
+
 setup_postdata( $post );
 $count = $count+1;
 echo '<div class="carousel-item ';
 if ( $count == '1' ) { echo 'active'; }
-echo '" ><a href="'.get_permalink($post->ID).'" ><img  class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'"></a>
+echo '" data-interval="5000" ><a href="'.get_permalink($post->ID).'" ><img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'"></a>
   <div class="carousel-caption"  style="background-color: rgba(0, 0, 0, 0.5)">
     <h4><a href="'.get_permalink($post->ID).'" class="text-white">'.$post->post_title.'</a></h4>
     <small class="text-white"><i class="fas fa-calendar fa-fw"></i> '.__('Post on', 'ptibogxivtheme').' '.get_the_date( '', $post->ID).'</small>
@@ -202,7 +208,14 @@ echo '" ><a href="'.get_permalink($post->ID).'" ><img  class="d-block w-100 img-
 }
 wp_reset_postdata();    
 echo '</div>
-
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>';
 
 echo '</div></div>';

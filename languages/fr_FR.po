@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2019-03-01 16:12+0100\n"
-"PO-Revision-Date: 2019-03-01 16:13+0100\n"
+"POT-Creation-Date: 2019-07-01 20:06+0200\n"
+"PO-Revision-Date: 2019-07-01 20:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -34,144 +34,132 @@ msgstr "La page que vous recherchez n’existe pas."
 msgid "Author %s"
 msgstr "Auteur %s"
 
-#: footer.php:6
+#: footer.php:7
 msgid "Payment modes"
 msgstr "Modes de paiement"
 
-#: footer.php:8
+#: footer.php:11
 msgid "Social networks"
 msgstr "Réseaux sociaux"
 
-#: footer.php:33 footer.php:84
+#: footer.php:36 footer.php:87
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
 
-#: footer.php:37 footer.php:67 header.php:76
+#: footer.php:40 footer.php:70 header.php:84
 msgid "Choose language"
 msgstr "Choisissez une langue"
 
-#: footer.php:39
+#: footer.php:42
 msgid "Kiosk mode ON"
 msgstr "Mode kiosque ON"
 
-#: footer.php:56
+#: footer.php:59
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:58
+#: footer.php:61
 msgid "Hosting & Theme by"
 msgstr "Hébergement & Thème par"
 
-#: footer.php:60
+#: footer.php:63
 msgid "Theme by"
 msgstr "Thème par"
 
-#: footer.php:71 header.php:105 header.php:107
+#: footer.php:74 header.php:113 header.php:115
 msgid "Sign in"
 msgstr "Connexion"
 
-#: footer.php:73 header.php:82
+#: footer.php:76 header.php:90
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:75 header.php:86
+#: footer.php:78 header.php:94
 msgid "Basket"
 msgstr "Panier"
 
-#: footer.php:105
+#: footer.php:108
 msgid "Change language"
 msgstr "Changer de langue"
 
-#: footer.php:126
+#: footer.php:129
 msgid "Loading"
 msgstr "Chargement"
 
-#: functions.php:197
-msgid "Post on"
-msgstr "Publié le"
-
-#: functions.php:217 functions/widgets.php:61
-msgid "Caroussel"
-msgstr "Carousel"
-
-#: functions.php:220
-msgid "Title:"
-msgstr "Titre:"
-
-#: functions.php:288
+#: functions.php:178
 msgid "year"
 msgstr "an"
 
-#: functions.php:288
+#: functions.php:178
 msgid "years"
 msgstr "ans"
 
-#: functions.php:289
+#: functions.php:179
 msgid "month"
 msgstr "mois"
 
-#: functions.php:289
+#: functions.php:179
 msgid "months"
 msgstr "mois"
 
-#: functions.php:290
+#: functions.php:180
 msgid "week"
 msgstr "semaine"
 
-#: functions.php:290
+#: functions.php:180
 msgid "weeks"
 msgstr "semaines"
 
-#: functions.php:291
+#: functions.php:181
 msgid "day"
 msgstr "jour"
 
-#: functions.php:291
+#: functions.php:181
 msgid "days"
 msgstr "jours"
 
-#: functions.php:292
+#: functions.php:182
 msgid "hour"
 msgstr "heure"
 
-#: functions.php:292
+#: functions.php:182
 msgid "hours"
 msgstr "heures"
 
-#: functions.php:293
+#: functions.php:183
 msgid "minute"
 msgstr "minute"
 
-#: functions.php:293
+#: functions.php:183
 msgid "minutes"
 msgstr "minutes"
 
-#: functions.php:294
+#: functions.php:184
 msgid "second"
 msgstr "seconde"
 
-#: functions.php:294 functions.php:334
+#: functions.php:184 functions.php:224
 msgid "seconds"
 msgstr "secondes"
 
-#: functions.php:311
+#: functions.php:201
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:337
+#: functions.php:227
 #, php-format
-msgid "%s %s ago"
-msgstr "il y a %s %s"
+msgid "%s ago"
+msgstr "Il y a %s"
 
-#: functions/feedback.php:28
+#: functions/feedback.php:26
 msgid "at"
 msgstr "à"
 
-#: functions/feedback.php:30
+#: functions/feedback.php:28
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: functions/feedback.php:41
+#: functions/feedback.php:39
 msgid "Edit"
 msgstr "Éditer"
 
@@ -223,7 +211,7 @@ msgstr "Container pleine largeur"
 msgid "Css scheme"
 msgstr "Schéma CSS"
 
-#: functions/setup.php:82 functions/setup.php:126 functions/setup.php:236
+#: functions/setup.php:82 functions/setup.php:126 functions/setup.php:262
 msgid "Choose between scheme"
 msgstr "Choisissez un jeu de couleurs"
 
@@ -319,35 +307,35 @@ msgstr "Yéti"
 msgid "Navbar Color scheme"
 msgstr "Barre de navigation"
 
-#: functions/setup.php:132 functions/setup.php:242
+#: functions/setup.php:132 functions/setup.php:268
 msgid "Light scheme"
 msgstr "Jeu de couleurs clairs"
 
-#: functions/setup.php:133 functions/setup.php:243
+#: functions/setup.php:133 functions/setup.php:269
 msgid "Dark scheme"
 msgstr ""
 
-#: functions/setup.php:134 functions/setup.php:244
+#: functions/setup.php:134 functions/setup.php:270
 msgid "Primary scheme"
 msgstr ""
 
-#: functions/setup.php:135 functions/setup.php:245
+#: functions/setup.php:135 functions/setup.php:271
 msgid "Secondary scheme"
 msgstr ""
 
-#: functions/setup.php:136 functions/setup.php:246
+#: functions/setup.php:136 functions/setup.php:272
 msgid "Info scheme"
 msgstr ""
 
-#: functions/setup.php:137 functions/setup.php:247
+#: functions/setup.php:137 functions/setup.php:273
 msgid "Success scheme"
 msgstr ""
 
-#: functions/setup.php:138 functions/setup.php:248
+#: functions/setup.php:138 functions/setup.php:274
 msgid "Warning scheme"
 msgstr ""
 
-#: functions/setup.php:139 functions/setup.php:249
+#: functions/setup.php:139 functions/setup.php:275
 msgid "Danger scheme"
 msgstr ""
 
@@ -402,19 +390,43 @@ msgstr "Barres latérales gauche et droite"
 msgid "No sidebar"
 msgstr "Pas de barre latérale"
 
-#: functions/setup.php:204
+#: functions/setup.php:208
+msgid "Carousel / Favorite image"
+msgstr ""
+
+#: functions/setup.php:209
+msgid "Set carousel / image"
+msgstr "Ensemble carrousel / image"
+
+#: functions/setup.php:214
+msgid "Carousel and images on every pages"
+msgstr ""
+
+#: functions/setup.php:215
+msgid "Only image on pages"
+msgstr ""
+
+#: functions/setup.php:216
+msgid "Only carousel and images on posts"
+msgstr ""
+
+#: functions/setup.php:217
+msgid "No carousel or images"
+msgstr ""
+
+#: functions/setup.php:230
 msgid "Restore the native admin bar"
 msgstr "Restaurer la barre admin native"
 
-#: functions/setup.php:217
+#: functions/setup.php:243
 msgid "Remove the shadow of content box"
 msgstr "Supprimer l'ombre de la boîte de contenu"
 
-#: functions/setup.php:235
+#: functions/setup.php:261
 msgid "Networkbar Color scheme"
 msgstr "Jeu de couleurs de la barre de réseau"
 
-#: functions/setup.php:261
+#: functions/setup.php:287
 msgid "ptibogxivtheme"
 msgstr "ptibogxivtheme"
 
@@ -427,32 +439,48 @@ msgid "The right sidebar widget area"
 msgstr "Zone du widget latéral droit"
 
 #: functions/widgets.php:35
-msgid "Footer"
-msgstr "Pied de page"
+msgid "Payment Footer"
+msgstr "Pied de page de paiement"
 
 #: functions/widgets.php:37
-msgid "The footer widget area"
-msgstr "Zone du widget du pied de la  page"
+msgid "The payment footer widget area"
+msgstr "La zone widget de paiement"
 
-#: functions/widgets.php:48
+#: functions/widgets.php:45
+msgid "Address Footer"
+msgstr "Pied de page d'adresse"
+
+#: functions/widgets.php:47
+msgid "The address footer widget area"
+msgstr "La zone widget d'adresse"
+
+#: functions/widgets.php:58
 msgid "Top"
 msgstr "Top"
 
-#: functions/widgets.php:50
+#: functions/widgets.php:60
 msgid "The top widget area"
 msgstr "Zone du widget d'entête"
 
-#: functions/widgets.php:63
+#: functions/widgets.php:71
+msgid "Caroussel"
+msgstr "Carousel"
+
+#: functions/widgets.php:73
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
-#: header.php:93 loops/comments.php:49
+#: header.php:109
+msgid "Sign up"
+msgstr "Inscription"
+
+#: header.php:118 loops/comments.php:49
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: header.php:101
-msgid "Sign up"
-msgstr "Inscription"
+#: header.php:158
+msgid "Post on"
+msgstr "Publié le"
 
 #: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:395
 msgid "Check for updates"
@@ -596,10 +624,6 @@ msgstr ""
 msgid "Be the first to write a comment."
 msgstr "Soyez le premier à commenter."
 
-#: loops/comments.php:30
-msgid "Comments are closed."
-msgstr "Les commentaires sont fermés."
-
 #: loops/comments.php:37 loops/comments.php:66 loops/comments.php:67
 msgid "Your comment"
 msgstr "Votre commentaire"
@@ -717,6 +741,12 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Title:"
+#~ msgstr "Titre:"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Les commentaires sont fermés."
 
 #~ msgid "Comments are closed for this post."
 #~ msgstr "Les commentaires sont fermés pour ce post."

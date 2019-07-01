@@ -121,7 +121,7 @@ if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1'
   </div>
   </div>
 </nav>
-<?php if ( get_current_blog_id() == '3' && !is_singular( 'page' ) ) { ?>
+<?php if ( ! empty(get_site_option('ptibogxivtheme_carousel')) && !is_singular( 'page' ) ) { ?>
 <div class="bd-example">
 <?php if ( ! has_post_thumbnail() ) {
 $args = array( 
@@ -172,7 +172,7 @@ echo '</div>
 
 echo '</div>';
 
- } else { 
+ } elseif ( get_site_option('ptibogxivtheme_carousel') >= '2' ) { 
 echo '<img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'">';
 }?>
 </div>

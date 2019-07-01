@@ -6,7 +6,7 @@
 <?php if(! is_active_sidebar('payment-footer-widget-area') && function_exists('doliconst')){ ?>
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center><i class="fab fa-cc-visa fa-fw fa-3x"></i><i class="fab fa-cc-mastercard fa-fw fa-3x"></i><i class="fab fa-cc-amex fa-fw fa-3x"></i><i class="fab fa-cc-apple-pay fa-fw fa-3x"></i></center>
 <?php } else { 
-dynamic_sidebar('footer-widget-area'); }?></div>
+dynamic_sidebar('footer-widget-area'); }?>
 <br></div><div class="col-6 col-md-3">
 <strong><?php _e('Social networks', 'ptibogxivtheme'); ?></strong><center>
 <?php if (get_option('doliconnect_social_facebook')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_facebook');?>" class="btn btn-facebook btn-circle btn-lg" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a> <?php } ?>

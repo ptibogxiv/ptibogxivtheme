@@ -171,7 +171,7 @@ echo '</div>
 </div>';
 
 echo '</div>';
-} elseif ( get_theme_mod('ptibogxivtheme_carousel') >= '2' ) {
+} elseif ( has_post_thumbnail() && get_theme_mod('ptibogxivtheme_carousel') >= '2' ) {
 echo '<img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'">';
 }?>
 </div>

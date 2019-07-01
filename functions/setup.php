@@ -194,6 +194,32 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
 				)
 			) );
       
+    $wp_customize->add_setting( 'ptibogxivtheme_carousel', array(
+			'default'           => '0',
+			'type'              => 'theme_mod',
+			'sanitize_callback' => 'esc_textarea',
+			'capability'        => 'edit_theme_options',
+		) );
+
+		$wp_customize->add_control(
+			new WP_Customize_Control(
+				$wp_customize,
+				'ptibogxivtheme_carousel', array(
+					'label'       => __( 'Carousel / Favorite image', 'ptibogxivtheme' ),
+					'description' => __( "Set carousel / image", 'ptibogxivtheme' ),
+					'section'     => 'ptibogxivtheme_theme_layout_options',
+					'settings'    => 'ptibogxivtheme_carousel',
+					'type'        => 'select',
+					'choices'     => array(
+						'3' => __( 'Carousel and images on every pages', 'ptibogxivtheme' ),
+						'2'  => __( 'Only image on pages', 'ptibogxivtheme' ),
+						'1'  => __( 'Only carousel and images on posts', 'ptibogxivtheme' ),
+						'0'  => __( 'No carousel or images', 'ptibogxivtheme' ),
+					),
+					'priority'    => '50',
+				)
+			) );      
+      
     $wp_customize->add_setting( 'ptibogxivtheme_adminbar', array(
     'default'        => false,
     'capability'     => 'edit_theme_options'
@@ -204,7 +230,7 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
     'label'    => __( 'Restore the native admin bar', 'ptibogxivtheme' ),
     'section'  => 'ptibogxivtheme_theme_layout_options',
     'type'     => 'checkbox',
-    'priority'    => '50',
+    'priority'    => '60',
 ) );
 
     $wp_customize->add_setting( 'ptibogxivtheme_shadowcontent', array(
@@ -217,7 +243,7 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
     'label'    => __( 'Remove the shadow of content box', 'ptibogxivtheme' ),
     'section'  => 'ptibogxivtheme_theme_layout_options',
     'type'     => 'checkbox',
-    'priority'    => '60',
+    'priority'    => '70',
 ) );
  
 if (is_multisite()) {

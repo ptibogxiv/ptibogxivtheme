@@ -123,7 +123,7 @@ if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1'
 </nav>
 <?php if ( ! empty(get_theme_mod('ptibogxivtheme_carousel')) ) { ?>
 <div class="bd-example">
-<?php if ( ! has_post_thumbnail() && get_theme_mod('ptibogxivtheme_carousel') != '2' && !is_singular( 'page' ) ) {
+<?php if ( ! has_post_thumbnail() && get_theme_mod('ptibogxivtheme_carousel') != '2' && (is_home() || !is_singular( 'page' )) ) {
 $args = array( 
             'posts_per_page' => 5,
             'post_status'    => 'publish',

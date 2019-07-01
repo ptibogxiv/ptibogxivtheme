@@ -32,7 +32,7 @@ function ptibogxivtheme_widgets_init() {
   Footer (three widget areas)
    */
   register_sidebar( array(
-    'name'            => __( 'Footer', 'ptibogxivtheme' ),
+    'name'            => __( 'Payment Footer', 'ptibogxivtheme' ),
     'id'              => 'payment-footer-widget-area',
     'description'     => __( 'The payment footer widget area', 'ptibogxivtheme' ),
     'before_widget'   => '<div class="%1$s %2$s">',
@@ -42,7 +42,7 @@ function ptibogxivtheme_widgets_init() {
   ) );
     
   register_sidebar( array(
-    'name'            => __( 'Footer', 'ptibogxivtheme' ),
+    'name'            => __( 'Address Footer', 'ptibogxivtheme' ),
     'id'              => 'address-footer-widget-area',
     'description'     => __( 'The address footer widget area', 'ptibogxivtheme' ),
     'before_widget'   => '<div class="%1$s %2$s">',

@@ -6,7 +6,7 @@
 <?php if(! is_active_sidebar('payment-footer-widget-area') && function_exists('doliconst')){ ?>
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center><i class="fab fa-cc-visa fa-fw fa-3x"></i><i class="fab fa-cc-mastercard fa-fw fa-3x"></i><i class="fab fa-cc-amex fa-fw fa-3x"></i><i class="fab fa-cc-apple-pay fa-fw fa-3x"></i></center>
 <?php } else { 
-dynamic_sidebar('footer-widget-area'); }?>
+dynamic_sidebar('payment-footer-widget-area'); }?>
 <br></div><div class="col-6 col-md-3">
 <strong><?php _e('Social networks', 'ptibogxivtheme'); ?></strong><center>
 <?php if (get_option('doliconnect_social_facebook')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_facebook');?>" class="btn btn-facebook btn-circle btn-lg" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a> <?php } ?>
@@ -28,7 +28,7 @@ echo doliconst('MAIN_INFO_SOCIETE_ZIP');
 echo " ";
 echo doliconst('MAIN_INFO_SOCIETE_TOWN');
 } else { 
-dynamic_sidebar('footer-widget-area'); }?></div>
+dynamic_sidebar('address-footer-widget-area'); }?></div>
 <div class="col-6"><ul class="fa-ul">
 <?php if (get_site_option('dolibarr_public_url')) { ?><li><span class="fa-li"><i class="fas fa-lock"></i></span><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" class="text-info" target="_dolibarr"><?php } ?>Dolibarr<?php if (current_user_can( 'administrator' )) { ?></a><?php } ?></li><?php } ?>
 <li><span class="fa-li"><i class="fas fa-lock"></i></span><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><a href="https://webmail.ptibogxiv.net" class="text-info" target="_webmail"><?php } ?>Webmail<?php if (current_user_can( 'administrator' )) { ?></a><?php } ?></li>

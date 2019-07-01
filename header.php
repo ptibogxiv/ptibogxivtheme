@@ -121,9 +121,9 @@ if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1'
   </div>
   </div>
 </nav>
-<?php if ( ! empty(get_theme_mod('ptibogxivtheme_carousel')) && get_theme_mod('ptibogxivtheme_carousel') != '2' && !is_singular( 'page' ) ) { ?>
+<?php if ( ! empty(get_theme_mod('ptibogxivtheme_carousel')) ) { ?>
 <div class="bd-example">
-<?php if ( ! has_post_thumbnail() ) {
+<?php if ( ! has_post_thumbnail() && get_theme_mod('ptibogxivtheme_carousel') != '2' && !is_singular( 'page' ) ) {
 $args = array( 
             'posts_per_page' => 5,
             'post_status'    => 'publish',

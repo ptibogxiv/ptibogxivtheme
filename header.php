@@ -47,13 +47,12 @@ foreach( $subsites as $subsite ) {
 <?php } ?>
 </ul>
 </div>
-</div><?php } ?>
-<?php if (get_header_image()){ ?> 
-<img class="d-block w-100 img-fluid" src="<?php header_image(); ?>" alt="banner logo">
-<?php }
+</div><?php }
 if (! empty(get_theme_mod( 'ptibogxivtheme_header')) ) { ?>
 <div class="header"><div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>">
 <?php the_custom_logo(); ?></div></div>
+<?php } elseif (get_header_image()) { ?> 
+<img class="d-block w-100 img-fluid" src="<?php header_image(); ?>" alt="banner logo">
 <?php } ?>
 <nav class="navbar sticky-top navbar-expand-md <?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )); ?>"> 
 <div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>"><?php

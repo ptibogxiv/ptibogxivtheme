@@ -50,12 +50,14 @@ foreach( $subsites as $subsite ) {
 </div><?php } ?>
 <?php if (get_header_image()){ ?> 
 <img class="d-block w-100 img-fluid" src="<?php header_image(); ?>" alt="banner logo">
-<?php } ?>
+<?php }
+if (! empty(get_theme_mod( 'ptibogxivtheme_header')) ) { ?>
 <div class="header"><div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>">
 <?php the_custom_logo(); ?></div></div>
+<?php } ?>
 <nav class="navbar sticky-top navbar-expand-md <?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )); ?>"> 
 <div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>"><?php
-  if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode') {
+if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode') {
 ?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><span class="fas fa-home fa-fw fa-1x"></span></a> 
 <?php } 
 elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode') {

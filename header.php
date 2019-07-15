@@ -46,11 +46,12 @@ foreach( $subsites as $subsite ) {
 <li class="nav-item"><small><a class="nav-link text-white <?php if (get_current_blog_id()==$subsite_id){ echo "active"; } ?>" href="<?php echo $subsite_url; ?>"><?php echo $subsite_name; ?></a></small></li>
 <?php } ?>
 </ul>
-</div>
-</div><?php }
-if (! empty(get_theme_mod( 'ptibogxivtheme_header')) ) { ?>
-<div class="header"><div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>">
-<?php the_custom_logo(); ?></div></div>
+</div></div><?php }
+if ( get_current_blog_id() == 1 || get_header_image()) { //! empty(get_theme_mod( 'ptibogxivtheme_header')) ?>
+<div class="text-dark d-none d-md-block" style="height:15vh;background:url('<?php header_image(); ?>')">
+<div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>">
+<div class="row"><div class="col-auto"><?php the_custom_logo(); ?></div><div class="col-auto "><span class="align-middle"><h2 class="text-white align-middle"><?php bloginfo('description'); ?></h2></span></div></div>
+</div></div>
 <?php } elseif (get_header_image()) { ?> 
 <img class="d-block w-100 img-fluid" src="<?php header_image(); ?>" alt="banner logo">
 <?php } ?>

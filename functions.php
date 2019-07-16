@@ -65,7 +65,7 @@ add_theme_support( 'custom-header', array(
 add_theme_support( 'custom-logo', array(
 	'height'      => 80,
 	'width'       => 200,
-	'flex-height' => true,
+	'flex-height' => false,
 	'flex-width'  => true,
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
@@ -75,7 +75,7 @@ function theme_prefix_setup() {
 add_theme_support( 'custom-logo', array(
 	'height'      => 80,
 	'width'       => 200,
-	'flex-height' => true,
+	'flex-height' => false,
 	'flex-width'  => true,
 	) );
 

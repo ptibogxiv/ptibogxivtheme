@@ -50,7 +50,11 @@ foreach( $subsites as $subsite ) {
 if ( get_current_blog_id() == 1 || get_header_image()) { //! empty(get_theme_mod( 'ptibogxivtheme_header')) ?>
 <div class="text-dark d-none d-md-block" style="height:15vh;background:url('<?php header_image(); ?>')">
 <div class="h-auto align-middle <?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>">
-<div class="mh-100 float-right"><p>Contact</p></div><br>
+<div class="mh-100 float-right"><p><?php if ( function_exists('doliconnecturl') && doliconnectid('dolicontact') > 0 ) { 
+?>
+<a href="<?php echo doliconnecturl('dolicontact'); ?>" title="<?php _e('Contact us', 'ptibogxivtheme'); ?>"><?php _e('Contact us', 'ptibogxivtheme'); ?></a> 
+<?php
+} ?></p></div><br>
 <div class="mh-100"><table class="mh-100"><tr><td class="align-middle"><?php the_custom_logo(); ?></td><td class="align-middle"><h2 class="text-white"><?php bloginfo('description'); ?></h2></td></tr></table></div>
 </div></div>
 <?php } elseif (get_header_image()) { ?> 

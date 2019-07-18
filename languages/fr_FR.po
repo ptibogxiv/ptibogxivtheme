@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2019-07-01 20:06+0200\n"
-"PO-Revision-Date: 2019-07-01 20:07+0200\n"
+"POT-Creation-Date: 2019-07-18 16:48+0200\n"
+"PO-Revision-Date: 2019-07-18 16:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -46,7 +46,7 @@ msgstr "Réseaux sociaux"
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
 
-#: footer.php:40 footer.php:70 header.php:84
+#: footer.php:40 footer.php:70 header.php:93
 msgid "Choose language"
 msgstr "Choisissez une langue"
 
@@ -66,15 +66,15 @@ msgstr "Hébergement & Thème par"
 msgid "Theme by"
 msgstr "Thème par"
 
-#: footer.php:74 header.php:113 header.php:115
+#: footer.php:74 header.php:123 header.php:125
 msgid "Sign in"
 msgstr "Connexion"
 
-#: footer.php:76 header.php:90
+#: footer.php:76 header.php:100
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:78 header.php:94
+#: footer.php:78 header.php:104
 msgid "Basket"
 msgstr "Panier"
 
@@ -86,67 +86,67 @@ msgstr "Changer de langue"
 msgid "Loading"
 msgstr "Chargement"
 
-#: functions.php:178
+#: functions.php:179
 msgid "year"
 msgstr "an"
 
-#: functions.php:178
+#: functions.php:179
 msgid "years"
 msgstr "ans"
 
-#: functions.php:179
+#: functions.php:180
 msgid "month"
 msgstr "mois"
 
-#: functions.php:179
+#: functions.php:180
 msgid "months"
 msgstr "mois"
 
-#: functions.php:180
+#: functions.php:181
 msgid "week"
 msgstr "semaine"
 
-#: functions.php:180
+#: functions.php:181
 msgid "weeks"
 msgstr "semaines"
 
-#: functions.php:181
+#: functions.php:182
 msgid "day"
 msgstr "jour"
 
-#: functions.php:181
+#: functions.php:182
 msgid "days"
 msgstr "jours"
 
-#: functions.php:182
+#: functions.php:183
 msgid "hour"
 msgstr "heure"
 
-#: functions.php:182
+#: functions.php:183
 msgid "hours"
 msgstr "heures"
 
-#: functions.php:183
+#: functions.php:184
 msgid "minute"
 msgstr "minute"
 
-#: functions.php:183
+#: functions.php:184
 msgid "minutes"
 msgstr "minutes"
 
-#: functions.php:184
+#: functions.php:185
 msgid "second"
 msgstr "seconde"
 
-#: functions.php:184 functions.php:224
+#: functions.php:185 functions.php:225
 msgid "seconds"
 msgstr "secondes"
 
-#: functions.php:201
+#: functions.php:202
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:227
+#: functions.php:228
 #, php-format
 msgid "%s ago"
 msgstr "Il y a %s"
@@ -392,7 +392,7 @@ msgstr "Pas de barre latérale"
 
 #: functions/setup.php:208
 msgid "Carousel / Favorite image"
-msgstr ""
+msgstr "Carrousel / Image préférée"
 
 #: functions/setup.php:209
 msgid "Set carousel / image"
@@ -470,15 +470,19 @@ msgstr "Carousel"
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
-#: header.php:109
+#: header.php:55
+msgid "Contact us"
+msgstr "Contactez-nous"
+
+#: header.php:119
 msgid "Sign up"
 msgstr "Inscription"
 
-#: header.php:118 loops/comments.php:49
+#: header.php:128 loops/comments.php:49
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: header.php:158
+#: header.php:168
 msgid "Post on"
 msgstr "Publié le"
 

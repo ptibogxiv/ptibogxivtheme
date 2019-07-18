@@ -43,7 +43,7 @@ foreach( $subsites as $subsite ) {
   $subsite_id = get_object_vars($subsite)["blog_id"];
   $subsite_name = get_blog_details($subsite_id)->blogname;
   $subsite_url = get_blog_details($subsite_id)->siteurl; ?>
-<li class="nav-item"><small><a class="nav-link text-white <?php if (get_current_blog_id()==$subsite_id){ echo "active"; } ?>" href="<?php echo $subsite_url; ?>"><?php echo $subsite_name; ?></a></small></li>
+<li class="nav-item"><small><a class="nav-link text-white <?php if ( get_current_blog_id()==$subsite_id ) { echo "active"; } ?>" href="<?php echo $subsite_url; ?>"><?php echo $subsite_name; ?></a></small></li>
 <?php } ?>
 </ul>
 </div></div><?php }

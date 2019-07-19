@@ -62,13 +62,13 @@ if ( get_current_blog_id() == 1 || get_header_image()) { //! empty(get_theme_mod
 <?php } ?>
 <nav class="navbar sticky-top navbar-expand-md <?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )); ?>"> 
 <div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>"><?php
-if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode') {
+if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode' && !get_header_image()) {
 ?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><span class="fas fa-home fa-fw fa-1x"></span></a> 
 <?php } 
-elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode') {
+elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode' && !get_header_image()) {
 the_custom_logo(); ?>&nbsp;<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a> 
 <?php }
-elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'logo_mode') {
+elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'logo_mode' && !get_header_image()) {
 the_custom_logo(); ?>
 <?php } else {
 ?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a><?php

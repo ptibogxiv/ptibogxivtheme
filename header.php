@@ -62,7 +62,7 @@ if ( ! empty(get_theme_mod( 'ptibogxivtheme_header'))) { //! empty(get_theme_mod
 <?php } ?>
 <nav class="navbar sticky-top navbar-expand-md <?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )); ?>"> 
 <div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>"><?php
-if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode' && (! empty(get_theme_mod( 'ptibogxivtheme_header')) || get_header_image()) {
+if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode' && (! empty(get_theme_mod( 'ptibogxivtheme_header')) || get_header_image())) {
 ?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><div class='d-block d-sm-block d-xs-block d-md-none'><?php bloginfo('name'); ?></div><div class='d-none d-md-block'><i class='fas fa-home'></i></div></a> 
 <?php } 
 elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode' && !get_header_image()) {

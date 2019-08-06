@@ -63,7 +63,7 @@ if ( get_current_blog_id() == 1 || get_header_image()) { //! empty(get_theme_mod
 <nav class="navbar sticky-top navbar-expand-md <?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )); ?>"> 
 <div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>"><?php
 if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode' && !get_header_image()) {
-?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><span class="fas fa-home fa-fw fa-1x"></span></a> 
+?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><div class='d-block d-sm-block d-xs-block d-md-none'><?php bloginfo('name'); ?></div><div class='d-none d-md-block'><i class='fas fa-home'></i></div></a> 
 <?php } 
 elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode' && !get_header_image()) {
 the_custom_logo(); ?>&nbsp;<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a> 

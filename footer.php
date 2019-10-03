@@ -119,7 +119,7 @@ jQuery('#loadingSelectLang').show();
 $translations = pll_the_languages( array( 'raw' => 1 ) );
 foreach ($translations as $key => $value) {
 ?>
-<a href='<?php echo $value['url'].$_SERVER["QUERY_STRING"]; ?>' onclick='loadingSelectLangModal()' class='list-group-item list-group-item-action list-group-item-light'>
+<a href='<?php echo $value['url']."?".$_SERVER["QUERY_STRING"]; ?>' onclick='loadingSelectLangModal()' class='list-group-item list-group-item-action list-group-item-light'>
 <img src='<?php echo $value['flag']; ?>' class='img-fluid' alt='<?php echo $value['name']; ?>'> <?php echo $value['name']; ?> <?php if ( $value['current_lang'] == true ) { ?><i class='fas fa-language fa-fw'></i><?php } ?>
 </a>
 <?php

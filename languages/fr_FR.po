@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2019-07-18 16:48+0200\n"
-"PO-Revision-Date: 2019-07-18 16:49+0200\n"
+"POT-Creation-Date: 2019-10-12 22:24+0200\n"
+"PO-Revision-Date: 2019-10-12 22:25+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -77,14 +77,6 @@ msgstr "Mon compte"
 #: footer.php:78 header.php:104
 msgid "Basket"
 msgstr "Panier"
-
-#: footer.php:108
-msgid "Change language"
-msgstr "Changer de langue"
-
-#: footer.php:129
-msgid "Loading"
-msgstr "Chargement"
 
 #: functions.php:179
 msgid "year"
@@ -400,19 +392,19 @@ msgstr "Ensemble carrousel / image"
 
 #: functions/setup.php:214
 msgid "Carousel and images on every pages"
-msgstr ""
+msgstr "Carrousel et images sur toutes les pages"
 
 #: functions/setup.php:215
 msgid "Only image on pages"
-msgstr ""
+msgstr "Seule image sur les pages"
 
 #: functions/setup.php:216
 msgid "Only carousel and images on posts"
-msgstr ""
+msgstr "Carrousel et images seulement sur les articles"
 
 #: functions/setup.php:217
 msgid "No carousel or images"
-msgstr ""
+msgstr "Pas de carrousel ou d'images"
 
 #: functions/setup.php:230
 msgid "Restore the native admin bar"
@@ -528,95 +520,116 @@ msgstr "Aucun registre de modifications disponible."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:204
 msgid "Sorry, you are not allowed to access this page."
-msgstr ""
+msgstr "Désolé, vous n'êtes pas autorisé à accéder à cette page."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:251
 msgid "Theme License - "
-msgstr ""
+msgstr "Licence du thème - "
 
 #: lib/wp-package-updater/class-wp-package-updater.php:406
 msgid ""
 "Unexpected Error! The query to retrieve the license data returned a "
 "malformed response."
 msgstr ""
+"Erreur inattendue! La requête pour récupérer les données de licence a "
+"renvoyé une réponse mal formée."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:424
 msgid "The license is already in use for this domain."
-msgstr ""
+msgstr "La licence est déjà utilisée pour ce domaine."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:427
 msgid ""
 "The license has reached the maximum number of activations and cannot be "
 "activated for this domain."
 msgstr ""
+"La licence a atteint le nombre maximal d'activations et ne peut pas être "
+"activée pour ce domaine."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:433
 msgid "The license is already inactive for this domain."
-msgstr ""
+msgstr "La licence est déjà inactive pour ce domaine."
 
 #. translators: the license expiry date
 #: lib/wp-package-updater/class-wp-package-updater.php:444
 #, php-format
 msgid "The license expired on %s and needs to be renewed to be updated."
 msgstr ""
+"La licence a expiré sur %s et doit être renouvelée pour être mise à jour."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:448
 msgid "The license expired and needs to be renewed to be updated."
-msgstr ""
+msgstr "La licence a expiré et doit être renouvelée pour être mise à jour."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:454
 msgid ""
 "The license is blocked and cannot be updated anymore. Please use another "
 "license key."
 msgstr ""
+"La licence est bloquée et ne peut plus être mise à jour. Veuillez utiliser "
+"une autre clé de licence."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:460
 msgid ""
 "The license has not been activated and its status is stil pending. Please "
 "try again or use another license key."
 msgstr ""
+"La licence n'a pas été activée et son statut est stil en attente. Veuillez "
+"réessayer ou utiliser une autre clé de licence."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:466
 msgid "The provided license key is invalid. Please use another license key."
 msgstr ""
+"La clé de licence fournie n'est pas valide. Veuillez utiliser une autre clé "
+"de licence."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:469
 msgid ""
 "The provided license key does not appear to be valid. Please use another "
 "license key."
 msgstr ""
+"La clé de licence fournie ne semble pas valide. Veuillez utiliser une autre "
+"clé de licence."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:473
 msgid ""
 "An active license is required to update the plugin. Please provide a valid "
 "license key in Plugins > Installed Plugins."
 msgstr ""
+"Une licence active est nécessaire pour mettre à jour le plugin. S'il vous "
+"plaît fournir une clé de licence valide dans plugins > plugins installés."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:475
 msgid ""
 "An active license is required to update the theme. Please provide a valid "
 "license key in Appearence > Theme License."
 msgstr ""
+"Une licence active est nécessaire pour mettre à jour le thème. Veuillez "
+"fournir une clé de licence valide dans apparence > licence thème."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:481
 msgid ""
 "An unexpected error has occured. Please try again. If the problem persists, "
 "please contact the author of the plugin."
 msgstr ""
+"Une erreur inattendue s'est produite. Veuillez réessayer. Si le problème "
+"persiste, veuillez contacter l'auteur du plugin."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:483
 msgid ""
 "An unexpected error has occured. Please try again. If the problem persists, "
 "please contact the author of the theme."
 msgstr ""
+"Une erreur inattendue s'est produite. Veuillez réessayer. Si le problème "
+"persiste, veuillez contacter l'auteur du thème."
 
 #: lib/wp-package-updater/templates/license-form.php:6
 msgid "Current license key:"
-msgstr ""
+msgstr "Clé de licence actuelle:"
 
 #: lib/wp-package-updater/templates/license-form.php:9
 msgid "License key to change:"
-msgstr ""
+msgstr "Clé de licence à changer:"
 
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
@@ -745,6 +758,12 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Change language"
+#~ msgstr "Changer de langue"
+
+#~ msgid "Loading"
+#~ msgstr "Chargement"
 
 #~ msgid "Title:"
 #~ msgstr "Titre:"

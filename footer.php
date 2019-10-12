@@ -99,37 +99,6 @@ if(function_exists('doliconst')){ ?>
 <p>Responsable de la publication : <?php echo doliconst('MAIN_INFO_SOCIETE_MANAGERS'); ?></p>
 <p><strong>Conception et Hébergement</strong><br />ptibogxiv.net<br />1 rue de la grande brasserie, 59000 LILLE<br />www.ptibogxiv.net<br />SIRET: 83802482600011 - APE6201Z</p>
 </div></div></div></div>
-<?php }
-if (function_exists('pll_the_languages')) {       
-?> 
-<div class="modal fade" id="SelectLang" tabindex="-1" role="dialog" aria-labelledby="SelectLangLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-<div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-<div class="modal-content border-0"><div class="modal-header border-0">
-<h5 class="modal-title" id="SelectLangLabel"><?php _e('Change language', 'ptibogxivtheme'); ?></h5><button id="closemodalSelectLang" type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span></button></div> 
-<script>
-function loadingSelectLangModal() {
-jQuery('#closemodalSelectLang').hide();
-jQuery('#SelectLangmodal-form').hide();
-jQuery('#loadingSelectLang').show();  
-}
-</script>
-<div class="modal-body"><div class="card" id="SelectLangmodal-form"><ul class="list-group list-group-flush">
-<?php  
-$translations = pll_the_languages( array( 'raw' => 1 ) );
-foreach ($translations as $key => $value) {
-?>
-<a href='<?php echo $value['url']."?".$_SERVER["QUERY_STRING"]; ?>' onclick='loadingSelectLangModal()' class='list-group-item list-group-item-action list-group-item-light'>
-<img src='<?php echo $value['flag']; ?>' class='img-fluid' alt='<?php echo $value['name']; ?>'> <?php echo $value['name']; ?> <?php if ( $value['current_lang'] == true ) { ?><i class='fas fa-language fa-fw'></i><?php } ?>
-</a>
-<?php
-}      
-?>
-</ul></div>
-<div id="loadingSelectLang" style="display:none"><br><br><br><br><center><div class="align-middle"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div><h4><?php _e('Loading', 'ptibogxivtheme'); ?></h4></div></center><br><br><br><br></div>
-</div></div></div></div>
-<?php
-}      
-?> 
+<?php } ?> 
 </body>
 </html>

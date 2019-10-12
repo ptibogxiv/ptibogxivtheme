@@ -37,7 +37,7 @@ dynamic_sidebar('address-footer-widget-area'); }?></div>
 <li><span class="fa-li"><i class="fas fa-info-circle"></i></span><a href="#" class="text-info" data-toggle="modal" data-target="#cgvumention">C.G.U.</a></li>
 </ul></div></div></div><div class="col-6">
 <?php if (function_exists('pll_the_languages')) { ?>       
-<a href="#" data-toggle="modal" data-target="#SelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><?php echo pll_current_language('flag');?> <?php echo pll_current_language('name');?></a>
+<a href="#" data-toggle="modal" data-target="#DoliconnectSelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><?php echo pll_current_language('flag');?> <?php echo pll_current_language('name');?></a>
 <?php } ?>
 </div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none"><?php _e('Kiosk mode ON', 'ptibogxivtheme'); ?> <i class="fas fa-desktop"></i></div>
 <?php 

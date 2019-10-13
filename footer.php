@@ -3,10 +3,10 @@
 <br>
 <div class="row">
 <div class="col-6 col-md-3">
-<?php if(! is_active_sidebar('payment-footer-widget-area') && function_exists('doliconst')){ ?>
+<?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('doliconst')) { ?>
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center><i class="fab fa-cc-visa fa-fw fa-3x"></i><i class="fab fa-cc-mastercard fa-fw fa-3x"></i><i class="fab fa-cc-amex fa-fw fa-3x"></i><i class="fab fa-cc-apple-pay fa-fw fa-3x"></i></center>
 <?php } else { 
-dynamic_sidebar('payment-footer-widget-area'); }?>
+dynamic_sidebar('payment-footer-widget-area'); } ?>
 <br></div><div class="col-6 col-md-3">
 <strong><?php _e('Social networks', 'ptibogxivtheme'); ?></strong><center>
 <?php if (get_option('doliconnect_social_facebook')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_facebook');?>" class="btn btn-facebook btn-circle btn-lg" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a> <?php } ?>
@@ -79,7 +79,7 @@ if ( !is_user_logged_in() && function_exists('doliconnect_modal') && get_option(
 <?php //} ?>
 </footer>
 <?php wp_footer();
-if(function_exists('doliconst')){ ?>
+if ( function_exists('doliconst') ) { ?>
 <div class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-header">
 <h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Privacy Policy', 'ptibogxivtheme'); ?></h5>
 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>

@@ -8,7 +8,7 @@ $css='';
 $version='4.4.0'; 
 } else {
 $css='bootswatch/'.get_theme_mod( 'ptibogxivtheme_css').'/';
-$version='4.3.1';  
+$version='4.4.0';  
 }
  
 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/theme/css/'.$css.'bootstrap.min.css', array(), $version);

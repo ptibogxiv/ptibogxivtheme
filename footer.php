@@ -79,21 +79,24 @@ if ( !is_user_logged_in() && function_exists('doliconnect_modal') && get_option(
 <?php //} ?>
 </footer>
 <?php wp_footer();
-if ( function_exists('doliconst') ) { ?>
+if ( function_exists('callDoliApi') ) { 
+$company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)))
+?>
 <div class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-header">
-<h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Privacy Policy', 'ptibogxivtheme'); ?></h5>
+<h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Legacy', 'ptibogxivtheme'); ?></h5>
 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
 <div class="modal-body">
 <p class="text-justify">En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé, aux utilisateurs du présent site, l'identité des différents intervenants.</p>
 <p><strong>Editeur</strong><br />
-<?php echo doliconst('MAIN_INFO_SOCIETE_NOM'); ?><br />
-<?php echo doliconst('MAIN_INFO_SOCIETE_ADDRESS'); ?><br />
-<?php echo doliconst('MAIN_INFO_SOCIETE_ZIP'); ?> <?php echo doliconst('MAIN_INFO_SOCIETE_TOWN'); ?>
-<?php if (!empty(doliconst('MAIN_INFO_SIRET'))) {?><br />SIRET: <?php echo doliconst('MAIN_INFO_SIRET'); ?> - APE<?php echo doliconst('MAIN_INFO_APE'); ?><?php }?>
-<?php if (!empty(doliconst('MAIN_INFO_RCS'))) {?><br />RCS: <?php echo doliconst('MAIN_INFO_RCS'); ?><?php }?>
-<?php if (!empty(doliconst('MAIN_INFO_TVAINTRA'))) {?><br />TVA: <?php echo doliconst('MAIN_INFO_TVAINTRA'); ?><?php }?>
-<?php if (!empty(doliconst('MAIN_INFO_SOCIETE_NOTE'))) {?><br /><?php echo doliconst('MAIN_INFO_SOCIETE_NOTE'); ?><?php }?></p>
-<p>Responsable de la publication : <?php echo doliconst('MAIN_INFO_SOCIETE_MANAGERS'); ?></p>
+<?php echo $company->name; ?><br />
+<?php echo $company->address; ?><br />
+<?php echo $company->zip; ?> <?php echo $company->town; ?>
+<?php echo $company->country; ?><br />
+<?php if (!empty($company->idprof2)) {?><br />SIRET: <?php echo $company->idprof2; ?> - APE<?php echo $company->idprof3; ?><?php }?>
+<?php if (!empty($company->idprof4)) {?><br />RCS: <?php echo $company->idprof4; ?><?php }?>
+<?php if (!empty($company->tva_assuj)) {?><br />TVA: <?php echo $company->tva_intra; ?><?php }?>
+<?php if (!empty($company->note_private)) {?><br /><?php echo $company->note_private; ?><?php }?></p>
+<p>Responsable de la publication : <?php echo $company->managers; ?></p>
 <p><strong>Conception et Hébergement</strong><br />ptibogxiv.net<br />1 rue de la grande brasserie, 59000 LILLE<br />www.ptibogxiv.net<br />SIRET: 83802482600011 - APE6201Z</p>
 </div></div></div></div>
 <?php } ?> 

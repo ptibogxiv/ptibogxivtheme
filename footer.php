@@ -3,7 +3,7 @@
 <br>
 <div class="row">
 <div class="col-6 col-md-3">
-<?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('doliconst')) { ?>
+<?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('callDoliApi')) { ?>
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center><i class="fab fa-cc-visa fa-fw fa-3x"></i><i class="fab fa-cc-mastercard fa-fw fa-3x"></i><i class="fab fa-cc-amex fa-fw fa-3x"></i><i class="fab fa-cc-apple-pay fa-fw fa-3x"></i></center>
 <?php } else { 
 dynamic_sidebar('payment-footer-widget-area'); } ?>
@@ -21,12 +21,13 @@ dynamic_sidebar('payment-footer-widget-area'); } ?>
 </center><br></div><div class="col-12 col-md-6">
 <strong><?php bloginfo('description'); ?></strong>
 <div class="row"><div class="col-6">
-<?php if(! is_active_sidebar('address-footer-widget-area') && function_exists('doliconst')){
-echo doliconst('MAIN_INFO_SOCIETE_ADDRESS');
-echo "<BR />";
-echo doliconst('MAIN_INFO_SOCIETE_ZIP');
-echo " ";
-echo doliconst('MAIN_INFO_SOCIETE_TOWN');
+<?php if(! is_active_sidebar('address-footer-widget-area') && function_exists('callDoliApi')){
+$company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)))
+?>
+<?php echo $company->name; ?><br>
+<?php echo $company->address; ?><br>
+<?php echo $company->zip; ?> <?php echo $company->town; ?>
+<?php echo $company->country;
 } else { 
 dynamic_sidebar('address-footer-widget-area'); }?></div>
 <div class="col-6"><ul class="fa-ul">

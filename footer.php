@@ -22,7 +22,7 @@ dynamic_sidebar('payment-footer-widget-area'); } ?>
 <strong><?php bloginfo('description'); ?></strong>
 <div class="row"><div class="col-6">
 <?php if(! is_active_sidebar('address-footer-widget-area') && function_exists('callDoliApi')){
-$company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)))
+$company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
 <?php echo $company->name; ?><br>
 <?php echo $company->address; ?><br>
@@ -81,7 +81,7 @@ if ( !is_user_logged_in() && function_exists('doliconnect_modal') && get_option(
 </footer>
 <?php wp_footer();
 if ( function_exists('callDoliApi') ) { 
-$company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)))
+$company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
 <div class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-header">
 <h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Legacy', 'ptibogxivtheme'); ?></h5>

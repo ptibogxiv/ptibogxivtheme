@@ -26,7 +26,7 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 ?>
 <?php echo $company->name; ?><br>
 <?php echo $company->address; ?><br>
-<?php echo $company->zip; ?> <?php echo $company->town; ?>
+<?php echo $company->zip; ?> <?php echo $company->town; ?><br>
 <?php echo $company->country;
 } else { 
 dynamic_sidebar('address-footer-widget-area'); }?></div>
@@ -88,17 +88,17 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
 <div class="modal-body">
 <p class="text-justify">En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé, aux utilisateurs du présent site, l'identité des différents intervenants.</p>
-<p><strong>Editeur</strong><br />
-<?php echo $company->name; ?><br />
-<?php echo $company->address; ?><br />
-<?php echo $company->zip; ?> <?php echo $company->town; ?>
-<?php echo $company->country; ?><br />
-<?php if (!empty($company->idprof2)) {?><br />SIRET: <?php echo $company->idprof2; ?> - APE<?php echo $company->idprof3; ?><?php }?>
-<?php if (!empty($company->idprof4)) {?><br />RCS: <?php echo $company->idprof4; ?><?php }?>
-<?php if (!empty($company->tva_assuj)) {?><br />TVA: <?php echo $company->tva_intra; ?><?php }?>
-<?php if (!empty($company->note_private)) {?><br /><?php echo $company->note_private; ?><?php }?></p>
+<p><strong>Editeur</strong><br>
+<?php echo $company->name; ?><br>
+<?php echo $company->address; ?><br>
+<?php echo $company->zip; ?> <?php echo $company->town; ?><br>
+<?php echo $company->country; ?><br>
+<?php if (!empty($company->idprof2)) {?><br>SIRET: <?php echo $company->idprof2; ?> - APE<?php echo $company->idprof3; ?><?php }?>
+<?php if (!empty($company->idprof4)) {?><br>RCS: <?php echo $company->idprof4; ?><?php }?>
+<?php if (!empty($company->tva_assuj)) {?><br>TVA: <?php echo $company->tva_intra; ?><?php }?>
+<?php if (!empty($company->note_private)) {?><br><?php echo $company->note_private; ?><?php }?></p>
 <p><b>Responsable de la publication:</b> <?php echo $company->managers; ?></p>
-<p><strong>Conception et Hébergement</strong><br />ptibogxiv.net<br />1 rue de la grande brasserie, 59000 LILLE<br />www.ptibogxiv.net<br />SIRET: 83802482600011 - APE6201Z</p>
+<p><strong>Conception et Hébergement</strong><br>ptibogxiv.net<br>1 rue de la grande brasserie, 59000 LILLE<br>www.ptibogxiv.net<br>SIRET: 83802482600011 - APE6201Z</p>
 </div></div></div></div>
 <?php } ?> 
 </body>

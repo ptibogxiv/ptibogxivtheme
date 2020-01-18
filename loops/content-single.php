@@ -5,29 +5,29 @@ The Single Posts Loop
 */
 ?>
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
-<ARTICLE role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
-<DIV class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="background-color: rgba(256, 256, 256, 0.8)">
-<?php if ( has_post_thumbnail() ){ ?><CENTER><IMG class="card-img-top" src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ); ?>" alt="<?php the_title()?>"></CENTER><?php } ?>
-<DIV class="card-body">
-<HEADER><TABLE width="100%"><TR><TD><H1><?php the_title()?> <?php edit_post_link('<I class="fas fa-edit"></I>', '<SPAN class="edit-link">', '</SPAN>' ); ?></H1>
-<H5><EM><SPAN class="text-muted author"><?php _e('By', 'ptibogxivtheme'); echo " "; the_author() ?>, </SPAN>
-<TIME class="text-muted" datetime="<?php the_time()?>"> <?php the_time('d F Y') ?></TIME>
-</EM></H5></TD><TD align="right"><DIV class="fa-4x text-muted"><SPAN class="fa-layers fa-fw"><I class="fas fa-comment"></I><SPAN class="fa-layers-text fa-inverse" data-fa-transform="shrink-8" style="font-weight:900"><?php comments_number('0', '1', '%'); ?></SPAN></SPAN></DIV></P>
-</TD></TR></TABLE>
-<HR><P class="text-muted" style="margin-bottom: 30px;">
-        <I class="fas fa-folder"></I>&nbsp;
-        <?php the_category(', ') ?></P>
+<article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
+<div class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="background-color: rgba(256, 256, 256, 0.8)">
+<?php if ( has_post_thumbnail() ){ ?><img class="card-img-top" src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ); ?>" alt="<?php the_title()?>"><?php } ?>
+<div class="card-body">
+<header><table width="100%"><tr><td><h1><?php the_title()?> <?php edit_post_link('<I class="fas fa-edit"></i>', '<span class="edit-link">', '</span>' ); ?></h1>
+<h6><em><span class="text-muted author"><?php _e('By', 'ptibogxivtheme'); echo " "; the_author() ?>, </span>
+<time class="text-muted" datetime="<?php the_time()?>"> <?php the_time('d F Y') ?></time>
+</em></h6></td><td align="right"><div class="fa-4x text-muted"><span class="fa-layers fa-fw"><i class="fas fa-comment"></i><span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8" style="font-weight:900"><?php comments_number('0', '1', '%'); ?></span></span></div></p>
+</td></tr></table>
+<hr><p class="text-muted" style="margin-bottom: 30px;">
+        <i class="fas fa-folder"></i>&nbsp;
+        <?php the_category(', ') ?></p>
         <?php echo ptibogxiv_social(); ?>    
-</HEADER>
-    <SECTION>
+</header>
+    <section>
       <?php the_content()?>
       <?php wp_link_pages(); ?>
-    </SECTION>
-<?php the_terms( $post->ID, 'post_tag', '<HR><I class="fas fa-tags"></I> ', ' ', '<BR><BR>'); ?>
+    </section>
+<?php the_terms( $post->ID, 'post_tag', '<hr><i class="fas fa-tags"></i> ', ' ', '<br><br>'); ?>
 <?php echo ptibogxiv_social()."<BR>"; ?> 
-<div class="card bg-light mb-3"><div class="card-body"><DIV class="row">
-<DIV class="col-3 col-md-2 text-center"><?php echo get_avatar(get_the_author_meta('ID'),80);?></DIV><DIV class="col-9 col-md-10"><H5><?php echo get_the_author(); ?></H5><H6><?php the_author_meta( 'description' ); ?></H6></DIV>
-</DIV></DIV></DIV></div></DIV></ARTICLE>
+<div class="card bg-light mb-3"><div class="card-body"><div class="row">
+<div class="col-3 col-md-2 text-center"><?php echo get_avatar(get_the_author_meta('ID'),80);?></div><div class="col-9 col-md-10"><h5><?php echo get_the_author(); ?></h5><h6><?php the_author_meta( 'description' ); ?></h6></div>
+</div></div></div></div></div></article>
   <?php comments_template('/loops/comments.php'); ?>
   <?php endwhile; ?>
   <?php else: ?>

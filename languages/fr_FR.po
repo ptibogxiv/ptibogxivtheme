@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2019-10-12 22:24+0200\n"
-"PO-Revision-Date: 2019-10-12 22:25+0200\n"
+"POT-Creation-Date: 2020-01-18 13:39+0100\n"
+"PO-Revision-Date: 2020-01-18 13:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -42,39 +42,39 @@ msgstr "Modes de paiement"
 msgid "Social networks"
 msgstr "Réseaux sociaux"
 
-#: footer.php:36 footer.php:87
-msgid "Privacy Policy"
-msgstr "Politique de confidentialité"
+#: footer.php:37 footer.php:87
+msgid "Privacy"
+msgstr "Confidentialité"
 
-#: footer.php:40 footer.php:70 header.php:93
-msgid "Choose language"
-msgstr "Choisissez une langue"
-
-#: footer.php:42
+#: footer.php:40
 msgid "Kiosk mode ON"
 msgstr "Mode kiosque ON"
 
-#: footer.php:59
+#: footer.php:57
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:61
+#: footer.php:59
 msgid "Hosting & Theme by"
 msgstr "Hébergement & Thème par"
 
-#: footer.php:63
+#: footer.php:61
 msgid "Theme by"
 msgstr "Thème par"
 
-#: footer.php:74 header.php:123 header.php:125
-msgid "Sign in"
-msgstr "Connexion"
+#: footer.php:68 header.php:93
+msgid "Choose language"
+msgstr "Choisissez une langue"
 
-#: footer.php:76 header.php:100
+#: footer.php:72 header.php:119 header.php:121
+msgid "Sign in"
+msgstr "S'identifier"
+
+#: footer.php:74 header.php:100
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:78 header.php:104
+#: footer.php:76 header.php:104
 msgid "Basket"
 msgstr "Panier"
 
@@ -305,31 +305,31 @@ msgstr "Jeu de couleurs clairs"
 
 #: functions/setup.php:133 functions/setup.php:269
 msgid "Dark scheme"
-msgstr ""
+msgstr "Jeu de couleurs sombres"
 
 #: functions/setup.php:134 functions/setup.php:270
 msgid "Primary scheme"
-msgstr ""
+msgstr "Jeu de couleurs primaires"
 
 #: functions/setup.php:135 functions/setup.php:271
 msgid "Secondary scheme"
-msgstr ""
+msgstr "Jeu de couleurs secondaires"
 
 #: functions/setup.php:136 functions/setup.php:272
 msgid "Info scheme"
-msgstr ""
+msgstr "Jeu de couleurs info"
 
 #: functions/setup.php:137 functions/setup.php:273
 msgid "Success scheme"
-msgstr ""
+msgstr "Jeu de couleurs succès"
 
 #: functions/setup.php:138 functions/setup.php:274
 msgid "Warning scheme"
-msgstr ""
+msgstr "Jeu de couleurs avertissement"
 
 #: functions/setup.php:139 functions/setup.php:275
 msgid "Danger scheme"
-msgstr ""
+msgstr "Jeu de couleurs danger"
 
 #: functions/setup.php:156
 msgid "Home brand style"
@@ -466,15 +466,11 @@ msgstr "La zone de widget caroussel"
 msgid "Contact us"
 msgstr "Contactez-nous"
 
-#: header.php:119
-msgid "Sign up"
-msgstr "Inscription"
+#: header.php:112
+msgid "Sign out"
+msgstr "Se déconnecter"
 
-#: header.php:128 loops/comments.php:49
-msgid "Logout"
-msgstr "Déconnexion"
-
-#: header.php:168
+#: header.php:162
 msgid "Post on"
 msgstr "Publié le"
 
@@ -672,6 +668,10 @@ msgstr "Connecté en tant que"
 msgid "Log out of this account"
 msgstr "Déconnecter"
 
+#: loops/comments.php:49
+msgid "Logout"
+msgstr "Déconnexion"
+
 #: loops/comments.php:53 loops/comments.php:54
 msgid "Your name"
 msgstr "Votre nom"
@@ -758,6 +758,9 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#~ msgid "Legacy mentions"
+#~ msgstr "Mentions d'héritage"
 
 #~ msgid "Change language"
 #~ msgstr "Changer de langue"

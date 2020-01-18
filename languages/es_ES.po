@@ -1,23 +1,23 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2018-08-02 13:33+0200\n"
-"PO-Revision-Date: 2018-08-03 20:51+0200\n"
+"POT-Creation-Date: 2020-01-18 13:41+0100\n"
+"PO-Revision-Date: 2020-01-18 13:42+0100\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: \n"
-"Language: es_ES\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -34,124 +34,124 @@ msgstr "La página que estás buscando no existe."
 msgid "Author %s"
 msgstr "Autor %s"
 
-#: footer.php:6
+#: footer.php:7
 msgid "Payment modes"
 msgstr "Formas de pago"
 
-#: footer.php:8
+#: footer.php:11
 msgid "Social networks"
 msgstr "Redes sociales"
 
-#: footer.php:33 footer.php:47
-msgid "Privacy Policy"
-msgstr "Política de privacidad"
+#: footer.php:37 footer.php:87
+msgid "Privacy"
+msgstr "Privacidad"
 
-#: footer.php:37
+#: footer.php:40
+msgid "Kiosk mode ON"
+msgstr "Modo quiosco ACTIVADO"
+
+#: footer.php:57
 msgid "All rights reserved"
 msgstr "Todos los derechos reservados"
 
-#: footer.php:39
+#: footer.php:59
 msgid "Hosting & Theme by"
 msgstr "Hosting & Theme por"
 
-#: footer.php:41
+#: footer.php:61
 msgid "Theme by"
 msgstr "Tema por"
 
-#: footer.php:68
-msgid "Change language"
-msgstr "Cambiar lenguaje"
+#: footer.php:68 header.php:93
+msgid "Choose language"
+msgstr "Elija el idioma"
 
-#: footer.php:89
-msgid "Loading"
-msgstr "Cargando"
+#: footer.php:72 header.php:119 header.php:121
+msgid "Sign in"
+msgstr "Registrarse"
 
-#: functions.php:155
-msgid "Post on"
-msgstr "Publicar en"
+#: footer.php:74 header.php:100
+msgid "My account"
+msgstr "Mi cuenta"
 
-#: functions.php:175 functions/widgets.php:61
-msgid "Caroussel"
-msgstr "Caroussel"
+#: footer.php:76 header.php:104
+msgid "Basket"
+msgstr "Cesta"
 
-#: functions.php:178
-msgid "Title:"
-msgstr "Título:"
-
-#: functions.php:246
+#: functions.php:179
 msgid "year"
 msgstr "año"
 
-#: functions.php:246
+#: functions.php:179
 msgid "years"
 msgstr "años"
 
-#: functions.php:247
+#: functions.php:180
 msgid "month"
 msgstr "mes"
 
-#: functions.php:247
+#: functions.php:180
 msgid "months"
 msgstr "meses"
 
-#: functions.php:248
+#: functions.php:181
 msgid "week"
 msgstr "semana"
 
-#: functions.php:248
+#: functions.php:181
 msgid "weeks"
 msgstr "semanas"
 
-#: functions.php:249
+#: functions.php:182
 msgid "day"
 msgstr "día"
 
-#: functions.php:249
+#: functions.php:182
 msgid "days"
 msgstr "días"
 
-#: functions.php:250
+#: functions.php:183
 msgid "hour"
 msgstr "hora"
 
-#: functions.php:250
+#: functions.php:183
 msgid "hours"
 msgstr "horas"
 
-#: functions.php:251
+#: functions.php:184
 msgid "minute"
 msgstr "minuto"
 
-#: functions.php:251
+#: functions.php:184
 msgid "minutes"
 msgstr "minutos"
 
-#: functions.php:252
+#: functions.php:185
 msgid "second"
 msgstr "segundo"
 
-#: functions.php:252 functions.php:292
+#: functions.php:185 functions.php:225
 msgid "seconds"
 msgstr "segundos"
 
-#: functions.php:269
+#: functions.php:202
 msgid "sometime"
 msgstr "algun tiempo"
 
-#: functions.php:295
+#: functions.php:228
 #, php-format
-msgid "%s %s ago"
-msgstr "hace %s %s"
+msgid "%s ago"
+msgstr "%s hace"
 
-#: functions/feedback.php:28
+#: functions/feedback.php:26
 msgid "at"
 msgstr "en"
 
-#: functions/feedback.php:30
+#: functions/feedback.php:28
 msgid "Your comment is awaiting moderation."
 msgstr "Tu comentario está esperando ser moderado."
 
-#: functions/feedback.php:41
+#: functions/feedback.php:39
 msgid "Edit"
 msgstr "Editar"
 
@@ -167,7 +167,7 @@ msgstr "< i class = \"fas fa-angulo-derecha\" > </i>"
 msgid "Navbar"
 msgstr "Navbar"
 
-#: functions/search-widget.php:6
+#: functions/search-widget.php:4
 msgid "Your search"
 msgstr "Tu búsqueda"
 
@@ -203,7 +203,7 @@ msgstr "Contenedor de ancho completo"
 msgid "Css scheme"
 msgstr "Esquema CSS"
 
-#: functions/setup.php:82 functions/setup.php:126 functions/setup.php:236
+#: functions/setup.php:82 functions/setup.php:126 functions/setup.php:262
 msgid "Choose between scheme"
 msgstr "Elegir entre esquema"
 
@@ -281,7 +281,7 @@ msgstr "Solar"
 
 #: functions/setup.php:105
 msgid "Spacelab"
-msgstr ""
+msgstr "Spacelab"
 
 #: functions/setup.php:106
 msgid "Superhero"
@@ -299,35 +299,35 @@ msgstr "Yeti"
 msgid "Navbar Color scheme"
 msgstr ""
 
-#: functions/setup.php:132 functions/setup.php:242
+#: functions/setup.php:132 functions/setup.php:268
 msgid "Light scheme"
 msgstr ""
 
-#: functions/setup.php:133 functions/setup.php:243
+#: functions/setup.php:133 functions/setup.php:269
 msgid "Dark scheme"
 msgstr ""
 
-#: functions/setup.php:134 functions/setup.php:244
+#: functions/setup.php:134 functions/setup.php:270
 msgid "Primary scheme"
 msgstr ""
 
-#: functions/setup.php:135 functions/setup.php:245
+#: functions/setup.php:135 functions/setup.php:271
 msgid "Secondary scheme"
 msgstr ""
 
-#: functions/setup.php:136 functions/setup.php:246
+#: functions/setup.php:136 functions/setup.php:272
 msgid "Info scheme"
 msgstr ""
 
-#: functions/setup.php:137 functions/setup.php:247
+#: functions/setup.php:137 functions/setup.php:273
 msgid "Success scheme"
 msgstr ""
 
-#: functions/setup.php:138 functions/setup.php:248
+#: functions/setup.php:138 functions/setup.php:274
 msgid "Warning scheme"
 msgstr ""
 
-#: functions/setup.php:139 functions/setup.php:249
+#: functions/setup.php:139 functions/setup.php:275
 msgid "Danger scheme"
 msgstr ""
 
@@ -374,25 +374,51 @@ msgstr "Barra lateral izquierda"
 
 #: functions/setup.php:190
 msgid "Left & Right sidebars"
-msgstr ""
+msgstr "Barras laterales izquierda y derecha"
 
 #: functions/setup.php:191
 msgid "No sidebar"
 msgstr "Sin barra lateral"
 
-#: functions/setup.php:204
-msgid "Restore the native admin bar"
+#: functions/setup.php:208
+msgid "Carousel / Favorite image"
+msgstr "Carrusel / Imagen favorita"
+
+#: functions/setup.php:209
+#, fuzzy
+#| msgid "The caroussel widget area"
+msgid "Set carousel / image"
+msgstr "El área del widget Caroussel"
+
+#: functions/setup.php:214
+msgid "Carousel and images on every pages"
+msgstr ""
+
+#: functions/setup.php:215
+msgid "Only image on pages"
+msgstr ""
+
+#: functions/setup.php:216
+msgid "Only carousel and images on posts"
 msgstr ""
 
 #: functions/setup.php:217
+msgid "No carousel or images"
+msgstr ""
+
+#: functions/setup.php:230
+msgid "Restore the native admin bar"
+msgstr ""
+
+#: functions/setup.php:243
 msgid "Remove the shadow of content box"
 msgstr ""
 
-#: functions/setup.php:235
+#: functions/setup.php:261
 msgid "Networkbar Color scheme"
 msgstr ""
 
-#: functions/setup.php:261
+#: functions/setup.php:287
 msgid "ptibogxivtheme"
 msgstr "ptibogxivtheme"
 
@@ -405,48 +431,190 @@ msgid "The right sidebar widget area"
 msgstr ""
 
 #: functions/widgets.php:35
-msgid "Footer"
-msgstr "Pie de página"
+#, fuzzy
+#| msgid "Payment modes"
+msgid "Payment Footer"
+msgstr "Formas de pago"
 
 #: functions/widgets.php:37
-msgid "The footer widget area"
+#, fuzzy
+#| msgid "The footer widget area"
+msgid "The payment footer widget area"
 msgstr "El área de widgets del pie de página"
 
-#: functions/widgets.php:48
+#: functions/widgets.php:45
+#, fuzzy
+#| msgid "Footer"
+msgid "Address Footer"
+msgstr "Pie de página"
+
+#: functions/widgets.php:47
+#, fuzzy
+#| msgid "The footer widget area"
+msgid "The address footer widget area"
+msgstr "El área de widgets del pie de página"
+
+#: functions/widgets.php:58
 msgid "Top"
 msgstr "Arriba"
 
-#: functions/widgets.php:50
+#: functions/widgets.php:60
 msgid "The top widget area"
 msgstr "El área de widgets superior"
 
-#: functions/widgets.php:63
+#: functions/widgets.php:71
+msgid "Caroussel"
+msgstr "Caroussel"
+
+#: functions/widgets.php:73
 msgid "The caroussel widget area"
 msgstr "El área del widget Caroussel"
 
-#: header.php:72
-msgid "Choose language"
-msgstr "Elija el idioma"
+#: header.php:55
+msgid "Contact us"
+msgstr ""
 
-#: header.php:78
-msgid "My account"
-msgstr "Mi cuenta"
-
-#: header.php:78
-msgid "Basket"
-msgstr "Cesta"
-
-#: header.php:84 loops/comments.php:49
-msgid "Logout"
-msgstr "Cerrar sesión"
-
-#: header.php:91 header.php:93
-msgid "Sign in"
-msgstr "Registrarse"
-
-#: header.php:95
-msgid "Sign up"
+#: header.php:112
+#, fuzzy
+#| msgid "Sign up"
+msgid "Sign out"
 msgstr "Regístrate"
+
+#: header.php:162
+msgid "Post on"
+msgstr "Publicar en"
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:395
+msgid "Check for updates"
+msgstr "Buscar actualizaciones"
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:432
+msgid "View details"
+msgstr "Ver detalles"
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:455
+#, php-format
+msgid "More information about %s"
+msgstr "Mas información sobre %s"
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:548
+#, php-format
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr "El plugin %s está actualizado."
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:550
+#, php-format
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr "Una nueva versión del %s plugin está disponible."
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:552
+#, php-format
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr "No podemos determinar si existen actualizaciones de %s."
+
+#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:558
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr "Estado de actualización desconocido \"%s\""
+
+#: lib/plugin-update-checker/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr "No hay changelog disponible."
+
+#: lib/wp-package-updater/class-wp-package-updater.php:204
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:251
+msgid "Theme License - "
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:406
+msgid ""
+"Unexpected Error! The query to retrieve the license data returned a "
+"malformed response."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:424
+msgid "The license is already in use for this domain."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:427
+msgid ""
+"The license has reached the maximum number of activations and cannot be "
+"activated for this domain."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:433
+msgid "The license is already inactive for this domain."
+msgstr ""
+
+#. translators: the license expiry date
+#: lib/wp-package-updater/class-wp-package-updater.php:444
+#, php-format
+msgid "The license expired on %s and needs to be renewed to be updated."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:448
+msgid "The license expired and needs to be renewed to be updated."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:454
+msgid ""
+"The license is blocked and cannot be updated anymore. Please use another "
+"license key."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:460
+msgid ""
+"The license has not been activated and its status is stil pending. Please "
+"try again or use another license key."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:466
+msgid "The provided license key is invalid. Please use another license key."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:469
+msgid ""
+"The provided license key does not appear to be valid. Please use another "
+"license key."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:473
+msgid ""
+"An active license is required to update the plugin. Please provide a valid "
+"license key in Plugins > Installed Plugins."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:475
+msgid ""
+"An active license is required to update the theme. Please provide a valid "
+"license key in Appearence > Theme License."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:481
+msgid ""
+"An unexpected error has occured. Please try again. If the problem persists, "
+"please contact the author of the plugin."
+msgstr ""
+
+#: lib/wp-package-updater/class-wp-package-updater.php:483
+msgid ""
+"An unexpected error has occured. Please try again. If the problem persists, "
+"please contact the author of the theme."
+msgstr ""
+
+#: lib/wp-package-updater/templates/license-form.php:6
+msgid "Current license key:"
+msgstr ""
+
+#: lib/wp-package-updater/templates/license-form.php:9
+msgid "License key to change:"
+msgstr ""
 
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
@@ -457,10 +625,6 @@ msgstr ""
 #: loops/comments.php:28
 msgid "Be the first to write a comment."
 msgstr "Se el primero en escribir un comentario."
-
-#: loops/comments.php:30
-msgid "Comments are closed for this post."
-msgstr "Los comentarios están cerrados para este post."
 
 #: loops/comments.php:37 loops/comments.php:66 loops/comments.php:67
 msgid "Your comment"
@@ -482,8 +646,7 @@ msgstr ""
 #: loops/comments.php:42
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr ""
-"Debe estar <a href=\"%s\"> conectado </a> para publicar un comentario."
+msgstr "Debe estar <a href=\"%s\"> conectado </a> para publicar un comentario."
 
 #: loops/comments.php:47 loops/comments.php:48
 msgid "Logged in as"
@@ -492,6 +655,10 @@ msgstr "Conectado como"
 #: loops/comments.php:49
 msgid "Log out of this account"
 msgstr "Salir de esta cuenta"
+
+#: loops/comments.php:49
+msgid "Logout"
+msgstr "Cerrar sesión"
 
 #: loops/comments.php:53 loops/comments.php:54
 msgid "Your name"
@@ -529,13 +696,9 @@ msgstr "Enviar comentario"
 msgid "Sorry, your search yielded no results."
 msgstr "Disculpa, tu búsqueda no tenido ningún resultado."
 
-#: loops/content-single.php:14
+#: loops/content-single.php:13
 msgid "By"
 msgstr "Por"
-
-#: loops/content-single.php:41
-msgid "About"
-msgstr "Acerca de"
 
 #: loops/content.php:19
 msgid "Post"
@@ -570,46 +733,6 @@ msgstr "Buscar"
 msgid "Search Results for"
 msgstr "Resultados de búsqueda para"
 
-#: update/Puc/v4p4/Plugin/UpdateChecker.php:395
-msgid "Check for updates"
-msgstr "Buscar actualizaciones"
-
-#: update/Puc/v4p4/Plugin/UpdateChecker.php:432
-msgid "View details"
-msgstr "Ver detalles"
-
-#: update/Puc/v4p4/Plugin/UpdateChecker.php:455
-#, php-format
-msgid "More information about %s"
-msgstr "Mas información sobre %s"
-
-#: update/Puc/v4p4/Plugin/UpdateChecker.php:548
-#, php-format
-msgctxt "the plugin title"
-msgid "The %s plugin is up to date."
-msgstr "El plugin %s está actualizado."
-
-#: update/Puc/v4p4/Plugin/UpdateChecker.php:550
-#, php-format
-msgctxt "the plugin title"
-msgid "A new version of the %s plugin is available."
-msgstr "Una nueva versión del %s plugin está disponible."
-
-#: update/Puc/v4p4/Plugin/UpdateChecker.php:552
-#, php-format
-msgctxt "the plugin title"
-msgid "Could not determine if updates are available for %s."
-msgstr "No podemos determinar si existen actualizaciones de %s."
-
-#: update/Puc/v4p4/Plugin/UpdateChecker.php:558
-#, php-format
-msgid "Unknown update checker status \"%s\""
-msgstr "Estado de actualización desconocido \"%s\""
-
-#: update/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
-msgid "There is no changelog available."
-msgstr "No hay changelog disponible."
-
 #. Theme Name of the plugin/theme
 #. Author of the plugin/theme
 msgid "ptibogxiv"
@@ -624,44 +747,59 @@ msgstr "https://www.ptibogxiv.net/es"
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Theme para WordPress & Doliconnect"
 
-msgid "Our websites"
-msgstr "Nuestros sitios web"
+#~ msgid "Change language"
+#~ msgstr "Cambiar lenguaje"
 
-msgid "on"
-msgstr "En"
+#~ msgid "Loading"
+#~ msgstr "Cargando"
 
-msgid "Search"
-msgstr "Búsqueda"
+#~ msgid "Title:"
+#~ msgstr "Título:"
 
-msgid "Login"
-msgstr "Login"
+#~ msgid "Comments are closed for this post."
+#~ msgstr "Los comentarios están cerrados para este post."
 
-msgid "Share"
-msgstr "Compartir"
+#~ msgid "About"
+#~ msgstr "Acerca de"
 
-msgid "Continue reading"
-msgstr "Continuar leyendo"
+#~ msgid "Our websites"
+#~ msgstr "Nuestros sitios web"
 
-msgid "Cart"
-msgstr "Carro"
+#~ msgid "on"
+#~ msgstr "En"
 
-msgid "Log out"
-msgstr "Cerrar sesión"
+#~ msgid "Search"
+#~ msgstr "Búsqueda"
 
-msgid "Feedback"
-msgstr "Comentarios"
+#~ msgid "Login"
+#~ msgstr "Login"
 
-msgid "None"
-msgstr "Ninguno"
+#~ msgid "Share"
+#~ msgstr "Compartir"
 
-msgid "Filed under"
-msgstr "Archivado en"
+#~ msgid "Continue reading"
+#~ msgstr "Continuar leyendo"
 
-msgid "post on"
-msgstr "publicar en"
+#~ msgid "Cart"
+#~ msgstr "Carro"
 
-msgid "Sidebar"
-msgstr "Barra lateral"
+#~ msgid "Log out"
+#~ msgstr "Cerrar sesión"
 
-msgid "Choose between color scheme"
-msgstr "Elegir entre combinación de colores"
+#~ msgid "Feedback"
+#~ msgstr "Comentarios"
+
+#~ msgid "None"
+#~ msgstr "Ninguno"
+
+#~ msgid "Filed under"
+#~ msgstr "Archivado en"
+
+#~ msgid "post on"
+#~ msgstr "publicar en"
+
+#~ msgid "Sidebar"
+#~ msgstr "Barra lateral"
+
+#~ msgid "Choose between color scheme"
+#~ msgstr "Elegir entre combinación de colores"

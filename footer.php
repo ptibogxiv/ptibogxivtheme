@@ -34,7 +34,7 @@ dynamic_sidebar('address-footer-widget-area'); }?></div>
 <?php if (get_site_option('dolibarr_public_url')) { ?><li><span class="fa-li"><i class="fas fa-lock"></i></span><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" class="text-info" target="_dolibarr"><?php } ?>Dolibarr<?php if (current_user_can( 'administrator' )) { ?></a><?php } ?></li><?php } ?>
 <li><span class="fa-li"><i class="fas fa-lock"></i></span><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><a href="https://webmail.ptibogxiv.net" class="text-info" target="_webmail"><?php } ?>Webmail<?php if (current_user_can( 'administrator' )) { ?></a><?php } ?></li>
 <li><span class="fa-li"><i class="fas fa-lock"></i></span><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><a href="https://my.ptibogxiv.net" class="text-info" target="_cloud"><?php } ?>Serveur/Cloud<?php if (current_user_can( 'administrator' )) { ?></a><?php } ?></li>
-<li><span class="fa-li"><i class="fas fa-info-circle"></i></span><a href="#" class="text-info" data-toggle="modal" data-target="#legacymention"><?php _e('Privacy Policy', 'ptibogxivtheme'); ?></a></li>
+<li><span class="fa-li"><i class="fas fa-info-circle"></i></span><a href="#" class="text-info" data-toggle="modal" data-target="#legacymention"><?php _e('Privacy', 'ptibogxivtheme'); ?></a></li>
 <li><span class="fa-li"><i class="fas fa-info-circle"></i></span><a href="#" class="text-info" data-toggle="modal" data-target="#cgvumention">C.G.U.</a></li>
 </ul></div></div></div><div class="col-6">
 </div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none"><?php _e('Kiosk mode ON', 'ptibogxivtheme'); ?> <i class="fas fa-desktop"></i></div>
@@ -84,7 +84,7 @@ if ( function_exists('callDoliApi') ) {
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
 <div class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-header">
-<h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Legacy', 'ptibogxivtheme'); ?></h5>
+<h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Privacy', 'ptibogxivtheme'); ?></h5>
 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
 <div class="modal-body">
 <p class="text-justify">En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé, aux utilisateurs du présent site, l'identité des différents intervenants.</p>

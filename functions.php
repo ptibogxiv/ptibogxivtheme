@@ -165,12 +165,7 @@ global $post;
 	
 	$date = get_post_time('G', true, $post);
 	
-	/**
-	 * Where you see 'ptibogxivtheme' below, you'd
-	 * want to replace those with whatever term
-	 * you're using in your theme to provide
-	 * support for localization.
-	 */ 
+if ($post->post_type == 'post') {
 	
 	// Array of time period chunks
 	$chunks = array(
@@ -224,6 +219,7 @@ global $post;
 	}
 
 	return sprintf( esc_html__( '%s ago', 'ptibogxivtheme' ), $duration);
+}
 }
 
 // Filter our ptibogxivtheme_time_ago() function into WP's the_time() function

@@ -21,7 +21,7 @@ $version='4.4.1';
 	wp_enqueue_script( 'font-awesome');
   wp_register_script( 'ptibogxivtheme-css', get_template_directory_uri() . '/theme/css/ptibogxivtheme.css', false, $version);
 	wp_enqueue_script( 'font-awesome');
-  wp_register_style( 'bootstrap-social', plugins_url( 'doliconnect/includes/bootstrap/css/bootstrap-social.css'), array(), $version);
+  wp_register_style( 'bootstrap-social', get_template_directory_uri() . '/theme/css/bootstrap-social.css', array(), $version);
 	wp_enqueue_style( 'bootstrap-social');
 	//wp_register_script('ptibogxivtheme-js', get_template_directory_uri() . '/theme/js/ptibogxivtheme.js', false, null, true);
 	//wp_enqueue_script('ptibogxivtheme-js');

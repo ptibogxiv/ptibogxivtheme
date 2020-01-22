@@ -59,7 +59,7 @@ if ( defined('PTIBOGXIV_NET') ) {
 _e('Hosting & Theme by', 'ptibogxivtheme');
 } else {
 _e('Theme by', 'ptibogxivtheme');
-} ?> <a href="https://www.ptibogxiv.net" class="text-info">ptibogxiv.net</a></small></p></div>
+} ?> <a href="https://www.ptibogxiv.net" rel="noopener" class="text-info">ptibogxiv.net</a></small></p></div>
 </div></div>
 <?php //if (get_theme_mod( 'ptibogxivtheme_mobileapp')) { ?>
 <div class="d-block d-md-none"><br /><br /><nav class="fixed-bottom navbar-light bg-light">

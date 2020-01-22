@@ -1,5 +1,5 @@
 **ptibogxivtheme** is a WordPress starter theme loaded with Bootstrap 4. Based on b4st theme. Optimized for Doliconnect, Polylang, Secupress modules.
-You can view it in on our website https://www.ptibogxiv.net
+You can view it in on our website https://www.ptibogxiv.net and https://demo.ptibogxiv.net 
 
 ## Features of this theme
 
@@ -7,15 +7,11 @@ You can view it in on our website https://www.ptibogxiv.net
 
 * Bootstrap, theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.1.3** CSS and JS enqueued with several color scheme with Bootswatch
+* **Bootstrap 4.4.1** CSS and JS enqueued with several color scheme with Bootswatch
 
-* **Popper 1.14.3** JS enqueued. Because Bootstrap popovers and tooltips need it.
+* **Popper 1.16.0** JS enqueued. Because Bootstrap popovers and tooltips need it.
 
-* **jQuery 3.3.1** enqueued.
-
-* **Font Awesome 5.2.0** enqueued.
-
-* **Modernizr 2.8.3** enqueued.
+* **Font Awesome 5.12.0** enqueued.
 
 * **Navbar with dropdowns (child menus)**
 

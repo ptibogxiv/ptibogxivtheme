@@ -263,8 +263,9 @@ if (is_multisite()) {
 					'section'     => 'ptibogxivtheme_theme_layout_options',
 					'settings'    => 'ptibogxivtheme_networkbar_color',
 					'type'        => 'select',
-          'default'     => 'navbar-dark bg-dark',
-					'choices'     => array(
+          'default'     => '0',
+					'choices'     => array( 
+            '0' => __( 'Not active', 'ptibogxivtheme' ),        
 						'navbar-light bg-light' => __( 'Light scheme', 'ptibogxivtheme' ),
 						'navbar-dark bg-dark' => __( 'Dark scheme', 'ptibogxivtheme' ),
 						'navbar-dark bg-primary' => __( 'Primary scheme', 'ptibogxivtheme' ),
@@ -282,42 +283,3 @@ if (is_multisite()) {
 	}
 } // endif function_exists( 'understrap_theme_customize_register' ).
 add_action( 'customize_register', 'ptibogxivtheme_theme_customize_register' );
-
-function ptibogxivtheme_admin_page() {
-add_menu_page(__( 'ptibogxivtheme', 'ptibogxivtheme' ), __( 'ptibogxivtheme', 'ptibogxivtheme' ), 'manage_options', 'ptibogxivtheme_network_page', 'ptibogxivtheme_network_page', 'dashicons-admin-appearance');
-add_submenu_page('ptibogxivtheme_network_page', "Management", "Management", 'manage_options', 'ptibogxivtheme_network_page', 'ptibogxivtheme_network_page');
-}
-
-if ( is_multisite() ) {
-add_action( 'network_admin_menu', 'ptibogxivtheme_admin_page' );
-}
-function ptibogxivtheme_network_page() {
-    echo '<DIV class="wrap">';
-    echo '<H2>Customization network ptibogxivtheme</H2>';
-/*** License activate button was clicked ***/
-if (isset($_REQUEST['activate_ptibogxivtheme'])) {     
-if ( add_site_option( 'ptibogxivtheme_networkbar', $_REQUEST['ptibogxivtheme_networkbar']) ) {
-} else {
-delete_site_option('ptibogxivtheme_networkbar');
-}
-    }    
-    /*** End of sample license deactivation ***/    
-		?>       
-<DIV id="<?php echo $id; ?>" class="postbox">
-<DIV class="inside">
-    <P>Force some customization for the network</P>
-    <FORM action="" method="post">
-        <TABLE class="form-table" width="100%">
-            <TR>
-                <TH style="width:150px;"><LABEL for="ptibogxivtheme_networkbar">ptibogxivtheme_networkbar</LABEL></TH>
-                <TD ><INPUT name="ptibogxivtheme_networkbar" type="checkbox" id="ptibogxivtheme_networkbar" value="1" <?php checked('1', get_site_option('ptibogxivtheme_networkbar')); ?> /> ptibogxivtheme_networkbar</TD>
-            </TR>            
-        </TABLE>
-        <P class="submit">
-            <INPUT type="submit" name="activate_ptibogxivtheme" value="Activate" class="button-primary" />
-        </P>
-    </FORM>     				
-    </DIV>
-</DIV>
-<?php    
-}

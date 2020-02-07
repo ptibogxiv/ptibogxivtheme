@@ -14,8 +14,8 @@ bloginfo('name'); echo " - "; bloginfo('description');
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="language" content="French">
   <meta http-equiv="Cache-control" content="public">
-  <link rel="icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon" />
-  <link rel="shortcut icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon" />
+  <link rel="icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon">
+  <link rel="shortcut icon" href="<?php echo get_site_icon_url(); ?>" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
 </head>

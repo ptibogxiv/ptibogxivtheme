@@ -69,7 +69,7 @@ the_custom_logo(); ?>
 	      'walker'  	      => new ptibogxivtheme_walker_nav_menu()
       ) );
 
-if ( function_exists('pll_the_languages') && function_exists('doliconnect_langs') ) {       
+if ( function_exists('pll_the_languages') && function_exists('doliconnect_langs') && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) {       
 ?><a href="#" data-toggle="modal" data-target="#DoliconnectSelectLang" data-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><i class='fas fa-language fa-fw fa-2x'></i></a>&nbsp;<?php
 }
 

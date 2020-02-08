@@ -27,26 +27,6 @@ if ( function_exists( 'wp_body_open' ) ) {
 } else {
     do_action( 'wp_body_open' );
 }
-if (is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) { ?>
-<div class="text-dark bg-<?php echo "dark"; //echo esc_attr(get_theme_mod( 'ptibogxivtheme_networkbar_color' )); ?>">
-<div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?> d-none d-md-block"><ul class="nav nav-pills">
-<li class="nav-item"><small> <?php   
-echo '<div class="nav-link text-white disabled"><i class="fas fa-globe fa-fw"></i>';
-echo esc_attr( get_network()->site_name ); 
-?></div></small></li><?php
-$defaults = array(
-//'site__in'=>(1),
-'public'=>'1'
-	);
-$subsites = get_sites($defaults);
-foreach( $subsites as $subsite ) {
-  $subsite_id = get_object_vars($subsite)["blog_id"];
-  $subsite_name = get_blog_details($subsite_id)->blogname;
-  $subsite_url = get_blog_details($subsite_id)->siteurl; ?>
-<li class="nav-item"><small><a class="nav-link text-white <?php if ( get_current_blog_id()==$subsite_id ) { echo "active"; } ?>" href="<?php echo $subsite_url; ?>"><?php echo $subsite_name; ?></a></small></li>
-<?php } ?>
-</ul>
-</div></div><?php }
 if ( ! empty(get_theme_mod( 'ptibogxivtheme_carousel'))) { //! empty(get_theme_mod( 'ptibogxivtheme_header')) ?>
 <div class="text-dark d-none d-md-block" style="height:15vh;background:url('<?php header_image(); ?>')">
 <div class="h-auto align-middle <?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>">

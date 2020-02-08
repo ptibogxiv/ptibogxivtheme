@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
 "POT-Creation-Date: 2020-02-08 10:51+0100\n"
-"PO-Revision-Date: 2020-02-08 10:53+0100\n"
+"PO-Revision-Date: 2020-02-08 11:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -175,7 +175,6 @@ msgid "Navbar"
 msgstr "Navbar"
 
 #: functions/search-widget.php:4
-#, fuzzy
 msgid "Your search"
 msgstr "Votre recherche"
 
@@ -725,7 +724,6 @@ msgstr ""
 "visualiser les commentaires."
 
 #: loops/comments.php:28
-#, fuzzy
 msgid "Be the first to write a comment."
 msgstr "Soyez le premier à écrire un commentaire."
 
@@ -734,12 +732,11 @@ msgid "Your comment"
 msgstr "Votre Commentaire"
 
 #: loops/comments.php:37
-#, fuzzy, php-format
+#, php-format
 msgid "Responses to %s"
 msgstr "Réponses aux %s"
 
 #: loops/comments.php:41
-#, fuzzy
 msgid ""
 "You must be <a href=\"#\" data-toggle=\"modal\" data-target="
 "\"#DoliconnectLogin\">logged in</a> to post a comment."

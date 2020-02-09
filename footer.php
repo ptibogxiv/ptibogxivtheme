@@ -11,7 +11,7 @@
 <i class="fas fa-university fa-3x fa-fw"></i>
 <i class="fas fa-university fa-3x fa-fw"></i>
 <i class="fas fa-money-check fa-3x fa-fw"></i>
-<i class="fas fa-money-bill-alt fa-3x fa-fw"></i>
+<?php if ( ! empty(dolikiosk()) ) { ?> <i class="fas fa-money-bill-alt fa-3x fa-fw"></i><?php } ?>
 </center>
 <?php } else { 
 dynamic_sidebar('payment-footer-widget-area'); } ?>

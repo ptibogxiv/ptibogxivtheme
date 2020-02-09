@@ -35,7 +35,7 @@ if ( ! empty(get_theme_mod( 'ptibogxivtheme_carousel'))) { //! empty(get_theme_m
 <a class="text-white" href="<?php echo doliconnecturl('dolicontact'); ?>" title="<?php _e('Contact us', 'ptibogxivtheme'); ?>"><?php _e('Contact us', 'ptibogxivtheme'); ?></a> 
 <?php
 } ?></p></div><br>
-<div class="mh-100"><table class="mh-100"><tr><td class="align-middle"><?php the_custom_logo(); ?></td><td class="align-middle"><h2 class="text-white"><?php bloginfo('description'); ?></h2></td></tr></table></div>
+<div class="mh-100"><table class="mh-100"><tr><td class="align-middle"><?php the_custom_logo(); ?></td></tr></table></div>
 </div></div>
 <?php } elseif (get_header_image()) { ?> 
 <img class="d-block w-100 img-fluid" src="<?php header_image(); ?>" alt="banner logo">

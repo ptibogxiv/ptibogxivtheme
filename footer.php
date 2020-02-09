@@ -4,7 +4,15 @@
 <div class="row">
 <div class="col-6 col-md-3">
 <?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('callDoliApi')) { ?>
-<strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center><i class="fab fa-cc-visa fa-fw fa-3x"></i><i class="fab fa-cc-mastercard fa-fw fa-3x"></i><i class="fab fa-cc-amex fa-fw fa-3x"></i><i class="fab fa-cc-apple-pay fa-fw fa-3x"></i></center>
+<strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center>
+<i class="fab fa-cc-visa fa-3x fa-fw"></i><i class="fab fa-cc-mastercard fa-3x fa-fw"></i><i class="fab fa-cc-amex fa-3x fa-fw"></i>
+<i class="fab fa-cc-apple-pay fa-3x fa-fw"></i>
+<i class="fab fa-ideal fa-3x fa-fw"></i>
+<i class="fas fa-university fa-3x fa-fw"></i>
+<i class="fas fa-university fa-3x fa-fw"></i>
+<i class="fas fa-money-check fa-3x fa-fw"></i>
+<i class="fas fa-money-bill-alt fa-3x fa-fw"></i>
+</center>
 <?php } else { 
 dynamic_sidebar('payment-footer-widget-area'); } ?>
 <br></div><div class="col-6 col-md-3">

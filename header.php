@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 <html class="no-js">
-<html lang="fr">
+<html <?php language_attributes(); ?>>
 <head>
 <title><?php wp_title('•', true, 'right'); bloginfo('name'); ?></title>
 <meta name="description" content="<?php if ( is_single() ) {

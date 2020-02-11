@@ -6,8 +6,8 @@
 <?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('callDoliApi')) { ?>
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center>
 <?php
-<?php if( function_exists('callDoliApi') ) {
-$listpaymentmethods = callDoliApi("GET", "/doliconnector/0/paymentmethods", null, dolidelay('paymentmethods', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
+$request = "/doliconnector/0/paymentmethods";
+$listpaymentmethods = callDoliApi("GET", $request, null, dolidelay('paymentmethods', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
 <?php if ( isset($listpaymentmethods->stripe) && in_array('card', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-visa fa-3x fa-fw"></i><i class="fab fa-cc-mastercard fa-3x fa-fw"></i><i class="fab fa-cc-amex fa-3x fa-fw"></i><?php } ?>
 <?php if ( isset($listpaymentmethods->stripe) && in_array('payment_request_api', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-apple-pay fa-3x fa-fw"></i><?php } ?>
@@ -15,8 +15,7 @@ $listpaymentmethods = callDoliApi("GET", "/doliconnector/0/paymentmethods", null
 <?php if ( isset($listpaymentmethods->stripe) && in_array('ideal', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-ideal fa-3x fa-fw"></i><?php } ?>
 <?php if ( isset($listpaymentmethods->VIR) ) { ?><i class="fas fa-university fa-3x fa-fw"></i><?php } ?>
 <?php if ( isset($listpaymentmethods->CHQ) ) { ?><i class="fas fa-money-check fa-3x fa-fw"></i><?php } ?>
-<?php if ( ! empty(dolikiosk()) ) { ?> <i class="fas fa-money-bill-alt fa-3x fa-fw"></i><?php } 
-}?>
+<?php if ( ! empty(dolikiosk()) ) { ?> <i class="fas fa-money-bill-alt fa-3x fa-fw"></i><?php } ?>
 </center>
 <?php } else { 
 dynamic_sidebar('payment-footer-widget-area'); } ?>
@@ -34,7 +33,7 @@ dynamic_sidebar('payment-footer-widget-area'); } ?>
 </center><br></div><div class="col-12 col-md-6">
 <strong><?php bloginfo('description'); ?></strong>
 <div class="row"><div class="col-6">
-<?php if(! is_active_sidebar('address-footer-widget-area') && function_exists('callDoliApi')){
+<?php if (! is_active_sidebar('address-footer-widget-area') && function_exists('callDoliApi')) {
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
 <?php echo $company->name; ?><br>

@@ -6,8 +6,8 @@
 <?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('callDoliApi')) { ?>
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center>
 <?php
-//$request = "/doliconnector/".doliconnector($current_user, 'fk_soc')."/paymentmethods";
-//$listpaymentmethods = callDoliApi("GET", $request, null, dolidelay('paymentmethods', $refresh));
+<?php if( function_exists('callDoliApi') ) {
+$listpaymentmethods = callDoliApi("GET", "/doliconnector/0/paymentmethods", null, dolidelay('paymentmethods', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
 <?php if ( isset($listpaymentmethods->stripe) && in_array('card', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-visa fa-3x fa-fw"></i><i class="fab fa-cc-mastercard fa-3x fa-fw"></i><i class="fab fa-cc-amex fa-3x fa-fw"></i><?php } ?>
 <?php if ( isset($listpaymentmethods->stripe) && in_array('payment_request_api', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-apple-pay fa-3x fa-fw"></i><?php } ?>
@@ -15,7 +15,8 @@
 <?php if ( isset($listpaymentmethods->stripe) && in_array('ideal', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-ideal fa-3x fa-fw"></i><?php } ?>
 <?php if ( isset($listpaymentmethods->VIR) ) { ?><i class="fas fa-university fa-3x fa-fw"></i><?php } ?>
 <?php if ( isset($listpaymentmethods->CHQ) ) { ?><i class="fas fa-money-check fa-3x fa-fw"></i><?php } ?>
-<?php if ( ! empty(dolikiosk()) ) { ?> <i class="fas fa-money-bill-alt fa-3x fa-fw"></i><?php } ?>
+<?php if ( ! empty(dolikiosk()) ) { ?> <i class="fas fa-money-bill-alt fa-3x fa-fw"></i><?php } 
+}?>
 </center>
 <?php } else { 
 dynamic_sidebar('payment-footer-widget-area'); } ?>

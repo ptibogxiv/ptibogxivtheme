@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
 "POT-Creation-Date: 2020-02-08 10:51+0100\n"
-"PO-Revision-Date: 2020-02-08 11:14+0100\n"
+"PO-Revision-Date: 2020-02-12 13:47+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -52,7 +52,7 @@ msgstr "Kiosk mode ON"
 
 #: footer.php:57
 msgid "All rights reserved"
-msgstr "Tous les droits réservés"
+msgstr "Tous droits réservés"
 
 #: footer.php:59
 msgid "Hosting & Theme by"
@@ -160,17 +160,14 @@ msgid "Edit"
 msgstr "Éditer"
 
 #: functions/index-pagination.php:29
-#, fuzzy
 msgid "<i class=\"fas fa-angle-left\"></i> Newer"
 msgstr "<i class=\"fas fa-angle-left\"></i>Nouveaux"
 
 #: functions/index-pagination.php:31
-#, fuzzy
 msgid "Older <i class=\"fas fa-angle-right\"></i>"
 msgstr "Plus<i class=\"fas fa-angle-right\"></i>"
 
 #: functions/navbar.php:59
-#, fuzzy
 msgid "Navbar"
 msgstr "Navbar"
 
@@ -183,42 +180,34 @@ msgid "Read more"
 msgstr "Lire la suite"
 
 #: functions/setup.php:40
-#, fuzzy
 msgid "Theme Layout Settings"
 msgstr "Paramètres de mise en page thématique"
 
 #: functions/setup.php:42
-#, fuzzy
 msgid "Container width and sidebar defaults"
 msgstr "Largeur du conteneur et par défaut de barre latérale"
 
 #: functions/setup.php:57
-#, fuzzy
 msgid "Container Width"
 msgstr "Largeur du conteneur"
 
 #: functions/setup.php:58
-#, fuzzy
 msgid "Choose between Bootstrap's container and container-fluid"
 msgstr "Choisissez entre le conteneur de Bootstrap et le fluide de conteneur"
 
 #: functions/setup.php:63
-#, fuzzy
 msgid "Fixed width container"
 msgstr "Conteneur de largeur fixe"
 
 #: functions/setup.php:64
-#, fuzzy
 msgid "Full width container"
 msgstr "Conteneur pleine largeur"
 
 #: functions/setup.php:81
-#, fuzzy
 msgid "Css scheme"
 msgstr "Régime Css"
 
 #: functions/setup.php:82 functions/setup.php:126 functions/setup.php:262
-#, fuzzy
 msgid "Choose between scheme"
 msgstr "Choisissez entre le régime"
 
@@ -227,192 +216,154 @@ msgid "Default"
 msgstr "Défaut"
 
 #: functions/setup.php:88
-#, fuzzy
 msgid "Cerulean"
 msgstr "Cerulean"
 
 #: functions/setup.php:89
-#, fuzzy
 msgid "Cosmo"
 msgstr "Cosmo"
 
 #: functions/setup.php:90
-#, fuzzy
 msgid "Cyborg"
 msgstr "Cyborg"
 
 #: functions/setup.php:91
-#, fuzzy
 msgid "Darkly"
 msgstr "Sombre"
 
 #: functions/setup.php:92
-#, fuzzy
 msgid "Flatly"
 msgstr "Catégoriquement"
 
 #: functions/setup.php:93
-#, fuzzy
 msgid "Journal"
 msgstr "Journal"
 
 #: functions/setup.php:94
-#, fuzzy
 msgid "Litera"
 msgstr "Litera"
 
 #: functions/setup.php:95
-#, fuzzy
 msgid "Lumen"
 msgstr "Lumen"
 
 #: functions/setup.php:96
-#, fuzzy
 msgid "Lux"
 msgstr "Lux"
 
 #: functions/setup.php:97
-#, fuzzy
 msgid "Materia"
 msgstr "Materia"
 
 #: functions/setup.php:98
-#, fuzzy
 msgid "Minty"
 msgstr "Minty"
 
 #: functions/setup.php:99
-#, fuzzy
 msgid "Pulse"
 msgstr "Impulsion"
 
 #: functions/setup.php:100
-#, fuzzy
 msgid "Sandstone"
 msgstr "Grès"
 
 #: functions/setup.php:101
-#, fuzzy
 msgid "Simplex"
 msgstr "Simplex"
 
 #: functions/setup.php:102
-#, fuzzy
 msgid "Sketchy"
 msgstr "Sommaire"
 
 #: functions/setup.php:103
-#, fuzzy
 msgid "Slate"
 msgstr "Ardoise"
 
 #: functions/setup.php:104
-#, fuzzy
 msgid "Solar"
 msgstr "Solaire"
 
 #: functions/setup.php:105
-#, fuzzy
 msgid "Spacelab"
 msgstr "Spacelab"
 
 #: functions/setup.php:106
-#, fuzzy
 msgid "Superhero"
 msgstr "Super-héros"
 
 #: functions/setup.php:107
-#, fuzzy
 msgid "United"
 msgstr "Unis"
 
 #: functions/setup.php:108
-#, fuzzy
 msgid "Yeti"
 msgstr "Yeti"
 
 #: functions/setup.php:125
-#, fuzzy
 msgid "Navbar Color scheme"
 msgstr "Navbar Color schéma"
 
 #: functions/setup.php:132 functions/setup.php:269
-#, fuzzy
 msgid "Light scheme"
 msgstr "Régime de lumière"
 
 #: functions/setup.php:133 functions/setup.php:270
-#, fuzzy
 msgid "Dark scheme"
 msgstr "Schéma sombre"
 
 #: functions/setup.php:134 functions/setup.php:271
-#, fuzzy
 msgid "Primary scheme"
 msgstr "Régime primaire"
 
 #: functions/setup.php:135 functions/setup.php:272
-#, fuzzy
 msgid "Secondary scheme"
 msgstr "Régime secondaire"
 
 #: functions/setup.php:136 functions/setup.php:273
-#, fuzzy
 msgid "Info scheme"
 msgstr "Schéma d'information"
 
 #: functions/setup.php:137 functions/setup.php:274
-#, fuzzy
 msgid "Success scheme"
 msgstr "Régime de réussite"
 
 #: functions/setup.php:138 functions/setup.php:275
-#, fuzzy
 msgid "Warning scheme"
 msgstr "Régime d'avertissement"
 
 #: functions/setup.php:139 functions/setup.php:276
-#, fuzzy
 msgid "Danger scheme"
 msgstr "Plan de danger"
 
 #: functions/setup.php:156
-#, fuzzy
 msgid "Home brand style"
 msgstr "Style de marque à la maison"
 
 #: functions/setup.php:157
-#, fuzzy
 msgid "Choose between style of home button"
 msgstr "Choisissez entre le style du bouton d’accueil"
 
 #: functions/setup.php:162
-#, fuzzy
 msgid "Brand only"
 msgstr "Marque uniquement"
 
 #: functions/setup.php:163
-#, fuzzy
 msgid "Logo only"
 msgstr "Logo uniquement"
 
 #: functions/setup.php:164
-#, fuzzy
 msgid "Brand & logo"
 msgstr "Marque et logo"
 
 #: functions/setup.php:165
-#, fuzzy
 msgid "Generic Home"
 msgstr "Maison générique"
 
 #: functions/setup.php:182
-#, fuzzy
 msgid "Sidebar Positioning"
 msgstr "Positionnement de la barre latérale"
 
 #: functions/setup.php:183
-#, fuzzy
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
@@ -420,102 +371,82 @@ msgstr ""
 "droite, gauche, les deux ou aucun."
 
 #: functions/setup.php:188 functions/widgets.php:22
-#, fuzzy
 msgid "Right sidebar"
 msgstr "Barre latérale droite"
 
 #: functions/setup.php:189 functions/widgets.php:9
-#, fuzzy
 msgid "Left sidebar"
 msgstr "Barre latérale gauche"
 
 #: functions/setup.php:190
-#, fuzzy
 msgid "Left & Right sidebars"
 msgstr "Barres latérales gauches et droites"
 
 #: functions/setup.php:191
-#, fuzzy
 msgid "No sidebar"
 msgstr "Pas de barre latérale"
 
 #: functions/setup.php:208
-#, fuzzy
 msgid "Carousel / Favorite image"
 msgstr "Carrousel / Image préférée"
 
 #: functions/setup.php:209
-#, fuzzy
 msgid "Set carousel / image"
 msgstr "Ensemble carrousel / image"
 
 #: functions/setup.php:214
-#, fuzzy
 msgid "Carousel and images on every pages"
 msgstr "Carrousel et images sur toutes les pages"
 
 #: functions/setup.php:215
-#, fuzzy
 msgid "Only image on pages"
 msgstr "Seule image sur les pages"
 
 #: functions/setup.php:216
-#, fuzzy
 msgid "Only carousel and images on posts"
 msgstr "Seul carrousel et images sur les poteaux"
 
 #: functions/setup.php:217
-#, fuzzy
 msgid "No carousel or images"
 msgstr "Pas de carrousel ou d’images"
 
 #: functions/setup.php:230
-#, fuzzy
 msgid "Restore the native admin bar"
 msgstr "Restaurer la barre d’administration native"
 
 #: functions/setup.php:243
-#, fuzzy
 msgid "Remove the shadow of content box"
 msgstr "Supprimer l’ombre de la boîte de contenu"
 
 #: functions/setup.php:261
-#, fuzzy
 msgid "Networkbar Color scheme"
 msgstr "Schéma de couleur Networkbar"
 
 #: functions/setup.php:268
-#, fuzzy
 msgid "Not active"
 msgstr "Non actif"
 
 #: functions/widgets.php:11
-#, fuzzy
 msgid "The left sidebar widget area"
 msgstr "La zone widget de barre latérale gauche"
 
 #: functions/widgets.php:24
-#, fuzzy
 msgid "The right sidebar widget area"
 msgstr "La zone widget de barre latérale droite"
 
 #: functions/widgets.php:35
-#, fuzzy
 msgid "Payment Footer"
 msgstr "Footer de paiement"
 
 #: functions/widgets.php:37
-#, fuzzy
 msgid "The payment footer widget area"
 msgstr "La zone widget de pied de paiement"
 
 #: functions/widgets.php:45
-#, fuzzy
 msgid "Address Footer"
 msgstr "Adresse Footer"
 
 #: functions/widgets.php:47
-#, fuzzy
 msgid "The address footer widget area"
 msgstr "La zone widget pied d’adresse"
 
@@ -524,17 +455,14 @@ msgid "Top"
 msgstr "Retour au début"
 
 #: functions/widgets.php:60
-#, fuzzy
 msgid "The top widget area"
 msgstr "La zone widget supérieure"
 
 #: functions/widgets.php:71
-#, fuzzy
 msgid "Caroussel"
 msgstr "Caroussel Caroussel"
 
 #: functions/widgets.php:73
-#, fuzzy
 msgid "The caroussel widget area"
 msgstr "La zone widget caroussel"
 
@@ -588,17 +516,14 @@ msgid "There is no changelog available."
 msgstr "Il n'y a pas de changelog disponible."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:204
-#, fuzzy
 msgid "Sorry, you are not allowed to access this page."
 msgstr "Désolé, vous n’êtes pas autorisé à accéder à cette page."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:251
-#, fuzzy
 msgid "Theme License - "
 msgstr "Licence thème -"
 
 #: lib/wp-package-updater/class-wp-package-updater.php:406
-#, fuzzy
 msgid ""
 "Unexpected Error! The query to retrieve the license data returned a "
 "malformed response."
@@ -607,12 +532,10 @@ msgstr ""
 "renvoyé une réponse mal formée."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:424
-#, fuzzy
 msgid "The license is already in use for this domain."
 msgstr "La licence est déjà utilisée pour ce domaine."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:427
-#, fuzzy
 msgid ""
 "The license has reached the maximum number of activations and cannot be "
 "activated for this domain."
@@ -621,24 +544,21 @@ msgstr ""
 "activée pour ce domaine."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:433
-#, fuzzy
 msgid "The license is already inactive for this domain."
 msgstr "La licence est déjà inactive pour ce domaine."
 
 #. translators: the license expiry date
 #: lib/wp-package-updater/class-wp-package-updater.php:444
-#, fuzzy, php-format
+#, php-format
 msgid "The license expired on %s and needs to be renewed to be updated."
 msgstr ""
 "La licence a expiré sur %s et doit être renouvelée pour être mise à jour."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:448
-#, fuzzy
 msgid "The license expired and needs to be renewed to be updated."
 msgstr "La licence a expiré et doit être renouvelée pour être mise à jour."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:454
-#, fuzzy
 msgid ""
 "The license is blocked and cannot be updated anymore. Please use another "
 "license key."
@@ -647,7 +567,6 @@ msgstr ""
 "une autre clé de licence."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:460
-#, fuzzy
 msgid ""
 "The license has not been activated and its status is stil pending. Please "
 "try again or use another license key."
@@ -656,14 +575,12 @@ msgstr ""
 "plaît essayer à nouveau ou utiliser une autre clé de licence."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:466
-#, fuzzy
 msgid "The provided license key is invalid. Please use another license key."
 msgstr ""
 "La clé de licence fournie est invalide. Veuillez utiliser une autre clé de "
 "licence."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:469
-#, fuzzy
 msgid ""
 "The provided license key does not appear to be valid. Please use another "
 "license key."
@@ -672,7 +589,6 @@ msgstr ""
 "clé de licence."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:473
-#, fuzzy
 msgid ""
 "An active license is required to update the plugin. Please provide a valid "
 "license key in Plugins > Installed Plugins."
@@ -681,7 +597,6 @@ msgstr ""
 "fournir une clé de licence valide dans Plugins et Plugins installés."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:475
-#, fuzzy
 msgid ""
 "An active license is required to update the theme. Please provide a valid "
 "license key in Appearence > Theme License."
@@ -690,7 +605,6 @@ msgstr ""
 "fournir une clé de licence valide dans la licence Appearence et Thème."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:481
-#, fuzzy
 msgid ""
 "An unexpected error has occured. Please try again. If the problem persists, "
 "please contact the author of the plugin."
@@ -699,7 +613,6 @@ msgstr ""
 "problème persiste, veuillez contacter l’auteur du plugin."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:483
-#, fuzzy
 msgid ""
 "An unexpected error has occured. Please try again. If the problem persists, "
 "please contact the author of the theme."
@@ -708,12 +621,10 @@ msgstr ""
 "problème persiste, veuillez contacter l’auteur du thème."
 
 #: lib/wp-package-updater/templates/license-form.php:6
-#, fuzzy
 msgid "Current license key:"
 msgstr "Clé de licence actuelle :"
 
 #: lib/wp-package-updater/templates/license-form.php:9
-#, fuzzy
 msgid "License key to change:"
 msgstr "Clé de licence pour changer :"
 

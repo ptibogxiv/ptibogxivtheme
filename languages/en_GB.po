@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2020-02-12 13:48+0100\n"
-"PO-Revision-Date: 2020-02-12 13:49+0100\n"
+"POT-Creation-Date: 2020-02-12 13:53+0100\n"
+"PO-Revision-Date: 2020-02-12 13:56+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: es_ES\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,10 +16,10 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
 #: 404.php:10
 msgid "Error"
@@ -27,7 +27,7 @@ msgstr "Error"
 
 #: 404.php:11
 msgid "The page you were looking for does not exist."
-msgstr "La página que estás buscando no existe."
+msgstr "The page you were looking for does not exist."
 
 #: author.php:24
 #, php-format
@@ -36,136 +36,136 @@ msgstr "Autor %s"
 
 #: footer.php:7
 msgid "Payment modes"
-msgstr "Formas de pago"
+msgstr "Payment modes"
 
 #: footer.php:23
 msgid "Social networks"
-msgstr "Redes sociales"
+msgstr "Social networks"
 
 #: footer.php:49 footer.php:102
 msgid "Privacy"
-msgstr "Privacidad"
+msgstr "Privacy"
 
 #: footer.php:52
 msgid "Kiosk mode ON"
-msgstr "Modo quiosco ACTIVADO"
+msgstr "Kiosk mode ON"
 
 #: footer.php:69
 msgid "All rights reserved"
-msgstr "Todos los derechos reservados"
+msgstr "All rights reserved"
 
 #: footer.php:71
 msgid "Hosting & Theme by"
-msgstr "Hosting & Theme por"
+msgstr "Hosting & Theme by"
 
 #: footer.php:73
 msgid "Theme by"
-msgstr "Tema por"
+msgstr "Theme by"
 
 #: footer.php:80 header.php:73
 msgid "Choose language"
-msgstr "Elija el idioma"
+msgstr "Choose language"
 
 #: footer.php:84 header.php:99 header.php:101
 msgid "Sign in"
-msgstr "Registrarse"
+msgstr "Sign in"
 
 #: footer.php:87 footer.php:89 header.php:80
 msgid "My account"
-msgstr "Mi cuenta"
+msgstr "My account"
 
 #: footer.php:90 header.php:84
 msgid "Basket"
-msgstr "Cesta"
+msgstr "Panier"
 
 #: footer.php:92 header.php:92
 msgid "Sign out"
-msgstr "Cerrar sesión"
+msgstr "Sign out"
 
 #: functions.php:172
 msgid "year"
-msgstr "año"
+msgstr "year"
 
 #: functions.php:172
 msgid "years"
-msgstr "años"
+msgstr "years"
 
 #: functions.php:173
 msgid "month"
-msgstr "mes"
+msgstr "month"
 
 #: functions.php:173
 msgid "months"
-msgstr "meses"
+msgstr "months"
 
 #: functions.php:174
 msgid "week"
-msgstr "semana"
+msgstr "Semana"
 
 #: functions.php:174
 msgid "weeks"
-msgstr "semanas"
+msgstr "weeks"
 
 #: functions.php:175
 msgid "day"
-msgstr "día"
+msgstr "day"
 
 #: functions.php:175
 msgid "days"
-msgstr "días"
+msgstr "days"
 
 #: functions.php:176
 msgid "hour"
-msgstr "hora"
+msgstr "hour"
 
 #: functions.php:176
 msgid "hours"
-msgstr "horas"
+msgstr "timer"
 
 #: functions.php:177
 msgid "minute"
-msgstr "minuto"
+msgstr "minute"
 
 #: functions.php:177
 msgid "minutes"
-msgstr "minutos"
+msgstr "minutter"
 
 #: functions.php:178
 msgid "second"
-msgstr "segundo"
+msgstr "Segundo"
 
 #: functions.php:178 functions.php:218
 msgid "seconds"
-msgstr "segundos"
+msgstr "secondes"
 
 #: functions.php:195
 msgid "sometime"
-msgstr "algun tiempo"
+msgstr "joskus"
 
 #: functions.php:221
 #, php-format
 msgid "%s ago"
-msgstr "%s hace"
+msgstr "%s ago"
 
 #: functions/feedback.php:26
 msgid "at"
-msgstr "en"
+msgstr "at"
 
 #: functions/feedback.php:28
 msgid "Your comment is awaiting moderation."
-msgstr "Tu comentario está esperando ser moderado."
+msgstr "Ваш комментарий ожидает модерации."
 
 #: functions/feedback.php:39
 msgid "Edit"
-msgstr "Editar"
+msgstr "Edit"
 
 #: functions/index-pagination.php:29
 msgid "<i class=\"fas fa-angle-left\"></i> Newer"
-msgstr "< i class = \"fas fa-angulo-izquierda\" > </i> más reciente"
+msgstr "<i class=\"fas fa-angle-left\"></i> Newer"
 
 #: functions/index-pagination.php:31
 msgid "Older <i class=\"fas fa-angle-right\"></i>"
-msgstr "< i class = \"fas fa-angulo-derecha\" > </i>"
+msgstr "Older <i class=\"fas fa-angle-right\"></i>"
 
 #: functions/navbar.php:59
 msgid "Navbar"
@@ -173,51 +173,51 @@ msgstr "Navbar"
 
 #: functions/search-widget.php:4
 msgid "Your search"
-msgstr "Tu búsqueda"
+msgstr "Pencarian Anda"
 
 #: functions/setup.php:23
 msgid "Read more"
-msgstr "Leer más"
+msgstr "Read more"
 
 #: functions/setup.php:40
 msgid "Theme Layout Settings"
-msgstr "Configuración de diseño de tema"
+msgstr "Theme Layout Settings"
 
 #: functions/setup.php:42
 msgid "Container width and sidebar defaults"
-msgstr "Valores por defecto de ancho y SideBar del contenedor"
+msgstr "Container width and sidebar defaults"
 
 #: functions/setup.php:57
 msgid "Container Width"
-msgstr "Ancho del Contenedor"
+msgstr "Container Width"
 
 #: functions/setup.php:58
 msgid "Choose between Bootstrap's container and container-fluid"
-msgstr "Elija entre el envase del bootstrap y el líquido del contenedor"
+msgstr "Choose between Bootstrap's container and container-fluid"
 
 #: functions/setup.php:63
 msgid "Fixed width container"
-msgstr "Contenedor de ancho fijo"
+msgstr "Fixed width container"
 
 #: functions/setup.php:64
 msgid "Full width container"
-msgstr "Contenedor de ancho completo"
+msgstr "Full width container"
 
 #: functions/setup.php:81
 msgid "Css scheme"
-msgstr "Esquema CSS"
+msgstr "Css scheme"
 
 #: functions/setup.php:82 functions/setup.php:126 functions/setup.php:262
 msgid "Choose between scheme"
-msgstr "Elegir entre esquema"
+msgstr "Choose between scheme"
 
 #: functions/setup.php:87
 msgid "Default"
-msgstr "Por defecto"
+msgstr "Default"
 
 #: functions/setup.php:88
 msgid "Cerulean"
-msgstr "Cerúleo"
+msgstr "Azul claro"
 
 #: functions/setup.php:89
 msgid "Cosmo"
@@ -237,7 +237,7 @@ msgstr "Flatly"
 
 #: functions/setup.php:93
 msgid "Journal"
-msgstr "Diario"
+msgstr "Journal"
 
 #: functions/setup.php:94
 msgid "Litera"
@@ -261,11 +261,11 @@ msgstr "Minty"
 
 #: functions/setup.php:99
 msgid "Pulse"
-msgstr "Pulso"
+msgstr "Pulse"
 
 #: functions/setup.php:100
 msgid "Sandstone"
-msgstr "Arenisca"
+msgstr "Sandstone"
 
 #: functions/setup.php:101
 msgid "Simplex"
@@ -273,11 +273,11 @@ msgstr "Simplex"
 
 #: functions/setup.php:102
 msgid "Sketchy"
-msgstr "Incompleto"
+msgstr "Sketchy"
 
 #: functions/setup.php:103
 msgid "Slate"
-msgstr "Pizarra"
+msgstr "Slate"
 
 #: functions/setup.php:104
 msgid "Solar"
@@ -289,11 +289,11 @@ msgstr "Spacelab"
 
 #: functions/setup.php:106
 msgid "Superhero"
-msgstr "Superhéroe"
+msgstr "Superhero"
 
 #: functions/setup.php:107
 msgid "United"
-msgstr "Comisionado de Educación"
+msgstr "United"
 
 #: functions/setup.php:108
 msgid "Yeti"
@@ -301,162 +301,161 @@ msgstr "Yeti"
 
 #: functions/setup.php:125
 msgid "Navbar Color scheme"
-msgstr "Esquema de color de Navbar"
+msgstr "Navbar Color scheme"
 
 #: functions/setup.php:132 functions/setup.php:269
 msgid "Light scheme"
-msgstr "Esquema de luz"
+msgstr "Light scheme"
 
 #: functions/setup.php:133 functions/setup.php:270
 msgid "Dark scheme"
-msgstr "Esquema oscuro"
+msgstr "Dark scheme"
 
 #: functions/setup.php:134 functions/setup.php:271
 msgid "Primary scheme"
-msgstr "Esquema primario"
+msgstr "Primary scheme"
 
 #: functions/setup.php:135 functions/setup.php:272
 msgid "Secondary scheme"
-msgstr "Esquema secundario"
+msgstr "Secondary scheme"
 
 #: functions/setup.php:136 functions/setup.php:273
 msgid "Info scheme"
-msgstr "Esquema de información"
+msgstr "Info scheme"
 
 #: functions/setup.php:137 functions/setup.php:274
 msgid "Success scheme"
-msgstr "Esquema de éxito"
+msgstr "Success scheme"
 
 #: functions/setup.php:138 functions/setup.php:275
 msgid "Warning scheme"
-msgstr "Esquema de advertencia"
+msgstr "Warning scheme"
 
 #: functions/setup.php:139 functions/setup.php:276
 msgid "Danger scheme"
-msgstr "Esquema de peligro"
+msgstr "Danger scheme"
 
 #: functions/setup.php:156
 msgid "Home brand style"
-msgstr "Estilo de marca de casa"
+msgstr "Home brand style"
 
 #: functions/setup.php:157
 msgid "Choose between style of home button"
-msgstr "Elija entre el estilo del botón de inicio"
+msgstr "Choose between style of home button"
 
 #: functions/setup.php:162
 msgid "Brand only"
-msgstr "Sólo marca"
+msgstr "Brand"
 
 #: functions/setup.php:163
 msgid "Logo only"
-msgstr "Sólo logotipo"
+msgstr "Logo only"
 
 #: functions/setup.php:164
 msgid "Brand & logo"
-msgstr "Marca y logotipo"
+msgstr "Brand & logo"
 
 #: functions/setup.php:165
 msgid "Generic Home"
-msgstr "Hogar Genérico"
+msgstr "Generic"
 
 #: functions/setup.php:182
 msgid "Sidebar Positioning"
-msgstr "Posicionamiento de la barra lateral"
+msgstr "Sidebar Positioning"
 
 #: functions/setup.php:183
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
-"Establezca la posición predeterminada de la barra lateral. Puede ser: "
-"derecha, izquierda, ambas o ninguna."
+"Set sidebar's default position. Can either be: right, left, both or none."
 
 #: functions/setup.php:188 functions/widgets.php:22
 msgid "Right sidebar"
-msgstr "Barra lateral derecha"
+msgstr "Sağ sidebar"
 
 #: functions/setup.php:189 functions/widgets.php:9
 msgid "Left sidebar"
-msgstr "Barra lateral izquierda"
+msgstr "Left sidebar"
 
 #: functions/setup.php:190
 msgid "Left & Right sidebars"
-msgstr "Barras laterales izquierda y derecha"
+msgstr "Left & Right sidebars"
 
 #: functions/setup.php:191
 msgid "No sidebar"
-msgstr "Sin barra lateral"
+msgstr "Nenhuma Sidebar"
 
 #: functions/setup.php:208
 msgid "Carousel / Favorite image"
-msgstr "Carrusel / Imagen favorita"
+msgstr "Carousel / Favorite image"
 
 #: functions/setup.php:209
 msgid "Set carousel / image"
-msgstr "El área del widget Caroussel"
+msgstr "Slider-Bild"
 
 #: functions/setup.php:214
 msgid "Carousel and images on every pages"
-msgstr "Carrusel e imágenes en cada página"
+msgstr "Carousel and images on every pages"
 
 #: functions/setup.php:215
 msgid "Only image on pages"
-msgstr "Sólo imagen en las páginas"
+msgstr "Only image on pages"
 
 #: functions/setup.php:216
 msgid "Only carousel and images on posts"
-msgstr "Sólo carrusel e imágenes en las publicaciones"
+msgstr "Only carousel and images on posts"
 
 #: functions/setup.php:217
 msgid "No carousel or images"
-msgstr "Sin carrusel ni imágenes"
+msgstr "No carousel or images"
 
 #: functions/setup.php:230
 msgid "Restore the native admin bar"
-msgstr "Restaurar la barra de administración nativa"
+msgstr "Restore the native admin bar"
 
 #: functions/setup.php:243
 msgid "Remove the shadow of content box"
-msgstr "Eliminar la sombra del cuadro de contenido"
+msgstr "Remove the shadow of content box"
 
 #: functions/setup.php:261
 msgid "Networkbar Color scheme"
-msgstr "Esquema de color de la barra de red"
+msgstr "Networkbar Color scheme"
 
 #: functions/setup.php:268
 msgid "Not active"
-msgstr "Inactivo"
+msgstr "Not active"
 
 #: functions/widgets.php:11
 msgid "The left sidebar widget area"
-msgstr "El área del widget de la barra lateral izquierda"
+msgstr "Primeiro Widget da Barra Lateral Esquerda"
 
 #: functions/widgets.php:24
 msgid "The right sidebar widget area"
-msgstr "El área del widget de la barra lateral derecha"
+msgstr "Primeiro Widget da Barra Lateral Direita"
 
 #: functions/widgets.php:35
 msgid "Payment Footer"
-msgstr "Formas de pago"
+msgstr "Payment Footer"
 
 #: functions/widgets.php:37
 msgid "The payment footer widget area"
-msgstr "El área de widgets del pie de página"
+msgstr "Payment Logo Footer Widget Area"
 
 #: functions/widgets.php:45
 msgid "Address Footer"
-msgstr "Pie de página"
+msgstr "Address Footer"
 
 #: functions/widgets.php:47
 msgid "The address footer widget area"
-msgstr "El área de widgets del pie de página"
+msgstr "The address footer widget area"
 
 #: functions/widgets.php:58
 msgid "Top"
-msgstr "Arriba"
+msgstr "Top"
 
 #: functions/widgets.php:60
 msgid "The top widget area"
-msgstr "El área de widgets superior"
+msgstr "The top widget area"
 
 #: functions/widgets.php:71
 msgid "Caroussel"
@@ -464,199 +463,195 @@ msgstr "Caroussel"
 
 #: functions/widgets.php:73
 msgid "The caroussel widget area"
-msgstr "El área del widget Caroussel"
+msgstr "The caroussel widget area"
 
 #: header.php:35
 msgid "Contact us"
-msgstr "Contáctenos"
+msgstr "Contact us"
 
 #: header.php:142
 msgid "Post on"
-msgstr "Publicar en"
+msgstr "Post on"
 
 #: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:395
 msgid "Check for updates"
-msgstr "Buscar actualizaciones"
+msgstr "Check for updates"
 
 #: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:432
 msgid "View details"
-msgstr "Ver detalles"
+msgstr "View details"
 
 #: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:455
 #, php-format
 msgid "More information about %s"
-msgstr "Mas información sobre %s"
+msgstr "More information about %s"
 
 #: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:548
 #, php-format
 msgctxt "the plugin title"
 msgid "The %s plugin is up to date."
-msgstr "El plugin %s está actualizado."
+msgstr "The %s plugin is up to date."
 
 #: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:550
 #, php-format
 msgctxt "the plugin title"
 msgid "A new version of the %s plugin is available."
-msgstr "Una nueva versión del %s plugin está disponible."
+msgstr "A new version of the %s plugin is available."
 
 #: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:552
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
-msgstr "No podemos determinar si existen actualizaciones de %s."
+msgstr "Could not determine if updates are available for %s."
 
 #: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:558
 #, php-format
 msgid "Unknown update checker status \"%s\""
-msgstr "Estado de actualización desconocido \"%s\""
+msgstr "Unknown update checker status \"%s\""
 
 #: lib/plugin-update-checker/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
 msgid "There is no changelog available."
-msgstr "No hay changelog disponible."
+msgstr "There is no changelog available."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:204
 msgid "Sorry, you are not allowed to access this page."
-msgstr "Lo siento, no tienes permiso para acceder a esta página."
+msgstr "You are not allowed to access this page."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:251
 msgid "Theme License - "
-msgstr "Licencia temática -"
+msgstr "Theme license - "
 
 #: lib/wp-package-updater/class-wp-package-updater.php:406
 msgid ""
 "Unexpected Error! The query to retrieve the license data returned a "
 "malformed response."
 msgstr ""
-"Error inesperado! La consulta para recuperar los datos de licencia devolvió "
-"una respuesta con formato incorrecto."
+"Unexpected Error! The query to retrieve the license data returned a "
+"malformed response."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:424
 msgid "The license is already in use for this domain."
-msgstr "La licencia ya está en uso para este dominio."
+msgstr "The license is already in use for this domain."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:427
 msgid ""
 "The license has reached the maximum number of activations and cannot be "
 "activated for this domain."
 msgstr ""
-"La licencia ha alcanzado el número máximo de activaciones y no se puede "
-"activar para este dominio."
+"The license has reached the maximum number of activations and cannot be "
+"activated for this domain."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:433
 msgid "The license is already inactive for this domain."
-msgstr "La licencia ya está inactiva para este dominio."
+msgstr "The license is already inactive for this domain."
 
 #. translators: the license expiry date
 #: lib/wp-package-updater/class-wp-package-updater.php:444
 #, php-format
 msgid "The license expired on %s and needs to be renewed to be updated."
-msgstr "La licencia expiró en %s y debe renovarse para actualizarse."
+msgstr "The license expired on %s and needs to be renewed to be updated."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:448
 msgid "The license expired and needs to be renewed to be updated."
-msgstr "La licencia expiró y debe renovarse para actualizarse."
+msgstr "The license expired and needs to be renewed to be updated."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:454
 msgid ""
 "The license is blocked and cannot be updated anymore. Please use another "
 "license key."
 msgstr ""
-"La licencia está bloqueada y ya no se puede actualizar. Utilice otra clave "
-"de licencia."
+"The license is blocked and cannot be updated anymore. Please use another "
+"license key."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:460
 msgid ""
 "The license has not been activated and its status is stil pending. Please "
 "try again or use another license key."
 msgstr ""
-"La licencia no se ha activado y su estado está pendiente. Inténtelo de nuevo "
-"o utilice otra clave de licencia."
+"The license has not been activated and its status is stil pending. Please "
+"try again or use another license key."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:466
 msgid "The provided license key is invalid. Please use another license key."
-msgstr ""
-"La clave de licencia proporcionada no es válida. Utilice otra clave de "
-"licencia."
+msgstr "The provided license key is invalid. Please use another license key."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:469
 msgid ""
 "The provided license key does not appear to be valid. Please use another "
 "license key."
 msgstr ""
-"La clave de licencia proporcionada no parece ser válida. Utilice otra clave "
-"de licencia."
+"The provided license key does not appear to be valid. Please use another "
+"license key."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:473
 msgid ""
 "An active license is required to update the plugin. Please provide a valid "
 "license key in Plugins > Installed Plugins."
 msgstr ""
-"Se requiere una licencia activa para actualizar el plugin. Proporcione una "
-"clave de licencia válida en Plugins > Plugins Installed Plugins."
+"An active license is required to update the plugin. Please provide a valid "
+"license key in Plugins > Installed Plugins."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:475
 msgid ""
 "An active license is required to update the theme. Please provide a valid "
 "license key in Appearence > Theme License."
 msgstr ""
-"Se requiere una licencia activa para actualizar el tema. Proporcione una "
-"clave de licencia válida en Appearence > Theme License."
+"An active license is required to update the theme. Please provide a valid "
+"license key in Appearence > Theme License."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:481
 msgid ""
 "An unexpected error has occured. Please try again. If the problem persists, "
 "please contact the author of the plugin."
 msgstr ""
-"Se ha producido un error inesperado. Por favor, inténtelo de nuevo. Si el "
-"problema persiste, póngase en contacto con el autor del complemento."
+"An unexpected error has occured. Please try again. If the problem persists, "
+"please contact the author of the plugin."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:483
 msgid ""
 "An unexpected error has occured. Please try again. If the problem persists, "
 "please contact the author of the theme."
 msgstr ""
-"Se ha producido un error inesperado. Por favor, inténtelo de nuevo. Si el "
-"problema persiste, póngase en contacto con el autor del tema."
+"An unexpected error has occured. Please try again. If the problem persists, "
+"please contact the author of the theme."
 
 #: lib/wp-package-updater/templates/license-form.php:6
 msgid "Current license key:"
-msgstr "Clave de licencia actual:"
+msgstr "Current license key:"
 
 #: lib/wp-package-updater/templates/license-form.php:9
 msgid "License key to change:"
-msgstr "Clave de licencia para cambiar:"
+msgstr "License key to change:"
 
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
-msgstr ""
-"Este mensaje está protegido con contraseña. Introduzca la contraseña para "
-"ver los comentarios."
+msgstr "Bu yazı şifre korumalıdır. Yorumları görmek için şifreyi girin."
 
 #: loops/comments.php:28
 msgid "Be the first to write a comment."
-msgstr "Se el primero en escribir un comentario."
+msgstr "Be the first to write a comment."
 
 #: loops/comments.php:37 loops/comments.php:66 loops/comments.php:67
 msgid "Your comment"
-msgstr "Tu comentario"
+msgstr "Your comment"
 
 #: loops/comments.php:37
 #, php-format
 msgid "Responses to %s"
-msgstr "Respuestas a %s"
+msgstr "Responses to %s"
 
 #: loops/comments.php:41
 msgid ""
 "You must be <a href=\"#\" data-toggle=\"modal\" data-target="
 "\"#DoliconnectLogin\">logged in</a> to post a comment."
 msgstr ""
-"Debe ser < a href = \"#\" data-toggle = \"modal\" data-target = "
-"\"#DoliconnectLogin\" > logueado en </a> para publicar un comentario."
+"You must be <a href=\"#\" data-toggle=\"modal\" data-target="
+"\"#DoliconnectLogin\">logged in</a> to post a comment."
 
 #: loops/comments.php:42
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
-msgstr "Debe estar <a href=\"%s\"> conectado </a> para publicar un comentario."
+msgstr "You must be <a href=\"%s\">logged in</a> to post a comment."
 
 #: loops/comments.php:47 loops/comments.php:48
 msgid "Logged in as"
@@ -668,43 +663,43 @@ msgstr "Salir de esta cuenta"
 
 #: loops/comments.php:49
 msgid "Logout"
-msgstr "Cerrar sesión"
+msgstr "Logout"
 
 #: loops/comments.php:53 loops/comments.php:54
 msgid "Your name"
-msgstr "Tu nombre"
+msgstr "Your name"
 
 #: loops/comments.php:53
 msgid "(required)"
-msgstr "(requerido)"
+msgstr "(requis)"
 
 #: loops/comments.php:57 loops/comments.php:58
 msgid "Your email address"
-msgstr "Tu correo electrónico"
+msgstr "Your email address"
 
 #: loops/comments.php:57
 msgid "(required, but will not be published)"
-msgstr "(obligatorio, pero no será publicado)"
+msgstr "(required, but will not be published)"
 
 #: loops/comments.php:61
 msgid "Your website"
-msgstr "Tu Sitio WEB"
+msgstr "Web Siteniz"
 
 #: loops/comments.php:61
 msgid "if you have one (not required)"
-msgstr "si tienes uno (no obligatorio)"
+msgstr "if you have one (not required)"
 
 #: loops/comments.php:62
 msgid "Your website url"
-msgstr "La dirección de tu web"
+msgstr "Your website url"
 
 #: loops/comments.php:69
 msgid "Submit comment"
-msgstr "Enviar comentario"
+msgstr "Submit comment"
 
 #: loops/content-search.php:18
 msgid "Sorry, your search yielded no results."
-msgstr "Disculpa, tu búsqueda no tenido ningún resultado."
+msgstr "Sorry, your search yielded no results."
 
 #: loops/content-single.php:13
 msgid "By"
@@ -712,36 +707,36 @@ msgstr "Por"
 
 #: loops/content.php:19
 msgid "Post"
-msgstr "Entrada"
+msgstr "Post"
 
 #: loops/content.php:19
 msgid "No comments yet"
-msgstr "No hay comentarios aún"
+msgstr "No comments yet."
 
 #: loops/content.php:19
 msgid "1 comment"
-msgstr "1 comentario"
+msgstr "1 Yorum"
 
 #: loops/content.php:19
 msgid "Comments are off"
-msgstr "Los comentarios están deshabilitados"
+msgstr "Comentarios desactivados"
 
 #: loops/content.php:28
 msgid "Previous"
-msgstr "Anterior"
+msgstr "Previous"
 
 #: loops/content.php:30
 msgid "Next"
-msgstr "Siguiente"
+msgstr "Next"
 
 #: navbar-search.php:12
 msgctxt "ptibogxivtheme"
 msgid "Search"
-msgstr "Buscar"
+msgstr "Search"
 
 #: search.php:11
 msgid "Search Results for"
-msgstr "Resultados de búsqueda para"
+msgstr "Arama Sonuçları"
 
 #. Theme Name of the plugin/theme
 #. Author of the plugin/theme
@@ -751,68 +746,8 @@ msgstr "ptibogxiv"
 #. Theme URI of the plugin/theme
 #. Author URI of the plugin/theme
 msgid "https://www.ptibogxiv.net/en"
-msgstr "https://www.ptibogxiv.net/es"
+msgstr "https://www.ptibogxiv.net/en"
 
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
-msgstr "Bootstrap Starter Theme para WordPress & Doliconnect"
-
-#~ msgid "ptibogxivtheme"
-#~ msgstr "ptibogxivtheme"
-
-#~ msgid "Change language"
-#~ msgstr "Cambiar lenguaje"
-
-#~ msgid "Loading"
-#~ msgstr "Cargando"
-
-#~ msgid "Title:"
-#~ msgstr "Título:"
-
-#~ msgid "Comments are closed for this post."
-#~ msgstr "Los comentarios están cerrados para este post."
-
-#~ msgid "About"
-#~ msgstr "Acerca de"
-
-#~ msgid "Our websites"
-#~ msgstr "Nuestros sitios web"
-
-#~ msgid "on"
-#~ msgstr "En"
-
-#~ msgid "Search"
-#~ msgstr "Búsqueda"
-
-#~ msgid "Login"
-#~ msgstr "Login"
-
-#~ msgid "Share"
-#~ msgstr "Compartir"
-
-#~ msgid "Continue reading"
-#~ msgstr "Continuar leyendo"
-
-#~ msgid "Cart"
-#~ msgstr "Carro"
-
-#~ msgid "Log out"
-#~ msgstr "Cerrar sesión"
-
-#~ msgid "Feedback"
-#~ msgstr "Comentarios"
-
-#~ msgid "None"
-#~ msgstr "Ninguno"
-
-#~ msgid "Filed under"
-#~ msgstr "Archivado en"
-
-#~ msgid "post on"
-#~ msgstr "publicar en"
-
-#~ msgid "Sidebar"
-#~ msgstr "Barra lateral"
-
-#~ msgid "Choose between color scheme"
-#~ msgstr "Elegir entre combinación de colores"
+msgstr "Bootstrap Starter Theme for WordPress & Doliconnect"

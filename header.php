@@ -46,10 +46,16 @@ if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode' && (! empty(get_
 ?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><div class='d-block d-sm-block d-xs-block d-md-none'><?php bloginfo('name'); ?></div><div class='d-none d-md-block'><i class='fas fa-home'></i></div></a> 
 <?php } 
 elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode' && !get_header_image()) {
-the_custom_logo(); ?>&nbsp;<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a> 
+$image_attributes = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full', false); 
+if ( $image_attributes ) : ?>
+<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo $image_attributes[0]; ?>" height="30px" alt="<?php bloginfo('name'); ?>"/></a>
+<?php endif; ?>&nbsp;<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a> 
 <?php }
 elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'logo_mode' && !get_header_image()) {
-the_custom_logo(); ?>
+$image_attributes = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full', false); 
+if ( $image_attributes ) : ?>
+<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo $image_attributes[0]; ?>" height="30px" alt="<?php bloginfo('name'); ?>"/></a>
+<?php endif; ?>
 <?php } else {
 ?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a><?php
 } ?>

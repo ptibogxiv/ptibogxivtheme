@@ -88,7 +88,7 @@ if ( function_exists('doliconnecturl') && doliconnectid('doliaccount') > 0 ) { ?
 if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { 
 ?>
 <a href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-fw fa-2x">
-<i class="fas fa-shopping-bag"></i><span class="fa-layers-counter fa-lg" style="background:Tomato"><?php echo doliconnector( null, 'fk_order_nb_item'); ?></span></span></a>&nbsp;  
+<i class="fas fa-shopping-bag"></i><span class="fa-layers-counter fa-lg" id="DoliHeaderCarItems" style="background:Tomato"><?php echo (!empty(doliconnector( null, 'fk_order_nb_item'))?doliconnector( null, 'fk_order_nb_item'):'0'); ?></span></span></a>&nbsp;  
 <?php
 } 
 if ( get_site_option('doliconnect_mode')=='one' && is_multisite() && is_multisite() ) {

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2020-02-08 10:54+0100\n"
-"PO-Revision-Date: 2020-02-08 10:54+0100\n"
+"POT-Creation-Date: 2020-02-23 10:46+0100\n"
+"PO-Revision-Date: 2020-02-23 10:47+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -38,49 +38,53 @@ msgstr "Auteur %s"
 msgid "Payment modes"
 msgstr "Modes de paiement"
 
-#: footer.php:11
+#: footer.php:23
 msgid "Social networks"
 msgstr "Réseaux sociaux"
 
-#: footer.php:37 footer.php:88
-msgid "Privacy"
-msgstr "Confidentialité"
+#: footer.php:49
+msgid "Legal notice"
+msgstr "Mentions légales"
 
-#: footer.php:40
+#: footer.php:52
 msgid "Kiosk mode ON"
 msgstr "Mode kiosque ON"
 
-#: footer.php:57
+#: footer.php:69
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:59
+#: footer.php:71
 msgid "Hosting & Theme by"
 msgstr "Hébergement & Thème par"
 
-#: footer.php:61
+#: footer.php:73
 msgid "Theme by"
 msgstr "Thème par"
 
-#: footer.php:68 header.php:73
+#: footer.php:80 header.php:79
 msgid "Choose language"
 msgstr "Choisissez une langue"
 
-#: footer.php:72 header.php:99 header.php:101
+#: footer.php:84 header.php:105 header.php:107
 msgid "Sign in"
 msgstr "S'identifier"
 
-#: footer.php:74 header.php:80
+#: footer.php:87 footer.php:89 header.php:86
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:76 header.php:84
+#: footer.php:90 header.php:90
 msgid "Basket"
 msgstr "Panier"
 
-#: footer.php:78 header.php:92
+#: footer.php:92 header.php:98
 msgid "Sign out"
 msgstr "Se déconnecter"
+
+#: footer.php:102
+msgid "Privacy"
+msgstr "Confidentialité"
 
 #: functions.php:172
 msgid "year"
@@ -470,7 +474,7 @@ msgstr "La zone de widget caroussel"
 msgid "Contact us"
 msgstr "Contactez-nous"
 
-#: header.php:142
+#: header.php:148
 msgid "Post on"
 msgstr "Publié le"
 

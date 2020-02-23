@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2020-02-12 13:53+0100\n"
-"PO-Revision-Date: 2020-02-12 13:56+0100\n"
+"POT-Creation-Date: 2020-02-23 10:50+0100\n"
+"PO-Revision-Date: 2020-02-23 10:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_GB\n"
@@ -32,7 +32,7 @@ msgstr "The page you were looking for does not exist."
 #: author.php:24
 #, php-format
 msgid "Author %s"
-msgstr "Autor %s"
+msgstr "Author %s"
 
 #: footer.php:7
 msgid "Payment modes"
@@ -42,9 +42,9 @@ msgstr "Payment modes"
 msgid "Social networks"
 msgstr "Social networks"
 
-#: footer.php:49 footer.php:102
-msgid "Privacy"
-msgstr "Privacy"
+#: footer.php:49
+msgid "Legal notice"
+msgstr "Legal notice"
 
 #: footer.php:52
 msgid "Kiosk mode ON"
@@ -62,25 +62,29 @@ msgstr "Hosting & Theme by"
 msgid "Theme by"
 msgstr "Theme by"
 
-#: footer.php:80 header.php:73
+#: footer.php:80 header.php:79
 msgid "Choose language"
 msgstr "Choose language"
 
-#: footer.php:84 header.php:99 header.php:101
+#: footer.php:84 header.php:105 header.php:107
 msgid "Sign in"
 msgstr "Sign in"
 
-#: footer.php:87 footer.php:89 header.php:80
+#: footer.php:87 footer.php:89 header.php:86
 msgid "My account"
 msgstr "My account"
 
-#: footer.php:90 header.php:84
+#: footer.php:90 header.php:90
 msgid "Basket"
 msgstr "Panier"
 
-#: footer.php:92 header.php:92
+#: footer.php:92 header.php:98
 msgid "Sign out"
 msgstr "Sign out"
+
+#: footer.php:102
+msgid "Privacy"
+msgstr "Privacy"
 
 #: functions.php:172
 msgid "year"
@@ -100,7 +104,7 @@ msgstr "months"
 
 #: functions.php:174
 msgid "week"
-msgstr "Semana"
+msgstr "week"
 
 #: functions.php:174
 msgid "weeks"
@@ -140,7 +144,7 @@ msgstr "secondes"
 
 #: functions.php:195
 msgid "sometime"
-msgstr "joskus"
+msgstr "sometime"
 
 #: functions.php:221
 #, php-format
@@ -153,7 +157,7 @@ msgstr "at"
 
 #: functions/feedback.php:28
 msgid "Your comment is awaiting moderation."
-msgstr "Ваш комментарий ожидает модерации."
+msgstr "Your comment is awaiting moderation."
 
 #: functions/feedback.php:39
 msgid "Edit"
@@ -217,7 +221,7 @@ msgstr "Default"
 
 #: functions/setup.php:88
 msgid "Cerulean"
-msgstr "Azul claro"
+msgstr "Cerulean"
 
 #: functions/setup.php:89
 msgid "Cosmo"
@@ -371,7 +375,7 @@ msgstr ""
 
 #: functions/setup.php:188 functions/widgets.php:22
 msgid "Right sidebar"
-msgstr "Sağ sidebar"
+msgstr "Right sidebar"
 
 #: functions/setup.php:189 functions/widgets.php:9
 msgid "Left sidebar"
@@ -383,7 +387,7 @@ msgstr "Left & Right sidebars"
 
 #: functions/setup.php:191
 msgid "No sidebar"
-msgstr "Nenhuma Sidebar"
+msgstr "No sidebar"
 
 #: functions/setup.php:208
 msgid "Carousel / Favorite image"
@@ -469,7 +473,7 @@ msgstr "The caroussel widget area"
 msgid "Contact us"
 msgstr "Contact us"
 
-#: header.php:142
+#: header.php:148
 msgid "Post on"
 msgstr "Post on"
 
@@ -625,7 +629,7 @@ msgstr "License key to change:"
 
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
-msgstr "Bu yazı şifre korumalıdır. Yorumları görmek için şifreyi girin."
+msgstr "This post is password protected. Enter the password to view comments."
 
 #: loops/comments.php:28
 msgid "Be the first to write a comment."
@@ -655,7 +659,7 @@ msgstr "You must be <a href=\"%s\">logged in</a> to post a comment."
 
 #: loops/comments.php:47 loops/comments.php:48
 msgid "Logged in as"
-msgstr "Conectado como"
+msgstr "Logged in as"
 
 #: loops/comments.php:49
 msgid "Log out of this account"
@@ -683,7 +687,7 @@ msgstr "(required, but will not be published)"
 
 #: loops/comments.php:61
 msgid "Your website"
-msgstr "Web Siteniz"
+msgstr "Your website"
 
 #: loops/comments.php:61
 msgid "if you have one (not required)"
@@ -703,7 +707,7 @@ msgstr "Sorry, your search yielded no results."
 
 #: loops/content-single.php:13
 msgid "By"
-msgstr "Por"
+msgstr "By"
 
 #: loops/content.php:19
 msgid "Post"
@@ -715,11 +719,11 @@ msgstr "No comments yet."
 
 #: loops/content.php:19
 msgid "1 comment"
-msgstr "1 Yorum"
+msgstr "1 comment"
 
 #: loops/content.php:19
 msgid "Comments are off"
-msgstr "Comentarios desactivados"
+msgstr "Comments are off"
 
 #: loops/content.php:28
 msgid "Previous"
@@ -736,7 +740,7 @@ msgstr "Search"
 
 #: search.php:11
 msgid "Search Results for"
-msgstr "Arama Sonuçları"
+msgstr "esults for"
 
 #. Theme Name of the plugin/theme
 #. Author of the plugin/theme

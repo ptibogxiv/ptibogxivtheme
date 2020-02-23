@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2020-02-12 13:48+0100\n"
-"PO-Revision-Date: 2020-02-12 13:49+0100\n"
+"POT-Creation-Date: 2020-02-23 10:50+0100\n"
+"PO-Revision-Date: 2020-02-23 10:50+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -42,9 +42,9 @@ msgstr "Formas de pago"
 msgid "Social networks"
 msgstr "Redes sociales"
 
-#: footer.php:49 footer.php:102
-msgid "Privacy"
-msgstr "Privacidad"
+#: footer.php:49
+msgid "Legal notice"
+msgstr "Aviso legal"
 
 #: footer.php:52
 msgid "Kiosk mode ON"
@@ -62,25 +62,29 @@ msgstr "Hosting & Theme por"
 msgid "Theme by"
 msgstr "Tema por"
 
-#: footer.php:80 header.php:73
+#: footer.php:80 header.php:79
 msgid "Choose language"
 msgstr "Elija el idioma"
 
-#: footer.php:84 header.php:99 header.php:101
+#: footer.php:84 header.php:105 header.php:107
 msgid "Sign in"
 msgstr "Registrarse"
 
-#: footer.php:87 footer.php:89 header.php:80
+#: footer.php:87 footer.php:89 header.php:86
 msgid "My account"
 msgstr "Mi cuenta"
 
-#: footer.php:90 header.php:84
+#: footer.php:90 header.php:90
 msgid "Basket"
 msgstr "Cesta"
 
-#: footer.php:92 header.php:92
+#: footer.php:92 header.php:98
 msgid "Sign out"
 msgstr "Cerrar sesión"
+
+#: footer.php:102
+msgid "Privacy"
+msgstr "Privacidad"
 
 #: functions.php:172
 msgid "year"
@@ -470,7 +474,7 @@ msgstr "El área del widget Caroussel"
 msgid "Contact us"
 msgstr "Contáctenos"
 
-#: header.php:142
+#: header.php:148
 msgid "Post on"
 msgstr "Publicar en"
 

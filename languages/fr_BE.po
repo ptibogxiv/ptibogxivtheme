@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2020-02-08 10:51+0100\n"
-"PO-Revision-Date: 2020-02-12 13:47+0100\n"
+"POT-Creation-Date: 2020-02-23 10:47+0100\n"
+"PO-Revision-Date: 2020-02-23 10:47+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
@@ -38,49 +38,53 @@ msgstr "Auteur %s"
 msgid "Payment modes"
 msgstr "Modes de paiement"
 
-#: footer.php:11
+#: footer.php:23
 msgid "Social networks"
 msgstr "Réseaux sociaux"
 
-#: footer.php:37 footer.php:88
-msgid "Privacy"
-msgstr "Vie privée"
+#: footer.php:49
+msgid "Legal notice"
+msgstr "Mentions légales"
 
-#: footer.php:40
+#: footer.php:52
 msgid "Kiosk mode ON"
 msgstr "Kiosk mode ON"
 
-#: footer.php:57
+#: footer.php:69
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:59
+#: footer.php:71
 msgid "Hosting & Theme by"
 msgstr "Hébergement et thème par"
 
-#: footer.php:61
+#: footer.php:73
 msgid "Theme by"
 msgstr "Thème par"
 
-#: footer.php:68 header.php:73
+#: footer.php:80 header.php:79
 msgid "Choose language"
 msgstr "Choisissez la langue"
 
-#: footer.php:72 header.php:99 header.php:101
+#: footer.php:84 header.php:105 header.php:107
 msgid "Sign in"
 msgstr "Se connecter"
 
-#: footer.php:74 header.php:80
+#: footer.php:87 footer.php:89 header.php:86
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:76 header.php:84
+#: footer.php:90 header.php:90
 msgid "Basket"
 msgstr "Panier"
 
-#: footer.php:78 header.php:92
+#: footer.php:92 header.php:98
 msgid "Sign out"
 msgstr "Déconnexion"
+
+#: footer.php:102
+msgid "Privacy"
+msgstr "Vie privée"
 
 #: functions.php:172
 msgid "year"
@@ -367,8 +371,8 @@ msgstr "Positionnement de la barre latérale"
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
-"Définir la position par défaut de la barre latérale. Peut être soit: "
-"droite, gauche, les deux ou aucun."
+"Définir la position par défaut de la barre latérale. Peut être soit: droite, "
+"gauche, les deux ou aucun."
 
 #: functions/setup.php:188 functions/widgets.php:22
 msgid "Right sidebar"
@@ -470,7 +474,7 @@ msgstr "La zone widget caroussel"
 msgid "Contact us"
 msgstr "Contactez-nous"
 
-#: header.php:142
+#: header.php:148
 msgid "Post on"
 msgstr "Poster sur"
 
@@ -503,8 +507,7 @@ msgstr "Une nouvelle version du plugin %s est disponible."
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
-msgstr ""
-"Impossible de déterminer si les mises à jour sont disponibles pour %s."
+msgstr "Impossible de déterminer si les mises à jour sont disponibles pour %s."
 
 #: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:558
 #, php-format
@@ -571,8 +574,8 @@ msgid ""
 "The license has not been activated and its status is stil pending. Please "
 "try again or use another license key."
 msgstr ""
-"La licence n’a pas été activée et son statut est en attente. S’il vous "
-"plaît essayer à nouveau ou utiliser une autre clé de licence."
+"La licence n’a pas été activée et son statut est en attente. S’il vous plaît "
+"essayer à nouveau ou utiliser une autre clé de licence."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:466
 msgid "The provided license key is invalid. Please use another license key."
@@ -631,8 +634,8 @@ msgstr "Clé de licence pour changer :"
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
 msgstr ""
-"Ce Post est protégé par mot de passe. Entrez le mot de passe pour "
-"visualiser les commentaires."
+"Ce Post est protégé par mot de passe. Entrez le mot de passe pour visualiser "
+"les commentaires."
 
 #: loops/comments.php:28
 msgid "Be the first to write a comment."

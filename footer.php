@@ -105,8 +105,7 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <p><strong><?php _e('Editor', 'ptibogxivtheme'); ?></strong><br>
 <?php echo $company->name; ?><br>
 <?php echo $company->address; ?><br>
-<?php echo $company->zip; ?> <?php echo $company->town; ?><br>
-<?php echo $company->country; ?><br>
+<?php echo $company->zip; ?> <?php echo $company->town; ?> - <?php echo $company->country; ?><br>
 <?php if (!empty($company->idprof2)) {?><br>SIRET: <?php echo $company->idprof2; ?> - APE<?php echo $company->idprof3; ?><?php }?>
 <?php if (!empty($company->idprof4)) {?><br>RCS: <?php echo $company->idprof4; ?><?php }?>
 <?php if (!empty($company->tva_assuj)) {?><br>TVA: <?php echo $company->tva_intra; ?><?php }?>

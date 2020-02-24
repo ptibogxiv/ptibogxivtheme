@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2020-02-23 10:49+0100\n"
-"PO-Revision-Date: 2020-02-23 10:49+0100\n"
+"POT-Creation-Date: 2020-02-24 20:57+0100\n"
+"PO-Revision-Date: 2020-02-24 20:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_NL\n"
@@ -42,7 +42,7 @@ msgstr "Betalingsmodi"
 msgid "Social networks"
 msgstr "Sociale netwerken"
 
-#: footer.php:49
+#: footer.php:49 footer.php:102
 msgid "Legal notice"
 msgstr "Wettelijke kennisgeving"
 
@@ -82,9 +82,17 @@ msgstr "Winkelmand"
 msgid "Sign out"
 msgstr "Uitloggen"
 
-#: footer.php:102
-msgid "Privacy"
-msgstr "Privacy"
+#: footer.php:105
+msgid "Editor"
+msgstr "Bewerker"
+
+#: footer.php:114
+msgid "Responsible for publishing"
+msgstr "Verantwoordelijk voor publicatie"
+
+#: footer.php:115
+msgid "Hosting"
+msgstr "Hosting"
 
 #: functions.php:172
 msgid "year"
@@ -762,3 +770,6 @@ msgstr "https://www.ptibogxiv.net/en"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Bootstrap Starter Thema voor WordPress & Doliconnect"
+
+#~ msgid "Privacy"
+#~ msgstr "Privacy"

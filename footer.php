@@ -111,7 +111,7 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <?php if (!empty($company->idprof4)) {?><br>RCS: <?php echo $company->idprof4; ?><?php }?>
 <?php if (!empty($company->tva_assuj)) {?><br>TVA: <?php echo $company->tva_intra; ?><?php }?>
 <?php if (!empty($company->note_private)) {?><br><?php echo $company->note_private; ?><?php }?></p>
-<p><b><?php _e('Responsible for publishing', 'ptibogxivtheme'); ?></b> <?php echo $company->managers; ?></p>
+<p><strong><?php _e('Responsible for publishing', 'ptibogxivtheme'); ?></strong><br><?php echo $company->managers; ?></p>
 <p><strong><?php _e('Hosting', 'ptibogxivtheme'); ?></strong><br>ptibogxiv.net<br>1 rue de la grande brasserie, 59000 LILLE<br>www.ptibogxiv.net<br>SIRET: 83802482600011 - APE6201Z</p>
 </div></div></div></div>
 <?php } ?> 

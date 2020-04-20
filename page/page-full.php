@@ -13,14 +13,12 @@ get_header(); ?>
 
 <?php echo ptibogxiv_alert(); ?> 
 
-  <div class="row">
-    
+  <div class="row" <?php if(get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?>style="-webkit-backdrop-filter: blur(5px);backdrop-filter: blur(5px);background-color: rgba(255, 255, 255, 0.5);"<?php endif; ?>>
     <div class="col-12">
       <div id="content" role="main">
         <?php get_template_part('loops/content', 'full'); ?>
       </div><!-- /#content -->
     </div>
-    
   </div><!-- /.row -->
 </div><!-- /.container -->
 

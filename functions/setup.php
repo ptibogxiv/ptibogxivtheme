@@ -245,6 +245,19 @@ if ( ! function_exists( 'ptibogxivtheme_theme_customize_register' ) ) {
     'type'     => 'checkbox',
     'priority'    => '70',
 ) );
+
+    $wp_customize->add_setting( 'ptibogxivtheme_cardcontent', array(
+    'default'        => false,
+    'capability'     => 'edit_theme_options'
+    ) );
+
+    $wp_customize->add_control( 'ptibogxivtheme_cardcontent', array(
+    'settings' => 'ptibogxivtheme_cardcontent',
+    'label'    => __( 'Remove the card of content box', 'ptibogxivtheme' ),
+    'section'  => 'ptibogxivtheme_theme_layout_options',
+    'type'     => 'checkbox',
+    'priority'    => '80',
+) );
  
 if (is_multisite()) {
     $wp_customize->add_setting( 'ptibogxivtheme_networkbar_color', array(

@@ -7,7 +7,7 @@ The Single Posts Loop
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
 <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
 <?php if(!get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?><div class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="<?php echo ptibogxivtheme_gradient(); ?>"><?php endif; ?>
-<?php if ( has_post_thumbnail() ){ ?><img class="card-img-top" src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ); ?>" alt="<?php the_title()?>"><?php } ?>
+<?php if ( has_post_thumbnail() ){ ?><img src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ); ?>" class="card-img-top" alt="<?php the_title()?>"><?php } ?>
 <div class="card-body">
 <header><table width="100%"><tr><td><h1><?php the_title()?> <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && ( wp_get_current_user()->show_admin_bar_front != true)) ) { edit_post_link('<I class="fas fa-edit"></i>', '<span class="edit-link">', '</span>' ); } ?></h1>
 <h6><em><span class="text-muted author"><?php _e('By', 'ptibogxivtheme'); echo " "; the_author() ?>, </span>

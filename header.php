@@ -28,7 +28,7 @@ if ( function_exists( 'wp_body_open' ) ) {
     do_action( 'wp_body_open' );
 }
 if ( ! empty(get_theme_mod( 'ptibogxivtheme_carousel'))) { //! empty(get_theme_mod( 'ptibogxivtheme_header')) ?>
-<div class="h-auto align-middle <?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>" <?php if(get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?>style="-webkit-backdrop-filter: blur(5px);backdrop-filter: blur(5px);background-color: rgba(255, 255, 255, 0.5);"<?php endif; ?>>
+<div class="h-auto align-middle <?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>" <?php if(get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?>style="<?php echo ptibogxivtheme_gradient(); ?>"<?php endif; ?>>
 <div class="text-dark d-none d-md-block" style="height:15vh;background:url('<?php header_image(); ?>')">
 <div class="mh-100 float-right"><p><?php if ( function_exists('doliconnecturl') && doliconnectid('dolicontact') > 0 ) { 
 ?>

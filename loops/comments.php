@@ -33,7 +33,7 @@ if (have_comments()) : ?>
 ?>
 
 <?php if (comments_open()) : ?>
-<section id="respond"><div class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="background-color: rgba(256, 256, 256, 0.8)"><div class="card-body">
+<section id="respond"><div class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="<?php echo ptibogxivtheme_gradient(); ?>"><div class="card-body">
   <h3><?php comment_form_title(__('Your comment', 'ptibogxivtheme'), __('Responses to %s', 'ptibogxivtheme')); ?></h3>
   <p><?php cancel_comment_reply_link(); ?></p>
   <?php if (get_option('comment_registration') && !is_user_logged_in()) : ?>

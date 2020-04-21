@@ -98,7 +98,7 @@ return false;
  }
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 
-function ptibogxiv_social() {
+function ptibogxivtheme_social() {
 global $post;
 $return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
 <a href='#' class='btn btn-outline-dark disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
@@ -140,6 +140,11 @@ restore_current_blog();
 $alert = null;
 } 
 return $alert;
+}
+
+function ptibogxivtheme_gradient() {
+
+return "-webkit-backdrop-filter: blur(4px);backdrop-filter: blur(4px);background-color: rgba(255, 255, 255, 0.5);";
 }
 
 add_action('add_meta_boxes','caroussel_metabox');

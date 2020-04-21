@@ -1,9 +1,25 @@
 <?php get_header(); ?>
 
-<div class="container">
-  <div class="row">
-    
-    <div class="<?php if(is_active_sidebar('sidebar-widget-area')): ?>col-sm-8<?php else: ?>col-sm-12<?php endif; ?>">
+<div class="<?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_container_type')); ?> site-content">
+
+<?php echo ptibogxiv_alert(); ?> 
+
+<div class="row">
+<?php dynamic_sidebar('top-widget-area');?>
+ </div>
+ <div class="row" <?php if(get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?>style="<?php echo ptibogxivtheme_gradient(); ?>"<?php endif; ?>>
+<?php if(is_active_sidebar('sidebar-left-widget-area') && (get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='left' or get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both')){ ?>    
+    <div class="order-2 order-md-1 <?php if(get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both'): ?>col-12 col-md-3<?php
+    else: ?>col-12 col-md-4<?php endif; ?>" id="leftsidebar" role="navigation"><br>
+<?php if(!get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?><div class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="<?php echo ptibogxivtheme_gradient(); ?>"><div class="card-body"><?php endif; ?>
+<?php dynamic_sidebar('sidebar-left-widget-area'); ?>
+<?php if(!get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?></div></div><?php endif; ?>
+<br></div>
+<?php } ?>  
+    <div class="order-1 order-md-2 <?php if(get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='none'): ?>col-12<?php
+    elseif(get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both'): ?>col-12 col-md-6<?php
+    elseif(is_active_sidebar('sidebar-left-widget-area') OR is_active_sidebar('sidebar-right-widget-area')): ?>col-12 col-md-8<?php 
+    else: ?>col-12<?php endif; ?>">
       <div id="content" role="main">
         <br>
         <div class="alert alert-warning">
@@ -12,12 +28,16 @@
         </div>
       </div><!-- /#content -->
     </div>
-    
-    <div class="col-sm-4" id="sidebar" role="navigation">
-       <?php get_sidebar(); ?>
-    </div>
-    
+<?php if(is_active_sidebar('sidebar-right-widget-area') && (get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='right' or get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both')){ ?>    
+    <div class="order-3 <?php if(get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both'): ?>col-12 col-md-3<?php
+    else: ?>col-12 col-md-4<?php endif; ?>" id="rightsidebar" role="navigation"><br>
+<?php if(!get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?><div class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="<?php echo ptibogxivtheme_gradient(); ?>"><div class="card-body"><?php endif; ?>
+<?php dynamic_sidebar('sidebar-right-widget-area'); ?>
+<?php if(!get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?></div></div><?php endif; ?>
+<br></div>
+<?php } ?>   
   </div><!-- /.row -->
 </div><!-- /.container -->
 
 <?php get_footer(); ?>
+

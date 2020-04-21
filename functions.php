@@ -144,7 +144,7 @@ return $alert;
 
 function ptibogxivtheme_gradient() {
 
-return "-webkit-backdrop-filter: blur(4px);backdrop-filter: blur(4px);background-color: rgba(255, 255, 255, 0.5);";
+return "backdrop-filter: blur(4px);-webkit-backdrop-filter: blur(4px);background-color: rgba(255, 255, 255, 0.5);";
 }
 
 add_action('add_meta_boxes','caroussel_metabox');

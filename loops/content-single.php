@@ -24,7 +24,7 @@ The Single Posts Loop
       <?php wp_link_pages(); ?>
     </section>
 <?php the_terms( $post->ID, 'post_tag', '<hr><i class="fas fa-tags"></i> ', ' ', '<br><br>'); ?>
-<?php echo ptibogxiv_social()."<BR>"; ?> 
+<?php echo ptibogxivtheme_social()."<br>"; ?> 
 <div class="card bg-light mb-3"><div class="card-body"><div class="row">
 <div class="col-3 col-md-2 text-center"><?php echo get_avatar(get_the_author_meta('ID'),80);?></div><div class="col-9 col-md-10"><h5><?php echo get_the_author(); ?></h5><h6><?php the_author_meta( 'description' ); ?></h6></div>
 </div></div></div>

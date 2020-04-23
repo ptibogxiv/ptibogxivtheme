@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2020-04-23 17:20+0200\n"
-"PO-Revision-Date: 2020-04-23 17:20+0200\n"
+"POT-Creation-Date: 2020-04-23 20:59+0200\n"
+"PO-Revision-Date: 2020-04-23 20:59+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -19,7 +19,7 @@ msgstr ""
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: 404.php:26
 msgid "Error"
@@ -41,6 +41,10 @@ msgstr "Modes de paiement"
 #: footer.php:23
 msgid "Social networks"
 msgstr "Réseaux sociaux"
+
+#: footer.php:45
+msgid "Resources"
+msgstr "Ressources"
 
 #: footer.php:49 footer.php:102
 msgid "Legal notice"

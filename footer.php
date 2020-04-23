@@ -30,16 +30,14 @@ dynamic_sidebar('payment-footer-widget-area'); } ?>
 <?php if (get_option('doliconnect_social_linkedin')) { ?><a href="https://www.linkedin.com/<?php echo get_option('doliconnect_social_linkedin');?>" rel="noopener" class="btn btn-linkedin btn-circle btn-lg" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a> <?php } ?>
 <?php if (get_option('doliconnect_social_skype')) { ?><div class="skype-button bubble" data-contact-id="<?php echo get_option('doliconnect_social_skype');?>"></div><script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script><?php } ?>
 <?php if (get_option('doliconnect_social_whatsapp')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_whatsapp');?>" rel="noopener" class="btn btn-whatsapp btn-circle btn-lg" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a> <?php } ?>
-</center><br></div><div class="col-12 col-md-6">
-<strong><?php bloginfo('blogname'); ?></strong>
-<div class="row"><div class="col-6">
+</center><br></div><div class="col-12 col-md-6"><div class="row"><div class="col-6">
 <?php if (! is_active_sidebar('address-footer-widget-area') && function_exists('callDoliApi')) {
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
-?>
-<?php echo $company->name; ?><br>
-<?php echo $company->address; ?><br>
-<?php echo $company->zip; ?> <?php echo $company->town; ?><br>
-<?php echo $company->country;
+?><strong><?php bloginfo('blogname'); ?></strong>
+<br><?php echo $company->name; ?>
+<br><?php echo $company->address; ?>
+<br><?php echo $company->zip; ?> <?php echo $company->town; ?>
+<br><?php echo $company->country;
 } else { 
 dynamic_sidebar('address-footer-widget-area'); }?></div>
 <div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>

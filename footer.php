@@ -113,12 +113,11 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <?php if (!empty($company->note_private)) {?><br><?php echo $company->note_private; ?><?php }?></p>
 <p><strong><?php _e('Responsible for publishing', 'ptibogxivtheme'); ?></strong><br><?php echo $company->managers; ?></p>
 <?php if ( defined('PTIBOGXIV_NET') ) { ?>
-<p><strong><?php _e('Designed', 'ptibogxivtheme'); ?></strong><br>ptibogxiv.net<br>
+<p><strong><?php _e('Design', 'ptibogxivtheme'); ?></strong><br>ptibogxiv.net<br>
 1 rue de la grande brasserie<br>
-FR - 59000 LILLE<br>
-Site Internet: <a href="https://www.ptibogxiv.net">ptibogxiv.net</a></p>
+FR - 59000 LILLE - FRANCE<br>
 SIRET: 83802482600011 - APE6201Z<br>
-Site Internet: <a href="https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b">Infomaniak</a></p>
+Site Internet: <a href="https://www.ptibogxiv.net">ptibogxiv.net</a></p>
 <p><strong><?php _e('Hosting', 'ptibogxivtheme'); ?></strong><br>Infomaniak Network SA<br>
 Rue Eugène-Marziano, 25<br>
 CH - 1227 GENEVE - SUISSE<br>

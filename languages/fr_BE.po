@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2020-04-23 16:31+0200\n"
-"PO-Revision-Date: 2020-04-23 16:32+0200\n"
+"POT-Creation-Date: 2020-04-23 17:20+0200\n"
+"PO-Revision-Date: 2020-04-23 17:20+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -96,7 +96,11 @@ msgstr "Éditeur"
 msgid "Responsible for publishing"
 msgstr "Responsable de la publication"
 
-#: footer.php:115
+#: footer.php:116
+msgid "Design"
+msgstr "Conception"
+
+#: footer.php:121
 msgid "Hosting"
 msgstr "Hébergement"
 

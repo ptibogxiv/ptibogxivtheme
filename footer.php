@@ -43,11 +43,11 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 } else { 
 dynamic_sidebar('address-footer-widget-area'); }?></div>
 <div class="col-6"><ul class="fa-ul">
-<?php if (get_site_option('dolibarr_public_url')) { ?><li><span class="fa-li"><i class="fas fa-lock"></i></span><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" class="text-info" target="_dolibarr"><?php } ?>Dolibarr<?php if (current_user_can( 'administrator' )) { ?></a><?php } ?></li><?php } ?>
-<li><span class="fa-li"><i class="fas fa-lock"></i></span><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><a href="https://webmail.ptibogxiv.net" rel="noopener" class="text-info" target="_webmail"><?php } ?>Webmail<?php if (current_user_can( 'administrator' )) { ?></a><?php } ?></li>
-<li><span class="fa-li"><i class="fas fa-lock"></i></span><?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><a href="https://my.ptibogxiv.net" rel="noopener" class="text-info" target="_cloud"><?php } ?>Serveur/Cloud<?php if (current_user_can( 'administrator' )) { ?></a><?php } ?></li>
-<li><span class="fa-li"><i class="fas fa-info-circle"></i></span><a href="#" class="text-info" data-toggle="modal" data-target="#legacymention"><?php _e('Legal notice', 'ptibogxivtheme'); ?></a></li>
-<li><span class="fa-li"><i class="fas fa-info-circle"></i></span><a href="#" class="text-info" data-toggle="modal" data-target="#cgvumention">C.G.U.</a></li>
+<?php if (get_site_option('dolibarr_public_url') && current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><li><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" class="text-info" target="_dolibarr">Dolibarr</a></li><?php } ?>
+<?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><li><a href="https://webmail.ptibogxiv.net" rel="noopener" class="text-info" target="_webmail">Webmail</a></li><?php } ?>
+<?php if (current_user_can( 'administrator' ) or current_user_can( 'editor' )) { ?><li><a href="https://my.ptibogxiv.net" rel="noopener" class="text-info" target="_cloud">Serveur/Cloud</a></li><?php } ?>
+<li><a href="#" class="text-info" data-toggle="modal" data-target="#legacymention"><?php _e('Legal notice', 'ptibogxivtheme'); ?></a></li>
+<li></span><a href="#" class="text-info" data-toggle="modal" data-target="#cgvumention">C.G.U.</a></li>
 </ul></div></div></div><div class="col-6">
 </div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none"><?php _e('Kiosk mode ON', 'ptibogxivtheme'); ?> <i class="fas fa-desktop"></i></div>
 <?php 

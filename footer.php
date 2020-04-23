@@ -42,13 +42,13 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <?php echo $company->country;
 } else { 
 dynamic_sidebar('address-footer-widget-area'); }?></div>
-<div class="col-6"><ul class="fa-ul">
-<?php if (get_site_option('dolibarr_public_url') && (current_user_can( 'administrator' ) or current_user_can( 'editor' ))) { ?><li><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" class="text-info" target="_dolibarr">Dolibarr</a></li><?php } ?>
-<?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_WEBMAIL')) { ?><li><a href="<?php echo constant('PTIBOGXIV_NET_WEBMAIL'); ?>" rel="noopener" class="text-info" target="_webmail">Webmail</a></li><?php } ?>
-<?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_CLOUD')) { ?><li><a href="<?php echo constant('PTIBOGXIV_NET_CLOUD'); ?>" rel="noopener" class="text-info" target="_cloud">Serveur/Cloud</a></li><?php } ?>
-<li><a href="#" class="text-info" data-toggle="modal" data-target="#legacymention"><?php _e('Legal notice', 'ptibogxivtheme'); ?></a></li>
-<li></span><a href="#" class="text-info" data-toggle="modal" data-target="#cgvumention">C.G.U.</a></li>
-</ul></div></div></div><div class="col-6">
+<div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>
+<?php if (get_site_option('dolibarr_public_url') && (current_user_can( 'administrator' ) or current_user_can( 'editor' ))) { ?><br><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" class="text-reset" target="_dolibarr">Dolibarr</a><?php } ?>
+<?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_WEBMAIL')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_WEBMAIL'); ?>" rel="noopener" class="text-reset" target="_webmail">Webmail</a><?php } ?>
+<?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_CLOUD')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_CLOUD'); ?>" rel="noopener" class="text-reset" target="_cloud">Serveur/Cloud</a><?php } ?>
+<br><a href="#" class="text-reset" data-toggle="modal" data-target="#legacymention"><?php _e('Legal notice', 'ptibogxivtheme'); ?></a>
+<br><a href="#" class="text-reset" data-toggle="modal" data-target="#cgvumention">C.G.U.</a>
+</div></div></div><div class="col-6">
 </div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none"><?php _e('Kiosk mode ON', 'ptibogxivtheme'); ?> <i class="fas fa-desktop"></i></div>
 <?php 
 if (function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
@@ -68,9 +68,9 @@ echo "</script>";
 <div class="row">
 <div class="col"><p class="text-center"><small><i class="fas fa-copyright"></i> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><br><small><?php 
 if ( defined('PTIBOGXIV_NET') ) {
-echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b> and hosted with <i class="fas fa-leaf text-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.net' rel='noopener'>ptibogxiv.net</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b'>Infomaniak</a>");
+echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b> and hosted with <i class="fas fa-leaf text-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.net' rel='noopener' class='text-reset'>ptibogxiv.net</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b' class='text-reset'>Infomaniak</a>");
 } else {
-echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.net' rel='noopener'>ptibogxiv.net</a>");
+echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.net' rel='noopener' class='text-reset'>ptibogxiv.net</a>");
 } ?></small></small></p></div>
 </div></div>
 <?php //if (get_theme_mod( 'ptibogxivtheme_mobileapp')) { ?>

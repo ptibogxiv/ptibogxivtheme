@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2020-02-24 20:55+0100\n"
-"PO-Revision-Date: 2020-02-24 20:55+0100\n"
+"POT-Creation-Date: 2020-04-23 16:31+0200\n"
+"PO-Revision-Date: 2020-04-23 16:32+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -21,11 +21,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: 404.php:10
+#: 404.php:26
 msgid "Error"
 msgstr "Erreur"
 
-#: 404.php:11
+#: 404.php:27
 msgid "The page you were looking for does not exist."
 msgstr "La page que vous recherchiez n’existe pas."
 
@@ -55,12 +55,18 @@ msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
 #: footer.php:71
-msgid "Hosting & Theme by"
-msgstr "Hébergement et thème par"
+#, php-format
+msgid ""
+"Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b> and "
+"hosted with <i class=\"fas fa-leaf text-success\"></i> by <b>%s</b>"
+msgstr ""
+"Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b> et "
+"hébergé avec <i class=\"fas fa-leaf text-success\"></i> par <b>%s</b>"
 
 #: footer.php:73
-msgid "Theme by"
-msgstr "Thème par"
+#, php-format
+msgid "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b>"
+msgstr "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b>"
 
 #: footer.php:80 header.php:79
 msgid "Choose language"
@@ -94,67 +100,67 @@ msgstr "Responsable de la publication"
 msgid "Hosting"
 msgstr "Hébergement"
 
-#: functions.php:172
+#: functions.php:177
 msgid "year"
 msgstr "année"
 
-#: functions.php:172
+#: functions.php:177
 msgid "years"
 msgstr "années"
 
-#: functions.php:173
+#: functions.php:178
 msgid "month"
 msgstr "mois"
 
-#: functions.php:173
+#: functions.php:178
 msgid "months"
 msgstr "mois"
 
-#: functions.php:174
+#: functions.php:179
 msgid "week"
 msgstr "semaine"
 
-#: functions.php:174
+#: functions.php:179
 msgid "weeks"
 msgstr "semaines"
 
-#: functions.php:175
+#: functions.php:180
 msgid "day"
 msgstr "jour"
 
-#: functions.php:175
+#: functions.php:180
 msgid "days"
 msgstr "jours"
 
-#: functions.php:176
+#: functions.php:181
 msgid "hour"
 msgstr "heure"
 
-#: functions.php:176
+#: functions.php:181
 msgid "hours"
 msgstr "heures"
 
-#: functions.php:177
+#: functions.php:182
 msgid "minute"
 msgstr "minute"
 
-#: functions.php:177
+#: functions.php:182
 msgid "minutes"
 msgstr "minutes"
 
-#: functions.php:178
+#: functions.php:183
 msgid "second"
 msgstr "seconde"
 
-#: functions.php:178 functions.php:218
+#: functions.php:183 functions.php:223
 msgid "seconds"
 msgstr "secondes"
 
-#: functions.php:195
+#: functions.php:200
 msgid "sometime"
 msgstr "parfois"
 
-#: functions.php:221
+#: functions.php:226
 #, php-format
 msgid "%s ago"
 msgstr "Il y a %s"
@@ -219,7 +225,7 @@ msgstr "Conteneur pleine largeur"
 msgid "Css scheme"
 msgstr "Régime Css"
 
-#: functions/setup.php:82 functions/setup.php:126 functions/setup.php:262
+#: functions/setup.php:82 functions/setup.php:126 functions/setup.php:275
 msgid "Choose between scheme"
 msgstr "Choisissez entre le régime"
 
@@ -315,35 +321,35 @@ msgstr "Yeti"
 msgid "Navbar Color scheme"
 msgstr "Navbar Color schéma"
 
-#: functions/setup.php:132 functions/setup.php:269
+#: functions/setup.php:132 functions/setup.php:282
 msgid "Light scheme"
 msgstr "Régime de lumière"
 
-#: functions/setup.php:133 functions/setup.php:270
+#: functions/setup.php:133 functions/setup.php:283
 msgid "Dark scheme"
 msgstr "Schéma sombre"
 
-#: functions/setup.php:134 functions/setup.php:271
+#: functions/setup.php:134 functions/setup.php:284
 msgid "Primary scheme"
 msgstr "Régime primaire"
 
-#: functions/setup.php:135 functions/setup.php:272
+#: functions/setup.php:135 functions/setup.php:285
 msgid "Secondary scheme"
 msgstr "Régime secondaire"
 
-#: functions/setup.php:136 functions/setup.php:273
+#: functions/setup.php:136 functions/setup.php:286
 msgid "Info scheme"
 msgstr "Schéma d'information"
 
-#: functions/setup.php:137 functions/setup.php:274
+#: functions/setup.php:137 functions/setup.php:287
 msgid "Success scheme"
 msgstr "Régime de réussite"
 
-#: functions/setup.php:138 functions/setup.php:275
+#: functions/setup.php:138 functions/setup.php:288
 msgid "Warning scheme"
 msgstr "Régime d'avertissement"
 
-#: functions/setup.php:139 functions/setup.php:276
+#: functions/setup.php:139 functions/setup.php:289
 msgid "Danger scheme"
 msgstr "Plan de danger"
 
@@ -430,11 +436,15 @@ msgstr "Restaurer la barre d’administration native"
 msgid "Remove the shadow of content box"
 msgstr "Supprimer l’ombre de la boîte de contenu"
 
-#: functions/setup.php:261
+#: functions/setup.php:256
+msgid "Remove the card of content box"
+msgstr "Supprimer l’ombre de la boîte de contenu"
+
+#: functions/setup.php:274
 msgid "Networkbar Color scheme"
 msgstr "Schéma de couleur Networkbar"
 
-#: functions/setup.php:268
+#: functions/setup.php:281
 msgid "Not active"
 msgstr "Non actif"
 
@@ -716,7 +726,7 @@ msgstr "Votre url de site Web"
 msgid "Submit comment"
 msgstr "Soumettre un commentaire"
 
-#: loops/content-search.php:18
+#: loops/content-search.php:19
 msgid "Sorry, your search yielded no results."
 msgstr "Désolé, votre recherche n’a donné aucun résultat."
 
@@ -770,6 +780,12 @@ msgstr "https://www.ptibogxiv.net/fr"
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
 msgstr "Thème de démarrage Bootstrap pour WordPress - Doliconnect"
+
+#~ msgid "Hosting & Theme by"
+#~ msgstr "Hébergement et thème par"
+
+#~ msgid "Theme by"
+#~ msgstr "Thème par"
 
 #~ msgid "Privacy"
 #~ msgstr "Vie privée"

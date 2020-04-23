@@ -68,10 +68,10 @@ echo "</script>";
 <div class="row">
 <div class="col"><p class="text-center"><span class="fas fa-copyright"></span> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><br><small><?php 
 if ( defined('PTIBOGXIV_NET') ) {
-_e('Hosting & Theme by', 'ptibogxivtheme');
+echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b> and hosted with <i class="fas fa-leaf text-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.net'>ptibogxiv.net</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b'>Infomaniak</a>");
 } else {
-_e('Theme by', 'ptibogxivtheme');
-} ?> <a href="https://www.ptibogxiv.net" rel="noopener" class="text-info">ptibogxiv.net</a></small></p></div>
+echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.net'>ptibogxiv.net</a>");
+} ?></small></p></div>
 </div></div>
 <?php //if (get_theme_mod( 'ptibogxivtheme_mobileapp')) { ?>
 <div class="d-block d-md-none"><br /><br /><nav class="fixed-bottom navbar-light bg-light">

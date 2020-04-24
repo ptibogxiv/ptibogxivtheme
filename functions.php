@@ -101,7 +101,7 @@ add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 function ptibogxivtheme_social() {
 global $post;
 $return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
-<a href='#' class='btn btn-outline-dark disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
+<a href='#' class='btn btn-light disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
 <a href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><i class='fas fa-envelope fa-fw'></i></a>"; 
 //<script>//if (navigator.userAgent.match(/iPhone|Android/i)) {
 //document.write('<a href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><i class='fab fa-whatsapp fa-fw'></i></a>');

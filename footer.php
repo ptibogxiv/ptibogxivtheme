@@ -103,22 +103,22 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <p><strong><?php _e('Editor', 'ptibogxivtheme'); ?></strong><br>
 <?php echo $company->name; ?><br>
 <?php echo $company->address; ?><br>
-<?php echo $company->zip; ?> <?php echo $company->town; ?>
-<?php if (!empty($company->state_id)) { ?>, <?php echo $company->state; ?> (<?php echo $company->state_code; ?>)<?php } ?> - <?php echo $company->country; ?><br>
+<?php echo $company->country_code; ?> - <?php echo $company->zip; ?> <?php echo $company->town; ?>
+<?php if (!empty($company->state_id)) { ?>, <?php echo $company->state; ?> (<?php echo $company->state_code; ?>)<?php } ?> - <?php echo $company->country; ?>
 <?php if (!empty($company->idprof2)) {?><br>SIRET: <?php echo $company->idprof2; ?> - APE<?php echo $company->idprof3; ?><?php }?>
 <?php if (!empty($company->idprof4)) {?><br>RCS: <?php echo $company->idprof4; ?><?php }?>
-<?php if (!empty($company->tva_assuj)) {?><br>TVA: <?php echo $company->tva_intra; ?><?php }?>
+<?php if (!empty($company->tva_assuj)) {?><br>N° TVA: <?php echo $company->tva_intra; ?><?php }?>
 <?php if (!empty($company->note_private)) {?><br><?php echo $company->note_private; ?><?php }?></p>
 <p><strong><?php _e('Responsible for publishing', 'ptibogxivtheme'); ?></strong><br><?php echo $company->managers; ?></p>
 <?php if ( defined('PTIBOGXIV_NET') ) { ?>
 <p><strong><?php _e('Design', 'ptibogxivtheme'); ?></strong><br>ptibogxiv.net<br>
 1 rue de la grande brasserie<br>
-FR - 59000 LILLE - FRANCE<br>
+FR - 59000 LILLE - France<br>
 SIRET: 83802482600011 - APE6201Z<br>
 Site Internet: <a href="https://www.ptibogxiv.net">ptibogxiv.net</a></p>
 <p><strong><?php _e('Hosting', 'ptibogxivtheme'); ?></strong><br>Infomaniak Network SA<br>
 Rue Eugène-Marziano, 25<br>
-CH - 1227 GENEVE - SUISSE<br>
+CH - 1227 GENEVE - Suisse<br>
 N° TVA: CHE - 103.167.648<br>
 N° de société: CH - 660 - 0059996 - 1<br>
 Site Internet: <a href="https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b">Infomaniak</a></p>

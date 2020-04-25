@@ -3,7 +3,7 @@
 <br>
 <div class="row">
 <div class="col-6 col-md-3">
-<?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('callDoliApi')) { ?>
+<?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('callDoliApi') && !empty(doliconnectid('dolicart'))) { ?>
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center>
 <?php
 $request = "/doliconnector/0/paymentmethods";

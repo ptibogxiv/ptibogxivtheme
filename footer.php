@@ -62,7 +62,7 @@ document.getElementById("dolikiosk").style.display = "block";
 echo "</script>";
 }
 ?>     
-</div></div>
+</div></div><br>
 <div class="row">
 <div class="col"><p class="text-center"><small><i class="fas fa-copyright"></i> <?php echo date('Y'); ?> <?php echo bloginfo('name'); ?> - <?php _e('All rights reserved', 'ptibogxivtheme'); ?><br><small><?php 
 if ( defined('PTIBOGXIV_NET') ) {

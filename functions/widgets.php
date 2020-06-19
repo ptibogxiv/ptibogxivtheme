@@ -37,8 +37,8 @@ function ptibogxivtheme_widgets_init() {
     'description'     => __( 'The payment footer widget area', 'ptibogxivtheme' ),
     'before_widget'   => '<div class="%1$s %2$s">',
     'after_widget'    => '</div>',
-    'before_title'    => '<h4>',
-    'after_title'     => '</h4>',
+    'before_title'    => '<strong>',
+    'after_title'     => '</strong>',
   ) );
     
   register_sidebar( array(
@@ -47,8 +47,8 @@ function ptibogxivtheme_widgets_init() {
     'description'     => __( 'The address footer widget area', 'ptibogxivtheme' ),
     'before_widget'   => '<div class="%1$s %2$s">',
     'after_widget'    => '</div>',
-    'before_title'    => '<h4>',
-    'after_title'     => '</h4>',
+    'before_title'    => '<strong>',
+    'after_title'     => '</strong>',
   ) );
   
       /*

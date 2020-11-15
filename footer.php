@@ -96,9 +96,9 @@ if ( !is_user_logged_in() && function_exists('doliconnect_modal') && get_option(
 if ( function_exists('callDoliApi') ) { 
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
-<div class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-lg" role="document"><div class="modal-content"><div class="modal-header">
+<div class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable modal-lg" role="document"><div class="modal-content"><div class="modal-header">
 <h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Legal notice', 'ptibogxivtheme'); ?></h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>
+<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button></div>
 <div class="modal-body">
 <p><strong><?php _e('Editor', 'ptibogxivtheme'); ?></strong><br>
 <?php echo $company->name; ?><br>

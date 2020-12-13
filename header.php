@@ -74,7 +74,8 @@ if ( $image_attributes ) : ?>
         'depth'			      => 2,
 	      'walker'  	      => new ptibogxivtheme_walker_nav_menu()
       ) );
-
+?>
+</div><div class="d-flex"><?php
 if ( function_exists('pll_the_languages') && function_exists('doliconnect_langs') && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) {       
 ?><a href="#" data-bs-toggle="modal" data-bs-target="#DoliconnectSelectLang" data-bs-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><i class='fas fa-language fa-fw fa-2x'></i></a>&nbsp;<?php
 }
@@ -107,8 +108,8 @@ if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1'
 <a href="<?php echo wp_login_url(); ?>?redirect_to=<?php echo get_permalink(); ?>" class="btn btn-primary my-2 my-sm-0" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>"><?php _e('Sign in', 'ptibogxivtheme'); ?></a>
 <?php
 } } ?>    
-<!-- <?php //get_template_part('navbar-search'); ?> --> 
-</div><div class="d-flex">sdgsdgdsg</div>
+<!--  //get_template_part('navbar-search'); --> 
+</div>
   </div>
 </nav>
 <?php if ( ! empty(get_theme_mod('ptibogxivtheme_carousel')) ) { ?>

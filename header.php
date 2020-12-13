@@ -108,7 +108,7 @@ if ( function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1'
 <?php
 } } ?>    
 <!-- <?php //get_template_part('navbar-search'); ?> --> 
-  </div>
+</div><div class="d-flex">sdgsdgdsg</div>
   </div>
 </nav>
 <?php if ( ! empty(get_theme_mod('ptibogxivtheme_carousel')) ) { ?>

@@ -44,8 +44,8 @@ dynamic_sidebar('address-footer-widget-area'); }?></div>
 <?php if (get_site_option('dolibarr_public_url') && (current_user_can( 'administrator' ) or current_user_can( 'editor' ))) { ?><br><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" class="text-reset" target="_dolibarr">Dolibarr</a><?php } ?>
 <?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_WEBMAIL')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_WEBMAIL'); ?>" rel="noopener" class="text-reset" target="_webmail">Webmail</a><?php } ?>
 <?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_CLOUD')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_CLOUD'); ?>" rel="noopener" class="text-reset" target="_cloud">Serveur/Cloud</a><?php } ?>
-<br><a href="#" class="text-reset" data-toggle="modal" data-target="#legacymention"><?php _e('Legal notice', 'ptibogxivtheme'); ?></a>
-<br><a href="#" class="text-reset" data-toggle="modal" data-target="#cgvumention">C.G.U.</a>
+<br><a href="#" class="text-reset" data-bs-toggle="modal" data-bs-target="#legacymention"><?php _e('Legal notice', 'ptibogxivtheme'); ?></a>
+<br><a href="#" class="text-reset" data-bs-toggle="modal" data-bs-target="#cgvumention">C.G.U.</a>
 </div></div></div><div class="col-6">
 </div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none"><?php _e('Kiosk mode ON', 'ptibogxivtheme'); ?> <i class="fas fa-desktop"></i></div>
 <?php 
@@ -96,9 +96,9 @@ if ( !is_user_logged_in() && function_exists('doliconnect_modal') && get_option(
 if ( function_exists('callDoliApi') ) { 
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
-<div class="modal fade" id="legacymention" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable modal-lg" role="document"><div class="modal-content"><div class="modal-header">
+<div class="modal fade" id="legacymention" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable modal-lg"><div class="modal-content"><div class="modal-header">
 <h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Legal notice', 'ptibogxivtheme'); ?></h5>
-<button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button></div>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
 <div class="modal-body">
 <p><strong><?php _e('Editor', 'ptibogxivtheme'); ?></strong><br>
 <?php echo $company->name; ?><br>

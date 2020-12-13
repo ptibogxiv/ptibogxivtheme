@@ -75,7 +75,7 @@ if ( $image_attributes ) : ?>
 	      'walker'  	      => new ptibogxivtheme_walker_nav_menu()
       ) );
 ?>
-</div><div class="d-flex"><?php
+</div><div class="d-flex d-none d-md-block"><?php
 if ( function_exists('pll_the_languages') && function_exists('doliconnect_langs') && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) {       
 ?><a href="#" data-bs-toggle="modal" data-bs-target="#DoliconnectSelectLang" data-bs-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><i class='fas fa-language fa-fw fa-2x'></i></a>&nbsp;<?php
 }

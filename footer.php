@@ -79,7 +79,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 <?php }
 if ( !is_user_logged_in() && function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1' ) {      
 ?>
-<a href="#" id="login-<?php echo current_time('timestamp'); ?>" data-toggle="modal" data-target="#DoliconnectLogin" data-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-light w-100" role="button"><i class="fas fa-user-circle fa-fw fa-2x"></i></a>
+<a href="#" id="login-<?php echo current_time('timestamp'); ?>" data-bs-toggle="modal" data-bs-target="#DoliconnectLogin" data-bs-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-light w-100" role="button"><i class="fas fa-user-circle fa-fw fa-2x"></i></a>
 <?php } elseif ( !is_user_logged_in() && function_exists('doliconnect_modal') && get_option('doliloginmodal') == '1' ) {      
 ?>
 <<a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fas fa-user-circle fa-fw fa-2x"></i></a>

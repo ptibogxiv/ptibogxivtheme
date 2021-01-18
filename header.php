@@ -89,7 +89,9 @@ if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) {
 ?><li class="nav-item dropdown">
 <a class="nav-item dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa-layers fa-fw fa-2x"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter fa-lg" id="DoliHeaderCarItems" style="background:Tomato"><?php echo (!empty(doliconnector( null, 'fk_order_nb_item'))?doliconnector( null, 'fk_order_nb_item'):'0'); ?></span></span></a>
 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
-<div><li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true"><?php _e( 'Your basket is empty', 'doliconnect'); ?></a></li></div>
+<div id="DoliHeaderCartItemsList"><li><h6 class="dropdown-header"><?php _e( 'Your basket is empty', 'doliconnect'); ?></h6></li>
+<li><a class="dropdown-item disabled" href="#" tabindex="-1" aria-disabled="true"><?php _e( 'Your basket is empty', 'doliconnect'); ?></a></li>
+<p class="p-3 text-muted"> test hfzefze fzeze gtez gtezgezg ezg</p></div>
 <li><hr class="dropdown-divider"></li>
 <li><a class="dropdown-item" href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Basket', 'ptibogxivtheme'); ?>"><?php _e('Go to basket', 'ptibogxivtheme'); ?></a></li>            
 </ul></li>

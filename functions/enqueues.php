@@ -9,7 +9,7 @@ $versionbase = '5.0.0-beta1';
 $version=$versionbase; 
 } else {
 $css='bootswatch/'.get_theme_mod( 'ptibogxivtheme_css').'/';
-$version='4.5.2';  
+$version='4.6.0';  
 }
 
 if (!empty(get_theme_mod( 'ptibogxivtheme_css')) && $version != $versionbase) {

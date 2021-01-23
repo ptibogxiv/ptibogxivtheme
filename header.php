@@ -75,7 +75,7 @@ if ( $image_attributes ) : ?>
 	      'walker'  	      => new ptibogxivtheme_walker_nav_menu()
       ) );
 ?>
-</div><ul class="nav justify-content-end w-25"><?php
+</div><div class="w-25 d-none d-md-block d-flex"><ul class="nav justify-content-end"><?php
 if ( function_exists('pll_the_languages') && function_exists('doliconnect_langs') && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) {       
 ?><li class="nav-item"><a class="nav-item" href="#" data-bs-toggle="modal" data-bs-target="#DoliconnectSelectLang" data-bs-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><i class='fas fa-language fa-fw fa-2x'></i></a></li><?php
 }
@@ -107,7 +107,7 @@ if ( function_exists('doliconnect_modalform') && get_option('doliloginmodal') ==
 <?php
 } } ?>    
 <!--  //get_template_part('navbar-search'); --> 
-</ul>
+</ul></div>
   </div>
 </nav>
 <?php if ( ! empty(get_theme_mod('ptibogxivtheme_carousel')) ) { ?>

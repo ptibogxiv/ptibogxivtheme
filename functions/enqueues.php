@@ -25,8 +25,8 @@ $version=$versionbase;
   wp_enqueue_script( 'bootstrap.bundle.min.js');
   wp_register_script( 'font-awesome', 'https://use.fontawesome.com/releases/v5.15.1/js/all.js', array(), '5.15.1' );
 	wp_enqueue_script( 'font-awesome');
-	wp_register_style( 'ptibogxivtheme-css', get_template_directory_uri() . '/theme/css/ptibogxivtheme.css', false, $version);
-	wp_enqueue_style( 'ptibogxivtheme-css');
+	wp_register_style( 'ptibogxivtheme', get_template_directory_uri() . '/theme/css/ptibogxivtheme.css', false, $version);
+	wp_enqueue_style( 'ptibogxivtheme');
 	//wp_register_script('ptibogxivtheme-js', get_template_directory_uri() . '/theme/js/ptibogxivtheme.js', false, null, true);
 	//wp_enqueue_script('ptibogxivtheme-js');
 

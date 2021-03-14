@@ -38,7 +38,7 @@ if (have_comments()) : ?>
   <p><?php cancel_comment_reply_link(); ?></p>
   <?php if (get_option('comment_registration') && !is_user_logged_in()) : ?>
   <p><?php if (get_option('doliloginmodal')=='1') {       
-printf(__('You must be <a href="#" data-toggle="modal" data-target="#DoliconnectLogin">logged in</a> to post a comment.', 'ptibogxivtheme'));
+printf(__('You must be <a href="#" data-bs-toggle="modal" data-bs-target="#DoliconnectLogin">logged in</a> to post a comment.', 'ptibogxivtheme'));
 } else {printf(__('You must be <a href="%s">logged in</a> to post a comment.', 'ptibogxivtheme'), wp_login_url(get_permalink()).'?redirect_to='.get_permalink());} ?></p>
   <?php else : ?>
   <form action="<?php echo site_url('/wp-comments-post.php') ?>" method="post" id="commentform"> 

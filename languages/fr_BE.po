@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2021-01-18 20:42+0100\n"
-"PO-Revision-Date: 2021-01-18 20:43+0100\n"
+"POT-Creation-Date: 2021-03-14 17:45+0100\n"
+"PO-Revision-Date: 2021-03-14 17:45+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -76,7 +76,7 @@ msgstr "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b>"
 msgid "Choose language"
 msgstr "Choisissez la langue"
 
-#: footer.php:82 header.php:104 header.php:106
+#: footer.php:82 header.php:106 header.php:108
 msgid "Sign in"
 msgstr "Se connecter"
 
@@ -84,11 +84,11 @@ msgstr "Se connecter"
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:88 header.php:94
+#: footer.php:88 header.php:94 header.php:97
 msgid "Basket"
 msgstr "Panier"
 
-#: footer.php:90 header.php:98
+#: footer.php:90 header.php:100
 msgid "Sign out"
 msgstr "Déconnexion"
 
@@ -504,7 +504,7 @@ msgstr "Contactez-nous"
 msgid "Go to basket"
 msgstr "Aller au panier"
 
-#: header.php:147
+#: header.php:149
 msgid "Post on"
 msgstr "Poster sur"
 
@@ -682,11 +682,11 @@ msgstr "Réponses aux %s"
 
 #: loops/comments.php:41
 msgid ""
-"You must be <a href=\"#\" data-toggle=\"modal\" data-target="
+"You must be <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target="
 "\"#DoliconnectLogin\">logged in</a> to post a comment."
 msgstr ""
-"Vous devez être <a href=\"#\" data-toggle=\"modal\" data-target="
-"\"#DoliconnectLogin\">connecté</a> pour poster un commentaire."
+"Vous devez être <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target="
+"\"#DoliconnectLogin\">connecté pour</a> poster un commentaire."
 
 #: loops/comments.php:42
 #, php-format

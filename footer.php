@@ -96,7 +96,7 @@ if ( !is_user_logged_in() && function_exists('doliconnect_modalform') && get_opt
 if ( function_exists('callDoliApi') ) { 
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
-<div class="modal fade" id="legacymention" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable modal-lg"><div class="modal-content"><div class="modal-header">
+<div class="modal fade" id="legacymention" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable modal-lg"><div class="modal-content"><div class="modal-header">
 <h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Legal notice', 'ptibogxivtheme'); ?></h5>
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
 <div class="modal-body">

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2021-03-14 17:44+0100\n"
-"PO-Revision-Date: 2021-03-14 17:44+0100\n"
+"POT-Creation-Date: 2021-04-05 17:45+0200\n"
+"PO-Revision-Date: 2021-04-05 17:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -49,6 +49,10 @@ msgstr "Ressources"
 #: footer.php:47 footer.php:100
 msgid "Legal notice"
 msgstr "Mentions légales"
+
+#: footer.php:48
+msgid "Terms of service"
+msgstr "Conditions Générales d’Utilisation"
 
 #: footer.php:50
 msgid "Kiosk mode ON"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2021-03-14 17:45+0100\n"
-"PO-Revision-Date: 2021-03-14 17:45+0100\n"
+"POT-Creation-Date: 2021-04-05 17:46+0200\n"
+"PO-Revision-Date: 2021-04-05 17:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -49,6 +49,10 @@ msgstr "Ressources"
 #: footer.php:47 footer.php:100
 msgid "Legal notice"
 msgstr "Mentions légales"
+
+#: footer.php:48
+msgid "Terms of service"
+msgstr "Conditions de service"
 
 #: footer.php:50
 msgid "Kiosk mode ON"
@@ -554,7 +558,7 @@ msgstr "Désolé, vous n’êtes pas autorisé à accéder à cette page."
 
 #: lib/wp-package-updater/class-wp-package-updater.php:251
 msgid "Theme License - "
-msgstr "Licence thème -"
+msgstr "Licence thème - "
 
 #: lib/wp-package-updater/class-wp-package-updater.php:406
 msgid ""

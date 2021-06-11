@@ -1,7 +1,7 @@
 === ptibogxivtheme ===
-Contributors: the WordPress team
-Requires at least: WordPress 4.7
-Tested up to: WordPress 5.2
+Contributors: ptibogxiv
+Requires at least: WordPress 5.0
+Tested up to: WordPress 5.8
 Version: 1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

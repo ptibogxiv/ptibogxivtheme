@@ -118,11 +118,28 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Legal notice', 'ptibogxivtheme'); ?></h5>
 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
 <div class="modal-body">
-<p><strong><?php _e('Editor', 'ptibogxivtheme'); ?></strong><br>
-<?php echo $company->name; ?><br>
-<?php echo $company->address; ?><br>
-<?php echo $company->country_code; ?> - <?php echo $company->zip; ?> <?php echo $company->town; ?>
-<?php if (!empty($company->state_id)) { ?>, <?php echo $company->state; ?> (<?php echo $company->state_code; ?>)<?php } ?> - <?php echo $company->country; ?>
+<p><strong><?php _e('Editor', 'ptibogxivtheme'); ?></strong>
+<br><?php echo $company->name; ?>
+<br><?php echo $company->address; ?>
+<br><?php echo $company->zip; ?> <?php echo $company->town; ?>
+<br><?php if ( !empty($company->country_id) ) {  
+if ( function_exists('pll_the_languages') ) { 
+$lang = pll_current_language('locale');
+} else {
+$lang = $current_user->locale;
+}
+$country = callDoliApi("GET", "/setup/dictionary/countries/".$company->country_id."?lang=".$lang, null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
+echo $country->label;
+} ?>
+<?php if ( !empty($company->state_id) ) {  
+if ( function_exists('pll_the_languages') ) { 
+$lang = pll_current_language('locale');
+} else {
+$lang = $current_user->locale;
+}
+$state = callDoliApi("GET", "/setup/dictionary/states/".$company->state_id."?lang=".$lang, null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
+echo ' - '.$state->name;
+} ?>
 <?php if (!empty($company->idprof2)) {?><br>SIRET: <?php echo $company->idprof2; ?> - APE<?php echo $company->idprof3; ?><?php }?>
 <?php if (!empty($company->idprof4)) {?><br>RCS: <?php echo $company->idprof4; ?><?php }?>
 <?php if (!empty($company->tva_assuj)) {?><br>N° TVA: <?php echo $company->tva_intra; ?><?php }?>

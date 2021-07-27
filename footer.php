@@ -47,6 +47,15 @@ $lang = $current_user->locale;
 $country = callDoliApi("GET", "/setup/dictionary/countries/".$company->country_id."?lang=".$lang, null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 echo $country->label;
 }
+if ( !empty($company->state_id) ) {  
+if ( function_exists('pll_the_languages') ) { 
+$lang = pll_current_language('locale');
+} else {
+$lang = $current_user->locale;
+}
+$state = callDoliApi("GET", "/setup/dictionary/states/".$company->state_id."?lang=".$lang, null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
+echo ' - '.$state->name;
+}
 } else { 
 dynamic_sidebar('address-footer-widget-area'); }?></div>
 <div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>

@@ -37,7 +37,7 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <br><?php echo $company->name; ?>
 <br><?php echo $company->address; ?>
 <br><?php echo $company->zip; ?> <?php echo $company->town; ?>
-<br><?php echo $company->country;
+<br><?php echo $company->country_code;
 } else { 
 dynamic_sidebar('address-footer-widget-area'); }?></div>
 <div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>

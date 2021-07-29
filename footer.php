@@ -38,6 +38,7 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <br><?php echo $company->address; ?>
 <br><?php echo $company->zip; ?> <?php echo $company->town; ?>
 <br><?php
+$current_user = wp_get_current_user();
 if ( !empty($company->country_id) ) {  
 if ( function_exists('pll_the_languages') ) { 
 $lang = pll_current_language('locale');

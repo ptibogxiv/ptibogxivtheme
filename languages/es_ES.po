@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2021-04-05 17:50+0200\n"
-"PO-Revision-Date: 2021-04-05 17:50+0200\n"
+"POT-Creation-Date: 2021-09-06 11:37+0200\n"
+"PO-Revision-Date: 2021-09-06 11:37+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
@@ -42,27 +42,27 @@ msgstr "Formas de pago"
 msgid "Social networks"
 msgstr "Redes sociales"
 
-#: footer.php:43
+#: footer.php:62
 msgid "Resources"
 msgstr "Recursos"
 
-#: footer.php:47 footer.php:100
+#: footer.php:66 footer.php:119
 msgid "Legal notice"
 msgstr "Aviso legal"
 
-#: footer.php:48
+#: footer.php:67
 msgid "Terms of service"
 msgstr "Términos de servicio"
 
-#: footer.php:50
+#: footer.php:69
 msgid "Kiosk mode ON"
 msgstr "Modo quiosco ACTIVADO"
 
-#: footer.php:67
+#: footer.php:86
 msgid "All rights reserved"
 msgstr "Todos los derechos reservados"
 
-#: footer.php:69
+#: footer.php:88
 #, php-format
 msgid ""
 "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b> and "
@@ -71,44 +71,44 @@ msgstr ""
 "Diseñado con <i class=\"fas fa-heart text-danger\"></i> por <b>%s</b> y "
 "alojado con <i class=\"fas fa-leaf text-success\"></i> por <b>%s</b>"
 
-#: footer.php:71
+#: footer.php:90
 #, php-format
 msgid "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b>"
 msgstr "Diseñado con <i class=\"fas fa-heart text-danger\"></i> por <b>%s</b>"
 
-#: footer.php:78 header.php:80
+#: footer.php:97 header.php:80
 msgid "Choose language"
 msgstr "Elija el idioma"
 
-#: footer.php:82 header.php:106 header.php:108
+#: footer.php:101 header.php:99 header.php:101
 msgid "Sign in"
 msgstr "Registrarse"
 
-#: footer.php:85 footer.php:87 header.php:86
+#: footer.php:104 footer.php:106 header.php:86
 msgid "My account"
 msgstr "Mi cuenta"
 
-#: footer.php:88 header.php:94 header.php:97
+#: footer.php:107 header.php:89
 msgid "Basket"
 msgstr "Cesta"
 
-#: footer.php:90 header.php:100
+#: footer.php:109 header.php:93
 msgid "Sign out"
 msgstr "Cerrar sesión"
 
-#: footer.php:103
+#: footer.php:122
 msgid "Editor"
 msgstr "Editor"
 
-#: footer.php:112
+#: footer.php:148
 msgid "Responsible for publishing"
 msgstr "Responsable de la publicación"
 
-#: footer.php:114
+#: footer.php:150
 msgid "Design"
 msgstr "Diseño"
 
-#: footer.php:119
+#: footer.php:155
 msgid "Hosting"
 msgstr "Hospedaje"
 
@@ -237,7 +237,7 @@ msgstr "Contenedor de ancho completo"
 msgid "Css scheme"
 msgstr "Esquema CSS"
 
-#: functions/setup.php:82 functions/setup.php:126 functions/setup.php:275
+#: functions/setup.php:82 functions/setup.php:130 functions/setup.php:279
 msgid "Choose between scheme"
 msgstr "Elegir entre esquema"
 
@@ -290,173 +290,189 @@ msgid "Minty"
 msgstr "Minty"
 
 #: functions/setup.php:99
+msgid "Morph"
+msgstr "Morph"
+
+#: functions/setup.php:100
 msgid "Pulse"
 msgstr "Pulso"
 
-#: functions/setup.php:100
+#: functions/setup.php:101
+msgid "Quartz"
+msgstr "Quartz"
+
+#: functions/setup.php:102
 msgid "Sandstone"
 msgstr "Arenisca"
 
-#: functions/setup.php:101
+#: functions/setup.php:103
 msgid "Simplex"
 msgstr "Simplex"
 
-#: functions/setup.php:102
+#: functions/setup.php:104
 msgid "Sketchy"
 msgstr "Incompleto"
 
-#: functions/setup.php:103
+#: functions/setup.php:105
 msgid "Slate"
 msgstr "Pizarra"
 
-#: functions/setup.php:104
+#: functions/setup.php:106
 msgid "Solar"
 msgstr "Solar"
 
-#: functions/setup.php:105
+#: functions/setup.php:107
 msgid "Spacelab"
 msgstr "Spacelab"
 
-#: functions/setup.php:106
+#: functions/setup.php:108
 msgid "Superhero"
 msgstr "Superhéroe"
 
-#: functions/setup.php:107
+#: functions/setup.php:109
 msgid "United"
 msgstr "Comisionado de Educación"
 
-#: functions/setup.php:108
+#: functions/setup.php:110
+msgid "Vapor"
+msgstr "Vapor"
+
+#: functions/setup.php:111
 msgid "Yeti"
 msgstr "Yeti"
 
-#: functions/setup.php:125
+#: functions/setup.php:112
+msgid "Zephyr"
+msgstr "Zephyr"
+
+#: functions/setup.php:129
 msgid "Navbar Color scheme"
 msgstr "Esquema de color de Navbar"
 
-#: functions/setup.php:132 functions/setup.php:282
+#: functions/setup.php:136 functions/setup.php:286
 msgid "Light scheme"
 msgstr "Esquema de luz"
 
-#: functions/setup.php:133 functions/setup.php:283
+#: functions/setup.php:137 functions/setup.php:287
 msgid "Dark scheme"
 msgstr "Esquema oscuro"
 
-#: functions/setup.php:134 functions/setup.php:284
+#: functions/setup.php:138 functions/setup.php:288
 msgid "Primary scheme"
 msgstr "Esquema primario"
 
-#: functions/setup.php:135 functions/setup.php:285
+#: functions/setup.php:139 functions/setup.php:289
 msgid "Secondary scheme"
 msgstr "Esquema secundario"
 
-#: functions/setup.php:136 functions/setup.php:286
+#: functions/setup.php:140 functions/setup.php:290
 msgid "Info scheme"
 msgstr "Esquema de información"
 
-#: functions/setup.php:137 functions/setup.php:287
+#: functions/setup.php:141 functions/setup.php:291
 msgid "Success scheme"
 msgstr "Esquema de éxito"
 
-#: functions/setup.php:138 functions/setup.php:288
+#: functions/setup.php:142 functions/setup.php:292
 msgid "Warning scheme"
 msgstr "Esquema de advertencia"
 
-#: functions/setup.php:139 functions/setup.php:289
+#: functions/setup.php:143 functions/setup.php:293
 msgid "Danger scheme"
 msgstr "Esquema de peligro"
 
-#: functions/setup.php:156
+#: functions/setup.php:160
 msgid "Home brand style"
 msgstr "Estilo de marca de casa"
 
-#: functions/setup.php:157
+#: functions/setup.php:161
 msgid "Choose between style of home button"
 msgstr "Elija entre el estilo del botón de inicio"
 
-#: functions/setup.php:162
+#: functions/setup.php:166
 msgid "Brand only"
 msgstr "Sólo marca"
 
-#: functions/setup.php:163
+#: functions/setup.php:167
 msgid "Logo only"
 msgstr "Sólo logotipo"
 
-#: functions/setup.php:164
+#: functions/setup.php:168
 msgid "Brand & logo"
 msgstr "Marca y logotipo"
 
-#: functions/setup.php:165
+#: functions/setup.php:169
 msgid "Generic Home"
 msgstr "Hogar Genérico"
 
-#: functions/setup.php:182
+#: functions/setup.php:186
 msgid "Sidebar Positioning"
 msgstr "Posicionamiento de la barra lateral"
 
-#: functions/setup.php:183
+#: functions/setup.php:187
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
 "Establezca la posición predeterminada de la barra lateral. Puede ser: "
 "derecha, izquierda, ambas o ninguna."
 
-#: functions/setup.php:188 functions/widgets.php:22
+#: functions/setup.php:192 functions/widgets.php:22
 msgid "Right sidebar"
 msgstr "Barra lateral derecha"
 
-#: functions/setup.php:189 functions/widgets.php:9
+#: functions/setup.php:193 functions/widgets.php:9
 msgid "Left sidebar"
 msgstr "Barra lateral izquierda"
 
-#: functions/setup.php:190
+#: functions/setup.php:194
 msgid "Left & Right sidebars"
 msgstr "Barras laterales izquierda y derecha"
 
-#: functions/setup.php:191
+#: functions/setup.php:195
 msgid "No sidebar"
 msgstr "Sin barra lateral"
 
-#: functions/setup.php:208
+#: functions/setup.php:212
 msgid "Carousel / Favorite image"
 msgstr "Carrusel / Imagen favorita"
 
-#: functions/setup.php:209
+#: functions/setup.php:213
 msgid "Set carousel / image"
 msgstr "El área del widget Caroussel"
 
-#: functions/setup.php:214
+#: functions/setup.php:218
 msgid "Carousel and images on every pages"
 msgstr "Carrusel e imágenes en cada página"
 
-#: functions/setup.php:215
+#: functions/setup.php:219
 msgid "Only image on pages"
 msgstr "Sólo imagen en las páginas"
 
-#: functions/setup.php:216
+#: functions/setup.php:220
 msgid "Only carousel and images on posts"
 msgstr "Sólo carrusel e imágenes en las publicaciones"
 
-#: functions/setup.php:217
+#: functions/setup.php:221
 msgid "No carousel or images"
 msgstr "Sin carrusel ni imágenes"
 
-#: functions/setup.php:230
+#: functions/setup.php:234
 msgid "Restore the native admin bar"
 msgstr "Restaurar la barra de administración nativa"
 
-#: functions/setup.php:243
+#: functions/setup.php:247
 msgid "Remove the shadow of content box"
 msgstr "Eliminar la sombra del cuadro de contenido"
 
-#: functions/setup.php:256
+#: functions/setup.php:260
 msgid "Remove the card of content box"
 msgstr "Eliminar la sombra del cuadro de contenido"
 
-#: functions/setup.php:274
+#: functions/setup.php:278
 msgid "Networkbar Color scheme"
 msgstr "Esquema de color de la barra de red"
 
-#: functions/setup.php:281
+#: functions/setup.php:285
 msgid "Not active"
 msgstr "Inactivo"
 
@@ -504,11 +520,7 @@ msgstr "El área del widget Caroussel"
 msgid "Contact us"
 msgstr "Contáctenos"
 
-#: header.php:94
-msgid "Go to basket"
-msgstr "Ir a la cesta"
-
-#: header.php:149
+#: header.php:142
 msgid "Post on"
 msgstr "Publicar en"
 
@@ -800,6 +812,9 @@ msgstr "ptibogxiv"
 #. Author URI of the plugin/theme
 msgid "https://www.ptibogxiv.net"
 msgstr "https://www.ptibogxiv.net/es"
+
+#~ msgid "Go to basket"
+#~ msgstr "Ir a la cesta"
 
 #~ msgid "Hosting & Theme by"
 #~ msgstr "Hosting & Theme por"

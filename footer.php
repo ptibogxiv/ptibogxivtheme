@@ -129,6 +129,7 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 if ( function_exists('pll_the_languages') ) { 
 $lang = pll_current_language('locale');
 } else {
+global $current_user;
 $lang = $current_user->locale;
 }
 $country = callDoliApi("GET", "/setup/dictionary/countries/".$company->country_id."?lang=".$lang, null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));

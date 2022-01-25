@@ -83,7 +83,7 @@ if ( get_site_option('doliconnect_mode') == 'one' && is_multisite() ) {
 switch_to_blog(1);
 }  
 if ( is_user_logged_in() ) { 
-if ( function_exists('doliconnecturl') && doliconnectid('doliaccount') > 0 ) { ?><li class="nav-item"><a class="nav-item" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fas fa-user-circle fa-fw fa-2x"></i></a></li>
+if ( function_exists('doliconnecturl') && doliconnectid('doliaccount') > 0 ) { ?><li class="nav-item"><a class="nav-item" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="far fa-user-circle fa-fw fa-2x"></i></a></li>
 <?php } 
 if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
 <li class="nav-item"><a class="nav-item" <? if ( function_exists('dolicart_modal') ) { ?> data-bs-toggle="offcanvas" href="#offcanvasDolicart" role="button" aria-controls="offcanvasDolicart" <? } else { ?> href="<?php echo doliconnecturl('dolicart'); ?>" <? } ?> title="<?php _e('Basket', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-fw fa-2x"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter fa-lg" id="DoliHeaderCartItems" style="background:Tomato"><?php echo (!empty(doliconnector( null, 'fk_order_nb_item'))?doliconnector( null, 'fk_order_nb_item'):'0'); ?></span></span></a></li>

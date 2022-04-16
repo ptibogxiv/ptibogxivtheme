@@ -101,9 +101,9 @@ if ( !is_user_logged_in() && function_exists('doliconnect_modalform') && get_opt
 <a href="#" id="login-<?php echo current_time('timestamp'); ?>" data-bs-toggle="modal" data-bs-target="#DoliconnectLogin" data-bs-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-light w-100" role="button"><i class="far fa-user-circle fa-fw fa-2x"></i></a>
 <?php } elseif ( !is_user_logged_in() ) {      
 ?>
-<<a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="far fa-user-circle fa-fw fa-2x"></i></a>
+<<a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user  fa-fw fa-2x"></i></a>
 <?php } elseif ( is_user_logged_in() ) { ?>
-<a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="far fa-user-circle fa-fw fa-2x"></i></a>
+<a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user  fa-fw fa-2x"></i></a>
 <? if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
 <a class="btn btn-light w-100" <? if ( function_exists('dolicart_modal') ) { ?> data-bs-toggle="offcanvas" href="#offcanvasDolicart" role="button" aria-controls="offcanvasDolicart" <? } else { ?> href="<?php echo doliconnecturl('dolicart'); ?>" <? } ?> title="<?php _e('Basket', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-fw fa-2x"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter fa-lg" id="DoliFooterCartItems" style="background:Tomato"><?php echo (!empty(doliconnector( null, 'fk_order_nb_item'))?doliconnector( null, 'fk_order_nb_item'):'0'); ?></span></span></a>
 <?php } ?>

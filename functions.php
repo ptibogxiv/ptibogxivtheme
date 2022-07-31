@@ -15,11 +15,18 @@ require_once get_stylesheet_directory() . '/functions/feedback.php';
 require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
 require_once get_stylesheet_directory() . '/lib/wp-package-updater/class-wp-package-updater.php';
 
- $ptibogxivtheme = new WP_Package_Updater(
- 	'https://www.ptibogxiv.net',
- 	wp_normalize_path( __FILE__ ),
- 	get_stylesheet_directory()
- );
+require 'lib/plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/ptibogxiv/ptibogxivtheme/',
+	__FILE__,
+	'ptibogxivtheme'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('stable-branch-name');
+
+//Optional: If you're using a private repository, specify the access token like this:
+//$myUpdateChecker->setAuthentication('your-token-here');
 
 //deactivate theme-color for superpwa
 add_filter( 'superpwa_add_theme_color', '__return_false' );

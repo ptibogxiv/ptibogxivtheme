@@ -13,9 +13,8 @@ require_once get_stylesheet_directory() . '/functions/index-pagination.php';
 require_once get_stylesheet_directory() . '/functions/split-post-pagination.php';
 require_once get_stylesheet_directory() . '/functions/feedback.php';
 require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
-require_once get_stylesheet_directory() . '/lib/wp-package-updater/class-wp-package-updater.php';
+require_once get_stylesheet_directory() . '/lib/plugin-update-checker/plugin-update-checker.php';
 
-require 'lib/plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/ptibogxiv/ptibogxivtheme/',
 	__FILE__,

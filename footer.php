@@ -20,17 +20,15 @@ $listpaymentmethods = callDoliApi("GET", $request, null, dolidelay('paymentmetho
 <?php } else { 
 dynamic_sidebar('payment-footer-widget-area'); } ?>
 <br></div><div class="col-6 col-md-3">
-<strong><?php _e('Social networks', 'ptibogxivtheme'); ?></strong><center>
+<?php if (! is_active_sidebar('social-footer-widget-area') && function_exists('callDoliApi')) {
+$company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
+?><strong><?php _e('Social networks', 'ptibogxivtheme'); ?></strong>
 <?php if (get_option('doliconnect_social_facebook')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_facebook');?>" rel="noopener" class="btn btn-facebook btn-circle btn-lg" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a> <?php } ?>
-<?php if (get_option('doliconnect_social_twitter')) { ?><a href="https://www.twitter.com/<?php echo get_option('doliconnect_social_twitter');?>" rel="noopener" class="btn btn-twitter btn-circle btn-lg" target="_blank"><i class="fab fa-twitter fa-fw"></i></a> <?php } ?>
-<?php if (get_option('doliconnect_social_googleplus')) { ?><a href="https://plus.google.com/<?php echo get_option('doliconnect_social_googleplus');?>" rel="noopener" class="btn btn-google btn-circle btn-lg" target="_blank"><i class="fab fa-google-plus-g fa-fw"></i></a> <?php } ?>
-<?php if (get_option('doliconnect_social_instagram')) { ?><a href="https://www.instagram.com/<?php echo get_option('doliconnect_social_instagram');?>" rel="noopener" class="btn btn-instagram btn-circle btn-lg" target="_blank"><i class="fab fa-instagram fa-fw"></i></a> <?php } ?>
-<?php if (get_option('doliconnect_social_youtube')) { ?><a href="https://www.youtube.com/<?php echo get_option('doliconnect_social_youtube');?>" rel="noopener" class="btn btn-google btn-circle btn-lg" target="_blank"><i class="fab fa-youtube fa-fw"></i></a> <?php } ?>
-<?php if (get_option('doliconnect_social_github')) { ?><a href="https://github.com/<?php echo get_option('doliconnect_social_github');?>" rel="noopener" class="btn btn-github btn-circle btn-lg" target="_blank"><i class="fab fa-github fa-fw"></i></a> <?php } ?>
-<?php if (get_option('doliconnect_social_linkedin')) { ?><a href="https://www.linkedin.com/<?php echo get_option('doliconnect_social_linkedin');?>" rel="noopener" class="btn btn-linkedin btn-circle btn-lg" target="_blank"><i class="fab fa-linkedin fa-fw"></i></a> <?php } ?>
-<?php if (get_option('doliconnect_social_skype')) { ?><div class="skype-button bubble" data-contact-id="<?php echo get_option('doliconnect_social_skype');?>"></div><script src="https://swc.cdn.skype.com/sdk/v1/sdk.min.js"></script><?php } ?>
-<?php if (get_option('doliconnect_social_whatsapp')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_whatsapp');?>" rel="noopener" class="btn btn-whatsapp btn-circle btn-lg" target="_blank"><i class="fab fa-whatsapp fa-fw"></i></a> <?php } ?>
-</center><br></div><div class="col-12 col-md-6"><div class="row"><div class="col-6">
+
+<?php } else { 
+    dynamic_sidebar('social-footer-widget-area'); 
+}?>
+</div><div class="col-12 col-md-6"><div class="row"><div class="col-6">
 <?php if (! is_active_sidebar('address-footer-widget-area') && function_exists('callDoliApi')) {
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?><strong><?php bloginfo('blogname'); ?></strong>
@@ -58,8 +56,9 @@ $state = callDoliApi("GET", "/setup/dictionary/states/".$company->state_id."?lan
 echo ' - '.$state->name;
 }
 } else { 
-dynamic_sidebar('address-footer-widget-area'); }?></div>
-<div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>
+    dynamic_sidebar('address-footer-widget-area'); 
+}?>
+</div><div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>
 <?php if (get_site_option('dolibarr_public_url') && (current_user_can( 'administrator' ) or current_user_can( 'editor' ))) { ?><br><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" class="text-reset" target="_dolibarr">Dolibarr</a><?php } ?>
 <?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_WEBMAIL')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_WEBMAIL'); ?>" rel="noopener" class="text-reset" target="_webmail">Webmail</a><?php } ?>
 <?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_CLOUD')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_CLOUD'); ?>" rel="noopener" class="text-reset" target="_cloud">Serveur/Cloud</a><?php } ?>

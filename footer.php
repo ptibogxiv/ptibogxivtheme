@@ -23,8 +23,9 @@ dynamic_sidebar('payment-footer-widget-area'); } ?>
 <?php if (! is_active_sidebar('social-footer-widget-area') && function_exists('callDoliApi')) {
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?><strong><?php _e('Social networks', 'ptibogxivtheme'); ?></strong>
-<?php if (get_option('doliconnect_social_facebook')) { ?><a href="https://www.facebook.com/<?php echo get_option('doliconnect_social_facebook');?>" rel="noopener" class="btn btn-facebook btn-circle btn-lg" target="_blank"><i class="fab fa-facebook-f fa-fw"></i></a> <?php } ?>
-
+<?php foreach ($company->socialnetworks as $social => $url) { ?>
+<a href="<?php echo $url; ?>" rel="noopener" class="btn btn-<?php echo $social; ?> btn-circle btn-lg" target="_blank"><i class="fab fa-<?php echo $social; ?> fa-fw"></i></a>   
+<?php } ?>
 <?php } else { 
     dynamic_sidebar('social-footer-widget-area'); 
 }?>

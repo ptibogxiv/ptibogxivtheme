@@ -150,7 +150,7 @@ echo ' - '.$state->name;
 <?php if (!empty($company->note_private)) {?><br><?php echo $company->note_private; ?><?php }?></p>
 <p><strong><?php _e('Responsible for publishing', 'ptibogxivtheme'); ?></strong><br><?php echo $company->managers; ?></p>
 <?php if ( defined('PTIBOGXIV_NET') ) { ?>
-<p><strong><?php _e('Design', 'ptibogxivtheme'); ?></strong><br>ptibogxiv.eu<br>
+<p><strong><?php _e('Design', 'ptibogxivtheme'); ?></strong><br>Thibault FOUCART - ptibogxiv.eu<br>
 1 rue de la grande brasserie<br>
 FR - 59000 LILLE - France<br>
 SIRET: 83802482600011 - APE6201Z<br>

@@ -60,7 +60,7 @@ echo ' - '.$state->name;
     dynamic_sidebar('address-footer-widget-area'); 
 }?>
 </div><div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>
-<?php if (get_site_option('dolibarr_public_url') && (current_user_can( 'administrator' ) or current_user_can( 'editor' ))) { ?><br><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo get_current_blog_id(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" class="text-reset" target="_dolibarr">Dolibarr</a><?php } ?>
+<?php if (get_site_option('dolibarr_public_url') && (current_user_can( 'administrator' ) or current_user_can( 'editor' ))) { ?><br><a href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php dolibarr_entity(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" class="text-reset" target="_dolibarr">Dolibarr</a><?php } ?>
 <?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_WEBMAIL')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_WEBMAIL'); ?>" rel="noopener" class="text-reset" target="_webmail">Webmail</a><?php } ?>
 <?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_CLOUD')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_CLOUD'); ?>" rel="noopener" class="text-reset" target="_cloud">Serveur/Cloud</a><?php } ?>
 <br><a href="#" class="text-reset" data-bs-toggle="modal" data-bs-target="#legacymention"><?php _e('Legal notice', 'ptibogxivtheme'); ?></a>

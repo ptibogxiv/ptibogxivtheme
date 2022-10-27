@@ -20,7 +20,7 @@ $version=$versionbase;
 
 	wp_register_style( 'bootstrap.min', get_template_directory_uri() . '/theme/' .$css.'/bootstrap.min.css', array(), $version);
 	wp_enqueue_style( 'bootstrap.min');
-	wp_register_script( 'bootstrap.bundle.min', get_template_directory_uri() . '/theme/js/bootstrap.bundle.min.js', array('jquery'), $version);
+	wp_register_script( 'bootstrap.bundle.min', get_template_directory_uri() . '/theme/js/bootstrap.bundle.min.js', array('jquery'), $version, true);
   	wp_enqueue_script( 'bootstrap.bundle.min');
   	wp_register_script( 'font-awesome', 'https://use.fontawesome.com/releases/v6.2.0/js/all.js', array(), '6.2.0');
 	wp_enqueue_script( 'font-awesome');

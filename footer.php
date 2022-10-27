@@ -113,8 +113,8 @@ if ( !is_user_logged_in() && function_exists('doliconnect_modalform') && get_opt
 </nav></div>
 <?php //} ?>
 </footer>
-<?php wp_footer();
-if ( function_exists('callDoliApi') ) { 
+<?php wp_footer(); ?>
+<?php if ( function_exists('callDoliApi') ) { 
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?>
 <div class="modal fade" id="legacymention" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable modal-lg"><div class="modal-content"><div class="modal-header">

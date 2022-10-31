@@ -62,9 +62,9 @@ printf(__('You must be <a href="#" data-bs-toggle="modal" data-bs-target="#Dolic
       <input type="url" class="form-control" name="url" id="url" placeholder="<?php _e('Your website url', 'ptibogxivtheme'); ?>" value="<?php echo esc_attr($comment_author_url); ?>">
     </div>
     <?php endif; ?>
-    <div class="form-group mb-2">
+    <div class="form-floating mb-2">
+      <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'ptibogxivtheme'); ?>" style="height: 100px" aria-required="true"></textarea>
       <label for="comment"><?php _e('Your comment', 'ptibogxivtheme'); ?></label>
-      <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'ptibogxivtheme'); ?>" rows="8" aria-required="true"></textarea>
     </div>
     <div class="d-grid gap-2"><input name="submit" class="btn btn-secondary" type="submit" id="submit" value="<?php _e('Submit comment', 'ptibogxivtheme'); ?>"></div>
     <?php comment_id_fields(); ?>

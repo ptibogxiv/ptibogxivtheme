@@ -105,7 +105,7 @@ restore_current_blog();
 }
 if ( function_exists('doliconnect_modalform') && get_option('doliloginmodal') == '1' ) {      
 ?>
-<li class="nav-item"><a class="nav-item btn btn-primary my-2 my-sm-0" href="#" id="login-<?php echo current_time('timestamp'); ?>" data-bs-toggle="modal" data-bs-target="#DoliconnectLogin" data-bs-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" role="button"><?php _e('Sign in', 'ptibogxivtheme'); ?></a></li>
+<li class="nav-item"><a class="nav-item btn btn-primary my-2 my-sm-0" href="#" id="login-<?php echo current_time('timestamp'); ?>" data-bs-toggle="modal" data-bs-target="#DoliconnectLogin" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" role="button"><?php _e('Sign in', 'ptibogxivtheme'); ?></a></li>
 <?php } else { ?>
 <li class="nav-item"><a class="nav-item btn btn-primary my-2 my-sm-0" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>"><?php _e('Sign in', 'ptibogxivtheme'); ?></a></li>
 <?php

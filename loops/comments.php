@@ -51,11 +51,11 @@ printf(__('You must be <a href="#" data-bs-toggle="modal" data-bs-target="#Dolic
     <?php else : ?>
     <div class="form-group">
       <label for="author"><?php _e('Your name', 'ptibogxivtheme'); if ($req) echo ' <span class="text-muted">' . __('(required)', 'ptibogxivtheme') . '</span>'; ?></label>
-      <input type="text" class="form-control" name="author" id="author" placeholder="<?php _e('Your name', 'ptibogxivtheme'); ?>" value="<?php echo esc_attr($comment_author); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
+      <input type="text" class="form-control" name="author" id="author" placeholder="<?php _e('Your name', 'ptibogxivtheme'); ?>" value="<?php echo esc_attr($comment_author); ?>" <?php if ($req) echo 'aria-required="true" required'; ?>>
     </div>
     <div class="form-group">
       <label for="email"><?php _e('Your email address', 'ptibogxivtheme'); if ($req) echo ' <span class="text-muted">' . _e('(required, but will not be published)', 'ptibogxivtheme') . '</span>'; ?></label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="<?php _e('Your email address', 'ptibogxivtheme'); ?>" value="<?php echo esc_attr($comment_author_email); ?>" <?php if ($req) echo 'aria-required="true"'; ?>>
+      <input type="email" class="form-control" name="email" id="email" placeholder="<?php _e('Your email address', 'ptibogxivtheme'); ?>" value="<?php echo esc_attr($comment_author_email); ?>" <?php if ($req) echo 'aria-required="true" required'; ?>>
     </div>
     <div class="form-group">
       <label for="url"><?php echo __('Your website', 'ptibogxivtheme') . ' <span class="text-muted">' . __('if you have one (not required)', 'ptibogxivtheme') . '</span>'; ?></label>
@@ -63,7 +63,7 @@ printf(__('You must be <a href="#" data-bs-toggle="modal" data-bs-target="#Dolic
     </div>
     <?php endif; ?>
     <div class="form-floating mb-2">
-      <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'ptibogxivtheme'); ?>" style="height: 150px" aria-required="true"></textarea>
+      <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'ptibogxivtheme'); ?>" style="height: 150px" aria-required="true" required></textarea>
       <label for="comment"><?php _e('Your comment', 'ptibogxivtheme'); ?></label>
     </div>
     <div class="d-grid gap-2"><input name="submit" class="btn btn-secondary" type="submit" id="submit" value="<?php _e('Submit comment', 'ptibogxivtheme'); ?>"></div>

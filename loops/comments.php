@@ -49,17 +49,17 @@ printf(__('You must be <a href="#" data-bs-toggle="modal" data-bs-target="#Dolic
     <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="<?php __('Log out of this account', 'ptibogxivtheme'); ?>"><?php echo __('Logout', 'ptibogxivtheme') . ' <i class="fas fa-sign-out-alt fa-fw"></i>'; ?></a>
     </p>
     <?php else : ?>
-    <div class="form-group">
-      <label for="author"><?php _e('Your name', 'ptibogxivtheme'); if ($req) echo ' <span class="text-muted">' . __('(required)', 'ptibogxivtheme') . '</span>'; ?></label>
+    <div class="form-floating mb-2">
       <input type="text" class="form-control" name="author" id="author" placeholder="<?php _e('Your name', 'ptibogxivtheme'); ?>" value="<?php echo esc_attr($comment_author); ?>" <?php if ($req) echo 'aria-required="true" required'; ?>>
+      <label for="author"><?php _e('Your name', 'ptibogxivtheme'); if ($req) echo ' <span class="text-muted">' . __('(required)', 'ptibogxivtheme') . '</span>'; ?></label>
     </div>
-    <div class="form-group">
-      <label for="email"><?php _e('Your email address', 'ptibogxivtheme'); if ($req) echo ' <span class="text-muted">' . _e('(required, but will not be published)', 'ptibogxivtheme') . '</span>'; ?></label>
+    <div class="form-floating mb-2">
       <input type="email" class="form-control" name="email" id="email" placeholder="<?php _e('Your email address', 'ptibogxivtheme'); ?>" value="<?php echo esc_attr($comment_author_email); ?>" <?php if ($req) echo 'aria-required="true" required'; ?>>
+      <label for="email"><?php _e('Your email address', 'ptibogxivtheme'); if ($req) echo ' <span class="text-muted">' . _e('(required, but will not be published)', 'ptibogxivtheme') . '</span>'; ?></label>
     </div>
-    <div class="form-group">
+    <div class="form-floating mb-2">
+    <input type="url" class="form-control" name="url" id="url" placeholder="<?php _e('Your website url', 'ptibogxivtheme'); ?>" value="<?php echo esc_attr($comment_author_url); ?>">
       <label for="url"><?php echo __('Your website', 'ptibogxivtheme') . ' <span class="text-muted">' . __('if you have one (not required)', 'ptibogxivtheme') . '</span>'; ?></label>
-      <input type="url" class="form-control" name="url" id="url" placeholder="<?php _e('Your website url', 'ptibogxivtheme'); ?>" value="<?php echo esc_attr($comment_author_url); ?>">
     </div>
     <?php endif; ?>
     <div class="form-floating mb-2">

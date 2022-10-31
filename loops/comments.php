@@ -25,9 +25,9 @@ if (have_comments()) : ?>
 <?php
   else :
 	  if (comments_open()) :
-  echo '<div class="alert alert-info" role="alert">' . __('Be the first to write a comment.', 'ptibogxivtheme') . '</div>';
+      echo '<div class="alert alert-info" role="alert">' . __('Be the first to write a comment.', 'ptibogxivtheme') . '</div>';
 		else :
-			//echo "<p class='alert alert-warning shadow-lg'>" . __('Comments are closed.', 'ptibogxivtheme') . "</p>";
+	    echo '<div class="alert alert-alert" role="alert">' . __('Comments are closed.', 'ptibogxivtheme') . "</div>";
 		endif;
 	endif;
 ?>

@@ -1,17 +1,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2021-09-06 11:34+0200\n"
-"PO-Revision-Date: 2021-09-06 11:35+0200\n"
+"POT-Creation-Date: 2022-10-31 10:15+0100\n"
+"PO-Revision-Date: 2022-10-31 10:16+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_BE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -38,7 +38,7 @@ msgstr "Auteur %s"
 msgid "Payment modes"
 msgstr "Betalingsmodi"
 
-#: footer.php:23
+#: footer.php:25
 msgid "Social networks"
 msgstr "Sociale netwerken"
 
@@ -46,7 +46,7 @@ msgstr "Sociale netwerken"
 msgid "Resources"
 msgstr "Hulpbronen"
 
-#: footer.php:66 footer.php:119
+#: footer.php:66 footer.php:121
 msgid "Legal notice"
 msgstr "Wettelijke kennisgeving"
 
@@ -89,91 +89,91 @@ msgstr "Aanmelden"
 msgid "My account"
 msgstr "Mijn Account"
 
-#: footer.php:107 header.php:89
+#: footer.php:108 header.php:89
 msgid "Basket"
 msgstr "Winkelmandje"
 
-#: footer.php:109 header.php:93
+#: footer.php:111 header.php:93
 msgid "Sign out"
 msgstr "Afmelden"
 
-#: footer.php:122
+#: footer.php:124
 msgid "Editor"
 msgstr "Editor"
 
-#: footer.php:148
+#: footer.php:151
 msgid "Responsible for publishing"
 msgstr "Verantwoordelijk voor publicatie"
 
-#: footer.php:150
+#: footer.php:153
 msgid "Design"
 msgstr "Design"
 
-#: footer.php:155
+#: footer.php:158
 msgid "Hosting"
 msgstr "Hosting"
 
-#: functions.php:177
+#: functions.php:183
 msgid "year"
 msgstr "jaar"
 
-#: functions.php:177
+#: functions.php:183
 msgid "years"
 msgstr "jaren"
 
-#: functions.php:178
+#: functions.php:184
 msgid "month"
 msgstr "maand"
 
-#: functions.php:178
+#: functions.php:184
 msgid "months"
 msgstr "maanden"
 
-#: functions.php:179
+#: functions.php:185
 msgid "week"
 msgstr "week"
 
-#: functions.php:179
+#: functions.php:185
 msgid "weeks"
 msgstr "weken"
 
-#: functions.php:180
+#: functions.php:186
 msgid "day"
 msgstr "dag"
 
-#: functions.php:180
+#: functions.php:186
 msgid "days"
 msgstr "dagen"
 
-#: functions.php:181
+#: functions.php:187
 msgid "hour"
 msgstr "uur"
 
-#: functions.php:181
+#: functions.php:187
 msgid "hours"
 msgstr "uren"
 
-#: functions.php:182
+#: functions.php:188
 msgid "minute"
 msgstr "minuut"
 
-#: functions.php:182
+#: functions.php:188
 msgid "minutes"
 msgstr "minuten"
 
-#: functions.php:183
+#: functions.php:189
 msgid "second"
 msgstr "seconden"
 
-#: functions.php:183 functions.php:223
+#: functions.php:189 functions.php:229
 msgid "seconds"
 msgstr "seconden"
 
-#: functions.php:200
+#: functions.php:206
 msgid "sometime"
 msgstr "ergens"
 
-#: functions.php:226
+#: functions.php:232
 #, php-format
 msgid "%s ago"
 msgstr "%s geleden"
@@ -525,159 +525,45 @@ msgstr "Contacteer ons"
 msgid "Post on"
 msgstr "Post op"
 
-#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:395
-msgid "Check for updates"
-msgstr "Controleren op updates"
-
-#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:432
+#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:54
 msgid "View details"
 msgstr "Details bekijken"
 
-#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:455
+#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:77
 #, php-format
 msgid "More information about %s"
 msgstr "Meer informatie over %s"
 
-#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:548
+#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:128
+msgid "Check for updates"
+msgstr "Controleren op updates"
+
+#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:214
 #, php-format
 msgctxt "the plugin title"
 msgid "The %s plugin is up to date."
 msgstr "De invoegtoepassing %s is up-to-date."
 
-#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:550
+#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:216
 #, php-format
 msgctxt "the plugin title"
 msgid "A new version of the %s plugin is available."
 msgstr "Er is een nieuwe versie van de invoegtoepassing %s beschikbaar."
 
-#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:552
+#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:218
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
 msgstr "Kan niet bepalen of er updates beschikbaar zijn voor %s."
 
-#: lib/plugin-update-checker/Puc/v4p4/Plugin/UpdateChecker.php:558
+#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:224
 #, php-format
 msgid "Unknown update checker status \"%s\""
 msgstr "Onbekende status van Update Checker %s"
 
-#: lib/plugin-update-checker/Puc/v4p4/Vcs/PluginUpdateChecker.php:98
+#: lib/plugin-update-checker/Puc/v4p13/Vcs/PluginUpdateChecker.php:100
 msgid "There is no changelog available."
 msgstr "Er is geen changelog beschikbaar."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:204
-msgid "Sorry, you are not allowed to access this page."
-msgstr "Je hebt geen toegang tot deze pagina."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:251
-msgid "Theme License - "
-msgstr "Themalicentie - "
-
-#: lib/wp-package-updater/class-wp-package-updater.php:406
-msgid ""
-"Unexpected Error! The query to retrieve the license data returned a "
-"malformed response."
-msgstr ""
-"Onverwachte fout! De query om de licentiegegevens op te halen, heeft een "
-"verkeerd gegeven antwoord geretourneerd."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:424
-msgid "The license is already in use for this domain."
-msgstr "De licentie is al in gebruik voor dit domein."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:427
-msgid ""
-"The license has reached the maximum number of activations and cannot be "
-"activated for this domain."
-msgstr ""
-"De licentie heeft het maximum aantal activeringen bereikt en kan niet worden "
-"geactiveerd voor dit domein."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:433
-msgid "The license is already inactive for this domain."
-msgstr "De licentie is al inactief voor dit domein."
-
-#. translators: the license expiry date
-#: lib/wp-package-updater/class-wp-package-updater.php:444
-#, php-format
-msgid "The license expired on %s and needs to be renewed to be updated."
-msgstr ""
-"De licentie is verlopen op %s en moet worden verlengd om te worden "
-"bijgewerkt."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:448
-msgid "The license expired and needs to be renewed to be updated."
-msgstr ""
-"De licentie is verlopen en moet worden verlengd om te worden bijgewerkt."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:454
-msgid ""
-"The license is blocked and cannot be updated anymore. Please use another "
-"license key."
-msgstr ""
-"De licentie is geblokkeerd en kan niet meer worden bijgewerkt. Gebruik een "
-"andere licentiesleutel."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:460
-msgid ""
-"The license has not been activated and its status is stil pending. Please "
-"try again or use another license key."
-msgstr ""
-"De licentie is niet geactiveerd en de status ervan is stil in behandeling. "
-"Probeer het opnieuw of gebruik een andere licentiesleutel."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:466
-msgid "The provided license key is invalid. Please use another license key."
-msgstr ""
-"De opgegeven licentiesleutel is ongeldig. Gebruik een andere licentiesleutel."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:469
-msgid ""
-"The provided license key does not appear to be valid. Please use another "
-"license key."
-msgstr ""
-"De opgegeven licentiesleutel lijkt niet geldig te zijn. Gebruik een andere "
-"licentiesleutel."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:473
-msgid ""
-"An active license is required to update the plugin. Please provide a valid "
-"license key in Plugins > Installed Plugins."
-msgstr ""
-"Een actieve licentie is vereist om de plug-in bij te werken. Geef een "
-"geldige licentiesleutel op in Plug-ins > Geïnstalleerde plug-ins."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:475
-msgid ""
-"An active license is required to update the theme. Please provide a valid "
-"license key in Appearence > Theme License."
-msgstr ""
-"Een actieve licentie is vereist om het thema bij te werken. Geef een geldige "
-"licentiesleutel op in Appearence > Themalicentie."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:481
-msgid ""
-"An unexpected error has occured. Please try again. If the problem persists, "
-"please contact the author of the plugin."
-msgstr ""
-"Er is een onverwachte fout opgetreden. Probeer het opnieuw. Als het probleem "
-"blijft bestaan, neem dan contact op met de auteur van de plugin."
-
-#: lib/wp-package-updater/class-wp-package-updater.php:483
-msgid ""
-"An unexpected error has occured. Please try again. If the problem persists, "
-"please contact the author of the theme."
-msgstr ""
-"Er is een onverwachte fout opgetreden. Probeer het opnieuw. Als het probleem "
-"blijft bestaan, neem dan contact op met de auteur van het thema."
-
-#: lib/wp-package-updater/templates/license-form.php:6
-msgid "Current license key:"
-msgstr "Huidige licentiesleutel:"
-
-#: lib/wp-package-updater/templates/license-form.php:9
-msgid "License key to change:"
-msgstr "Licentiesleutel om te wijzigen:"
 
 #: loops/comments.php:8
 msgid "This post is password protected. Enter the password to view comments."
@@ -689,9 +575,13 @@ msgstr ""
 msgid "Be the first to write a comment."
 msgstr "Schrijf als eerste een reactie."
 
-#: loops/comments.php:37 loops/comments.php:66 loops/comments.php:67
-msgid "Your comment"
-msgstr "Uw opmerking"
+#: loops/comments.php:30
+msgid "Comments are closed."
+msgstr "Reacties zijn uitgeschakeld."
+
+#: loops/comments.php:37
+msgid "Comment"
+msgstr "Reactie"
 
 #: loops/comments.php:37
 #, php-format
@@ -750,6 +640,10 @@ msgstr "als u er een hebt (niet vereist)"
 #: loops/comments.php:62
 msgid "Your website url"
 msgstr "Url van uw website"
+
+#: loops/comments.php:66 loops/comments.php:67
+msgid "Your comment"
+msgstr "Uw opmerking"
 
 #: loops/comments.php:69
 msgid "Submit comment"
@@ -815,6 +709,102 @@ msgstr "ptibogxiv"
 #. Author URI of the plugin/theme
 msgid "https://www.ptibogxiv.net"
 msgstr "https://www.ptibogxiv.net"
+
+#~ msgid "Sorry, you are not allowed to access this page."
+#~ msgstr "Je hebt geen toegang tot deze pagina."
+
+#~ msgid "Theme License - "
+#~ msgstr "Themalicentie - "
+
+#~ msgid ""
+#~ "Unexpected Error! The query to retrieve the license data returned a "
+#~ "malformed response."
+#~ msgstr ""
+#~ "Onverwachte fout! De query om de licentiegegevens op te halen, heeft een "
+#~ "verkeerd gegeven antwoord geretourneerd."
+
+#~ msgid "The license is already in use for this domain."
+#~ msgstr "De licentie is al in gebruik voor dit domein."
+
+#~ msgid ""
+#~ "The license has reached the maximum number of activations and cannot be "
+#~ "activated for this domain."
+#~ msgstr ""
+#~ "De licentie heeft het maximum aantal activeringen bereikt en kan niet "
+#~ "worden geactiveerd voor dit domein."
+
+#~ msgid "The license is already inactive for this domain."
+#~ msgstr "De licentie is al inactief voor dit domein."
+
+#, php-format
+#~ msgid "The license expired on %s and needs to be renewed to be updated."
+#~ msgstr ""
+#~ "De licentie is verlopen op %s en moet worden verlengd om te worden "
+#~ "bijgewerkt."
+
+#~ msgid "The license expired and needs to be renewed to be updated."
+#~ msgstr ""
+#~ "De licentie is verlopen en moet worden verlengd om te worden bijgewerkt."
+
+#~ msgid ""
+#~ "The license is blocked and cannot be updated anymore. Please use another "
+#~ "license key."
+#~ msgstr ""
+#~ "De licentie is geblokkeerd en kan niet meer worden bijgewerkt. Gebruik "
+#~ "een andere licentiesleutel."
+
+#~ msgid ""
+#~ "The license has not been activated and its status is stil pending. Please "
+#~ "try again or use another license key."
+#~ msgstr ""
+#~ "De licentie is niet geactiveerd en de status ervan is stil in "
+#~ "behandeling. Probeer het opnieuw of gebruik een andere licentiesleutel."
+
+#~ msgid "The provided license key is invalid. Please use another license key."
+#~ msgstr ""
+#~ "De opgegeven licentiesleutel is ongeldig. Gebruik een andere "
+#~ "licentiesleutel."
+
+#~ msgid ""
+#~ "The provided license key does not appear to be valid. Please use another "
+#~ "license key."
+#~ msgstr ""
+#~ "De opgegeven licentiesleutel lijkt niet geldig te zijn. Gebruik een "
+#~ "andere licentiesleutel."
+
+#~ msgid ""
+#~ "An active license is required to update the plugin. Please provide a "
+#~ "valid license key in Plugins > Installed Plugins."
+#~ msgstr ""
+#~ "Een actieve licentie is vereist om de plug-in bij te werken. Geef een "
+#~ "geldige licentiesleutel op in Plug-ins > Geïnstalleerde plug-ins."
+
+#~ msgid ""
+#~ "An active license is required to update the theme. Please provide a valid "
+#~ "license key in Appearence > Theme License."
+#~ msgstr ""
+#~ "Een actieve licentie is vereist om het thema bij te werken. Geef een "
+#~ "geldige licentiesleutel op in Appearence > Themalicentie."
+
+#~ msgid ""
+#~ "An unexpected error has occured. Please try again. If the problem "
+#~ "persists, please contact the author of the plugin."
+#~ msgstr ""
+#~ "Er is een onverwachte fout opgetreden. Probeer het opnieuw. Als het "
+#~ "probleem blijft bestaan, neem dan contact op met de auteur van de plugin."
+
+#~ msgid ""
+#~ "An unexpected error has occured. Please try again. If the problem "
+#~ "persists, please contact the author of the theme."
+#~ msgstr ""
+#~ "Er is een onverwachte fout opgetreden. Probeer het opnieuw. Als het "
+#~ "probleem blijft bestaan, neem dan contact op met de auteur van het thema."
+
+#~ msgid "Current license key:"
+#~ msgstr "Huidige licentiesleutel:"
+
+#~ msgid "License key to change:"
+#~ msgstr "Licentiesleutel om te wijzigen:"
 
 #~ msgid "Go to basket"
 #~ msgstr "Ga naar mandje"

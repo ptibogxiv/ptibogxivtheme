@@ -25,7 +25,7 @@ if (have_comments()) : ?>
 <?php
   else :
 	  if (comments_open()) :
-  echo "<p class='alert alert-info shadow-lg'>" . __('Be the first to write a comment.', 'ptibogxivtheme') . "</p>";
+  echo '<div class="alert alert-info" role="alert">' . __('Be the first to write a comment.', 'ptibogxivtheme') . '</div>';
 		else :
 			//echo "<p class='alert alert-warning shadow-lg'>" . __('Comments are closed.', 'ptibogxivtheme') . "</p>";
 		endif;
@@ -34,7 +34,7 @@ if (have_comments()) : ?>
 
 <?php if (comments_open()) : ?>
 <section id="respond"><div class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="<?php echo ptibogxivtheme_gradient(); ?>"><div class="card-body">
-  <h3><?php comment_form_title(__('Your comment', 'ptibogxivtheme'), __('Responses to %s', 'ptibogxivtheme')); ?></h3>
+  <h3><?php comment_form_title(__('Comment', 'ptibogxivtheme'), __('Responses to %s', 'ptibogxivtheme')); ?></h3>
   <p><?php cancel_comment_reply_link(); ?></p>
   <?php if (get_option('comment_registration') && !is_user_logged_in()) : ?>
   <p><?php if (get_option('doliloginmodal')=='1') {       

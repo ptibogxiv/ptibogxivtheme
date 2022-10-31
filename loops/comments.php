@@ -63,7 +63,7 @@ printf(__('You must be <a href="#" data-bs-toggle="modal" data-bs-target="#Dolic
     </div>
     <?php endif; ?>
     <div class="form-floating mb-2">
-      <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'ptibogxivtheme'); ?>" style="height: 100px" aria-required="true"></textarea>
+      <textarea name="comment" class="form-control" id="comment" placeholder="<?php _e('Your comment', 'ptibogxivtheme'); ?>" style="height: 150px" aria-required="true"></textarea>
       <label for="comment"><?php _e('Your comment', 'ptibogxivtheme'); ?></label>
     </div>
     <div class="d-grid gap-2"><input name="submit" class="btn btn-secondary" type="submit" id="submit" value="<?php _e('Submit comment', 'ptibogxivtheme'); ?>"></div>

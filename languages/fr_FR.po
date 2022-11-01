@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2022-10-31 10:15+0100\n"
-"PO-Revision-Date: 2022-10-31 10:15+0100\n"
+"POT-Creation-Date: 2022-11-01 13:19+0100\n"
+"PO-Revision-Date: 2022-11-01 13:19+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -46,7 +46,7 @@ msgstr "Réseaux sociaux"
 msgid "Resources"
 msgstr "Ressources"
 
-#: footer.php:66 footer.php:121
+#: footer.php:66 footer.php:131
 msgid "Legal notice"
 msgstr "Mentions légales"
 
@@ -80,35 +80,35 @@ msgstr "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b>"
 msgid "Choose language"
 msgstr "Choisissez une langue"
 
-#: footer.php:101 header.php:99 header.php:101
+#: footer.php:101 header.php:108 header.php:110
 msgid "Sign in"
 msgstr "S'identifier"
 
-#: footer.php:104 footer.php:106 header.php:86
+#: footer.php:104 footer.php:106 header.php:95
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:108 header.php:89
+#: footer.php:108 header.php:98
 msgid "Basket"
 msgstr "Panier"
 
-#: footer.php:111 header.php:93
+#: footer.php:121 header.php:102
 msgid "Sign out"
 msgstr "Se déconnecter"
 
-#: footer.php:124
+#: footer.php:134
 msgid "Editor"
 msgstr "Éditeur"
 
-#: footer.php:151
+#: footer.php:161
 msgid "Responsible for publishing"
 msgstr "Responsable de la publication"
 
-#: footer.php:153
+#: footer.php:163
 msgid "Design"
 msgstr "Conception"
 
-#: footer.php:158
+#: footer.php:168
 msgid "Hosting"
 msgstr "Hébergement"
 
@@ -520,7 +520,7 @@ msgstr "La zone de widget caroussel"
 msgid "Contact us"
 msgstr "Contactez-nous"
 
-#: header.php:142
+#: header.php:151
 msgid "Post on"
 msgstr "Publié le"
 
@@ -574,10 +574,6 @@ msgstr ""
 msgid "Be the first to write a comment."
 msgstr "Soyez le premier à commenter."
 
-#: loops/comments.php:30
-msgid "Comments are closed."
-msgstr "Les commentaires sont fermés."
-
 #: loops/comments.php:37
 msgid "Comment"
 msgstr "Commenter"
@@ -617,7 +613,7 @@ msgstr "Déconnexion"
 msgid "Your name"
 msgstr "Votre nom"
 
-#: loops/comments.php:53
+#: loops/comments.php:54
 msgid "(required)"
 msgstr "(requis)"
 
@@ -625,25 +621,29 @@ msgstr "(requis)"
 msgid "Your email address"
 msgstr "Votre adresse email"
 
-#: loops/comments.php:57
+#: loops/comments.php:58
 msgid "(required, but will not be published)"
 msgstr "(requis, mais ne sera pas publié)"
 
 #: loops/comments.php:61
-msgid "Your website"
-msgstr "Votre site internet"
-
-#: loops/comments.php:61
-msgid "if you have one (not required)"
-msgstr "si vous en avez un (non requis)"
-
-#: loops/comments.php:62
 msgid "Your website url"
 msgstr "Votre site internet"
 
-#: loops/comments.php:66 loops/comments.php:67
+#: loops/comments.php:62
+msgid "Your website"
+msgstr "Votre site internet"
+
+#: loops/comments.php:62
+msgid "if you have one (not required)"
+msgstr "si vous en avez un (non requis)"
+
+#: loops/comments.php:66
 msgid "Your comment"
 msgstr "Votre commentaire"
+
+#: loops/comments.php:67
+msgid "Message"
+msgstr ""
 
 #: loops/comments.php:69
 msgid "Submit comment"
@@ -709,3 +709,6 @@ msgstr "ptibogxiv"
 #. Author URI of the plugin/theme
 msgid "https://www.ptibogxiv.net"
 msgstr "https://www.ptibogxiv.net/fr"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Les commentaires sont fermés."

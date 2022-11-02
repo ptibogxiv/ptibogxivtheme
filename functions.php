@@ -22,11 +22,8 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 	'ptibogxivtheme'
 );
 
-//Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
 $myUpdateChecker->getVcsApi()->enableReleaseAssets();
-
-//Optional: If you're using a private repository, specify the access token like this:
 //$myUpdateChecker->setAuthentication('your-token-here');
 
 //deactivate theme-color for superpwa

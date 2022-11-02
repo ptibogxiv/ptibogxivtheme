@@ -15,7 +15,7 @@ require_once get_stylesheet_directory() . '/functions/feedback.php';
 require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
 require_once get_stylesheet_directory() . '/lib/plugin-update-checker/plugin-update-checker.php';
 
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+$myUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://github.com/ptibogxiv/ptibogxivtheme/',
 	__FILE__,
 	'ptibogxivtheme'
@@ -23,6 +23,7 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 
 //Set the branch that contains the stable release.
 $myUpdateChecker->setBranch('master');
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
 
 //Optional: If you're using a private repository, specify the access token like this:
 //$myUpdateChecker->setAuthentication('your-token-here');

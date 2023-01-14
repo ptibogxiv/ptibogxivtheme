@@ -76,13 +76,12 @@ if ( $image_attributes ) : ?>
       ) );
 ?>
 </div><div class="w-25 d-none d-md-block d-flex"><ul class="nav justify-content-end">
-<?php if ( function_exists('pll_the_languages') && function_exists('doliconnect_langs') && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
-  <li class="nav-item"><a class="nav-item" href="#" data-bs-toggle="modal" data-bs-target="#DoliconnectSelectLang" data-bs-dismiss="modal" title="<?php _e('Choose language', 'ptibogxivtheme'); ?>"><i class='fas fa-language fa-fw fa-2x'></i></a></li>
-  <?php }
-if ( get_site_option('doliconnect_mode') == 'one' && is_multisite() ) {
-switch_to_blog(1);
+<?php if ( function_exists('pll_the_languages') && function_exists('doliModalButton') && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
+  <li class="nav-item"><?php echo doliModalButton('selectlang', 'selectlangheader', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'nav-item', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></li>
+<?php } ?>
+<?php if ( get_site_option('doliconnect_mode') == 'one' && is_multisite() ) {
+  switch_to_blog(1);
 } 
-
 if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
   $redirect_to=doliconnecturl('doliaccount');
 } elseif (is_front_page()) {

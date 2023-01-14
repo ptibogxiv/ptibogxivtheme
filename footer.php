@@ -124,54 +124,5 @@ if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'ed
 <?php //} ?>
 </footer>
 <?php wp_footer(); ?>
-<?php if ( function_exists('callDoliApi') ) { 
-$company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
-?>
-<div class="modal fade" id="legacymention" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true"><div class="modal-dialog modal-fullscreen-md-down modal-dialog-centered modal-dialog-scrollable modal-lg"><div class="modal-content"><div class="modal-header">
-<h5 class="modal-title" id="exampleModalLongTitle"><?php _e('Legal notice', 'ptibogxivtheme'); ?></h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
-<div class="modal-body">
-<p><strong><?php _e('Editor', 'ptibogxivtheme'); ?></strong>
-<br><?php echo $company->name; ?>
-<br><?php echo $company->address; ?>
-<br><?php echo $company->zip; ?> <?php echo $company->town; ?>
-<br><?php if ( !empty($company->country_id) ) {  
-if ( function_exists('pll_the_languages') ) { 
-$lang = pll_current_language('locale');
-} else {
-global $current_user;
-$lang = $current_user->locale;
-}
-$country = callDoliApi("GET", "/setup/dictionary/countries/".$company->country_id."?lang=".$lang, null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
-echo $country->label;
-} ?>
-<?php if ( !empty($company->state_id) ) {  
-if ( function_exists('pll_the_languages') ) { 
-$lang = pll_current_language('locale');
-} else {
-$lang = $current_user->locale;
-}
-$state = callDoliApi("GET", "/setup/dictionary/states/".$company->state_id."?lang=".$lang, null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
-echo ' - '.$state->name;
-} ?>
-<?php if (!empty($company->idprof2)) {?><br>SIRET: <?php echo $company->idprof2; ?> - APE<?php echo $company->idprof3; ?><?php }?>
-<?php if (!empty($company->idprof4)) {?><br>RCS: <?php echo $company->idprof4; ?><?php }?>
-<?php if (!empty($company->tva_assuj)) {?><br>N° TVA: <?php echo $company->tva_intra; ?><?php }?>
-<?php if (!empty($company->note_private)) {?><br><?php echo $company->note_private; ?><?php }?></p>
-<p><strong><?php _e('Responsible for publishing', 'ptibogxivtheme'); ?></strong><br><?php echo $company->managers; ?></p>
-<?php if ( defined('PTIBOGXIV_NET') ) { ?>
-<p><strong><?php _e('Design', 'ptibogxivtheme'); ?></strong><br>Thibault FOUCART - ptibogxiv.eu<br>
-1 rue de la grande brasserie<br>
-FR - 59000 LILLE - France<br>
-SIRET: 83802482600011 - APE6201Z<br>
-Site Internet: <a href="https://www.ptibogxiv.eu">ptibogxiv.eu</a></p>
-<p><strong><?php _e('Hosting', 'ptibogxivtheme'); ?></strong><br>Infomaniak Network SA<br>
-Rue Eugène-Marziano, 25<br>
-CH - 1227 GENEVE - Suisse<br>
-N° TVA: CHE - 103.167.648<br>
-N° de société: CH - 660 - 0059996 - 1<br>
-Site Internet: <a href="https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b">Infomaniak</a></p>
-<?php } ?>
-</div></div></div></div><?php } ?>
 </body>
 </html>

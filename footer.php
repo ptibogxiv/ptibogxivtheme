@@ -30,33 +30,11 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
     dynamic_sidebar('social-footer-widget-area'); 
 }?>
 </div><div class="col-12 col-md-6"><div class="row"><div class="col-6">
-<?php if (! is_active_sidebar('address-footer-widget-area') && function_exists('callDoliApi')) {
+<?php if (! is_active_sidebar('address-footer-widget-area') && function_exists('callDoliApi') && function_exists('doliCompanyCard')) {
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?><strong><?php bloginfo('blogname'); ?></strong>
-<br><?php echo $company->name; ?>
-<br><?php echo $company->address; ?>
-<br><?php echo $company->zip; ?> <?php echo $company->town; ?>
-<br><?php
-$current_user = wp_get_current_user();
-if ( !empty($company->country_id) ) {  
-if ( function_exists('pll_the_languages') ) { 
-$lang = pll_current_language('locale');
-} else {
-$lang = $current_user->locale;
-}
-$country = callDoliApi("GET", "/setup/dictionary/countries/".$company->country_id."?lang=".$lang, null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
-echo $country->label;
-}
-if ( !empty($company->state_id) ) {  
-if ( function_exists('pll_the_languages') ) { 
-$lang = pll_current_language('locale');
-} else {
-$lang = $current_user->locale;
-}
-$state = callDoliApi("GET", "/setup/dictionary/states/".$company->state_id."?lang=".$lang, null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
-echo ' - '.$state->name;
-}
-} else { 
+<br><?php echo doliCompanyCard($company); ?>
+<?php } else { 
     dynamic_sidebar('address-footer-widget-area'); 
 }?>
 </div><div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>

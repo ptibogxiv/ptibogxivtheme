@@ -72,7 +72,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 <div class="d-block d-md-none"><br/><br/><nav class="fixed-bottom navbar-light bg-light">
 <div class="btn-group d-flex" role="group" aria-label="Basic example">
 <?php if ( function_exists('pll_the_languages') && function_exists('doliModalButton') ) { ?>
-<?php echo doliModalButton('selectlang', 'selectlangfooter', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'btn btn-light w-100', get_the_ID(), $_SERVER["QUERY_STRING"]); ?>
+<?php echo doliModalButton('doliSelectlang', 'doliSelectlangFooter', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'btn btn-light w-100', get_the_ID(), $_SERVER["QUERY_STRING"]); ?>
 <?php }
 if ( !is_user_logged_in() && function_exists('doliconnect_modalform') && get_option('doliloginmodal') == '1' ) {      
 ?>

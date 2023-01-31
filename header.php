@@ -102,7 +102,7 @@ if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'ed
 if ( get_site_option('doliconnect_mode') =='one' && is_multisite() ) {
 restore_current_blog();
 }
-if ( function_exists('doliconnect_modalform') && get_option('doliloginmodal') == '1' ) {      
+if ( function_exists('doliModalButton') && get_option('doliloginmodal') == '1' ) {      
 ?>
 <li class="nav-item"><a class="nav-item btn btn-primary my-2 my-sm-0" href="#" id="login-<?php echo current_time('timestamp'); ?>" data-bs-toggle="modal" data-bs-target="#DoliconnectLogin" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" role="button"><?php _e('Sign in', 'ptibogxivtheme'); ?></a></li>
 <?php } else { ?>

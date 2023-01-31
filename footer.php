@@ -76,7 +76,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 <?php }
 if ( !is_user_logged_in() && function_exists('doliModalButton') && get_option('doliloginmodal') == '1' ) {      
 ?>
-<a href="#" id="login-<?php echo current_time('timestamp'); ?>" data-bs-toggle="modal" data-bs-target="#DoliconnectLogin" data-bs-dismiss="modal" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>" class="btn btn-light w-100" role="button"><i class="fa-solid fa-circle-user fa-2x"></i></a>
+<? echo doliModalButton('login', 'loginfooter', '<i class="fa-solid fa-circle-user fa-2x"></i>', 'a', 'btn btn-light w-100'); ?>
 <?php } elseif ( !is_user_logged_in() ) {      
 ?>
 <<a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>

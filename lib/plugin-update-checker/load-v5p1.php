@@ -1,14 +1,14 @@
 <?php
 
-namespace YahnisElsts\PluginUpdateChecker\v5p0;
+namespace YahnisElsts\PluginUpdateChecker\v5p1;
 
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory as MajorFactory;
-use YahnisElsts\PluginUpdateChecker\v5p0\PucFactory as MinorFactory;
+use YahnisElsts\PluginUpdateChecker\v5p1\PucFactory as MinorFactory;
 
-require __DIR__ . '/Puc/v5p0/Autoloader.php';
+require __DIR__ . '/Puc/v5p1/Autoloader.php';
 new Autoloader();
 
-require __DIR__ . '/Puc/v5p0/PucFactory.php';
+require __DIR__ . '/Puc/v5p1/PucFactory.php';
 require __DIR__ . '/Puc/v5/PucFactory.php';
 
 //Register classes defined in this version with the factory.
@@ -26,9 +26,9 @@ foreach (
 	)
 	as $pucGeneralClass => $pucVersionedClass
 ) {
-	MajorFactory::addVersion($pucGeneralClass, $pucVersionedClass, '5.0');
+	MajorFactory::addVersion($pucGeneralClass, $pucVersionedClass, '5.1');
 	//Also add it to the minor-version factory in case the major-version factory
 	//was already defined by another, older version of the update checker.
-	MinorFactory::addVersion($pucGeneralClass, $pucVersionedClass, '5.0');
+	MinorFactory::addVersion($pucGeneralClass, $pucVersionedClass, '5.1');
 }
 

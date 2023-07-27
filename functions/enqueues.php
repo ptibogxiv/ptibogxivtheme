@@ -18,7 +18,7 @@ $css = 'bootstrap/css';
 $version = $versionbase;
 }
 
-	wp_register_style( 'bootstrap.min', get_template_directory_uri().'/theme'.$css.'/bootstrap.min.css', array(), $version );
+	wp_register_style( 'bootstrap.min', get_template_directory_uri().'/theme/'.$css.'/bootstrap.min.css', array(), $version );
 	wp_enqueue_style( 'bootstrap.min');
 	wp_register_script( 'bootstrap.bundle.min', get_template_directory_uri().'/theme/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), $version, true);
   	wp_enqueue_script( 'bootstrap.bundle.min');

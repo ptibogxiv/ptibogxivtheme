@@ -1,8 +1,8 @@
 === ptibogxivtheme ===
 Contributors: ptibogxiv
 Requires at least: WordPress 5.0
-Tested up to: WordPress 6.2
-Version: 7.0.0
+Tested up to: WordPress 6.7
+Version: 8.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready

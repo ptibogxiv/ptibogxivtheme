@@ -73,7 +73,9 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 <div class="btn-group d-flex" role="group" aria-label="Basic example">
 <?php if ( function_exists('pll_the_languages') && function_exists('doliModalButton') ) { ?>
 <?php echo doliModalButton('doliSelectlang', 'doliSelectlangFooter', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'btn btn-light w-100', get_the_ID(), $_SERVER["QUERY_STRING"]); ?>
-<?php }
+<?php } ?>
+<a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
+<?php 
 if ( !is_user_logged_in() && function_exists('doliModalButton') && get_option('doliloginmodal') == '1' ) {      
 ?>
 <? echo doliModalButton('login', 'loginfooter', '<i class="fa-solid fa-circle-user fa-2x"></i>', 'a', 'btn btn-light w-100'); ?>

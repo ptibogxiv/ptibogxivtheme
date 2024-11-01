@@ -29,7 +29,7 @@ $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 add_filter( 'superpwa_add_theme_color', '__return_false' );
 
 function ptibogxivtheme_load_theme_textdomain() {
-	load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages/' );
 }
 add_action( 'after_setup_theme', 'ptibogxivtheme_load_theme_textdomain' );
 

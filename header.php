@@ -140,7 +140,7 @@ if ( function_exists('doliModalButton') && get_option('doliloginmodal') == '1' )
 } } ?>    
 <!--  //get_template_part('navbar-search'); --> 
 </ul></div>
-  </div>
+</div>
 </nav>
 <?php if ( ! empty(get_theme_mod('ptibogxivtheme_carousel')) ) { ?>
 <div class="bd-example">

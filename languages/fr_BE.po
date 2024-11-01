@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2022-10-31 10:15+0100\n"
-"PO-Revision-Date: 2022-10-31 10:15+0100\n"
+"POT-Creation-Date: 2024-11-01 20:41+0100\n"
+"PO-Revision-Date: 2024-11-01 20:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -42,27 +42,27 @@ msgstr "Modes de paiement"
 msgid "Social networks"
 msgstr "Réseaux sociaux"
 
-#: footer.php:62
+#: footer.php:40
 msgid "Resources"
 msgstr "Ressources"
 
-#: footer.php:66 footer.php:121
+#: footer.php:44
 msgid "Legal notice"
 msgstr "Mentions légales"
 
-#: footer.php:67
+#: footer.php:45
 msgid "Terms of service"
 msgstr "Conditions de service"
 
-#: footer.php:69
+#: footer.php:47
 msgid "Kiosk mode ON"
 msgstr "Kiosk mode ON"
 
-#: footer.php:86
+#: footer.php:64
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:88
+#: footer.php:66
 #, php-format
 msgid ""
 "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b> and "
@@ -71,108 +71,80 @@ msgstr ""
 "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b> et "
 "hébergé avec <i class=\"fas fa-leaf text-success\"></i> par <b>%s</b>"
 
-#: footer.php:90
+#: footer.php:68
 #, php-format
 msgid "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b>"
 msgstr "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b>"
 
-#: footer.php:97 header.php:80
-msgid "Choose language"
-msgstr "Choisissez la langue"
-
-#: footer.php:101 header.php:99 header.php:101
-msgid "Sign in"
-msgstr "Se connecter"
-
-#: footer.php:104 footer.php:106 header.php:86
+#: footer.php:84 footer.php:89 header.php:96 header.php:100
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:108 header.php:89
-msgid "Basket"
-msgstr "Panier"
-
-#: footer.php:111 header.php:93
+#: footer.php:101 header.php:110
 msgid "Sign out"
 msgstr "Déconnexion"
 
-#: footer.php:124
-msgid "Editor"
-msgstr "Éditeur"
-
-#: footer.php:151
-msgid "Responsible for publishing"
-msgstr "Responsable de la publication"
-
-#: footer.php:153
-msgid "Design"
-msgstr "Conception"
-
-#: footer.php:158
-msgid "Hosting"
-msgstr "Hébergement"
-
-#: functions.php:183
+#: functions.php:182
 msgid "year"
 msgstr "année"
 
-#: functions.php:183
+#: functions.php:182
 msgid "years"
 msgstr "années"
 
-#: functions.php:184
+#: functions.php:183
 msgid "month"
 msgstr "mois"
 
-#: functions.php:184
+#: functions.php:183
 msgid "months"
 msgstr "mois"
 
-#: functions.php:185
+#: functions.php:184
 msgid "week"
 msgstr "semaine"
 
-#: functions.php:185
+#: functions.php:184
 msgid "weeks"
 msgstr "semaines"
 
-#: functions.php:186
+#: functions.php:185
 msgid "day"
 msgstr "jour"
 
-#: functions.php:186
+#: functions.php:185
 msgid "days"
 msgstr "jours"
 
-#: functions.php:187
+#: functions.php:186
 msgid "hour"
 msgstr "heure"
 
-#: functions.php:187
+#: functions.php:186
 msgid "hours"
 msgstr "heures"
 
-#: functions.php:188
+#: functions.php:187
 msgid "minute"
 msgstr "minute"
 
-#: functions.php:188
+#: functions.php:187
 msgid "minutes"
 msgstr "minutes"
 
-#: functions.php:189
+#: functions.php:188
 msgid "second"
 msgstr "seconde"
 
-#: functions.php:189 functions.php:229
+#: functions.php:188 functions.php:228
 msgid "seconds"
 msgstr "secondes"
 
-#: functions.php:206
+#: functions.php:205
 msgid "sometime"
 msgstr "parfois"
 
-#: functions.php:232
+#: functions.php:231
 #, php-format
 msgid "%s ago"
 msgstr "Il y a %s"
@@ -516,51 +488,95 @@ msgstr "Caroussel Caroussel"
 msgid "The caroussel widget area"
 msgstr "La zone widget caroussel"
 
-#: header.php:35
+#: header.php:34
 msgid "Contact us"
 msgstr "Contactez-nous"
 
-#: header.php:142
+#: header.php:116
+msgid "Cart"
+msgstr "Panier"
+
+#: header.php:125
+msgid "Finalize the order"
+msgstr "Finaliser la commande"
+
+#: header.php:136 header.php:138
+msgid "Sign in"
+msgstr "Se connecter"
+
+#: header.php:179
 msgid "Post on"
 msgstr "Poster sur"
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:54
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:56
 msgid "View details"
 msgstr "Voir les détails"
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:77
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:79
 #, php-format
 msgid "More information about %s"
 msgstr "Plus d'informations sur %s"
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:128
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:130
 msgid "Check for updates"
 msgstr "Vérifier les mises à jour"
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:214
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:217
 #, php-format
 msgctxt "the plugin title"
 msgid "The %s plugin is up to date."
 msgstr "Le plugin %s est à jour."
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:216
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:219
 #, php-format
 msgctxt "the plugin title"
 msgid "A new version of the %s plugin is available."
 msgstr "Une nouvelle version du plugin %s est disponible."
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:218
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:221
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
 msgstr "Impossible de déterminer si les mises à jour sont disponibles pour %s."
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:224
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:227
 #, php-format
 msgid "Unknown update checker status \"%s\""
 msgstr "État inconnu de vérificateur de mise à jour \"%s\""
 
-#: lib/plugin-update-checker/Puc/v4p13/Vcs/PluginUpdateChecker.php:100
+#: lib/plugin-update-checker/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
+#: lib/plugin-update-checker/Puc/v5p1/Vcs/PluginUpdateChecker.php:98
+#: lib/plugin-update-checker/Puc/v5p2/Vcs/PluginUpdateChecker.php:98
+#: lib/plugin-update-checker/Puc/v5p3/Vcs/PluginUpdateChecker.php:113
+#: lib/plugin-update-checker/Puc/v5p4/Vcs/PluginUpdateChecker.php:113
 msgid "There is no changelog available."
 msgstr "Il n'y a pas de changelog disponible."
 
@@ -574,10 +590,6 @@ msgstr ""
 msgid "Be the first to write a comment."
 msgstr "Soyez le premier à écrire un commentaire."
 
-#: loops/comments.php:30
-msgid "Comments are closed."
-msgstr "Les commentaires sont fermés"
-
 #: loops/comments.php:37
 msgid "Comment"
 msgstr "Commenter"
@@ -589,11 +601,11 @@ msgstr "Réponses aux %s"
 
 #: loops/comments.php:41
 msgid ""
-"You must be <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target="
-"\"#DoliconnectLogin\">logged in</a> to post a comment."
+"You must be <a href=\"#\" data-bs-toggle=\"modal\" data-bs-"
+"target=\"#DoliconnectLogin\">logged in</a> to post a comment."
 msgstr ""
-"Vous devez être <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target="
-"\"#DoliconnectLogin\">connecté pour</a> poster un commentaire."
+"Vous devez être <a href=\"#\" data-bs-toggle=\"modal\" data-bs-"
+"target=\"#DoliconnectLogin\">connecté pour</a> poster un commentaire."
 
 #: loops/comments.php:42
 #, php-format
@@ -617,7 +629,7 @@ msgstr "Déconnexion"
 msgid "Your name"
 msgstr "Votre Nom"
 
-#: loops/comments.php:53
+#: loops/comments.php:54
 msgid "(required)"
 msgstr "(requis)"
 
@@ -625,25 +637,29 @@ msgstr "(requis)"
 msgid "Your email address"
 msgstr "Votre adresse e-mail"
 
-#: loops/comments.php:57
+#: loops/comments.php:58
 msgid "(required, but will not be published)"
 msgstr "(nécessaire, mais ne sera pas publié)"
 
 #: loops/comments.php:61
-msgid "Your website"
-msgstr "Votre site web"
-
-#: loops/comments.php:61
-msgid "if you have one (not required)"
-msgstr "si vous en avez un (non requis)"
-
-#: loops/comments.php:62
 msgid "Your website url"
 msgstr "Votre url de site Web"
 
-#: loops/comments.php:66 loops/comments.php:67
+#: loops/comments.php:62
+msgid "Your website"
+msgstr "Votre site web"
+
+#: loops/comments.php:62
+msgid "if you have one (not required)"
+msgstr "si vous en avez un (non requis)"
+
+#: loops/comments.php:66
 msgid "Your comment"
 msgstr "Votre Commentaire"
+
+#: loops/comments.php:67
+msgid "Message"
+msgstr "Message"
 
 #: loops/comments.php:69
 msgid "Submit comment"
@@ -709,3 +725,24 @@ msgstr "ptibogxiv"
 #. Author URI of the plugin/theme
 msgid "https://www.ptibogxiv.net"
 msgstr "https://www.ptibogxiv.net/fr"
+
+#~ msgid "Choose language"
+#~ msgstr "Choisissez la langue"
+
+#~ msgid "Basket"
+#~ msgstr "Panier"
+
+#~ msgid "Editor"
+#~ msgstr "Éditeur"
+
+#~ msgid "Responsible for publishing"
+#~ msgstr "Responsable de la publication"
+
+#~ msgid "Design"
+#~ msgstr "Conception"
+
+#~ msgid "Hosting"
+#~ msgstr "Hébergement"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Les commentaires sont fermés"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2024-10-31 21:07+0100\n"
-"PO-Revision-Date: 2024-10-31 21:07+0100\n"
+"POT-Creation-Date: 2024-11-01 20:41+0100\n"
+"PO-Revision-Date: 2024-11-01 20:41+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -80,7 +80,7 @@ msgstr "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b>"
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:101 header.php:106 header.php:127
+#: footer.php:101 header.php:110
 msgid "Sign out"
 msgstr "Se déconnecter"
 
@@ -492,15 +492,19 @@ msgstr "La zone de widget caroussel"
 msgid "Contact us"
 msgstr "Contactez-nous"
 
-#: header.php:121
+#: header.php:116
+msgid "Cart"
+msgstr "Panier"
+
+#: header.php:125
 msgid "Finalize the order"
 msgstr "Finaliser la commande"
 
-#: header.php:133 header.php:135
+#: header.php:136 header.php:138
 msgid "Sign in"
 msgstr "S'identifier"
 
-#: header.php:176
+#: header.php:179
 msgid "Post on"
 msgstr "Publié le"
 

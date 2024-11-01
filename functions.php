@@ -26,7 +26,6 @@ $myUpdateChecker->setBranch('master');
 $myUpdateChecker->getVcsApi()->enableReleaseAssets();
 //$myUpdateChecker->setAuthentication('your-token-here');
 
-//deactivate theme-color for superpwa
 add_filter( 'superpwa_add_theme_color', '__return_false' );
 
 function ptibogxivtheme_load_theme_textdomain() {

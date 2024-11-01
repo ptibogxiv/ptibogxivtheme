@@ -84,7 +84,7 @@ if ( !is_user_logged_in() && function_exists('doliModalButton') && get_option('d
 <<a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
 <?php } elseif ( is_user_logged_in() ) { ?>
   <? if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
-<? echo doliModalButton('doliCart', 'cartFooter', '<span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato">'.(!empty(doliconnector( null, 'fk_order_nb_item'))?doliconnector( null, 'fk_order_nb_item'):'0').'</span></span>', 'a', 'btn btn-light w-100'); ?>
+<? echo doliModalButton('doliCart', 'cartFooter', '<span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato">'.doliconnect_countitems(doliConnect('order', wp_get_current_user())).'</span></span>', 'a', 'btn btn-light w-100'); ?>
 <?php } ?>
 <a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
 <?php 

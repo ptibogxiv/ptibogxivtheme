@@ -71,7 +71,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 <?php //if (get_theme_mod( 'ptibogxivtheme_mobileapp')) { ?>
 <div class="d-block d-md-none"><br/><br/><nav class="fixed-bottom navbar-light bg-light">
 <div class="btn-group d-flex" role="group" aria-label="Basic example">
-<?php if ( function_exists('pll_current_language') && function_exists('doliModalButton') ) { ?>
+<?php if ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang()) ) { ?>
 <?php echo doliModalButton('doliSelectlang', 'doliSelectlangFooter', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'btn btn-light w-100', get_the_ID(), $_SERVER["QUERY_STRING"]); ?>
 <?php } ?>
 <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 

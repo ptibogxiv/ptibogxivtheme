@@ -117,9 +117,11 @@ if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
           <span class="fa-layers fa-2x"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter bg-danger" id="DoliHeaderCartItems"><? echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span>
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Actionzegze</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+          <?php
+          $lines = doliConnect('order', wp_get_current_user())->lines; ?>
+          <?php foreach ($lines as $line) { ?>
+            <li><a class="dropdown-item" href="#"><?php echo doliproduct($line, 'product_label'); ?> x<?php echo $line->qty; ?></a></li>
+          <?php } ?>
             <li><hr class="dropdown-divider"></li>
             <li>
               <a class="dropdown-item" href="<?php echo esc_url(doliconnecturl('dolicart')); ?>" title="<?php _e( 'Finalize the order', 'doliconnect'); ?>"><?php _e( 'Finalize the order', 'doliconnect'); ?></a>

@@ -85,7 +85,7 @@ if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
 } else {
   $redirect_to=get_permalink();
 } ?>
-<?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang()) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
+<?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang(array( 'raw' => 1 ))) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
 <li class="nav-item dropdown"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-2x'></i>", 'a' , 'nav-link', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></li>
 <?php } ?>
 <?php if ( is_user_logged_in() ) { 

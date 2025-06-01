@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2024-11-01 20:41+0100\n"
-"PO-Revision-Date: 2024-11-01 20:41+0100\n"
+"POT-Creation-Date: 2025-06-01 13:07+0200\n"
+"PO-Revision-Date: 2025-06-01 13:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -10,14 +10,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
@@ -34,6 +33,10 @@ msgstr "La page que vous recherchez n’existe pas."
 msgid "Author %s"
 msgstr "Auteur %s"
 
+#: category.php:25
+msgid "Category :"
+msgstr "Catégorie :"
+
 #: footer.php:7
 msgid "Payment modes"
 msgstr "Modes de paiement"
@@ -47,22 +50,22 @@ msgid "Resources"
 msgstr "Ressources"
 
 #: footer.php:44
-msgid "Legal notice"
-msgstr "Mentions légales"
-
-#: footer.php:45
 msgid "Terms of service"
 msgstr "Conditions Générales d’Utilisation"
 
-#: footer.php:47
+#: footer.php:46
 msgid "Kiosk mode ON"
 msgstr "Mode kiosque ON"
 
-#: footer.php:64
+#: footer.php:63
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:66
+#: footer.php:63
+msgid "Legal notice"
+msgstr "Mentions légales"
+
+#: footer.php:67
 #, php-format
 msgid ""
 "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b> and "
@@ -71,80 +74,80 @@ msgstr ""
 "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b> et "
 "hébergé avec <i class=\"fas fa-leaf text-success\"></i> par <b>%s</b>"
 
-#: footer.php:68
+#: footer.php:69
 #, php-format
 msgid "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b>"
 msgstr "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b>"
 
-#: footer.php:84 footer.php:89 header.php:96 header.php:100
+#: footer.php:85 footer.php:90 header.php:96 header.php:100
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:101 header.php:110
+#: footer.php:102 header.php:110
 msgid "Sign out"
 msgstr "Se déconnecter"
 
-#: functions.php:182
+#: functions.php:181
 msgid "year"
 msgstr "an"
 
-#: functions.php:182
+#: functions.php:181
 msgid "years"
 msgstr "ans"
 
-#: functions.php:183
+#: functions.php:182
 msgid "month"
 msgstr "mois"
 
-#: functions.php:183
+#: functions.php:182
 msgid "months"
 msgstr "mois"
 
-#: functions.php:184
+#: functions.php:183
 msgid "week"
 msgstr "semaine"
 
-#: functions.php:184
+#: functions.php:183
 msgid "weeks"
 msgstr "semaines"
 
-#: functions.php:185
+#: functions.php:184
 msgid "day"
 msgstr "jour"
 
-#: functions.php:185
+#: functions.php:184
 msgid "days"
 msgstr "jours"
 
-#: functions.php:186
+#: functions.php:185
 msgid "hour"
 msgstr "heure"
 
-#: functions.php:186
+#: functions.php:185
 msgid "hours"
 msgstr "heures"
 
-#: functions.php:187
+#: functions.php:186
 msgid "minute"
 msgstr "minute"
 
-#: functions.php:187
+#: functions.php:186
 msgid "minutes"
 msgstr "minutes"
 
-#: functions.php:188
+#: functions.php:187
 msgid "second"
 msgstr "seconde"
 
-#: functions.php:188 functions.php:228
+#: functions.php:187 functions.php:227
 msgid "seconds"
 msgstr "secondes"
 
-#: functions.php:205
+#: functions.php:204
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:231
+#: functions.php:230
 #, php-format
 msgid "%s ago"
 msgstr "Il y a %s"
@@ -209,7 +212,7 @@ msgstr "Container pleine largeur"
 msgid "Css scheme"
 msgstr "Schéma CSS"
 
-#: functions/setup.php:82 functions/setup.php:130 functions/setup.php:279
+#: functions/setup.php:82 functions/setup.php:131 functions/setup.php:280
 msgid "Choose between scheme"
 msgstr "Choisissez un jeu de couleurs"
 
@@ -218,233 +221,237 @@ msgid "Default"
 msgstr "Par défaut"
 
 #: functions/setup.php:88
+msgid "Brite"
+msgstr "Brite"
+
+#: functions/setup.php:89
 msgid "Cerulean"
 msgstr "Cæruléum"
 
-#: functions/setup.php:89
+#: functions/setup.php:90
 msgid "Cosmo"
 msgstr "Cosmo"
 
-#: functions/setup.php:90
+#: functions/setup.php:91
 msgid "Cyborg"
 msgstr "Cyborg"
 
-#: functions/setup.php:91
+#: functions/setup.php:92
 msgid "Darkly"
 msgstr "Darkly"
 
-#: functions/setup.php:92
+#: functions/setup.php:93
 msgid "Flatly"
 msgstr "Flatly"
 
-#: functions/setup.php:93
+#: functions/setup.php:94
 msgid "Journal"
 msgstr "Journal"
 
-#: functions/setup.php:94
+#: functions/setup.php:95
 msgid "Litera"
 msgstr "Litera"
 
-#: functions/setup.php:95
+#: functions/setup.php:96
 msgid "Lumen"
 msgstr "Lumen"
 
-#: functions/setup.php:96
+#: functions/setup.php:97
 msgid "Lux"
 msgstr "Lux"
 
-#: functions/setup.php:97
+#: functions/setup.php:98
 msgid "Materia"
 msgstr "Materia"
 
-#: functions/setup.php:98
+#: functions/setup.php:99
 msgid "Minty"
 msgstr "Minty"
 
-#: functions/setup.php:99
+#: functions/setup.php:100
 msgid "Morph"
 msgstr "Morph"
 
-#: functions/setup.php:100
+#: functions/setup.php:101
 msgid "Pulse"
 msgstr "Pulsation"
 
-#: functions/setup.php:101
+#: functions/setup.php:102
 msgid "Quartz"
 msgstr "Quartz"
 
-#: functions/setup.php:102
+#: functions/setup.php:103
 msgid "Sandstone"
 msgstr "Grès"
 
-#: functions/setup.php:103
+#: functions/setup.php:104
 msgid "Simplex"
 msgstr "Simplex"
 
-#: functions/setup.php:104
+#: functions/setup.php:105
 msgid "Sketchy"
 msgstr "Sketchy"
 
-#: functions/setup.php:105
+#: functions/setup.php:106
 msgid "Slate"
 msgstr "Ardoise"
 
-#: functions/setup.php:106
+#: functions/setup.php:107
 msgid "Solar"
 msgstr "Solar"
 
-#: functions/setup.php:107
+#: functions/setup.php:108
 msgid "Spacelab"
 msgstr "Spacelab"
 
-#: functions/setup.php:108
+#: functions/setup.php:109
 msgid "Superhero"
 msgstr "Super-héros"
 
-#: functions/setup.php:109
+#: functions/setup.php:110
 msgid "United"
 msgstr "Fusionné"
 
-#: functions/setup.php:110
+#: functions/setup.php:111
 msgid "Vapor"
 msgstr "Vapor"
 
-#: functions/setup.php:111
+#: functions/setup.php:112
 msgid "Yeti"
 msgstr "Yéti"
 
-#: functions/setup.php:112
+#: functions/setup.php:113
 msgid "Zephyr"
 msgstr "Zephyr"
 
-#: functions/setup.php:129
+#: functions/setup.php:130
 msgid "Navbar Color scheme"
 msgstr "Barre de navigation"
 
-#: functions/setup.php:136 functions/setup.php:286
+#: functions/setup.php:137 functions/setup.php:287
 msgid "Light scheme"
 msgstr "Jeu de couleurs clairs"
 
-#: functions/setup.php:137 functions/setup.php:287
+#: functions/setup.php:138 functions/setup.php:288
 msgid "Dark scheme"
 msgstr "Jeu de couleurs sombres"
 
-#: functions/setup.php:138 functions/setup.php:288
+#: functions/setup.php:139 functions/setup.php:289
 msgid "Primary scheme"
 msgstr "Jeu de couleurs primaires"
 
-#: functions/setup.php:139 functions/setup.php:289
+#: functions/setup.php:140 functions/setup.php:290
 msgid "Secondary scheme"
 msgstr "Jeu de couleurs secondaires"
 
-#: functions/setup.php:140 functions/setup.php:290
+#: functions/setup.php:141 functions/setup.php:291
 msgid "Info scheme"
 msgstr "Jeu de couleurs info"
 
-#: functions/setup.php:141 functions/setup.php:291
+#: functions/setup.php:142 functions/setup.php:292
 msgid "Success scheme"
 msgstr "Jeu de couleurs succès"
 
-#: functions/setup.php:142 functions/setup.php:292
+#: functions/setup.php:143 functions/setup.php:293
 msgid "Warning scheme"
 msgstr "Jeu de couleurs avertissement"
 
-#: functions/setup.php:143 functions/setup.php:293
+#: functions/setup.php:144 functions/setup.php:294
 msgid "Danger scheme"
 msgstr "Jeu de couleurs danger"
 
-#: functions/setup.php:160
+#: functions/setup.php:161
 msgid "Home brand style"
 msgstr "Style du bouton d'acceuil"
 
-#: functions/setup.php:161
+#: functions/setup.php:162
 msgid "Choose between style of home button"
 msgstr "Choisissez un style pour le bouton d'accueil"
 
-#: functions/setup.php:166
+#: functions/setup.php:167
 msgid "Brand only"
 msgstr "Marque seulement"
 
-#: functions/setup.php:167
+#: functions/setup.php:168
 msgid "Logo only"
 msgstr "Logo seulement"
 
-#: functions/setup.php:168
+#: functions/setup.php:169
 msgid "Brand & logo"
 msgstr "Marque et logo"
 
-#: functions/setup.php:169
+#: functions/setup.php:170
 msgid "Generic Home"
 msgstr "Maison générique"
 
-#: functions/setup.php:186
+#: functions/setup.php:187
 msgid "Sidebar Positioning"
 msgstr "Positionnement de la barre latérale"
 
-#: functions/setup.php:187
+#: functions/setup.php:188
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
 "Définissez la position par défaut de la barre latérale. Peut être : droite, "
 "gauche, tous les deux ou aucun."
 
-#: functions/setup.php:192 functions/widgets.php:22
+#: functions/setup.php:193 functions/widgets.php:22
 msgid "Right sidebar"
 msgstr "Barre latérale à droite"
 
-#: functions/setup.php:193 functions/widgets.php:9
+#: functions/setup.php:194 functions/widgets.php:9
 msgid "Left sidebar"
 msgstr "Barre latérale à gauche"
 
-#: functions/setup.php:194
+#: functions/setup.php:195
 msgid "Left & Right sidebars"
 msgstr "Barres latérales gauche et droite"
 
-#: functions/setup.php:195
+#: functions/setup.php:196
 msgid "No sidebar"
 msgstr "Pas de barre latérale"
 
-#: functions/setup.php:212
+#: functions/setup.php:213
 msgid "Carousel / Favorite image"
 msgstr "Carrousel / Image préférée"
 
-#: functions/setup.php:213
+#: functions/setup.php:214
 msgid "Set carousel / image"
 msgstr "Ensemble carrousel / image"
 
-#: functions/setup.php:218
+#: functions/setup.php:219
 msgid "Carousel and images on every pages"
 msgstr "Carrousel et images sur toutes les pages"
 
-#: functions/setup.php:219
+#: functions/setup.php:220
 msgid "Only image on pages"
 msgstr "Seule image sur les pages"
 
-#: functions/setup.php:220
+#: functions/setup.php:221
 msgid "Only carousel and images on posts"
 msgstr "Carrousel et images seulement sur les articles"
 
-#: functions/setup.php:221
+#: functions/setup.php:222
 msgid "No carousel or images"
 msgstr "Pas de carrousel ou d'images"
 
-#: functions/setup.php:234
+#: functions/setup.php:235
 msgid "Restore the native admin bar"
 msgstr "Restaurer la barre admin native"
 
-#: functions/setup.php:247
+#: functions/setup.php:248
 msgid "Remove the shadow of content box"
 msgstr "Supprimer l'ombre de la boîte de contenu"
 
-#: functions/setup.php:260
+#: functions/setup.php:261
 msgid "Remove the card of content box"
 msgstr "Supprimer la carte de la boîte de contenu"
 
-#: functions/setup.php:278
+#: functions/setup.php:279
 msgid "Networkbar Color scheme"
 msgstr "Jeu de couleurs de la barre de réseau"
 
-#: functions/setup.php:285
+#: functions/setup.php:286
 msgid "Not active"
 msgstr "Inactif"
 
@@ -496,15 +503,15 @@ msgstr "Contactez-nous"
 msgid "Cart"
 msgstr "Panier"
 
-#: header.php:125
+#: header.php:127
 msgid "Finalize the order"
 msgstr "Finaliser la commande"
 
-#: header.php:136 header.php:138
+#: header.php:138 header.php:140
 msgid "Sign in"
 msgstr "S'identifier"
 
-#: header.php:179
+#: header.php:181
 msgid "Post on"
 msgstr "Publié le"
 
@@ -513,6 +520,7 @@ msgstr "Publié le"
 #: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:56
 #: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:56
 #: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:56
 msgid "View details"
 msgstr "Voir les détails"
 
@@ -521,6 +529,7 @@ msgstr "Voir les détails"
 #: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:79
 #: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:79
 #: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:79
 #, php-format
 msgid "More information about %s"
 msgstr "Informations à propos de %s"
@@ -530,6 +539,7 @@ msgstr "Informations à propos de %s"
 #: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:130
 #: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:130
 #: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:130
 msgid "Check for updates"
 msgstr "Vérifier les mises à jour"
 
@@ -538,6 +548,7 @@ msgstr "Vérifier les mises à jour"
 #: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:217
 #: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:217
 #: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:217
 #, php-format
 msgctxt "the plugin title"
 msgid "The %s plugin is up to date."
@@ -548,6 +559,7 @@ msgstr "L'extension %s est à jour."
 #: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:219
 #: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:219
 #: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:219
 #, php-format
 msgctxt "the plugin title"
 msgid "A new version of the %s plugin is available."
@@ -558,6 +570,7 @@ msgstr "Une nouvelle version de %s est disponible."
 #: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:221
 #: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:221
 #: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:221
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
@@ -568,6 +581,7 @@ msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s.
 #: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:227
 #: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:227
 #: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:227
 #, php-format
 msgid "Unknown update checker status \"%s\""
 msgstr "Statut des mises à jour inconnu \"%s\""
@@ -577,6 +591,7 @@ msgstr "Statut des mises à jour inconnu \"%s\""
 #: lib/plugin-update-checker/Puc/v5p2/Vcs/PluginUpdateChecker.php:98
 #: lib/plugin-update-checker/Puc/v5p3/Vcs/PluginUpdateChecker.php:113
 #: lib/plugin-update-checker/Puc/v5p4/Vcs/PluginUpdateChecker.php:113
+#: lib/plugin-update-checker/Puc/v5p6/Vcs/PluginUpdateChecker.php:113
 msgid "There is no changelog available."
 msgstr "Aucun registre de modifications disponible."
 
@@ -711,8 +726,9 @@ msgid "ptibogxivtheme"
 msgstr "ptibogxivtheme"
 
 #. Theme URI of the plugin/theme
-msgid "https://www.ptibogxiv.net/en"
-msgstr "https://www.ptibogxiv.net/fr"
+#. Author URI of the plugin/theme
+msgid "https://www.ptibogxiv.eu"
+msgstr "https://www.ptibogxiv.eu"
 
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
@@ -721,28 +737,3 @@ msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
 #. Author of the plugin/theme
 msgid "ptibogxiv"
 msgstr "ptibogxiv"
-
-#. Author URI of the plugin/theme
-msgid "https://www.ptibogxiv.net"
-msgstr "https://www.ptibogxiv.net/fr"
-
-#~ msgid "Choose language"
-#~ msgstr "Choisissez une langue"
-
-#~ msgid "Basket"
-#~ msgstr "Panier"
-
-#~ msgid "Editor"
-#~ msgstr "Éditeur"
-
-#~ msgid "Responsible for publishing"
-#~ msgstr "Responsable de la publication"
-
-#~ msgid "Design"
-#~ msgstr "Conception"
-
-#~ msgid "Hosting"
-#~ msgstr "Hébergement"
-
-#~ msgid "Comments are closed."
-#~ msgstr "Les commentaires sont fermés."

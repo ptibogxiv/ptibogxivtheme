@@ -118,34 +118,6 @@ $return .= "<a href='https://www.facebook.com/sharer/sharer.php?u=".get_permalin
 return $return;
 }
 
-function ptibogxiv_alert() {
-if ( is_user_logged_in() && function_exists('callAPI') ){ 
-$time = current_time( 'timestamp',1);
-if ( get_site_option('doliconnect_mode')=='one' && function_exists('switch_to_blog') ) {
-switch_to_blog(1);
-}
-if ( constant("DOLIBARR_MEMBER") > 0 ) {
-$adherent = callDoliApi("GET", "/adherentsplus/".constant("DOLIBARR_MEMBER"), null, dolidelay( DAY_IN_SECONDS, esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
-if ( $time>$adherent->datefin && $adherent->statut == '1' && !empty($adherent->datefin) ) {
-$alert = "<br><div class='card text-white bg-info'><div class='card-body'>Il semble que votre adhésion a expiré le ".date_i18n('d/m/Y', $adherent->datefin).". Afin de ne pas perdre vos avantages, renouvelez <a href='".esc_url( add_query_arg( 'module', 'membership', doliconnecturl('doliaccount')) )."' class='alert-link'>en cliquant -ici-</a>.</div></div>";
-} elseif ( $time>$adherent->datefin && $adherent->statut == '1' && empty($adherent->datefin!=null) ) {
-$alert = "<br><div class='card text-white bg-info'><div class='card-body'>Il semble que vous n'avez pas encore réglé votre adhésion. Afin de bénéficier de vos avantages, finalisez <a href='".esc_url( add_query_arg( 'module', 'membership', doliconnecturl('doliaccount')) )."' class='alert-link'>en cliquant -ici-</a>.</div></div>";
-} elseif ( $time>$adherent->next_subscription_renew && $time<$adherent->datefin && $adherent->statut == '1' ) {
-$alert = "<BR><div class='card text-white bg-info'><div class='card-body'>Il semble que votre adhésion expire le ".date_i18n('d/m/Y', $adherent->datefin).". Afin de ne pas perdre vos avantages, renouvelez <a href='".esc_url( add_query_arg( 'module', 'membership', doliconnecturl('doliaccount')) )."' class='alert-link'>en cliquant -ici-</a>.</div></div>";
-} else {
-$alert = null;
-}
-
-}
-if ( get_site_option('doliconnect_mode')=='one'  && function_exists('switch_to_blog') ) {
-restore_current_blog();
-}
-} else {
-$alert = null;
-} 
-return $alert;
-}
-
 function ptibogxivtheme_gradient() {
 
 return "backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);background-color: rgba(255, 255, 255, 0.55);";

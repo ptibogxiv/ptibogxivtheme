@@ -1,9 +1,6 @@
 <?php get_header(); ?>
 
 <div class="<?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_container_type')); ?> site-content">
-
-<?php echo ptibogxiv_alert(); ?> 
-
 <div class="row">
 <?php dynamic_sidebar('top-widget-area');?>
  </div>

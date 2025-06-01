@@ -10,9 +10,6 @@ Template Name: PleinePage
 get_header(); ?>
 
 <div class="<?php echo esc_attr(get_theme_mod( 'ptibogxivtheme_container_type')); ?> site-content">
-
-<?php echo ptibogxiv_alert(); ?> 
-
   <div class="row" <?php if(get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?>style="<?php echo ptibogxivtheme_gradient(); ?>"<?php endif; ?>>
     <div class="col-12">
       <div id="content" role="main">

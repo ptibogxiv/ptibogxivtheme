@@ -119,8 +119,7 @@ return $return;
 }
 
 function ptibogxivtheme_gradient() {
-
-return "backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);background-color: rgba(255, 255, 255, 0.55);";
+	return "backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);background-color: rgba(255, 255, 255, 0.55);";
 }
 
 add_action('add_meta_boxes','caroussel_metabox');

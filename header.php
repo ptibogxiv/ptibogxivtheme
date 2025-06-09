@@ -77,7 +77,7 @@ if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
   $redirect_to=get_permalink();
 } ?>
 <?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang(array( 'raw' => 1 ))) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
-<li class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-2x'></i>", 'a' , 'nav-link', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></li>
+<li class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa'></i>", 'a' , 'nav-link', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></li>
 <?php } ?>
 <?php if ( is_user_logged_in() ) { 
 if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
@@ -122,7 +122,7 @@ if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
 if ( get_site_option('doliconnect_mode') =='one' && is_multisite() ) {
 restore_current_blog();
 } ?>
-<li class="nav-item"><?php echo doliModalButton('login', 'loginheader', __('Sign in', 'ptibogxivtheme'), 'a', 'nav-item btn btn-primary my-2 my-sm-0'); ?></li>
+<li class="nav-item"><a class="nav-link btn btn-primary my-2 my-sm-0" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('Sign in', 'ptibogxivtheme'); ?>"><?php _e('Sign in', 'ptibogxivtheme'); ?></a></li>
 <?php
 } ?>
 </ul>

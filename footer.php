@@ -76,23 +76,43 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>");
 } ?></small></small></p></div>
 </div></div>
-<div class="d-block d-md-none"><br/><br/>
-<nav class="navbar navbar-light bg-light fixed-bottom pb-3">
-<div class="btn-group d-flex" role="group" aria-label="Basic example">
-<a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
-<?php if ( !is_user_logged_in() ) { ?>
-<a href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
-<?php } elseif ( is_user_logged_in() ) { ?>
-  <? if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
-<? echo doliModalButton('doliCart', 'cartFooter', '<span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato">'.doliconnect_countitems(doliConnect('order', wp_get_current_user())).'</span></span>', 'a', 'btn btn-light w-100'); ?>
-<?php } ?>
-<a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
-<?php 
-if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && ( wp_get_current_user()->show_admin_bar_front != true)) ) { ?><a href="<?php echo admin_url('index.php'); ?>" class="btn btn-light w-100" title="<?php _e('Administration', 'ptibogxivtheme'); ?>"><i class="fas fa-cogs fa-fw fa-2x"></i></a><?php } ?>
-<?php } ?>
+<nav class="navbar bg-body-tertiary fixed-bottom pb-4">
+  <div class="container-fluid">
+    <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic example">
+      <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
+      <?php if ( !is_user_logged_in() ) { ?>
+      <a href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
+      <?php } elseif ( is_user_logged_in() ) { ?>
+      <? if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
+      <? echo doliModalButton('doliCart', 'cartFooter', '<span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato">'.doliconnect_countitems(doliConnect('order', wp_get_current_user())).'</span></span>', 'a', 'btn btn-light w-100'); ?>
+      <?php } ?>
+      <a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
+      <?php } ?>
+      <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><?php _e('Menu', 'ptibogxivtheme'); ?></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <?php
+          wp_nav_menu( array(
+            'theme_location'	=> 'navbar',
+            'container'       => false,
+            'menu_class'		  => '',
+            'fallback_cb'		  => '__return_false',
+            'items_wrap'		  => '<ul id="%1$s" class="navbar-nav flex-grow-1 pe-3 %2$s">%3$s</ul>',
+            'depth'			      => 2,
+            'walker'  	      => new ptibogxivtheme_walker_nav_menu()
+          ) );
+        ?>
+      </div>
+    </div>
   </div>
 </nav>
-</div>
 </footer>
 <?php wp_footer(); ?>
 </body>

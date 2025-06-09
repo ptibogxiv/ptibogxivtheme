@@ -78,13 +78,15 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 </div></div>
 <nav class="navbar bg-body-tertiary fixed-bottom pb-4">
   <div class="container-fluid">
-    <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic example">
+  <div class="row">
+  <div class="col-12">
+    <div class="btn-group d-flex justify-content-around p-2" role="group" aria-label="Bottom menu">
       <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
       <?php if ( !is_user_logged_in() ) { ?>
       <a href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
       <?php } elseif ( is_user_logged_in() ) { ?>
       <? if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
-      <? echo doliModalButton('doliCart', 'cartFooter', '<span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato">'.doliconnect_countitems(doliConnect('order', wp_get_current_user())).'</span></span>', 'a', 'btn btn-light w-100'); ?>
+      <a href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a>
       <?php } ?>
       <a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
       <?php } ?>
@@ -111,6 +113,8 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
         ?>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 </nav>
 </footer>

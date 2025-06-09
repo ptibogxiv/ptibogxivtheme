@@ -89,9 +89,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 <a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
 <?php 
 if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && ( wp_get_current_user()->show_admin_bar_front != true)) ) { ?><a href="<?php echo admin_url('index.php'); ?>" class="btn btn-light w-100" title="<?php _e('Administration', 'ptibogxivtheme'); ?>"><i class="fas fa-cogs fa-fw fa-2x"></i></a><?php } ?>
-<?php } ?><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<?php } ?>
   </div>
 </nav>
 </div>

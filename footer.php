@@ -75,7 +75,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 } else {
 echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>");
 } ?></small></small></p></div>
-</div></div>
+</div></div><br><br>
 <nav class="navbar bg-body-tertiary fixed-bottom pb-4">
   <div class="container-fluid">
   <div class="row">

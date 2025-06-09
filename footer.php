@@ -77,7 +77,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 } ?></small></small></p></div>
 </div></div>
 <div class="d-block d-md-none"><br/><br/>
-<nav class="navbarnavbar-light bg-light fixed-bottom pb-3">
+<nav class="navbar navbar-light bg-light fixed-bottom pb-3">
 <div class="btn-group d-flex" role="group" aria-label="Basic example">
 <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
 <?php if ( !is_user_logged_in() ) { ?>

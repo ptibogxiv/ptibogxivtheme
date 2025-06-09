@@ -79,9 +79,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 <div class="d-block d-md-none"><br/><br/><nav class="fixed-bottom navbar-light bg-light">
 <div class="btn-group d-flex" role="group" aria-label="Basic example">
 <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
-<?php if ( !is_user_logged_in() && function_exists('doliModalButton') && get_option('doliloginmodal') == '1' ) { ?>
-<? echo doliModalButton('login', 'loginfooter', '<i class="fa-solid fa-circle-user fa-2x"></i>', 'a', 'btn btn-light w-100'); ?>
-<?php } elseif ( !is_user_logged_in() ) { ?>
+<?php if ( !is_user_logged_in() ) { ?>
 <a href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
 <?php } elseif ( is_user_logged_in() ) { ?>
   <? if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>

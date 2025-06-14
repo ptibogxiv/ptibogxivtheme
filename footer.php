@@ -77,9 +77,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 </div></div>
 <nav class="navbar bg-body-tertiary fixed-bottom pb-4 d-block d-md-none">
   <div class="container-fluid">
-  <div class="row">
-  <div class="col-12">
-    <div class="btn-group d-flex justify-content-around p-2" role="group" aria-label="Bottom menu">
+    <div class="btn-group d-flex p-2" role="group" aria-label="Bottom menu">
       <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
       <?php if ( !is_user_logged_in() ) { ?>
       <a href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
@@ -122,8 +120,6 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
         </ul>
       </div>
     </div>
-  </div>
-  </div>
   </div>
 </nav>
 </footer>

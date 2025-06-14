@@ -59,9 +59,8 @@ if ( function_exists( 'wp_body_open' ) ) {
           'walker'  	      => new ptibogxivtheme_walker_nav_menu()
         ) );
       ?>
-    </div>
-    
-      <ul class="navbar-nav pe-3">
+      </div>
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
       <?php if ( get_site_option('doliconnect_mode') == 'one' && is_multisite() ) {
         switch_to_blog(1);
       } 

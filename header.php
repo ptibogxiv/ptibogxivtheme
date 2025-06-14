@@ -2,12 +2,14 @@
 <html <?php language_attributes(); ?> class="no-js" data-bs-theme="light">
 <head>
 <?php add_theme_support( 'title-tag' ); ?>
-<meta name="description" content="<?php if ( is_single() ) {
-single_post_title('', true); 
+<?php
+if ( is_single() ) {
+    $desc = get_the_title();
 } else {
-bloginfo('name'); echo " - "; bloginfo('description');
+    $desc = get_bloginfo('name') . ' - ' . get_bloginfo('description');
 }
-?>" />
+?>
+<meta name="description" content="<?php echo esc_attr($desc); ?>" />
   <meta charset="utf-8">
   <meta name="theme-color" content="#<?php echo get_background_color(); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">

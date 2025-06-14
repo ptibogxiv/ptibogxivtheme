@@ -4,7 +4,7 @@
 <div class="row">
 <div class="col-6 col-md-3">
 <?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('callDoliApi') && !empty(doliconnectid('dolicart'))) { ?>
-<strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><center>
+<strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><div class="text-center">
 <?php
 $request = "/doliconnector/0/paymentmethods";
 $listpaymentmethods = callDoliApi("GET", $request, null, dolidelay('paymentmethods', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
@@ -16,7 +16,7 @@ $listpaymentmethods = callDoliApi("GET", $request, null, dolidelay('paymentmetho
 <?php if ( isset($listpaymentmethods->VIR) ) { ?><i class="fas fa-university fa-3x fa-fw"></i><?php } ?>
 <?php if ( isset($listpaymentmethods->CHQ) ) { ?><i class="fas fa-money-check fa-3x fa-fw"></i><?php } ?>
 <?php if ( ! empty(dolikiosk()) ) { ?> <i class="fas fa-money-bill-alt fa-3x fa-fw"></i><?php } ?>
-</center>
+</div>
 <?php } else { 
 dynamic_sidebar('payment-footer-widget-area'); } ?>
 <br></div><div class="col-6 col-md-3">

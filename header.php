@@ -87,8 +87,10 @@ if ( function_exists( 'wp_body_open' ) ) {
         ) );
       ?>
       <form class="d-flex navbar-nav" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <?php if ( !empty(get_option('doliconnectbeta')) ) { ?>
+          <input class="form-control me-2" type="search" placeholder="<?php echo esc_attr__('Name, Ref., Description or Barcode', 'doliconnect'); ?>" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        <?php } ?>
         <?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang(array( 'raw' => 1 ))) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
           <a class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'nav-link', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></a>
         <?php } ?>

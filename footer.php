@@ -103,16 +103,6 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
             'walker'  	      => new ptibogxivtheme_walker_nav_menu()
           ) );
         ?>
-        <ul class="navbar-nav">
-          <?php if ( !isset(doliConnect('user', wp_get_current_user())->error) && doliConnect('user', wp_get_current_user()) != null ) { ?>
-            <li><hr></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo dolibarr_entity(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" title="<?php _e('Dolibarr', 'ptibogxivtheme'); ?>" target="_dolibarr"><i class="fas fa-cogs fa-fw"></i> <?php _e('Dolibarr', 'ptibogxivtheme'); ?></a></li>
-          <?php } ?>
-          <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && ( wp_get_current_user()->show_admin_bar_front != true)) ) { ?>
-            <li><hr></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>"><i class="fas fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a></li>
-          <?php } ?>
-        </ul>
       </div>
     </div>
   </div>

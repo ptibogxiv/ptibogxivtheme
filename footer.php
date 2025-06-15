@@ -84,7 +84,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
       <?php } ?>
       <?php if ( !is_user_logged_in() ) { ?>
         <a href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
-      <?php } elseif ( is_user_logged_in() ) { ?>
+      <?php } else { ?>
         <a href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><i class="fa-solid fa-circle-user fa-2x"></i></a>
       <?php } ?>
       <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">

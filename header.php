@@ -54,11 +54,10 @@ if ( function_exists( 'wp_body_open' ) ) {
       $redirect_to=get_permalink();
     } ?>
     <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="<?php _e('My account', 'ptibogxivtheme'); ?>">
-                  <i class="fa-solid fa-circle-user fa-2x"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="<?php _e('My account', 'ptibogxivtheme'); ?>">
+          <i class="fa-solid fa-circle-user fa-2x"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
                   <li><a class="dropdown-item" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><?php _e('My account', 'ptibogxivtheme'); ?>
                   </a></li>
                   <?php if ( !isset(doliConnect('user', wp_get_current_user())->error) && doliConnect('user', wp_get_current_user()) != null ) { ?>
@@ -73,7 +72,7 @@ if ( function_exists( 'wp_body_open' ) ) {
                   <li>
                     <a class="dropdown-item" href="<?php echo wp_logout_url( $redirect_to ); ?>" title="<?php _e('Sign out', 'ptibogxivtheme'); ?>"><i class="fas fa-sign-out-alt fa-fw"></i> <?php _e('Sign out', 'ptibogxivtheme'); ?></a>
                   </li>
-                </ul>
+          </ul>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <?php

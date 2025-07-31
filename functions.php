@@ -36,6 +36,15 @@ add_action( 'after_setup_theme', 'ptibogxivtheme_load_theme_textdomain' );
 function ptibogxivtheme_slug_setup() {
     add_theme_support( 'title-tag' );
 }
+
+//add_action('login_head',function(){
+    //get_template_part( 'header' );
+//});
+
+//add_action('login_footer',function(){
+    //get_template_part( 'footer' );
+//});
+
 add_action( 'after_setup_theme', 'ptibogxivtheme_slug_setup' );
 
 add_theme_support( 'custom-background',array(

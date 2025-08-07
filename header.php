@@ -1,7 +1,6 @@
 <!DOCTYPE html> 
 <html <?php language_attributes(); ?> class="no-js" data-bs-theme="light">
 <head>
-<?php add_theme_support( 'title-tag' ); ?>
 <?php
 if ( is_single() ) {
     $desc = get_the_title();

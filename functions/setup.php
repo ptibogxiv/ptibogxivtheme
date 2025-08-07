@@ -3,16 +3,16 @@
 function ptibogxivtheme_setup() {
 	add_editor_style('theme/css/editor-style.css');
 	add_theme_support('post-thumbnails');
-  add_image_size('ptibogxiv_small', 200, 250, true );
-  add_image_size('ptibogxiv', 380, 200, true );
-  add_image_size('ptibogxiv_square', 512, 512, true );
-  add_image_size('ptibogxiv_large', 1200, 400, true );
+  	add_image_size('ptibogxiv_small', 200, 250, true );
+  	add_image_size('ptibogxiv', 380, 200, true );
+  	add_image_size('ptibogxiv_square', 512, 512, true );
+  	add_image_size('ptibogxiv_large', 1200, 400, true );
 	update_option('thumbnail_size_w', 170);
 	update_option('medium_size_w', 380);
-  update_option('medium_size_h', 200);
-  update_option('large_size_w', 760);
-  update_option('large_size_h', 400);   
-  update_option('large_crop', 1);
+  	update_option('medium_size_h', 200);
+  	update_option('large_size_w', 760);
+  	update_option('large_size_h', 400);   
+  	update_option('large_crop', 1);
 }
 add_action('init', 'ptibogxivtheme_setup');
 

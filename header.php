@@ -30,7 +30,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 }
 ?>
 <nav class="navbar navbar-expand-lg sticky-top <?php echo (!empty(esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )))?esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )):'navbar-light bg-light'); ?>">
-  <div class="<?php echo esc_attr(get_theme_mod('ptibogxivtheme_container_type')); ?>">
+  <div class="<?php echo (!empty(esc_attr(get_theme_mod('ptibogxivtheme_container_type')))?esc_attr(get_theme_mod('ptibogxivtheme_container_type')):'container'); ?>">
     <?php if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode' && (! empty(get_theme_mod( 'ptibogxivtheme_carousel')) || get_header_image())) { ?>
     <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><div class='d-block d-sm-block d-xs-block d-md-none'><?php bloginfo('name'); ?></div><div class='d-none d-md-block'><i class='fas fa-home'></i></div></a> 
     <?php } elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode' && !get_header_image()) {

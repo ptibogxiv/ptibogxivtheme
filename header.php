@@ -36,12 +36,12 @@ if ( function_exists( 'wp_body_open' ) ) {
     <?php } elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode' && !get_header_image()) {
     $image_attributes = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full', false); 
     if ( $image_attributes ) : ?>
-    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url($image_attributes[0]); ?>" height="30px" alt="<?php esc_attr(get_bloginfo('name')); ?>"/></a>
+    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url($image_attributes[0]); ?>" height="30px" alt="<?php echo esc_attr(get_bloginfo('name')); ?>"/></a>
     <?php endif; ?>&nbsp;<a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a> 
     <?php } elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'logo_mode' && !get_header_image()) {
     $image_attributes = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full', false); 
     if ( $image_attributes ) : ?>
-    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url($image_attributes[0]); ?>" height="30px" alt="<?php esc_attr(get_bloginfo('name')); ?>"/></a>
+    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url($image_attributes[0]); ?>" height="30px" alt="<?php echo esc_attr(get_bloginfo('name')); ?>"/></a>
     <?php endif; ?>
     <?php } else {
     ?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a><?php

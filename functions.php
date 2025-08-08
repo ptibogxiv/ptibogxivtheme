@@ -45,6 +45,7 @@ add_action( 'after_setup_theme', 'ptibogxivtheme_slug_setup' );
 //add_action('login_footer',function(){
     //get_template_part( 'footer' );
 //});
+
 add_theme_support( 'custom-background',array(
 	'default-color'          => '',
 	'default-image'          => '',

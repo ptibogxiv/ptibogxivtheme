@@ -114,85 +114,30 @@ if ( function_exists( 'wp_body_open' ) ) {
           </li>
         <?php } ?>
         <li class="nav-item">
-        <?php if ( !is_user_logged_in() ) { ?>
-          <a class="nav-link" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-circle-user fa-fw fa-2x"></i></a>
-        <?php } else { ?>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="<?php _e('My account', 'ptibogxivtheme'); ?>">
-              <i class="fa-solid fa-circle-user fa-2x"></i>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end">
-              <li><a class="dropdown-item" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><?php _e('My account', 'ptibogxivtheme'); ?></a></li>
-                <?php if ( !isset(doliConnect('user', wp_get_current_user())->error) && doliConnect('user', wp_get_current_user()) != null ) { ?>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo dolibarr_entity(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" title="<?php _e('Dolibarr', 'ptibogxivtheme'); ?>" target="_dolibarr"><i class="fas fa-cogs fa-fw"></i> <?php _e('Dolibarr', 'ptibogxivtheme'); ?></a></li>
-                <?php } ?>
-                <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && ( wp_get_current_user()->show_admin_bar_front != true)) ) { ?>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>"><i class="fas fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a></li>
-                <?php } ?>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="<?php echo wp_logout_url( $redirect_to ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><?php _e('Logout', 'ptibogxivtheme'); ?></a></li>
-            </ul>
-          </li>
-        <?php } ?>
+          <?php if ( !is_user_logged_in() ) { ?>
+            <a class="nav-link border border-0" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-circle-user fa-fw fa-2x"></i></a>
+          <?php } else { ?>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle border border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="<?php _e('My account', 'ptibogxivtheme'); ?>">
+                <i class="fa-solid fa-circle-user fa-2x"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><?php _e('My account', 'ptibogxivtheme'); ?></a></li>
+                  <?php if ( !isset(doliConnect('user', wp_get_current_user())->error) && doliConnect('user', wp_get_current_user()) != null ) { ?>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo dolibarr_entity(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" title="<?php _e('Dolibarr', 'ptibogxivtheme'); ?>" target="_dolibarr"><i class="fas fa-cogs fa-fw"></i> <?php _e('Dolibarr', 'ptibogxivtheme'); ?></a></li>
+                  <?php } ?>
+                  <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && ( wp_get_current_user()->show_admin_bar_front != true)) ) { ?>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>"><i class="fas fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a></li>
+                  <?php } ?>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="<?php echo wp_logout_url( $redirect_to ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><?php _e('Logout', 'ptibogxivtheme'); ?></a></li>
+              </ul>
+            </li>
+            <?php } ?>
+        </li>
       </form>
     </div>
   </div>
 </nav>
-
-<?php if ( ! empty(get_theme_mod('ptibogxivtheme_carousel')) ) { ?>
-<div class="bd-example">
-<?php if ( get_theme_mod('ptibogxivtheme_carousel') != '2' && (is_home() || is_front_page()) ) {
-$args = array( 
-            'posts_per_page' => 5,
-            'post_status'    => 'publish',
-            'meta_key'       => '_thumbnail_id',
-            'meta_value'     => ' ',
-            'meta_compare'   => '!=',
-            'meta_query' => array()
-);
-$myposts = get_posts( $args );
-
-echo '<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-interval="4000" data-ride="carousel"><ol class="carousel-indicators">';
-$count=-1;
-foreach ( $myposts as $post ) {
-setup_postdata( $post );
-$count = $count+1;
-echo '<li data-target="#carouselExampleIndicators" data-slide-to="'.$count.'"';
-if ($count=='0') {echo 'class="active"';}
-echo '></li>'; 
-}
-echo '</ol>';
-echo '<div class="carousel-inner">';
-$count=0;
-foreach ( $myposts as $post ) {
-
-setup_postdata( $post );
-$count = $count+1;
-echo '<div class="carousel-item ';
-if ( $count == '1' ) { echo 'active'; }
-echo '" data-interval="5000" ><a href="'.get_permalink($post->ID).'" ><img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'"></a>
-  <div class="carousel-caption"  style="background-color: rgba(0, 0, 0, 0.5)">
-    <h4><a href="'.get_permalink($post->ID).'" class="text-white">'.$post->post_title.'</a></h4>
-    <small class="text-white"><i class="fas fa-calendar fa-fw"></i> '.__('Post on', 'ptibogxivtheme').' '.get_the_date( '', $post->ID).'</small>
-  </div></div>'; 
-}
-wp_reset_postdata();    
-echo '</div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>';
-
-echo '</div>';
-} elseif ( has_post_thumbnail() && get_theme_mod('ptibogxivtheme_carousel') >= '2' ) {
-echo '<img class="d-block w-100 img-fluid" src="'.wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ).'" alt="'.$post->post_title.'">';
-}?>
-</div>
-<?php } ?>

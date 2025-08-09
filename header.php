@@ -66,8 +66,8 @@ if ( function_exists( 'wp_body_open' ) ) {
       ?>
       <form class="d-flex navbar-nav" role="search">
         <?php if ( !empty(get_option('doliconnectbeta')) ) { ?>
-          <input class="form-control me-2" type="search" placeholder="<?php echo esc_attr__('Name, Ref., Description or Barcode', 'doliconnect'); ?>" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <input class="form-control form-control-sm me-2" type="search" placeholder="<?php echo esc_attr__('Name, Ref., Description or Barcode', 'doliconnect'); ?>" aria-label="Search"/>
+          <button class="btn btn-sm btn-outline-success" type="submit">Search</button>
         <?php } ?>
         <li class="nav-item">
           <?php if ( !is_user_logged_in() ) { ?>
@@ -75,16 +75,6 @@ if ( function_exists( 'wp_body_open' ) ) {
           <?php } ?>
         </li>
       </form>
-    </div>
-    <div class="navbar-brand dropdown text-end">
-      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle"></a>
-      <ul class="dropdown-menu text-small">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
     </div>
     <ul class="navbar-nav text-end">
       <?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang(array( 'raw' => 1 ))) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>

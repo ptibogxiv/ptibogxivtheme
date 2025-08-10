@@ -76,12 +76,12 @@ if ( function_exists( 'wp_body_open' ) ) {
         </li>
       </form>
     </div>
-    <ul class="navbar-nav text-end">
+    <ul class="nav nav-pills text-end">
       <?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang(array( 'raw' => 1 ))) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
         <a class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'nav-link active', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></a>
       <?php } ?>
       <?php if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown d-none d-lg-block">
           <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="<?php _e('Cart', 'doliconnect'); ?>">
           <span class="fa-layers fa-fw fa-2x"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter bg-danger" id="DoliHeaderCartItems"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span>
           </a>

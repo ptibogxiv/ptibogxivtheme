@@ -64,14 +64,8 @@ if ( function_exists( 'wp_body_open' ) ) {
           'walker'  	      => new ptibogxivtheme_walker_nav_menu()
         ) );
       ?>
-      <form class="d-flex navbar-nav" role="search">
-        <?php if ( !empty(get_option('doliconnectbeta')) ) { ?>
-          <input class="form-control form-control-sm me-2" type="search" placeholder="<?php echo esc_attr__('Name, Ref., Description or Barcode', 'doliconnect'); ?>" aria-label="Search"/>
-          <button class="btn btn-sm btn-outline-success" type="submit">Search</button>
-        <?php } ?>
-      </form>
     </div>
-    <ul class="nav nav-pills text-end">
+    <nav class="nav mb-0">
       <?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang(array( 'raw' => 1 ))) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
         <a class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'nav-link active', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></a>
       <?php } ?>
@@ -110,6 +104,6 @@ if ( function_exists( 'wp_body_open' ) ) {
           <?php } ?>
         </ul>
       </li>
-    </ul>
+    </nav>
   </div>
 </nav>

@@ -78,17 +78,18 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 <nav class="bg-body-tertiary fixed-bottom pb-4 d-block d-md-none">
   <div class="container-fluid">
     <div class="btn-group d-flex p-2" role="group" aria-label="Bottom menu">
+      <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliNavbarBottom" aria-controls="offcanvasDoliNavbarBottom" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fa-2x fa-fw"></i>
+      </button>
       <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
       <?php if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
       <a href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>" class="btn btn-light w-100"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a>
       <?php } ?>
-      <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars fa-2x fa-fw"></i>
-      </button>
+
     </div>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDoliNavbarBottom" aria-labelledby="offcanvasDoliNavbarBottomLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbar2Label"><?php _e('Menu', 'ptibogxivtheme'); ?></h5>
+        <h5 class="offcanvas-title" id="offcanvasDoliNavbarBottomLabel"><?php _e('Menu', 'ptibogxivtheme'); ?></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">

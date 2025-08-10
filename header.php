@@ -65,9 +65,9 @@ if ( function_exists( 'wp_body_open' ) ) {
         ) );
       ?>
     </div>
-    <nav class="nav mb-0">
+    <nav class="navbar-nav mb-0">
       <?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang(array( 'raw' => 1 ))) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
-        <a class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'nav-link active', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></a>
+        <a class="nav-item active"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'nav-link active', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></a>
       <?php } ?>
       <?php if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
         <li class="nav-item dropdown d-none d-lg-block">

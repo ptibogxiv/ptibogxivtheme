@@ -80,10 +80,10 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
       </button>
       <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
       <?php if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
-        <?php if (is_page(doliconnectid('dolicart'))) { ?>
-          <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a> 
-          <?php } else { ?>
+        <?php if (!is_page(doliconnectid('dolicart')) && function_exists('doliOffcanvasCart')) { ?>
           <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliCartLabel" aria-controls="offcanvasDoliCartLabel" aria-label="<?php _e('My account', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></button>
+        <?php } else { ?>
+          <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a> 
         <?php } ?>
       <?php } ?>
     </div>
@@ -108,7 +108,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
     </div>
   </div>
 </nav>
-<?php if (!is_page(doliconnectid('dolicart'))) { ?>
+<?php if (!is_page(doliconnectid('dolicart')) && function_exists('doliOffcanvasCart')) { ?>
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDoliCartLabel" aria-labelledby="offcanvasDoliCartLabel">
 <?php echo doliOffcanvasCart( wp_get_current_user() ); ?>
 </div>

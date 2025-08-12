@@ -76,7 +76,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
   <div class="container-fluid">
     <div class="btn-group d-flex p-2" role="group" aria-label="Bottom menu">
       <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliNavbarBottom" aria-controls="offcanvasDoliNavbarBottom" aria-label="Togglemenu">
-        <i class="fa-solid fa-bars fa-2x fa-fw"></i><br><small>><?php _e('Menu', 'ptibogxivtheme'); ?></small>
+        <i class="fa-solid fa-bars fa-2x fa-fw"></i><br><small><?php _e('Menu', 'ptibogxivtheme'); ?></small>
       </button>
       <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i><br><small><?php _e('Home', 'ptibogxivtheme'); ?></small></a> 
       <?php if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>

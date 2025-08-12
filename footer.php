@@ -34,7 +34,7 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
   <div class="row"><div class="col-6">
     <?php dynamic_sidebar('address-footer-widget-area'); ?>
   </div>
-<div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>
+  <div class="col-6"><strong><?php _e('Resources', 'ptibogxivtheme'); ?></strong>
 <?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_WEBMAIL')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_WEBMAIL'); ?>" rel="noopener" class="text-reset" target="_webmail">Webmail</a><?php } ?>
 <?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_CLOUD')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_CLOUD'); ?>" rel="noopener" class="text-reset" target="_cloud">Serveur/Cloud</a><?php } ?>
 <?php if (!empty(doliconnectid('dolitos'))) { ?><br><a href="<?php echo doliconnecturl('dolitos'); ?>" class="text-reset"><?php _e('Terms of service', 'ptibogxivtheme'); ?></a><?php } ?>

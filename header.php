@@ -69,10 +69,10 @@ if ( function_exists( 'wp_body_open' ) ) {
           <a class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'nav-link', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></a>
         <?php } ?>
         <?php if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
-          <?php if (is_page(doliconnectid('dolicart'))) { ?>
-            <li class="nav-item"><a class="nav-link" href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Cart', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a></li>
-          <?php } else { ?>
+          <?php if (!is_page(doliconnectid('dolicart')) && function_exists('doliOffcanvasCart')) { ?>
             <li class="nav-item"><a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliCartLabel" aria-controls="offcanvasDoliCartLabel" aria-label="<?php _e('Cart', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliHeaderCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a></li>
+          <?php } else { ?>
+            <li class="nav-item"><a class="nav-link" href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Cart', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a></li>
           <?php } ?>
         <?php } ?>
         <li class="nav-item">

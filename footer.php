@@ -113,24 +113,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 </nav>
 <?php if (!is_page(doliconnectid('dolicart'))) { ?>
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDoliCartLabel" aria-labelledby="offcanvasDoliCartLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasDoliCartLabel"><?php _e('Cart', 'ptibogxivtheme'); ?></h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <?php
-      echo doliline(doliConnect('order', wp_get_current_user()), esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null), false);
-    ?>
-  </div>
-  <div class="offcanvas-footer m-3">
-    <?php
-    $arr_params = array( 'checkout' => wp_create_nonce( 'dolicart'. doliConnect('order', wp_get_current_user())->id.'-'.get_current_user_id()));  
-    $return = esc_url( add_query_arg( $arr_params, doliconnecturl('dolicart')) );
-    ?>
-    <a type="button" class="btn btn-primary w-100" href="<?php echo $return; ?>">
-        <?php _e('Finaliser la commande', 'ptibogxivtheme'); ?>
-    </a>
-  </div>
+<?php echo doliOffcanvasCart( wp_get_current_user() ); ?>
 </div>
 <?php } ?>
 </footer>

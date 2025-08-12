@@ -123,9 +123,13 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
     ?>
   </div>
   <div class="offcanvas-footer m-3">
-    <button type="button" class="btn btn-primary w-100" onclick="window.location.href='<?php echo esc_url(doliconnecturl('dolicart')); ?>'">
+    <?php
+    $arr_params = array( 'checkout' => wp_create_nonce( 'dolicart'. doliConnect('order', wp_get_current_user())->id.'-'.get_current_user_id()));  
+    $return = esc_url( add_query_arg( $arr_params, doliconnecturl('dolicart')) );
+    ?>
+    <a type="button" class="btn btn-primary w-100" href="<?php echo $return; ?>">
         <?php _e('Finaliser la commande', 'ptibogxivtheme'); ?>
-    </button>
+    </a>
   </div>
 </div>
 <?php } ?>

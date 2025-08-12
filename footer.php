@@ -111,6 +111,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
     </div>
   </div>
 </nav>
+<?php if (!is_page(doliconnectid('dolicart'))) { ?>
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDoliCartLabel" aria-labelledby="offcanvasDoliCartLabel">
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasDoliCartLabel"><?php _e('Cart', 'ptibogxivtheme'); ?></h5>
@@ -135,6 +136,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
     </button>
   </div>
 </div>
+<?php } ?>
 </footer>
 <?php wp_footer(); ?>
 </body>

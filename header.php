@@ -64,7 +64,7 @@ if ( function_exists( 'wp_body_open' ) ) {
           'walker'  	      => new ptibogxivtheme_walker_nav_menu()
         ) );
       ?>
-      <div class="d-flex navbar-nav">
+      <div class="navbar-nav f-flex float-end">
         <?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang(array( 'raw' => 1 ))) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
           <a class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-fw fa-2x'></i>", 'a' , 'nav-link', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></a>
         <?php } ?>

@@ -119,15 +119,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
   </div>
   <div class="offcanvas-body">
     <?php
-      wp_nav_menu( array(
-        'theme_location'	=> 'navbar',
-        'container'       => false,
-        'menu_class'		  => '',
-        'fallback_cb'		  => '__return_false',
-        'items_wrap'		  => '<ul id="%1$s" class="navbar-nav flex-grow-1 pe-3 %2$s">%3$s</ul>',
-        'depth'			      => 2,
-        'walker'  	      => new ptibogxivtheme_walker_nav_menu()
-      ) );
+      echo doliline(doliConnect('order', wp_get_current_user()), esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null), false);
     ?>
   </div>
   <div class="offcanvas-footer m-3">

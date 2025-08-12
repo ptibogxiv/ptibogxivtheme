@@ -86,6 +86,7 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
           <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></a> 
         <?php } ?>
       <?php } ?>
+      <a href="<?php echo doliconnecturl('doliaccount'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Account', 'ptibogxivtheme'); ?></small></a> 
     </div>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDoliNavbarBottom" aria-labelledby="offcanvasDoliNavbarBottomLabel">
       <div class="offcanvas-header">

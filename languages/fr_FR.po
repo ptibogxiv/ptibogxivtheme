@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2025-06-01 13:07+0200\n"
-"PO-Revision-Date: 2025-06-01 13:07+0200\n"
+"POT-Creation-Date: 2025-08-12 15:44+0200\n"
+"PO-Revision-Date: 2025-08-12 15:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -20,11 +20,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: 404.php:26
+#: 404.php:23
 msgid "Error"
 msgstr "Erreur"
 
-#: 404.php:27
+#: 404.php:24
 msgid "The page you were looking for does not exist."
 msgstr "La page que vous recherchez n’existe pas."
 
@@ -33,7 +33,7 @@ msgstr "La page que vous recherchez n’existe pas."
 msgid "Author %s"
 msgstr "Auteur %s"
 
-#: category.php:25
+#: category.php:22
 msgid "Category :"
 msgstr "Catégorie :"
 
@@ -45,27 +45,27 @@ msgstr "Modes de paiement"
 msgid "Social networks"
 msgstr "Réseaux sociaux"
 
-#: footer.php:40
+#: footer.php:37
 msgid "Resources"
 msgstr "Ressources"
 
-#: footer.php:44
+#: footer.php:40
 msgid "Terms of service"
 msgstr "Conditions Générales d’Utilisation"
 
-#: footer.php:46
+#: footer.php:42
 msgid "Kiosk mode ON"
 msgstr "Mode kiosque ON"
 
-#: footer.php:63
+#: footer.php:59
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:63
+#: footer.php:59
 msgid "Legal notice"
 msgstr "Mentions légales"
 
-#: footer.php:67
+#: footer.php:70
 #, php-format
 msgid ""
 "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b> and "
@@ -74,80 +74,88 @@ msgstr ""
 "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b> et "
 "hébergé avec <i class=\"fas fa-leaf text-success\"></i> par <b>%s</b>"
 
-#: footer.php:69
+#: footer.php:72
 #, php-format
 msgid "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b>"
 msgstr "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b>"
 
-#: footer.php:85 footer.php:90 header.php:96 header.php:100
+#: footer.php:79 footer.php:92
+msgid "Menu"
+msgstr "Menu"
+
+#: footer.php:81
+msgid "Home"
+msgstr "Accueil"
+
+#: footer.php:84 header.php:80 header.php:83 header.php:85
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:102 header.php:110
-msgid "Sign out"
-msgstr "Se déconnecter"
+#: footer.php:84 footer.php:86 header.php:73 header.php:75
+msgid "Cart"
+msgstr "Panier"
 
-#: functions.php:181
+#: functions.php:160
 msgid "year"
 msgstr "an"
 
-#: functions.php:181
+#: functions.php:160
 msgid "years"
 msgstr "ans"
 
-#: functions.php:182
+#: functions.php:161
 msgid "month"
 msgstr "mois"
 
-#: functions.php:182
+#: functions.php:161
 msgid "months"
 msgstr "mois"
 
-#: functions.php:183
+#: functions.php:162
 msgid "week"
 msgstr "semaine"
 
-#: functions.php:183
+#: functions.php:162
 msgid "weeks"
 msgstr "semaines"
 
-#: functions.php:184
+#: functions.php:163
 msgid "day"
 msgstr "jour"
 
-#: functions.php:184
+#: functions.php:163
 msgid "days"
 msgstr "jours"
 
-#: functions.php:185
+#: functions.php:164
 msgid "hour"
 msgstr "heure"
 
-#: functions.php:185
+#: functions.php:164
 msgid "hours"
 msgstr "heures"
 
-#: functions.php:186
+#: functions.php:165
 msgid "minute"
 msgstr "minute"
 
-#: functions.php:186
+#: functions.php:165
 msgid "minutes"
 msgstr "minutes"
 
-#: functions.php:187
+#: functions.php:166
 msgid "second"
 msgstr "seconde"
 
-#: functions.php:187 functions.php:227
+#: functions.php:166 functions.php:206
 msgid "seconds"
 msgstr "secondes"
 
-#: functions.php:204
+#: functions.php:183
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:230
+#: functions.php:209
 #, php-format
 msgid "%s ago"
 msgstr "Il y a %s"
@@ -495,25 +503,17 @@ msgstr "Carousel"
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
-#: header.php:34
-msgid "Contact us"
-msgstr "Contactez-nous"
+#: header.php:88
+msgid "Dolibarr"
+msgstr "Dolibarr"
 
-#: header.php:116
-msgid "Cart"
-msgstr "Panier"
+#: header.php:92
+msgid "Administration"
+msgstr "Administration"
 
-#: header.php:127
-msgid "Finalize the order"
-msgstr "Finaliser la commande"
-
-#: header.php:138 header.php:140
-msgid "Sign in"
-msgstr "S'identifier"
-
-#: header.php:181
-msgid "Post on"
-msgstr "Publié le"
+#: header.php:95 loops/comments.php:49
+msgid "Logout"
+msgstr "Déconnexion"
 
 #: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:56
 #: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:56
@@ -636,10 +636,6 @@ msgstr "Connecté en tant que"
 msgid "Log out of this account"
 msgstr "Déconnecter"
 
-#: loops/comments.php:49
-msgid "Logout"
-msgstr "Déconnexion"
-
 #: loops/comments.php:53 loops/comments.php:54
 msgid "Your name"
 msgstr "Votre nom"
@@ -717,7 +713,7 @@ msgctxt "ptibogxivtheme"
 msgid "Search"
 msgstr "Chercher"
 
-#: search.php:25
+#: search.php:22
 msgid "Search Results for"
 msgstr "Résultats de la recherche pour"
 
@@ -737,3 +733,18 @@ msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
 #. Author of the plugin/theme
 msgid "ptibogxiv"
 msgstr "ptibogxiv"
+
+#~ msgid "Sign out"
+#~ msgstr "Se déconnecter"
+
+#~ msgid "Contact us"
+#~ msgstr "Contactez-nous"
+
+#~ msgid "Finalize the order"
+#~ msgstr "Finaliser la commande"
+
+#~ msgid "Sign in"
+#~ msgstr "S'identifier"
+
+#~ msgid "Post on"
+#~ msgstr "Publié le"

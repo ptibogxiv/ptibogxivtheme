@@ -72,18 +72,18 @@ echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%
 echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>");
 } ?></small></small></p></div>
 </div></div>
-<nav class="bg-body-tertiary fixed-bottom pb-4 d-block d-md-none">
+<nav class="bg-body-tertiary fixed-bottom pb-1 d-block d-md-none">
   <div class="container-fluid">
     <div class="btn-group d-flex p-2" role="group" aria-label="Bottom menu">
       <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliNavbarBottom" aria-controls="offcanvasDoliNavbarBottom" aria-label="Togglemenu">
-        <i class="fa-solid fa-bars fa-2x fa-fw"></i>
+        <i class="fa-solid fa-bars fa-2x fa-fw"></i><br><small>><?php _e('Menu', 'ptibogxivtheme'); ?></small>
       </button>
-      <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i></a> 
+      <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fas fa-home fa-2x fa-fw'></i><br><small><?php _e('Home', 'ptibogxivtheme'); ?></small></a> 
       <?php if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
         <?php if (!is_page(doliconnectid('dolicart')) && function_exists('doliOffcanvasCart')) { ?>
-          <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliCartLabel" aria-controls="offcanvasDoliCartLabel" aria-label="<?php _e('My account', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></button>
+          <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliCartLabel" aria-controls="offcanvasDoliCartLabel" aria-label="<?php _e('My account', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></button>
         <?php } else { ?>
-          <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a> 
+          <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></a> 
         <?php } ?>
       <?php } ?>
     </div>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2022-10-31 10:15+0100\n"
-"PO-Revision-Date: 2022-10-31 10:16+0100\n"
+"POT-Creation-Date: 2025-08-12 15:45+0200\n"
+"PO-Revision-Date: 2025-08-12 15:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_BE\n"
@@ -10,22 +10,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: 404.php:26
+#: 404.php:23
 msgid "Error"
 msgstr "Fout"
 
-#: 404.php:27
+#: 404.php:24
 msgid "The page you were looking for does not exist."
 msgstr "De pagina die u zocht bestaat niet."
 
@@ -33,6 +32,10 @@ msgstr "De pagina die u zocht bestaat niet."
 #, php-format
 msgid "Author %s"
 msgstr "Auteur %s"
+
+#: category.php:22
+msgid "Category :"
+msgstr "Categorie :"
 
 #: footer.php:7
 msgid "Payment modes"
@@ -42,27 +45,27 @@ msgstr "Betalingsmodi"
 msgid "Social networks"
 msgstr "Sociale netwerken"
 
-#: footer.php:62
+#: footer.php:37
 msgid "Resources"
 msgstr "Hulpbronen"
 
-#: footer.php:66 footer.php:121
-msgid "Legal notice"
-msgstr "Wettelijke kennisgeving"
-
-#: footer.php:67
+#: footer.php:40
 msgid "Terms of service"
 msgstr "Servicevoorwaarden"
 
-#: footer.php:69
+#: footer.php:42
 msgid "Kiosk mode ON"
 msgstr "Kioskmodus AAN"
 
-#: footer.php:86
+#: footer.php:59
 msgid "All rights reserved"
 msgstr "Alle rechten voorbehouden"
 
-#: footer.php:88
+#: footer.php:59
+msgid "Legal notice"
+msgstr "Wettelijke kennisgeving"
+
+#: footer.php:70
 #, php-format
 msgid ""
 "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b> and "
@@ -71,109 +74,89 @@ msgstr ""
 "Ontworpen met <i class=\"fas fa-heart text-danger\"></i> door <b>%s</b> en "
 "gehost met <i class=\"fas fa-leaf text-success\"></i> door <b>%s</b>"
 
-#: footer.php:90
+#: footer.php:72
 #, php-format
 msgid "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b>"
 msgstr ""
 "Ontworpen met <i class=\"fas fa-heart text-danger\"></i> door <b>%s</b>"
 
-#: footer.php:97 header.php:80
-msgid "Choose language"
-msgstr "Taal kiezen"
+#: footer.php:79 footer.php:92
+msgid "Menu"
+msgstr "Menu"
 
-#: footer.php:101 header.php:99 header.php:101
-msgid "Sign in"
-msgstr "Aanmelden"
+#: footer.php:81
+msgid "Home"
+msgstr "Home"
 
-#: footer.php:104 footer.php:106 header.php:86
+#: footer.php:84 header.php:80 header.php:83 header.php:85
 msgid "My account"
 msgstr "Mijn Account"
 
-#: footer.php:108 header.php:89
-msgid "Basket"
+#: footer.php:84 footer.php:86 header.php:73 header.php:75
+msgid "Cart"
 msgstr "Winkelmandje"
 
-#: footer.php:111 header.php:93
-msgid "Sign out"
-msgstr "Afmelden"
-
-#: footer.php:124
-msgid "Editor"
-msgstr "Editor"
-
-#: footer.php:151
-msgid "Responsible for publishing"
-msgstr "Verantwoordelijk voor publicatie"
-
-#: footer.php:153
-msgid "Design"
-msgstr "Design"
-
-#: footer.php:158
-msgid "Hosting"
-msgstr "Hosting"
-
-#: functions.php:183
+#: functions.php:160
 msgid "year"
 msgstr "jaar"
 
-#: functions.php:183
+#: functions.php:160
 msgid "years"
 msgstr "jaren"
 
-#: functions.php:184
+#: functions.php:161
 msgid "month"
 msgstr "maand"
 
-#: functions.php:184
+#: functions.php:161
 msgid "months"
 msgstr "maanden"
 
-#: functions.php:185
+#: functions.php:162
 msgid "week"
 msgstr "week"
 
-#: functions.php:185
+#: functions.php:162
 msgid "weeks"
 msgstr "weken"
 
-#: functions.php:186
+#: functions.php:163
 msgid "day"
 msgstr "dag"
 
-#: functions.php:186
+#: functions.php:163
 msgid "days"
 msgstr "dagen"
 
-#: functions.php:187
+#: functions.php:164
 msgid "hour"
 msgstr "uur"
 
-#: functions.php:187
+#: functions.php:164
 msgid "hours"
 msgstr "uren"
 
-#: functions.php:188
+#: functions.php:165
 msgid "minute"
 msgstr "minuut"
 
-#: functions.php:188
+#: functions.php:165
 msgid "minutes"
 msgstr "minuten"
 
-#: functions.php:189
+#: functions.php:166
 msgid "second"
 msgstr "seconden"
 
-#: functions.php:189 functions.php:229
+#: functions.php:166 functions.php:206
 msgid "seconds"
 msgstr "seconden"
 
-#: functions.php:206
+#: functions.php:183
 msgid "sometime"
 msgstr "ergens"
 
-#: functions.php:232
+#: functions.php:209
 #, php-format
 msgid "%s ago"
 msgstr "%s geleden"
@@ -238,7 +221,7 @@ msgstr "Volledige breedte van container"
 msgid "Css scheme"
 msgstr "Css-schema"
 
-#: functions/setup.php:82 functions/setup.php:130 functions/setup.php:279
+#: functions/setup.php:82 functions/setup.php:131 functions/setup.php:280
 msgid "Choose between scheme"
 msgstr "Kies tussen schema"
 
@@ -247,233 +230,237 @@ msgid "Default"
 msgstr "Standaard"
 
 #: functions/setup.php:88
+msgid "Brite"
+msgstr "Brite"
+
+#: functions/setup.php:89
 msgid "Cerulean"
 msgstr "Cerulean"
 
-#: functions/setup.php:89
+#: functions/setup.php:90
 msgid "Cosmo"
 msgstr "Cosmo"
 
-#: functions/setup.php:90
+#: functions/setup.php:91
 msgid "Cyborg"
 msgstr "Cyborg"
 
-#: functions/setup.php:91
+#: functions/setup.php:92
 msgid "Darkly"
 msgstr "Darkly"
 
-#: functions/setup.php:92
+#: functions/setup.php:93
 msgid "Flatly"
 msgstr "Plat"
 
-#: functions/setup.php:93
+#: functions/setup.php:94
 msgid "Journal"
 msgstr "Register"
 
-#: functions/setup.php:94
+#: functions/setup.php:95
 msgid "Litera"
 msgstr "Litera"
 
-#: functions/setup.php:95
+#: functions/setup.php:96
 msgid "Lumen"
 msgstr "Lumen (Lumen)"
 
-#: functions/setup.php:96
+#: functions/setup.php:97
 msgid "Lux"
 msgstr "Lux"
 
-#: functions/setup.php:97
+#: functions/setup.php:98
 msgid "Materia"
 msgstr "Materia"
 
-#: functions/setup.php:98
+#: functions/setup.php:99
 msgid "Minty"
 msgstr "Minty"
 
-#: functions/setup.php:99
+#: functions/setup.php:100
 msgid "Morph"
 msgstr "Morph"
 
-#: functions/setup.php:100
+#: functions/setup.php:101
 msgid "Pulse"
 msgstr "Polsslag"
 
-#: functions/setup.php:101
+#: functions/setup.php:102
 msgid "Quartz"
 msgstr "Quartz"
 
-#: functions/setup.php:102
+#: functions/setup.php:103
 msgid "Sandstone"
 msgstr "Zandsteen"
 
-#: functions/setup.php:103
+#: functions/setup.php:104
 msgid "Simplex"
 msgstr "Simplex"
 
-#: functions/setup.php:104
+#: functions/setup.php:105
 msgid "Sketchy"
 msgstr "Schetsmatig"
 
-#: functions/setup.php:105
+#: functions/setup.php:106
 msgid "Slate"
 msgstr "Leisteen"
 
-#: functions/setup.php:106
+#: functions/setup.php:107
 msgid "Solar"
 msgstr "Zonne-energie"
 
-#: functions/setup.php:107
+#: functions/setup.php:108
 msgid "Spacelab"
 msgstr "Spacelab"
 
-#: functions/setup.php:108
+#: functions/setup.php:109
 msgid "Superhero"
 msgstr "Superheld"
 
-#: functions/setup.php:109
+#: functions/setup.php:110
 msgid "United"
 msgstr "Verenigde"
 
-#: functions/setup.php:110
+#: functions/setup.php:111
 msgid "Vapor"
 msgstr "Vapor"
 
-#: functions/setup.php:111
+#: functions/setup.php:112
 msgid "Yeti"
 msgstr "Yeti"
 
-#: functions/setup.php:112
+#: functions/setup.php:113
 msgid "Zephyr"
 msgstr "Zephyr"
 
-#: functions/setup.php:129
+#: functions/setup.php:130
 msgid "Navbar Color scheme"
 msgstr "Navbar-kleurschema"
 
-#: functions/setup.php:136 functions/setup.php:286
+#: functions/setup.php:137 functions/setup.php:287
 msgid "Light scheme"
 msgstr "Lichtregeling"
 
-#: functions/setup.php:137 functions/setup.php:287
+#: functions/setup.php:138 functions/setup.php:288
 msgid "Dark scheme"
 msgstr "Donker schema"
 
-#: functions/setup.php:138 functions/setup.php:288
+#: functions/setup.php:139 functions/setup.php:289
 msgid "Primary scheme"
 msgstr "Primaire regeling"
 
-#: functions/setup.php:139 functions/setup.php:289
+#: functions/setup.php:140 functions/setup.php:290
 msgid "Secondary scheme"
 msgstr "Secundaire regeling"
 
-#: functions/setup.php:140 functions/setup.php:290
+#: functions/setup.php:141 functions/setup.php:291
 msgid "Info scheme"
 msgstr "Infoschema"
 
-#: functions/setup.php:141 functions/setup.php:291
+#: functions/setup.php:142 functions/setup.php:292
 msgid "Success scheme"
 msgstr "Succesregeling"
 
-#: functions/setup.php:142 functions/setup.php:292
+#: functions/setup.php:143 functions/setup.php:293
 msgid "Warning scheme"
 msgstr "Waarschuwingsschema"
 
-#: functions/setup.php:143 functions/setup.php:293
+#: functions/setup.php:144 functions/setup.php:294
 msgid "Danger scheme"
 msgstr "Gevarenregeling"
 
-#: functions/setup.php:160
+#: functions/setup.php:161
 msgid "Home brand style"
 msgstr "Huismerkstijl"
 
-#: functions/setup.php:161
+#: functions/setup.php:162
 msgid "Choose between style of home button"
 msgstr "Kiezen tussen stijl van de startknop"
 
-#: functions/setup.php:166
+#: functions/setup.php:167
 msgid "Brand only"
 msgstr "Alleen merk"
 
-#: functions/setup.php:167
+#: functions/setup.php:168
 msgid "Logo only"
 msgstr "Alleen logo"
 
-#: functions/setup.php:168
+#: functions/setup.php:169
 msgid "Brand & logo"
 msgstr "Merk & logo"
 
-#: functions/setup.php:169
+#: functions/setup.php:170
 msgid "Generic Home"
 msgstr "Algemeen huis"
 
-#: functions/setup.php:186
+#: functions/setup.php:187
 msgid "Sidebar Positioning"
 msgstr "Positie van zijbalk"
 
-#: functions/setup.php:187
+#: functions/setup.php:188
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
 "De standaardpositie van de zijbalk instellen. Kan zijn: rechts, links, beide "
 "of geen."
 
-#: functions/setup.php:192 functions/widgets.php:22
+#: functions/setup.php:193 functions/widgets.php:22
 msgid "Right sidebar"
 msgstr "Rechtse zijbalk"
 
-#: functions/setup.php:193 functions/widgets.php:9
+#: functions/setup.php:194 functions/widgets.php:9
 msgid "Left sidebar"
 msgstr "Linkse zijbalk"
 
-#: functions/setup.php:194
+#: functions/setup.php:195
 msgid "Left & Right sidebars"
 msgstr "Linker- en rechterzijbalk"
 
-#: functions/setup.php:195
+#: functions/setup.php:196
 msgid "No sidebar"
 msgstr "Geen sidebar"
 
-#: functions/setup.php:212
+#: functions/setup.php:213
 msgid "Carousel / Favorite image"
 msgstr "Carrousel / Favoriete afbeelding"
 
-#: functions/setup.php:213
+#: functions/setup.php:214
 msgid "Set carousel / image"
 msgstr "Carrousel / afbeelding instellen"
 
-#: functions/setup.php:218
+#: functions/setup.php:219
 msgid "Carousel and images on every pages"
 msgstr "Carrousel en afbeeldingen op elke pagina"
 
-#: functions/setup.php:219
+#: functions/setup.php:220
 msgid "Only image on pages"
 msgstr "Alleen afbeelding op pagina's"
 
-#: functions/setup.php:220
+#: functions/setup.php:221
 msgid "Only carousel and images on posts"
 msgstr "Alleen carrousel en afbeeldingen op berichten"
 
-#: functions/setup.php:221
+#: functions/setup.php:222
 msgid "No carousel or images"
 msgstr "Geen carrousel of afbeeldingen"
 
-#: functions/setup.php:234
+#: functions/setup.php:235
 msgid "Restore the native admin bar"
 msgstr "De oorspronkelijke beheerdersbalk herstellen"
 
-#: functions/setup.php:247
+#: functions/setup.php:248
 msgid "Remove the shadow of content box"
 msgstr "Het vak schaduw van inhoud verwijderen"
 
-#: functions/setup.php:260
+#: functions/setup.php:261
 msgid "Remove the card of content box"
 msgstr "Het vak schaduw van inhoud verwijderen"
 
-#: functions/setup.php:278
+#: functions/setup.php:279
 msgid "Networkbar Color scheme"
 msgstr "Kleurschema netwerkbalk"
 
-#: functions/setup.php:285
+#: functions/setup.php:286
 msgid "Not active"
 msgstr "Niet actief"
 
@@ -517,51 +504,95 @@ msgstr "Caroussel (Caroussel)"
 msgid "The caroussel widget area"
 msgstr "Het caroussel widget gebied"
 
-#: header.php:35
-msgid "Contact us"
-msgstr "Contacteer ons"
+#: header.php:88
+msgid "Dolibarr"
+msgstr "Dolibarr"
 
-#: header.php:142
-msgid "Post on"
-msgstr "Post op"
+#: header.php:92
+msgid "Administration"
+msgstr "Administratie"
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:54
+#: header.php:95 loops/comments.php:49
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:56
 msgid "View details"
 msgstr "Details bekijken"
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:77
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:79
 #, php-format
 msgid "More information about %s"
 msgstr "Meer informatie over %s"
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:128
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:130
 msgid "Check for updates"
 msgstr "Controleren op updates"
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:214
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:217
 #, php-format
 msgctxt "the plugin title"
 msgid "The %s plugin is up to date."
 msgstr "De invoegtoepassing %s is up-to-date."
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:216
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:219
 #, php-format
 msgctxt "the plugin title"
 msgid "A new version of the %s plugin is available."
 msgstr "Er is een nieuwe versie van de invoegtoepassing %s beschikbaar."
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:218
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:221
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
 msgstr "Kan niet bepalen of er updates beschikbaar zijn voor %s."
 
-#: lib/plugin-update-checker/Puc/v4p13/Plugin/Ui.php:224
+#: lib/plugin-update-checker/Puc/v5p0/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p1/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:227
 #, php-format
 msgid "Unknown update checker status \"%s\""
 msgstr "Onbekende status van Update Checker %s"
 
-#: lib/plugin-update-checker/Puc/v4p13/Vcs/PluginUpdateChecker.php:100
+#: lib/plugin-update-checker/Puc/v5p0/Vcs/PluginUpdateChecker.php:98
+#: lib/plugin-update-checker/Puc/v5p1/Vcs/PluginUpdateChecker.php:98
+#: lib/plugin-update-checker/Puc/v5p2/Vcs/PluginUpdateChecker.php:98
+#: lib/plugin-update-checker/Puc/v5p3/Vcs/PluginUpdateChecker.php:113
+#: lib/plugin-update-checker/Puc/v5p4/Vcs/PluginUpdateChecker.php:113
+#: lib/plugin-update-checker/Puc/v5p6/Vcs/PluginUpdateChecker.php:113
 msgid "There is no changelog available."
 msgstr "Er is geen changelog beschikbaar."
 
@@ -575,10 +606,6 @@ msgstr ""
 msgid "Be the first to write a comment."
 msgstr "Schrijf als eerste een reactie."
 
-#: loops/comments.php:30
-msgid "Comments are closed."
-msgstr "Reacties zijn uitgeschakeld."
-
 #: loops/comments.php:37
 msgid "Comment"
 msgstr "Reactie"
@@ -590,11 +617,11 @@ msgstr "Reacties op %s"
 
 #: loops/comments.php:41
 msgid ""
-"You must be <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target="
-"\"#DoliconnectLogin\">logged in</a> to post a comment."
+"You must be <a href=\"#\" data-bs-toggle=\"modal\" data-bs-"
+"target=\"#DoliconnectLogin\">logged in</a> to post a comment."
 msgstr ""
-"Je moet <a href=\"#\" data-bs-toggle=\"modal\" data-bs-target="
-"\"#DoliconnectLogin\">ingelogd</a> zijn om een reactie te plaatsen."
+"Je moet <a href=\"#\" data-bs-toggle=\"modal\" data-bs-"
+"target=\"#DoliconnectLogin\">ingelogd</a> zijn om een reactie te plaatsen."
 
 #: loops/comments.php:42
 #, php-format
@@ -609,15 +636,11 @@ msgstr "Aangemeld als"
 msgid "Log out of this account"
 msgstr "Uitloggen van dit account"
 
-#: loops/comments.php:49
-msgid "Logout"
-msgstr "Uitloggen"
-
 #: loops/comments.php:53 loops/comments.php:54
 msgid "Your name"
 msgstr "Je naam"
 
-#: loops/comments.php:53
+#: loops/comments.php:54
 msgid "(required)"
 msgstr "(verplicht)"
 
@@ -625,25 +648,29 @@ msgstr "(verplicht)"
 msgid "Your email address"
 msgstr "Uw e-mailadres"
 
-#: loops/comments.php:57
+#: loops/comments.php:58
 msgid "(required, but will not be published)"
 msgstr "(vereist, maar zal niet worden gepubliceerd)"
 
 #: loops/comments.php:61
-msgid "Your website"
-msgstr "Uw website"
-
-#: loops/comments.php:61
-msgid "if you have one (not required)"
-msgstr "als u er een hebt (niet vereist)"
-
-#: loops/comments.php:62
 msgid "Your website url"
 msgstr "Url van uw website"
 
-#: loops/comments.php:66 loops/comments.php:67
+#: loops/comments.php:62
+msgid "Your website"
+msgstr "Uw website"
+
+#: loops/comments.php:62
+msgid "if you have one (not required)"
+msgstr "als u er een hebt (niet vereist)"
+
+#: loops/comments.php:66
 msgid "Your comment"
 msgstr "Uw opmerking"
+
+#: loops/comments.php:67
+msgid "Message"
+msgstr "Bericht"
 
 #: loops/comments.php:69
 msgid "Submit comment"
@@ -686,7 +713,7 @@ msgctxt "ptibogxivtheme"
 msgid "Search"
 msgstr "Zoeken"
 
-#: search.php:25
+#: search.php:22
 msgid "Search Results for"
 msgstr "Zoekresultaten voor"
 
@@ -695,8 +722,9 @@ msgid "ptibogxivtheme"
 msgstr "ptibogxivtheme"
 
 #. Theme URI of the plugin/theme
-msgid "https://www.ptibogxiv.net/en"
-msgstr "https://www.ptibogxiv.net/en"
+#. Author URI of the plugin/theme
+msgid "https://www.ptibogxiv.eu"
+msgstr "https://www.ptibogxiv.eu"
 
 #. Description of the plugin/theme
 msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
@@ -706,9 +734,41 @@ msgstr "Bootstrap Starter Thema voor WordPress & Doliconnect"
 msgid "ptibogxiv"
 msgstr "ptibogxiv"
 
-#. Author URI of the plugin/theme
-msgid "https://www.ptibogxiv.net"
-msgstr "https://www.ptibogxiv.net"
+#~ msgid "Choose language"
+#~ msgstr "Taal kiezen"
+
+#~ msgid "Sign in"
+#~ msgstr "Aanmelden"
+
+#~ msgid "Basket"
+#~ msgstr "Winkelmandje"
+
+#~ msgid "Sign out"
+#~ msgstr "Afmelden"
+
+#~ msgid "Editor"
+#~ msgstr "Editor"
+
+#~ msgid "Responsible for publishing"
+#~ msgstr "Verantwoordelijk voor publicatie"
+
+#~ msgid "Design"
+#~ msgstr "Design"
+
+#~ msgid "Hosting"
+#~ msgstr "Hosting"
+
+#~ msgid "Contact us"
+#~ msgstr "Contacteer ons"
+
+#~ msgid "Post on"
+#~ msgstr "Post op"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Reacties zijn uitgeschakeld."
+
+#~ msgid "https://www.ptibogxiv.net/en"
+#~ msgstr "https://www.ptibogxiv.net/en"
 
 #~ msgid "Sorry, you are not allowed to access this page."
 #~ msgstr "Je hebt geen toegang tot deze pagina."

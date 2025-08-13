@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2025-08-12 15:45+0200\n"
-"PO-Revision-Date: 2025-08-12 15:46+0200\n"
+"POT-Creation-Date: 2025-08-13 20:23+0200\n"
+"PO-Revision-Date: 2025-08-13 20:24+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl_BE\n"
@@ -80,7 +80,7 @@ msgid "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b>"
 msgstr ""
 "Ontworpen met <i class=\"fas fa-heart text-danger\"></i> door <b>%s</b>"
 
-#: footer.php:79 footer.php:92
+#: footer.php:79 footer.php:93
 msgid "Menu"
 msgstr "Menu"
 
@@ -95,6 +95,10 @@ msgstr "Mijn Account"
 #: footer.php:84 footer.php:86 header.php:73 header.php:75
 msgid "Cart"
 msgstr "Winkelmandje"
+
+#: footer.php:89
+msgid "Account"
+msgstr "﻿Account"
 
 #: functions.php:160
 msgid "year"

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2025-08-12 15:44+0200\n"
-"PO-Revision-Date: 2025-08-12 15:45+0200\n"
+"POT-Creation-Date: 2025-08-13 20:23+0200\n"
+"PO-Revision-Date: 2025-08-13 20:23+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_BE\n"
@@ -79,7 +79,7 @@ msgstr ""
 msgid "Designed with <i class=\"fas fa-heart text-danger\"></i> by <b>%s</b>"
 msgstr "Conçu avec <i class=\"fas fa-heart text-danger\"></i> par <b>%s</b>"
 
-#: footer.php:79 footer.php:92
+#: footer.php:79 footer.php:93
 msgid "Menu"
 msgstr "Menu"
 
@@ -94,6 +94,10 @@ msgstr "Mon compte"
 #: footer.php:84 footer.php:86 header.php:73 header.php:75
 msgid "Cart"
 msgstr "Panier"
+
+#: footer.php:89
+msgid "Account"
+msgstr "Compte"
 
 #: functions.php:160
 msgid "year"

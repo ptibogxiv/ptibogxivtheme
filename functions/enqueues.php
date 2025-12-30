@@ -3,11 +3,11 @@
 function ptibogxivtheme_enqueues() {
 	if ( empty(get_theme_mod( 'ptibogxivtheme_css')) || get_theme_mod( 'ptibogxivtheme_css') == 'css' ) {
 		$css = 'bootstrap/css';
-		$versionbase = '5.3.6'; 
+		$versionbase = '5.3.8'; 
 		$version = $versionbase; 
 	} else {
 		$css = 'bootswatch/'.get_theme_mod( 'ptibogxivtheme_css');
-		$version = '5.3.6'; 
+		$version = '5.3.8'; 
 		$versionbase = $version; 
 	}
 	if (!empty(get_theme_mod( 'ptibogxivtheme_css')) && $version != $versionbase && empty(get_option('doliconnectbeta'))) {
@@ -18,7 +18,7 @@ function ptibogxivtheme_enqueues() {
 	wp_enqueue_style( 'bootstrap.min');
 	wp_register_script( 'bootstrap.bundle.min', get_template_directory_uri().'/theme/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), $version, true);
   	wp_enqueue_script( 'bootstrap.bundle.min');
-  	wp_register_script( 'font-awesome', 'https://use.fontawesome.com/releases/v7.0.0/js/all.js', array(), '7.0.0');
+  	wp_register_script( 'font-awesome', 'https://use.fontawesome.com/releases/v7.1.0/js/all.js', array(), '7.1.0');
 	wp_enqueue_script( 'font-awesome');
 	wp_enqueue_script( 'jquery-masonry' );
 	wp_register_style( 'ptibogxivtheme', get_template_directory_uri().'/theme/custom/css/ptibogxivtheme.css', false, $version);

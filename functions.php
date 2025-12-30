@@ -119,7 +119,7 @@ $return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
 //document.write('<a href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><i class='fab fa-whatsapp fa-fw'></i></a>');
 //}</script>
 $return .= "<a href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><i class='fa-brands fa-facebook-f fa-fw'></i></a>
-<a href='https://twitter.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><i class='fa-brands fa-x-twitter fa-fw'></i></a>
+<a href='https://x.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><i class='fa-brands fa-x-twitter fa-fw'></i></a>
 <a href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><i class='fa-brands fa-linkedin-in fa-fw'></i></a>
 <a href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><i class='fa-brands fa-pinterest fa-fw'></i></a>
 </div>";

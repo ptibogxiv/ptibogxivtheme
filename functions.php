@@ -130,24 +130,6 @@ function ptibogxivtheme_gradient() {
 	return "backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);background-color: rgba(255, 255, 255, 0.55);";
 }
 
-add_action('add_meta_boxes','caroussel_metabox');
-function caroussel_metabox(){
-  add_meta_box('url_crea', 'Caroussel', 'url_crea', 'post', 'side');
-}
-
-function url_crea($post){
-  $url = get_post_meta($post->ID,'_displaycaroussel',true);
-  echo '<label for="url_meta">Afficher dans le carrousel</label>';
-  echo '<input id="url_meta" type="text" name="url_site" value="'.$url.'" />';
-}
-
-add_action('save_post','save_metabox');
-
-function save_metabox($post_id){
-if(isset($_POST['url_site']))
-update_post_meta($post_id, '_url_crea', esc_url($_POST['url_site']));
-}
-
 function ptibogxivtheme_time_ago() {
 global $post;
 	

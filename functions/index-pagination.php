@@ -2,60 +2,45 @@
 
 // Bootstrap pagination for index and category pages
 
+// Correction et amélioration de la fonction de pagination
 if ( ! function_exists( 'b4st_pagination' ) ) {
 
 	function b4st_pagination() {
 
 		global $wp_query;
 
-		$big = 999999999; // This needs to be an unlikely integer
+		$big = 999999999; // Nombre improbable pour remplacer dans les liens
 
-		// For more options and info view the docs for paginate_links()
-
-		// http://codex.wordpress.org/Function_Reference/paginate_links
-
+		// Générer les liens de pagination
 		$paginate_links = paginate_links( array(
-
-			'base' => str_replace( $big, '%#%', get_pagenum_link($big) ),
-
+			'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link($big) ) ),
+			'format' => '?paged=%#%',
 			'current' => max( 1, get_query_var('paged') ),
-
 			'total' => $wp_query->max_num_pages,
-
-			'mid_size' => 5,
-
-			'prev_next' => True,
-
-			'prev_text' => __('<i class="fas fa-angle-left"></i> Newer'),
-
-			'next_text' => __('Older <i class="fas fa-angle-right"></i>'),
-
-			'type' => 'list'
-
+			'mid_size' => 2,
+			'prev_next' => true,
+			'prev_text' => __('<i class="fas fa-angle-left"></i> Newer', 'text-domain'),
+			'next_text' => __('Older <i class="fas fa-angle-right"></i>', 'text-domain'),
+			'type' => 'array'
 		) );
 
-		$paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );
-
-		$paginate_links = str_replace( "<li><span class='page-numbers current'>", "<li class='page-item active'><a class='page-link' href='#'>", $paginate_links );
-
-    $paginate_links = str_replace( "<li>", "<li class='page-item'>", $paginate_links );
-
-		$paginate_links = str_replace( "<a", "<a class='page-link' ", $paginate_links );
-
-
-
-		$paginate_links = str_replace( "</span>", "</a>", $paginate_links );
-
-		$paginate_links = preg_replace( "/\s*page-numbers/", "", $paginate_links );
-
-		// Display the pagination if more than one page is found
-
+		// Vérifier si des liens de pagination existent
 		if ( $paginate_links ) {
+			echo '<nav aria-label="Page navigation example">';
+			echo '<ul class="pagination justify-content-center">';
 
-			echo $paginate_links;
+			foreach ( $paginate_links as $link ) {
+				if ( strpos( $link, 'current' ) !== false ) {
+					echo '<li class="page-item active" aria-current="page">' . str_replace( 'page-numbers', 'page-link', $link ) . '</li>';
+				} elseif ( strpos( $link, 'dots' ) !== false ) {
+					echo '<li class="page-item disabled"><span class="page-link">' . $link . '</span></li>';
+				} else {
+					echo '<li class="page-item">' . str_replace( 'page-numbers', 'page-link', $link ) . '</li>';
+				}
+			}
 
+			echo '</ul>';
+			echo '</nav>';
 		}
-
 	}
-
 }

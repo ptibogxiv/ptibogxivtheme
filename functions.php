@@ -82,13 +82,11 @@ add_theme_support( 'custom-logo', array(
 ) );
 
 function theme_prefix_setup() {
-	
-add_theme_support( 'custom-logo', array(
-	'height'      => 80,
-	'width'       => 200,
-	'flex-width'  => true,
-	) );
-
+	add_theme_support( 'custom-logo', array(
+		'height'      => 80,
+		'width'       => 200,
+		'flex-width'  => true,
+		) );
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
 
@@ -98,32 +96,32 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
  
 function wpc_show_admin_bar() { 
-global $current_user;
-if ( current_user_can( 'edit_posts' ) && !get_theme_mod( 'ptibogxivtheme_adminbar') ) {  
-return false;
-} elseif ( current_user_can( 'edit_posts' ) && is_user_logged_in() && $current_user->show_admin_bar_front == 'true' ) {
-return true;
+	global $current_user;
+	if ( current_user_can( 'edit_posts' ) && !get_theme_mod( 'ptibogxivtheme_adminbar') ) {  
+		return false;
+	} elseif ( current_user_can( 'edit_posts' ) && is_user_logged_in() && $current_user->show_admin_bar_front == 'true' ) {
+		return true;
+	}
+	else {
+		return false;
+	}
 }
-else {
-return false;
-}
- }
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 
 function ptibogxivtheme_social() {
 global $post;
-$return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
-<a href='#' class='btn btn-light disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
-<a href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><i class='fas fa-envelope fa-fw'></i></a>"; 
-//<script>//if (navigator.userAgent.match(/iPhone|Android/i)) {
-//document.write('<a href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><i class='fab fa-whatsapp fa-fw'></i></a>');
-//}</script>
-$return .= "<a href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><i class='fa-brands fa-facebook-f fa-fw'></i></a>
-<a href='https://x.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><i class='fa-brands fa-x-twitter fa-fw'></i></a>
-<a href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><i class='fa-brands fa-linkedin-in fa-fw'></i></a>
-<a href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><i class='fa-brands fa-pinterest fa-fw'></i></a>
-</div>";
-return $return;
+	$return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
+	<a href='#' class='btn btn-light disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
+	<a href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><i class='fas fa-envelope fa-fw'></i></a>"; 
+	//<script>//if (navigator.userAgent.match(/iPhone|Android/i)) {
+	//document.write('<a href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><i class='fab fa-whatsapp fa-fw'></i></a>');
+	//}</script>
+	$return .= "<a href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><i class='fa-brands fa-facebook-f fa-fw'></i></a>
+	<a href='https://x.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><i class='fa-brands fa-x-twitter fa-fw'></i></a>
+	<a href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><i class='fa-brands fa-linkedin-in fa-fw'></i></a>
+	<a href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><i class='fa-brands fa-pinterest fa-fw'></i></a>
+	</div>";
+	return $return;
 }
 
 function ptibogxivtheme_gradient() {
@@ -132,10 +130,8 @@ function ptibogxivtheme_gradient() {
 
 function ptibogxivtheme_time_ago() {
 global $post;
-	
 	$date = get_post_time('G', true, $post);
-	
-if ($post->post_type == 'post') {
+	if ($post->post_type == 'post') {
 	
 	// Array of time period chunks
 	$chunks = array(

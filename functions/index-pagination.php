@@ -19,8 +19,8 @@ if ( ! function_exists( 'b4st_pagination' ) ) {
 			'total' => $wp_query->max_num_pages,
 			'mid_size' => 2,
 			'prev_next' => true,
-			'prev_text' => __('<i class="fas fa-angle-left"></i> Newer', 'text-domain'),
-			'next_text' => __('Older <i class="fas fa-angle-right"></i>', 'text-domain'),
+			'prev_text' => __('<i class="fas fa-angle-left"></i> Newer', 'ptibogxivtheme'),
+			'next_text' => __('Older <i class="fas fa-angle-right"></i>', 'ptibogxivtheme'),
 			'type' => 'array'
 		) );
 

@@ -21,7 +21,7 @@ function ptibogxivtheme_pagination() {
     // Vérifier si des liens de pagination existent
     if ( $paginate_links ) {
         echo '<nav aria-label="Page navigation example">';
-        echo '<ul class="pagination justify-content-center">';
+        echo '<ul class="pagination pagination-sm justify-content-center">';
 
         foreach ( $paginate_links as $link ) {
             if ( strpos( $link, 'current' ) !== false ) {

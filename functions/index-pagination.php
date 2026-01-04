@@ -3,9 +3,9 @@
 // Bootstrap pagination for index and category pages
 
 // Correction et amélioration de la fonction de pagination
-if ( ! function_exists( 'b4st_pagination' ) ) {
+if ( ! function_exists( 'ptibogxivtheme_pagination' ) ) {
 
-	function b4st_pagination() {
+	function ptibogxivtheme_pagination() {
 
 		global $wp_query;
 

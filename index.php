@@ -20,7 +20,7 @@
       <div id="content" role="main">
         <?php get_template_part('loops/content', get_post_format()); ?>
       </div>
-      <?php b4st_pagination(); ?>
+      <?php ptibogxivtheme_pagination(); ?>
     </div>
 <?php if(is_active_sidebar('sidebar-right-widget-area') && (get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='right' or get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both')){ ?>    
     <div class="order-3 <?php if(get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both'): ?>col-12 col-md-3<?php

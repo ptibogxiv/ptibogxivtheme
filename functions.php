@@ -14,7 +14,7 @@ require_once get_stylesheet_directory() . '/functions/split-post-pagination.php'
 require_once get_stylesheet_directory() . '/functions/feedback.php';
 require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
 
-require_once get_stylesheet_directory() . '/lib/plugin-update-checker/plugin-update-checker.php';
+require_once get_stylesheet_directory() . '/includes/plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $myUpdateChecker = PucFactory::buildUpdateChecker(
 	'https://github.com/ptibogxiv/ptibogxivtheme/',

@@ -1,4 +1,9 @@
 <?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
+
 /*
 All the functions are in the PHP pages in the `functions/` folder.
 */
@@ -14,17 +19,14 @@ require_once get_stylesheet_directory() . '/functions/split-post-pagination.php'
 require_once get_stylesheet_directory() . '/functions/feedback.php';
 require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
 
-require_once get_stylesheet_directory() . '/includes/plugin-update-checker/plugin-update-checker.php';
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
-$myUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://github.com/ptibogxiv/ptibogxivtheme/',
-	__FILE__,
-	'ptibogxivtheme'
-);
+use Anyape\UpdatePulse\Updater\v2_0\UpdatePulse_Updater;
+require_once plugin_dir_path( __FILE__ ) . 'lib/updatepulse-updater/class-updatepulse-updater.php';
 
-$myUpdateChecker->setBranch('master');
-$myUpdateChecker->getVcsApi()->enableReleaseAssets();
-//$myUpdateChecker->setAuthentication('your-token-here');
+/** Enable plugin updates**/
+$dummy_plugin_updater = new UpdatePulse_Updater(
+	wp_normalize_path( __FILE__ ),
+	0 === strpos( __DIR__, WP_PLUGIN_DIR ) ? wp_normalize_path( __DIR__ ) : get_stylesheet_directory()
+);
 
 add_filter( 'superpwa_add_theme_color', '__return_false' );
 

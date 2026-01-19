@@ -8,7 +8,7 @@ use Anyape\UpdatePulse\Updater\v2_0\UpdatePulse_Updater;
 require_once plugin_dir_path( __FILE__ ) . 'lib/updatepulse-updater/class-updatepulse-updater.php';
 
 /** Enable plugin updates**/
-$dummy_plugin_updater = new UpdatePulse_Updater(
+$ptibogxivtheme_updater = new UpdatePulse_Updater(
 	wp_normalize_path( __FILE__ ),
 	0 === strpos( __DIR__, WP_PLUGIN_DIR ) ? wp_normalize_path( __DIR__ ) : get_stylesheet_directory()
 );

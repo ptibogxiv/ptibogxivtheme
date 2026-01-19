@@ -17,7 +17,7 @@ use DateTimeZone;
 use WP_Error;
 use RuntimeException;
 use stdClass;
-use YahnisElsts\PluginUpdateChecker\v5p3\PucFactory;
+use YahnisElsts\PluginUpdateChecker\v5p6\PucFactory;
 
 /* ================================================================================================ */
 /*                                     UpdatePulse Updater                                          */

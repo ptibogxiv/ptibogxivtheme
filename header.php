@@ -31,7 +31,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 <nav class="navbar navbar-expand-lg sticky-top <?php echo (!empty(esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )))?esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )):'navbar-light bg-light'); ?>">
   <div class="<?php echo (!empty(esc_attr(get_theme_mod('ptibogxivtheme_container_type')))?esc_attr(get_theme_mod('ptibogxivtheme_container_type')):'container'); ?>">
     <?php if (get_theme_mod( 'ptibogxivtheme_brand_style') == 'home_mode' && (! empty(get_theme_mod( 'ptibogxivtheme_carousel')) || get_header_image())) { ?>
-    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><div class='d-block d-sm-block d-xs-block d-md-none'><?php bloginfo('name'); ?></div><div class='d-none d-md-block'><i class='fas fa-home'></i></div></a> 
+    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><div class='d-block d-sm-block d-xs-block d-md-none'><?php bloginfo('name'); ?></div><div class='d-none d-md-block'><i class='fa-regular fa-home'></i></div></a> 
     <?php } elseif (get_theme_mod( 'ptibogxivtheme_brand_style') == 'dual_mode' && !get_header_image()) {
     $image_attributes = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full', false); 
     if ( $image_attributes ) : ?>
@@ -66,30 +66,30 @@ if ( function_exists( 'wp_body_open' ) ) {
       ?>
       <div class="navbar-nav f-flex float-end">
         <?php if ( ( function_exists('doliModalButton') && function_exists('doliListLang') && !empty(doliListLang(array( 'raw' => 1 ))) ) && !(is_multisite() && !empty(get_theme_mod( 'ptibogxivtheme_networkbar_color'))) ) { ?>
-          <a class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fas fa-language fa-2x fa-fw'></i>", 'a' , 'nav-link', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></a>
+          <a class="nav-item"><?php echo doliModalButton('doliSelectlang', 'doliSelectlangHeader', "<i class='fa-solid fa-language fa-2x fa-fw'></i>", 'a' , 'nav-link', get_the_ID(), $_SERVER["QUERY_STRING"]); ?></a>
         <?php } ?>
         <?php if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
           <?php if (!is_page(doliconnectid('dolicart')) && function_exists('doliOffcanvasCart')) { ?>
-            <li class="nav-item"><a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliCartLabel" aria-controls="offcanvasDoliCartLabel" aria-label="<?php _e('Cart', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliHeaderCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a></li>
+            <li class="nav-item"><a class="nav-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliCartLabel" aria-controls="offcanvasDoliCartLabel" aria-label="<?php _e('Cart', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliHeaderCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a></li>
           <?php } else { ?>
-            <li class="nav-item"><a class="nav-link" href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Cart', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fas fa-shopping-bag"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a></li>
+            <li class="nav-item"><a class="nav-link" href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Cart', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a></li>
           <?php } ?>
         <?php } ?>
         <li class="nav-item">
         <?php if ( !is_user_logged_in() ) { ?>
-          <a class="nav-link" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-circle-user fa-2x fa-fw"></i></a>
+          <a class="nav-link" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a>
         <?php } else { ?>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-circle-user fa-2x fa-fw"></i> </a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i> </a>
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><?php _e('My account', 'ptibogxivtheme'); ?></a></li>
                 <?php if ( !isset(doliConnect('user', wp_get_current_user())->error) && doliConnect('user', wp_get_current_user()) != null ) { ?>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo dolibarr_entity(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" title="<?php _e('Dolibarr', 'ptibogxivtheme'); ?>" target="_dolibarr"><i class="fas fa-cogs fa-fw"></i> <?php _e('Dolibarr', 'ptibogxivtheme'); ?></a></li>
+                  <li><a class="dropdown-item" href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo dolibarr_entity(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" title="<?php _e('Dolibarr', 'ptibogxivtheme'); ?>" target="_dolibarr"><i class="fa-solid fa-cogs fa-fw"></i> <?php _e('Dolibarr', 'ptibogxivtheme'); ?></a></li>
                 <?php } ?>
                 <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && ( wp_get_current_user()->show_admin_bar_front != true)) ) { ?>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>"><i class="fas fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a></li>
+                  <li><a class="dropdown-item" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a></li>
                 <?php } ?>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="<?php echo wp_logout_url( $redirect_to ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><?php _e('Logout', 'ptibogxivtheme'); ?></a></li>

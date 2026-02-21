@@ -11,11 +11,11 @@ $listpaymentmethods = callDoliApi("GET", $request, null, dolidelay('paymentmetho
 ?>
 <?php if ( isset($listpaymentmethods->stripe) && in_array('card', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-visa fa-3x fa-fw"></i><i class="fab fa-cc-mastercard fa-3x fa-fw"></i><i class="fab fa-cc-amex fa-3x fa-fw"></i><?php } ?>
 <?php if ( isset($listpaymentmethods->stripe) && in_array('payment_request_api', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-apple-pay fa-3x fa-fw"></i><?php } ?>
-<?php if ( isset($listpaymentmethods->stripe) && in_array('sepa_debit', $listpaymentmethods->stripe->types) ) { ?><i class="fas fa-university fa-3x fa-fw"></i><?php } ?>
+<?php if ( isset($listpaymentmethods->stripe) && in_array('sepa_debit', $listpaymentmethods->stripe->types) ) { ?><i class="fa-solid fa-university fa-3x fa-fw"></i><?php } ?>
 <?php if ( isset($listpaymentmethods->stripe) && in_array('ideal', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-ideal fa-3x fa-fw"></i><?php } ?>
-<?php if ( isset($listpaymentmethods->VIR) ) { ?><i class="fas fa-university fa-3x fa-fw"></i><?php } ?>
-<?php if ( isset($listpaymentmethods->CHQ) ) { ?><i class="fas fa-money-check fa-3x fa-fw"></i><?php } ?>
-<?php if ( ! empty(dolikiosk()) ) { ?> <i class="fas fa-money-bill-alt fa-3x fa-fw"></i><?php } ?>
+<?php if ( isset($listpaymentmethods->VIR) ) { ?><i class="fa-solid fa-university fa-3x fa-fw"></i><?php } ?>
+<?php if ( isset($listpaymentmethods->CHQ) ) { ?><i class="fa-solid fa-money-check fa-3x fa-fw"></i><?php } ?>
+<?php if ( ! empty(dolikiosk()) ) { ?> <i class="fa-solid fa-money-bill-alt fa-3x fa-fw"></i><?php } ?>
 </div>
 <?php } else { 
 dynamic_sidebar('payment-footer-widget-area'); } ?>
@@ -39,7 +39,7 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
 <?php if ((current_user_can( 'administrator' ) or current_user_can( 'editor' )) && defined('PTIBOGXIV_NET_CLOUD')) { ?><br><a href="<?php echo constant('PTIBOGXIV_NET_CLOUD'); ?>" rel="noopener" class="text-reset" target="_cloud">Serveur/Cloud</a><?php } ?>
 <?php if (!empty(doliconnectid('dolitos'))) { ?><br><a href="<?php echo doliconnecturl('dolitos'); ?>" class="text-reset"><?php _e('Terms of service', 'ptibogxivtheme'); ?></a><?php } ?>
 </div></div></div><div class="col-6">
-</div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none"><?php _e('Kiosk mode ON', 'ptibogxivtheme'); ?> <i class="fas fa-desktop"></i></div>
+</div><div class="col-6"><div class="text-right" id="dolikiosk" style="display: none"><?php _e('Kiosk mode ON', 'ptibogxivtheme'); ?> <i class="fa-solid fa-desktop"></i></div>
 <?php 
 if (function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
 echo "<script>";
@@ -56,7 +56,7 @@ echo "</script>";
 ?>     
 </div></div><br>
 <div class="row">
-<div class="col"><p class="text-center"><small><i class="fas fa-copyright"></i> <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?><br><?php _e('All rights reserved', 'ptibogxivtheme'); ?><?php if (function_exists('doliModalButton')) { ?> - <?php echo doliModalButton('legacy', 'legacyfooter', __('Legal notice', 'ptibogxivtheme'), 'a' , 'text-reset'); } ?>
+<div class="col"><p class="text-center"><small><i class="fa-solid fa-copyright"></i> <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?><br><?php _e('All rights reserved', 'ptibogxivtheme'); ?><?php if (function_exists('doliModalButton')) { ?> - <?php echo doliModalButton('legacy', 'legacyfooter', __('Legal notice', 'ptibogxivtheme'), 'a' , 'text-reset'); } ?>
 
 <br><small><?php 
   if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
@@ -67,9 +67,9 @@ echo "</script>";
     $redirect_to=get_permalink();
   }
 if ( defined('PTIBOGXIV_NET') ) {
-echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b> and hosted with <i class="fas fa-leaf text-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b' class='text-reset'>Infomaniak</a>");
+echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by <b>%s</b> and hosted with <i class="fa-solid fa-leaf text-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b' class='text-reset'>Infomaniak</a>");
 } else {
-echo sprintf( __('Designed with <i class="fas fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://www.ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>");
+echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>");
 } ?></small></small></p></div>
 </div></div>
 <nav class="bg-body-tertiary fixed-bottom pb-1 d-block d-md-none">

@@ -4,6 +4,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+add_action( 'after_setup_theme', 'ptibogxivtheme_load_theme_textdomain' );
+function ptibogxivtheme_load_theme_textdomain() {
+	load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages/' );
+}
+
 use Anyape\UpdatePulse\Updater\v2_0\UpdatePulse_Updater;
 require_once plugin_dir_path( __FILE__ ) . 'lib/updatepulse-updater/class-updatepulse-updater.php';
 
@@ -29,11 +34,6 @@ require_once get_stylesheet_directory() . '/functions/feedback.php';
 require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
 
 add_filter( 'superpwa_add_theme_color', '__return_false' );
-
-function ptibogxivtheme_load_theme_textdomain() {
-	load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages/' );
-}
-add_action( 'after_setup_theme', 'ptibogxivtheme_load_theme_textdomain' );
 
 function ptibogxivtheme_slug_setup() {
     add_theme_support( 'title-tag' );

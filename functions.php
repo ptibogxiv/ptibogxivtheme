@@ -4,13 +4,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-add_action( 'after_setup_theme', 'ptibogxivtheme_load_theme_textdomain' );
-function ptibogxivtheme_load_theme_textdomain() {
+add_action( 'init', 'load_theme_ptibogxivtheme' );
+function load_theme_ptibogxivtheme() {
 	load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages/' );
 }
 
 use Anyape\UpdatePulse\Updater\v2_0\UpdatePulse_Updater;
-require_once plugin_dir_path( __FILE__ ) . 'lib/updatepulse-updater/class-updatepulse-updater.php';
+require_once get_stylesheet_directory() . '/lib/updatepulse-updater/class-updatepulse-updater.php';
 
 /** Enable plugin updates**/
 $ptibogxivtheme_updater = new UpdatePulse_Updater(
@@ -83,15 +83,6 @@ add_theme_support( 'custom-logo', array(
 	'header-text' => array( 'site-title', 'site-description' ),
 ) );
 
-function theme_prefix_setup() {
-	add_theme_support( 'custom-logo', array(
-		'height'      => 80,
-		'width'       => 200,
-		'flex-width'  => true,
-		) );
-}
-add_action( 'after_setup_theme', 'theme_prefix_setup' );
-
 function custom_excerpt_length( $length ) {
 	return 25;
 }
@@ -110,86 +101,88 @@ function wpc_show_admin_bar() {
 }
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 
-function ptibogxivtheme_social() {
-global $post;
-	$return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
-	<a href='#' class='btn btn-light disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
-	<a href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><i class='fas fa-envelope fa-fw'></i></a>"; 
-	//<script>//if (navigator.userAgent.match(/iPhone|Android/i)) {
-	//document.write('<a href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><i class='fab fa-whatsapp fa-fw'></i></a>');
-	//}</script>
-	$return .= "<a href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><i class='fa-brands fa-facebook-f fa-fw'></i></a>
-	<a href='https://x.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><i class='fa-brands fa-x-twitter fa-fw'></i></a>
-	<a href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><i class='fa-brands fa-linkedin-in fa-fw'></i></a>
-	<a href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><i class='fa-brands fa-pinterest fa-fw'></i></a>
-	</div>";
-	return $return;
-}
-
-function ptibogxivtheme_gradient() {
-	return "backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);background-color: rgba(255, 255, 255, 0.55);";
-}
-
-function ptibogxivtheme_time_ago() {
-global $post;
-	$date = get_post_time('G', true, $post);
-	if ($post->post_type == 'post') {
-	
-	// Array of time period chunks
-	$chunks = array(
-		array( 60 * 60 * 24 * 365 , __( 'year', 'ptibogxivtheme' ), __( 'years', 'ptibogxivtheme' ) ),
-		array( 60 * 60 * 24 * 30 , __( 'month', 'ptibogxivtheme' ), __( 'months', 'ptibogxivtheme' ) ),
-		array( 60 * 60 * 24 * 7, __( 'week', 'ptibogxivtheme' ), __( 'weeks', 'ptibogxivtheme' ) ),
-		array( 60 * 60 * 24 , __( 'day', 'ptibogxivtheme' ), __( 'days', 'ptibogxivtheme' ) ),
-		array( 60 * 60 , __( 'hour', 'ptibogxivtheme' ), __( 'hours', 'ptibogxivtheme' ) ),
-		array( 60 , __( 'minute', 'ptibogxivtheme' ), __( 'minutes', 'ptibogxivtheme' ) ),
-		array( 1, __( 'second', 'ptibogxivtheme' ), __( 'seconds', 'ptibogxivtheme' ) )
-	);
-
-	if ( !is_numeric( $date ) ) {
-		$time_chunks = explode( ':', str_replace( ' ', ':', $date ) );
-		$date_chunks = explode( '-', str_replace( ' ', '-', $date ) );
-		$date = gmmktime( (int)$time_chunks[1], (int)$time_chunks[2], (int)$time_chunks[3], (int)$date_chunks[1], (int)$date_chunks[2], (int)$date_chunks[0] );
-	}
-	
-	$current_time = current_time( 'mysql', $gmt = 0 );
-	$newer_date = strtotime( $current_time );
-
-	// Difference in seconds
-	$since = $newer_date - $date;
-
-	// Something went wrong with date calculation and we ended up with a negative date.
-	if ( 0 > $since )
-		return __( 'sometime', 'ptibogxivtheme' );
-
-	/**
-	 * We only want to output one chunks of time here, eg:
-	 * x years
-	 * xx months
-	 * so there's only one bit of calculation below:
-	 */
-
-	//Step one: the first chunk
-	for ( $i = 0, $j = count($chunks); $i < $j; $i++) {
-		$seconds = $chunks[$i][0];
-
-		// Finding the biggest chunk (if the chunk fits, break)
-		if ( ( $count = floor($since / $seconds) ) != 0 )
-			break;
+add_action('init', 'ptibogxivtheme_custom');
+function ptibogxivtheme_custom() {
+	function ptibogxivtheme_social() {
+	global $post;
+		$return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
+		<a href='#' class='btn btn-light disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
+		<a href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><i class='fas fa-envelope fa-fw'></i></a>"; 
+		//<script>//if (navigator.userAgent.match(/iPhone|Android/i)) {
+		//document.write('<a href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><i class='fab fa-whatsapp fa-fw'></i></a>');
+		//}</script>
+		$return .= "<a href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><i class='fa-brands fa-facebook-f fa-fw'></i></a>
+		<a href='https://x.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><i class='fa-brands fa-x-twitter fa-fw'></i></a>
+		<a href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><i class='fa-brands fa-linkedin-in fa-fw'></i></a>
+		<a href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><i class='fa-brands fa-pinterest fa-fw'></i></a>
+		</div>";
+		return $return;
 	}
 
-	// Set output var
-	$duration = ( 1 == $count ) ? '1 '. $chunks[$i][1] : $count . ' ' . $chunks[$i][2];
-	
-
-	if ( !(int)trim($duration) ){
-		$duration = '0 ' . __( 'seconds', 'ptibogxivtheme' );
+	function ptibogxivtheme_gradient() {
+		return "backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);background-color: rgba(255, 255, 255, 0.55);";
 	}
 
-	return sprintf( esc_html__( '%s ago', 'ptibogxivtheme' ), $duration);
-}
-}
+	function ptibogxivtheme_time_ago() {
+	global $post;
+		$date = get_post_time('G', true, $post);
+		if ($post->post_type == 'post') {
+		
+		// Array of time period chunks
+		$chunks = array(
+			array( 60 * 60 * 24 * 365 , __( 'year', 'ptibogxivtheme' ), __( 'years', 'ptibogxivtheme' ) ),
+			array( 60 * 60 * 24 * 30 , __( 'month', 'ptibogxivtheme' ), __( 'months', 'ptibogxivtheme' ) ),
+			array( 60 * 60 * 24 * 7, __( 'week', 'ptibogxivtheme' ), __( 'weeks', 'ptibogxivtheme' ) ),
+			array( 60 * 60 * 24 , __( 'day', 'ptibogxivtheme' ), __( 'days', 'ptibogxivtheme' ) ),
+			array( 60 * 60 , __( 'hour', 'ptibogxivtheme' ), __( 'hours', 'ptibogxivtheme' ) ),
+			array( 60 , __( 'minute', 'ptibogxivtheme' ), __( 'minutes', 'ptibogxivtheme' ) ),
+			array( 1, __( 'second', 'ptibogxivtheme' ), __( 'seconds', 'ptibogxivtheme' ) )
+		);
 
-// Filter our ptibogxivtheme_time_ago() function into WP's the_time() function
-add_filter('the_time', 'ptibogxivtheme_time_ago');
+		if ( !is_numeric( $date ) ) {
+			$time_chunks = explode( ':', str_replace( ' ', ':', $date ) );
+			$date_chunks = explode( '-', str_replace( ' ', '-', $date ) );
+			$date = gmmktime( (int)$time_chunks[1], (int)$time_chunks[2], (int)$time_chunks[3], (int)$date_chunks[1], (int)$date_chunks[2], (int)$date_chunks[0] );
+		}
+		
+		$current_time = current_time( 'mysql', $gmt = 0 );
+		$newer_date = strtotime( $current_time );
 
+		// Difference in seconds
+		$since = $newer_date - $date;
+
+		// Something went wrong with date calculation and we ended up with a negative date.
+		if ( 0 > $since )
+			return __( 'sometime', 'ptibogxivtheme' );
+
+		/**
+		 * We only want to output one chunks of time here, eg:
+		 * x years
+		 * xx months
+		 * so there's only one bit of calculation below:
+		 */
+
+		//Step one: the first chunk
+		for ( $i = 0, $j = count($chunks); $i < $j; $i++) {
+			$seconds = $chunks[$i][0];
+
+			// Finding the biggest chunk (if the chunk fits, break)
+			if ( ( $count = floor($since / $seconds) ) != 0 )
+				break;
+		}
+
+		// Set output var
+		$duration = ( 1 == $count ) ? '1 '. $chunks[$i][1] : $count . ' ' . $chunks[$i][2];
+		
+
+		if ( !(int)trim($duration) ){
+			$duration = '0 ' . __( 'seconds', 'ptibogxivtheme' );
+		}
+
+		return sprintf( esc_html__( '%s ago', 'ptibogxivtheme' ), $duration);
+	}
+	}
+
+	// Filter our ptibogxivtheme_time_ago() function into WP's the_time() function
+	add_filter('the_time', 'ptibogxivtheme_time_ago');
+}

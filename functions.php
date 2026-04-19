@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-add_action( 'init', 'load_theme_ptibogxivtheme' );
+add_action( 'after_setup_theme', 'load_theme_ptibogxivtheme' );
 function load_theme_ptibogxivtheme() {
 	load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages/' );
 }
@@ -101,7 +101,7 @@ function wpc_show_admin_bar() {
 }
 add_filter('show_admin_bar' , 'wpc_show_admin_bar');
 
-add_action('init', 'ptibogxivtheme_custom');
+add_action('after_setup_theme', 'ptibogxivtheme_custom');
 function ptibogxivtheme_custom() {
 	function ptibogxivtheme_social() {
 	global $post;

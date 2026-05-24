@@ -4,27 +4,59 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-add_action( 'after_setup_theme', 'ptibogxivtheme_load_textdomain' );
-function ptibogxivtheme_load_textdomain() {
-    load_theme_textdomain(
-        'ptibogxivtheme',
-        get_template_directory() . '/languages'
-    );
+add_action( 'after_setup_theme', 'ptibogxivtheme_init' );
+function ptibogxivtheme_init() {
+	load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages' );
+
+	add_theme_support( 'title-tag' );
+
+	add_theme_support( 'custom-background', array(
+		'default-color'          => '',
+		'default-image'          => '',
+		'default-repeat'         => '',
+		'default-position-x'     => '',
+		'default-attachment'     => '',
+		'wp-head-callback'       => '_custom_background_cb',
+		'admin-head-callback'    => '',
+		'admin-preview-callback' => '',
+	) );
+
+	add_theme_support( 'custom-header', array(
+		'default-image'          => '',
+		'random-default'         => false,
+		'width'                  => 0,
+		'height'                 => 0,
+		'flex-height'            => false,
+		'flex-width'             => false,
+		'default-text-color'    => '',
+		'header-text'            => true,
+		'uploads'                => true,
+		'wp-head-callback'       => '',
+		'admin-head-callback'    => '',
+		'admin-preview-callback' => '',
+		'video'                  => true,
+		'video-active-callback'  => 'is_front_page',
+	) );
+
+	add_theme_support( 'custom-logo', array(
+		'height'      => 80,
+		'width'       => 200,
+		'flex-width'  => true,
+		'header-text' => array( 'site-title', 'site-description' ),
+	) );
 }
 
-use Anyape\UpdatePulse\Updater\v2_0\UpdatePulse_Updater;
 require_once get_stylesheet_directory() . '/lib/updatepulse-updater/class-updatepulse-updater.php';
-
-/** Enable plugin updates**/
-$ptibogxivtheme_updater = new UpdatePulse_Updater(
-	wp_normalize_path( __FILE__ ),
-	0 === strpos( __DIR__, WP_PLUGIN_DIR ) ? wp_normalize_path( __DIR__ ) : get_stylesheet_directory()
-);
+if ( class_exists( UpdatePulse_Updater::class ) ) {
+	$ptibogxivtheme_updater = new UpdatePulse_Updater(
+		wp_normalize_path( __FILE__ ),
+		0 === strpos( __DIR__, WP_PLUGIN_DIR ) ? wp_normalize_path( __DIR__ ) : get_stylesheet_directory()
+	);
+}
 
 /*
 All the functions are in the PHP pages in the `functions/` folder.
 */
-  
 require_once get_stylesheet_directory() . '/functions/cleanup.php';
 require_once get_stylesheet_directory() . '/functions/setup.php';
 require_once get_stylesheet_directory() . '/functions/enqueues.php';
@@ -38,154 +70,110 @@ require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
 
 add_filter( 'superpwa_add_theme_color', '__return_false' );
 
-function ptibogxivtheme_slug_setup() {
-    add_theme_support( 'title-tag' );
-}
-add_action( 'after_setup_theme', 'ptibogxivtheme_slug_setup' );
-
-//add_action('login_head',function(){
-    //get_template_part( 'header' );
-//});
-
-//add_action('login_footer',function(){
-    //get_template_part( 'footer' );
-//});
-
-add_theme_support( 'custom-background',array(
-	'default-color'          => '',
-	'default-image'          => '',
-	'default-repeat'         => '',
-	'default-position-x'     => '',
-	'default-attachment'     => '',
-	'wp-head-callback'       => '_custom_background_cb',
-	'admin-head-callback'    => '',
-	'admin-preview-callback' => ''
-) );
-
-add_theme_support( 'custom-header', array(
-    'default-image' => '',
-    'random-default' => false,
-    'width' => 0,
-    'height' => 0,
-    'flex-height' => false,
-    'flex-width' => false,
-    'default-text-color' => '',
-    'header-text' => true,
-    'uploads' => true,
-    'wp-head-callback' => '',
-    'admin-head-callback' => '',
-    'admin-preview-callback' => '',
-    'video' => true,
-    'video-active-callback' => 'is_front_page',
-) );
-
-add_theme_support( 'custom-logo', array(
-	'height'      => 80,
-	'width'       => 200,
-	'flex-width'  => true,
-	'header-text' => array( 'site-title', 'site-description' ),
-) );
-
 function custom_excerpt_length( $length ) {
 	return 25;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
- 
-function wpc_show_admin_bar() { 
-	global $current_user;
-	if ( current_user_can( 'edit_posts' ) && !get_theme_mod( 'ptibogxivtheme_adminbar') ) {  
+
+function ptibogxivtheme_show_admin_bar( $show ) {
+	if ( ! is_user_logged_in() ) {
 		return false;
-	} elseif ( current_user_can( 'edit_posts' ) && is_user_logged_in() && $current_user->show_admin_bar_front == 'true' ) {
+	}
+
+	if ( current_user_can( 'edit_posts' ) && ! get_theme_mod( 'ptibogxivtheme_adminbar', false ) ) {
+		return false;
+	}
+
+	if ( current_user_can( 'edit_posts' ) && get_user_meta( get_current_user_id(), 'show_admin_bar_front', true ) === 'true' ) {
 		return true;
 	}
-	else {
-		return false;
-	}
+
+	return $show;
 }
-add_filter('show_admin_bar' , 'wpc_show_admin_bar');
+add_filter( 'show_admin_bar', 'ptibogxivtheme_show_admin_bar' );
 
-add_action('after_setup_theme', 'ptibogxivtheme_custom');
-function ptibogxivtheme_custom() {
-	function ptibogxivtheme_social() {
-	global $post;
-		$return = "<div class='btn-group d-flex' role='group' aria-label='First group'>
-		<a href='#' class='btn btn-light disabled w-100' role='button' aria-disabled='true'><i class='fas fa-share-alt fa-fw'></i></a>
-		<a href='mailto:?subject=[".get_bloginfo('name')."] Informations intéressante&body=Bonjour, ".get_permalink($post->ID)."' role='button' class='btn btn-dark w-100' target='_blank'><i class='fas fa-envelope fa-fw'></i></a>"; 
-		//<script>//if (navigator.userAgent.match(/iPhone|Android/i)) {
-		//document.write('<a href='whatsapp://send?text=<?php echo get_permalink($post->ID);' data-action='share/whatsapp/share' role='button' class='btn btn-whatsapp' target='_blank'><i class='fab fa-whatsapp fa-fw'></i></a>');
-		//}</script>
-		$return .= "<a href='https://www.facebook.com/sharer/sharer.php?u=".get_permalink($post->ID)."&t=".get_the_title()."' role='button' class='btn btn-facebook w-100' target='_blank'><i class='fa-brands fa-facebook-f fa-fw'></i></a>
-		<a href='https://x.com/intent/tweet?text=".get_the_title()."&url=".get_permalink($post->ID)."&via=".get_option('doliconnect_social_twitter')."' role='button' class='btn btn-twitter w-100' target='_blank'><i class='fa-brands fa-x-twitter fa-fw'></i></a>
-		<a href='https://www.linkedin.com/shareArticle?mini=true&url=url=".get_permalink($post->ID)."&title=".get_the_title()."&source=".get_option('doliconnect_social_linkedin')."' role='button' class='btn btn-linkedin w-100' target='_blank'><i class='fa-brands fa-linkedin-in fa-fw'></i></a>
-		<a href='https://pinterest.com/pin/create/button/?url=".get_permalink($post->ID)."&media=&description=".get_the_title()."' role='button' class='btn btn-pinterest w-100' target='_blank'><i class='fa-brands fa-pinterest fa-fw'></i></a>
-		</div>";
-		return $return;
+function ptibogxivtheme_social() {
+	if ( ! is_singular() ) {
+		return '';
 	}
 
-	function ptibogxivtheme_gradient() {
-		return "backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);background-color: rgba(255, 255, 255, 0.55);";
-	}
+	$post_id      = get_the_ID();
+	$post_title   = get_the_title( $post_id );
+	$permalink    = get_permalink( $post_id );
+	$site_name    = get_bloginfo( 'name' );
+	$twitter_via  = ltrim( get_option( 'doliconnect_social_twitter', '' ), '@' );
+	$linkedin_src = get_option( 'doliconnect_social_linkedin', '' );
 
-	function ptibogxivtheme_time_ago() {
-	global $post;
-		$date = get_post_time('G', true, $post);
-		if ($post->post_type == 'post') {
-		
-		// Array of time period chunks
-		$chunks = array(
-			array( 60 * 60 * 24 * 365 , __( 'year', 'ptibogxivtheme' ), __( 'years', 'ptibogxivtheme' ) ),
-			array( 60 * 60 * 24 * 30 , __( 'month', 'ptibogxivtheme' ), __( 'months', 'ptibogxivtheme' ) ),
-			array( 60 * 60 * 24 * 7, __( 'week', 'ptibogxivtheme' ), __( 'weeks', 'ptibogxivtheme' ) ),
-			array( 60 * 60 * 24 , __( 'day', 'ptibogxivtheme' ), __( 'days', 'ptibogxivtheme' ) ),
-			array( 60 * 60 , __( 'hour', 'ptibogxivtheme' ), __( 'hours', 'ptibogxivtheme' ) ),
-			array( 60 , __( 'minute', 'ptibogxivtheme' ), __( 'minutes', 'ptibogxivtheme' ) ),
-			array( 1, __( 'second', 'ptibogxivtheme' ), __( 'seconds', 'ptibogxivtheme' ) )
-		);
+	$mailto_subject = rawurlencode( sprintf( '[%s] Informations intéressante', $site_name ) );
+	$mailto_body    = rawurlencode( sprintf( 'Bonjour, %s', $permalink ) );
 
-		if ( !is_numeric( $date ) ) {
-			$time_chunks = explode( ':', str_replace( ' ', ':', $date ) );
-			$date_chunks = explode( '-', str_replace( ' ', '-', $date ) );
-			$date = gmmktime( (int)$time_chunks[1], (int)$time_chunks[2], (int)$time_chunks[3], (int)$date_chunks[1], (int)$date_chunks[2], (int)$date_chunks[0] );
-		}
-		
-		$current_time = current_time( 'mysql', $gmt = 0 );
-		$newer_date = strtotime( $current_time );
+	$facebook_url = add_query_arg(
+		array(
+			'u' => $permalink,
+			't' => $post_title,
+		),
+		'https://www.facebook.com/sharer/sharer.php'
+	);
 
-		// Difference in seconds
-		$since = $newer_date - $date;
+	$twitter_url = add_query_arg(
+		array(
+			'text' => $post_title,
+			'url'  => $permalink,
+			'via'  => $twitter_via,
+		),
+		'https://x.com/intent/tweet'
+	);
 
-		// Something went wrong with date calculation and we ended up with a negative date.
-		if ( 0 > $since )
-			return __( 'sometime', 'ptibogxivtheme' );
+	$linkedin_url = add_query_arg(
+		array(
+			'mini'   => 'true',
+			'url'    => $permalink,
+			'title'  => $post_title,
+			'source' => $linkedin_src,
+		),
+		'https://www.linkedin.com/shareArticle'
+	);
 
-		/**
-		 * We only want to output one chunks of time here, eg:
-		 * x years
-		 * xx months
-		 * so there's only one bit of calculation below:
-		 */
+	$pinterest_url = add_query_arg(
+		array(
+			'url'         => $permalink,
+			'description' => $post_title,
+		),
+		'https://pinterest.com/pin/create/button/'
+	);
 
-		//Step one: the first chunk
-		for ( $i = 0, $j = count($chunks); $i < $j; $i++) {
-			$seconds = $chunks[$i][0];
+	$html  = '<div class="btn-group d-flex" role="group" aria-label="' . esc_attr__( 'Social sharing', 'ptibogxivtheme' ) . '">';
+	$html .= '<a href="#" class="btn btn-light disabled w-100" role="button" aria-disabled="true"><i class="fas fa-share-alt fa-fw"></i></a>';
+	$html .= '<a href="mailto:?subject=' . $mailto_subject . '&body=' . $mailto_body . '" class="btn btn-dark w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope fa-fw"></i></a>';
+	$html .= '<a href="' . esc_url( $facebook_url ) . '" class="btn btn-facebook w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f fa-fw"></i></a>';
+	$html .= '<a href="' . esc_url( $twitter_url ) . '" class="btn btn-twitter w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-fw"></i></a>';
+	$html .= '<a href="' . esc_url( $linkedin_url ) . '" class="btn btn-linkedin w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in fa-fw"></i></a>';
+	$html .= '<a href="' . esc_url( $pinterest_url ) . '" class="btn btn-pinterest w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest fa-fw"></i></a>';
+	$html .= '</div>';
 
-			// Finding the biggest chunk (if the chunk fits, break)
-			if ( ( $count = floor($since / $seconds) ) != 0 )
-				break;
-		}
-
-		// Set output var
-		$duration = ( 1 == $count ) ? '1 '. $chunks[$i][1] : $count . ' ' . $chunks[$i][2];
-		
-
-		if ( !(int)trim($duration) ){
-			$duration = '0 ' . __( 'seconds', 'ptibogxivtheme' );
-		}
-
-		return sprintf( esc_html__( '%s ago', 'ptibogxivtheme' ), $duration);
-	}
-	}
-
-	// Filter our ptibogxivtheme_time_ago() function into WP's the_time() function
-	add_filter('the_time', 'ptibogxivtheme_time_ago');
+	return $html;
 }
+
+function ptibogxivtheme_gradient() {
+	return 'backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 0.55);';
+}
+
+function ptibogxivtheme_time_ago( $time, $format = '' ) {
+	$post_id = get_the_ID();
+
+	if ( ! $post_id || get_post_type( $post_id ) !== 'post' ) {
+		return $time;
+	}
+
+	$post_time    = get_post_time( 'U', true, $post_id );
+	$current_time = current_time( 'timestamp', true );
+	$since        = $current_time - $post_time;
+
+	if ( $since < 0 ) {
+		return esc_html__( 'sometime', 'ptibogxivtheme' );
+	}
+
+	$duration = human_time_diff( $post_time, $current_time );
+	return sprintf( esc_html__( '%s ago', 'ptibogxivtheme' ), $duration );
+}
+add_filter( 'the_time', 'ptibogxivtheme_time_ago', 10, 2 );

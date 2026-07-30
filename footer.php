@@ -113,11 +113,6 @@ echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by
     </div>
   </div>
 </nav>
-<?php if (!is_page(doliconnectid('dolicart')) && function_exists('doliOffcanvasCart')) { ?>
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDoliCartLabel" aria-labelledby="offcanvasDoliCartLabel">
-<?php echo doliOffcanvasCart( wp_get_current_user() ); ?>
-</div>
-<?php } ?>
 </footer>
 <?php wp_footer(); ?>
 </body>

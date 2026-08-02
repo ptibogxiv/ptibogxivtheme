@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2026-05-24 15:27+0200\n"
-"PO-Revision-Date: 2026-05-24 15:27+0200\n"
+"POT-Creation-Date: 2026-08-02 14:46+0200\n"
+"PO-Revision-Date: 2026-08-02 14:47+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -57,111 +57,63 @@ msgstr "Conditions Générales d’Utilisation"
 msgid "Kiosk mode ON"
 msgstr "Mode kiosque ON"
 
-#: footer.php:59
+#: footer.php:61 footer.php:119
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:59
+#: footer.php:61 footer.php:119
 msgid "Legal notice"
 msgstr "Mentions légales"
 
-#: footer.php:70
+#: footer.php:64
 #, php-format
 msgid ""
 "Designed with <i class=\"fa-solid fa-heart text-danger\"></i> by <b>%s</b> "
 "and hosted with <i class=\"fa-solid fa-leaf text-success\"></i> by <b>%s</b>"
 msgstr ""
 "Conçu avec <i class=\"fa-solid fa-heart text-danger\"></i> par <b>%s</b> et "
-"hébergé sur <i class=\"fa-solid fa-leaf text-success\"></i> par <b>%s</b>"
+"hébergé avec <i class=\"fa-solid fa-leaf text-success\"></i> par <b>%s</b>"
 
-#: footer.php:72
+#: footer.php:66
 #, php-format
 msgid ""
 "Designed with <i class=\"fa-solid fa-heart text-danger\"></i> by <b>%s</b>"
 msgstr ""
 "Conçu avec <i class=\"fa-solid fa-heart text-danger\"></i> par <b>%s</b>"
 
-#: footer.php:79 footer.php:97
+#: footer.php:76 footer.php:101
 msgid "Menu"
 msgstr "Menu"
 
-#: footer.php:81
+#: footer.php:78
 msgid "Home"
 msgstr "Accueil"
 
-#: footer.php:84 header.php:80 header.php:83 header.php:85
+#: footer.php:81 header.php:80 header.php:83 header.php:85
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:84 footer.php:86 header.php:73 header.php:75
+#: footer.php:81 footer.php:83 header.php:73 header.php:75
 msgid "Cart"
 msgstr "Panier"
 
-#: footer.php:90 footer.php:92
+#: footer.php:94 footer.php:96
 msgid "Account"
 msgstr "Compte"
 
-#: functions.php:136
-msgid "year"
-msgstr "an"
+#: footer.php:121 header.php:92
+msgid "Administration"
+msgstr "Administration"
 
-#: functions.php:136
-msgid "years"
-msgstr "ans"
+#: functions.php:144
+msgid "Social sharing"
+msgstr "Partage sur les réseaux sociaux"
 
-#: functions.php:137
-msgid "month"
-msgstr "mois"
-
-#: functions.php:137
-msgid "months"
-msgstr "mois"
-
-#: functions.php:138
-msgid "week"
-msgstr "semaine"
-
-#: functions.php:138
-msgid "weeks"
-msgstr "semaines"
-
-#: functions.php:139
-msgid "day"
-msgstr "jour"
-
-#: functions.php:139
-msgid "days"
-msgstr "jours"
-
-#: functions.php:140
-msgid "hour"
-msgstr "heure"
-
-#: functions.php:140
-msgid "hours"
-msgstr "heures"
-
-#: functions.php:141
-msgid "minute"
-msgstr "minute"
-
-#: functions.php:141
-msgid "minutes"
-msgstr "minutes"
-
-#: functions.php:142
-msgid "second"
-msgstr "seconde"
-
-#: functions.php:142 functions.php:182
-msgid "seconds"
-msgstr "secondes"
-
-#: functions.php:159
+#: functions.php:172
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:185
+#: functions.php:176
 #, php-format
 msgid "%s ago"
 msgstr "Il y a %s"
@@ -194,278 +146,278 @@ msgstr "Barre de navigation"
 msgid "Your search"
 msgstr "Votre recherche"
 
-#: functions/setup.php:23
+#: functions/setup.php:35
 msgid "Read more"
 msgstr "Lire plus"
 
-#: functions/setup.php:40
+#: functions/setup.php:66
 msgid "Theme Layout Settings"
 msgstr "Paramètres de mise en page"
 
-#: functions/setup.php:42
+#: functions/setup.php:68
 msgid "Container width and sidebar defaults"
 msgstr "Largeur du site (avec widget latéraux)"
 
-#: functions/setup.php:57
+#: functions/setup.php:74
 msgid "Container Width"
 msgstr "Largeur de conteneur"
 
-#: functions/setup.php:58
+#: functions/setup.php:75
 msgid "Choose between Bootstrap's container and container-fluid"
 msgstr "Choisissez entre conteneur Bootstrap ou conteneur-fluide"
 
-#: functions/setup.php:63
+#: functions/setup.php:79
 msgid "Fixed width container"
 msgstr "Conteneur à largeur fixe"
 
-#: functions/setup.php:64
+#: functions/setup.php:80
 msgid "Full width container"
 msgstr "Container pleine largeur"
 
-#: functions/setup.php:81
+#: functions/setup.php:84
 msgid "Css scheme"
 msgstr "Schéma CSS"
 
-#: functions/setup.php:82 functions/setup.php:131 functions/setup.php:280
+#: functions/setup.php:85 functions/setup.php:120 functions/setup.php:237
 msgid "Choose between scheme"
 msgstr "Choisissez un jeu de couleurs"
 
-#: functions/setup.php:87
+#: functions/setup.php:89
 msgid "Default"
 msgstr "Par défaut"
 
-#: functions/setup.php:88
+#: functions/setup.php:90
 msgid "Brite"
 msgstr "Brite"
 
-#: functions/setup.php:89
+#: functions/setup.php:91
 msgid "Cerulean"
 msgstr "Cæruléum"
 
-#: functions/setup.php:90
+#: functions/setup.php:92
 msgid "Cosmo"
 msgstr "Cosmo"
 
-#: functions/setup.php:91
+#: functions/setup.php:93
 msgid "Cyborg"
 msgstr "Cyborg"
 
-#: functions/setup.php:92
+#: functions/setup.php:94
 msgid "Darkly"
 msgstr "Darkly"
 
-#: functions/setup.php:93
+#: functions/setup.php:95
 msgid "Flatly"
 msgstr "Flatly"
 
-#: functions/setup.php:94
+#: functions/setup.php:96
 msgid "Journal"
 msgstr "Journal"
 
-#: functions/setup.php:95
+#: functions/setup.php:97
 msgid "Litera"
 msgstr "Litera"
 
-#: functions/setup.php:96
+#: functions/setup.php:98
 msgid "Lumen"
 msgstr "Lumen"
 
-#: functions/setup.php:97
+#: functions/setup.php:99
 msgid "Lux"
 msgstr "Lux"
 
-#: functions/setup.php:98
+#: functions/setup.php:100
 msgid "Materia"
 msgstr "Materia"
 
-#: functions/setup.php:99
+#: functions/setup.php:101
 msgid "Minty"
 msgstr "Minty"
 
-#: functions/setup.php:100
+#: functions/setup.php:102
 msgid "Morph"
 msgstr "Morph"
 
-#: functions/setup.php:101
+#: functions/setup.php:103
 msgid "Pulse"
 msgstr "Pulsation"
 
-#: functions/setup.php:102
+#: functions/setup.php:104
 msgid "Quartz"
 msgstr "Quartz"
 
-#: functions/setup.php:103
+#: functions/setup.php:105
 msgid "Sandstone"
 msgstr "Grès"
 
-#: functions/setup.php:104
+#: functions/setup.php:106
 msgid "Simplex"
 msgstr "Simplex"
 
-#: functions/setup.php:105
+#: functions/setup.php:107
 msgid "Sketchy"
 msgstr "Sketchy"
 
-#: functions/setup.php:106
+#: functions/setup.php:108
 msgid "Slate"
 msgstr "Ardoise"
 
-#: functions/setup.php:107
+#: functions/setup.php:109
 msgid "Solar"
 msgstr "Solar"
 
-#: functions/setup.php:108
+#: functions/setup.php:110
 msgid "Spacelab"
 msgstr "Spacelab"
 
-#: functions/setup.php:109
+#: functions/setup.php:111
 msgid "Superhero"
 msgstr "Super-héros"
 
-#: functions/setup.php:110
+#: functions/setup.php:112
 msgid "United"
 msgstr "Fusionné"
 
-#: functions/setup.php:111
+#: functions/setup.php:113
 msgid "Vapor"
 msgstr "Vapor"
 
-#: functions/setup.php:112
+#: functions/setup.php:114
 msgid "Yeti"
 msgstr "Yéti"
 
-#: functions/setup.php:113
+#: functions/setup.php:115
 msgid "Zephyr"
 msgstr "Zephyr"
 
-#: functions/setup.php:130
+#: functions/setup.php:119
 msgid "Navbar Color scheme"
 msgstr "Barre de navigation"
 
-#: functions/setup.php:137 functions/setup.php:287
+#: functions/setup.php:124 functions/setup.php:243
 msgid "Light scheme"
 msgstr "Jeu de couleurs clairs"
 
-#: functions/setup.php:138 functions/setup.php:288
+#: functions/setup.php:125 functions/setup.php:244
 msgid "Dark scheme"
 msgstr "Jeu de couleurs sombres"
 
-#: functions/setup.php:139 functions/setup.php:289
+#: functions/setup.php:126 functions/setup.php:245
 msgid "Primary scheme"
 msgstr "Jeu de couleurs primaires"
 
-#: functions/setup.php:140 functions/setup.php:290
+#: functions/setup.php:127 functions/setup.php:246
 msgid "Secondary scheme"
 msgstr "Jeu de couleurs secondaires"
 
-#: functions/setup.php:141 functions/setup.php:291
+#: functions/setup.php:128 functions/setup.php:247
 msgid "Info scheme"
 msgstr "Jeu de couleurs info"
 
-#: functions/setup.php:142 functions/setup.php:292
+#: functions/setup.php:129 functions/setup.php:248
 msgid "Success scheme"
 msgstr "Jeu de couleurs succès"
 
-#: functions/setup.php:143 functions/setup.php:293
+#: functions/setup.php:130 functions/setup.php:249
 msgid "Warning scheme"
 msgstr "Jeu de couleurs avertissement"
 
-#: functions/setup.php:144 functions/setup.php:294
+#: functions/setup.php:131 functions/setup.php:250
 msgid "Danger scheme"
 msgstr "Jeu de couleurs danger"
 
-#: functions/setup.php:161
+#: functions/setup.php:135
 msgid "Home brand style"
 msgstr "Style du bouton d'acceuil"
 
-#: functions/setup.php:162
+#: functions/setup.php:136
 msgid "Choose between style of home button"
 msgstr "Choisissez un style pour le bouton d'accueil"
 
-#: functions/setup.php:167
+#: functions/setup.php:140
 msgid "Brand only"
 msgstr "Marque seulement"
 
-#: functions/setup.php:168
+#: functions/setup.php:141
 msgid "Logo only"
 msgstr "Logo seulement"
 
-#: functions/setup.php:169
+#: functions/setup.php:142
 msgid "Brand & logo"
 msgstr "Marque et logo"
 
-#: functions/setup.php:170
+#: functions/setup.php:143
 msgid "Generic Home"
 msgstr "Maison générique"
 
-#: functions/setup.php:187
+#: functions/setup.php:147
 msgid "Sidebar Positioning"
 msgstr "Positionnement de la barre latérale"
 
-#: functions/setup.php:188
+#: functions/setup.php:148
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
 "Définissez la position par défaut de la barre latérale. Peut être : droite, "
 "gauche, tous les deux ou aucun."
 
-#: functions/setup.php:193 functions/widgets.php:22
+#: functions/setup.php:152 functions/widgets.php:22
 msgid "Right sidebar"
 msgstr "Barre latérale à droite"
 
-#: functions/setup.php:194 functions/widgets.php:9
+#: functions/setup.php:153 functions/widgets.php:9
 msgid "Left sidebar"
 msgstr "Barre latérale à gauche"
 
-#: functions/setup.php:195
+#: functions/setup.php:154
 msgid "Left & Right sidebars"
 msgstr "Barres latérales gauche et droite"
 
-#: functions/setup.php:196
+#: functions/setup.php:155
 msgid "No sidebar"
 msgstr "Pas de barre latérale"
 
-#: functions/setup.php:213
+#: functions/setup.php:159
 msgid "Carousel / Favorite image"
 msgstr "Carrousel / Image préférée"
 
-#: functions/setup.php:214
+#: functions/setup.php:160
 msgid "Set carousel / image"
 msgstr "Ensemble carrousel / image"
 
-#: functions/setup.php:219
+#: functions/setup.php:164
 msgid "Carousel and images on every pages"
 msgstr "Carrousel et images sur toutes les pages"
 
-#: functions/setup.php:220
+#: functions/setup.php:165
 msgid "Only image on pages"
 msgstr "Seule image sur les pages"
 
-#: functions/setup.php:221
+#: functions/setup.php:166
 msgid "Only carousel and images on posts"
 msgstr "Carrousel et images seulement sur les articles"
 
-#: functions/setup.php:222
+#: functions/setup.php:167
 msgid "No carousel or images"
 msgstr "Pas de carrousel ou d'images"
 
-#: functions/setup.php:235
+#: functions/setup.php:198
 msgid "Restore the native admin bar"
 msgstr "Restaurer la barre admin native"
 
-#: functions/setup.php:248
+#: functions/setup.php:199
 msgid "Remove the shadow of content box"
 msgstr "Supprimer l'ombre de la boîte de contenu"
 
-#: functions/setup.php:261
+#: functions/setup.php:200
 msgid "Remove the card of content box"
 msgstr "Supprimer la carte de la boîte de contenu"
 
-#: functions/setup.php:279
+#: functions/setup.php:236
 msgid "Networkbar Color scheme"
 msgstr "Jeu de couleurs de la barre de réseau"
 
-#: functions/setup.php:286
+#: functions/setup.php:242
 msgid "Not active"
 msgstr "Inactif"
 
@@ -513,105 +465,74 @@ msgstr "La zone de widget caroussel"
 msgid "Dolibarr"
 msgstr "Dolibarr"
 
-#: header.php:92
-msgid "Administration"
-msgstr "Administration"
-
 #: header.php:95 loops/comments.php:49
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:56
-#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:56
-#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:56
-#: lib/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:56
-#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:56
+#: lib/plugin-update-checker/Puc/v5p7/Plugin/Ui.php:56
 msgid "View details"
 msgstr "Voir les détails"
 
-#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:79
-#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:79
-#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:79
-#: lib/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:79
-#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:79
+#: lib/plugin-update-checker/Puc/v5p7/Plugin/Ui.php:79
 #, php-format
 msgid "More information about %s"
 msgstr "Informations à propos de %s"
 
-#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:130
-#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:130
-#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:130
-#: lib/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:130
-#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:130
+#: lib/plugin-update-checker/Puc/v5p7/Plugin/Ui.php:130
 msgid "Check for updates"
 msgstr "Vérifier les mises à jour"
 
-#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:217
-#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:217
-#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:217
-#: lib/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:217
-#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:217
+#: lib/plugin-update-checker/Puc/v5p7/Plugin/Ui.php:217
 #, php-format
 msgctxt "the plugin title"
 msgid "The %s plugin is up to date."
 msgstr "L'extension %s est à jour."
 
-#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:219
-#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:219
-#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:219
-#: lib/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:219
-#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:219
+#: lib/plugin-update-checker/Puc/v5p7/Plugin/Ui.php:219
 #, php-format
 msgctxt "the plugin title"
 msgid "A new version of the %s plugin is available."
 msgstr "Une nouvelle version de %s est disponible."
 
-#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:221
-#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:221
-#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:221
-#: lib/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:221
-#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:221
+#: lib/plugin-update-checker/Puc/v5p7/Plugin/Ui.php:221
 #, php-format
 msgctxt "the plugin title"
 msgid "Could not determine if updates are available for %s."
 msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
 
-#: lib/plugin-update-checker/Puc/v5p2/Plugin/Ui.php:227
-#: lib/plugin-update-checker/Puc/v5p3/Plugin/Ui.php:227
-#: lib/plugin-update-checker/Puc/v5p4/Plugin/Ui.php:227
-#: lib/plugin-update-checker/Puc/v5p5/Plugin/Ui.php:227
-#: lib/plugin-update-checker/Puc/v5p6/Plugin/Ui.php:227
+#: lib/plugin-update-checker/Puc/v5p7/Plugin/Ui.php:227
 #, php-format
 msgid "Unknown update checker status \"%s\""
 msgstr "Statut des mises à jour inconnu \"%s\""
 
-#: lib/plugin-update-checker/Puc/v5p2/Vcs/PluginUpdateChecker.php:98
-#: lib/plugin-update-checker/Puc/v5p3/Vcs/PluginUpdateChecker.php:113
-#: lib/plugin-update-checker/Puc/v5p4/Vcs/PluginUpdateChecker.php:113
-#: lib/plugin-update-checker/Puc/v5p5/Vcs/PluginUpdateChecker.php:113
-#: lib/plugin-update-checker/Puc/v5p6/Vcs/PluginUpdateChecker.php:113
+#: lib/plugin-update-checker/Puc/v5p7/Vcs/PluginUpdateChecker.php:113
 msgid "There is no changelog available."
 msgstr "Aucun registre de modifications disponible."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:380
-#: lib/updatepulse-updater/class-updatepulse-updater.php:970
+#: lib/updatepulse-updater/class-updatepulse-updater.php:382
+#: lib/updatepulse-updater/class-updatepulse-updater.php:996
 msgid "Deactivate"
 msgstr "Désactiver"
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:387
-#: lib/updatepulse-updater/class-updatepulse-updater.php:967
+#: lib/updatepulse-updater/class-updatepulse-updater.php:389
+#: lib/updatepulse-updater/class-updatepulse-updater.php:993
 msgid "Deactivation is possible after:"
 msgstr "La désactivation est possible après :"
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:609
+#: lib/updatepulse-updater/class-updatepulse-updater.php:398
+msgid "An undefined error occurred while activating the license."
+msgstr ""
+"Une erreur indéfinie s'est produite lors de l'activation de la licence."
+
+#: lib/updatepulse-updater/class-updatepulse-updater.php:614
 msgid "Sorry, you are not allowed to access this page."
 msgstr "Désolé, vous n'êtes pas autorisé à accéder à cette page."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:613
+#: lib/updatepulse-updater/class-updatepulse-updater.php:618
 msgid "Theme License - "
 msgstr "Licence du thème - "
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:866
+#: lib/updatepulse-updater/class-updatepulse-updater.php:881
 msgid ""
 "Unexpected Error! The query to retrieve the license data returned a "
 "malformed response."
@@ -619,11 +540,11 @@ msgstr ""
 "Erreur inattendue ! La requête visant à récupérer les données de licence a "
 "renvoyé une réponse non valide."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:886
-msgid "The license is already in use for this domain."
-msgstr "La licence est déjà utilisée pour ce domaine."
+#: lib/updatepulse-updater/class-updatepulse-updater.php:902
+msgid "The license is already activated for this domain."
+msgstr "La licence est déjà activée pour ce domaine."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:891
+#: lib/updatepulse-updater/class-updatepulse-updater.php:910
 msgid ""
 "The license has reached the maximum number of activations and cannot be "
 "activated for this domain."
@@ -631,15 +552,15 @@ msgstr ""
 "La licence a atteint le nombre maximal d'activations et ne peut plus être "
 "activée pour ce domaine."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:896
-msgid "The license is already inactive for this domain."
-msgstr "La licence n'est déjà plus valide pour ce domaine."
+#: lib/updatepulse-updater/class-updatepulse-updater.php:915
+msgid "The license is already deactivated for this domain."
+msgstr "La licence est déjà désactivée pour ce domaine."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:900
+#: lib/updatepulse-updater/class-updatepulse-updater.php:925
 msgid "The license may not be deactivated yet."
 msgstr "Il se peut que la licence ne soit pas encore désactivée."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:907
+#: lib/updatepulse-updater/class-updatepulse-updater.php:933
 msgid ""
 "The license is blocked and cannot be updated anymore. Please use another "
 "license key."
@@ -647,7 +568,7 @@ msgstr ""
 "La licence est bloquée et ne peut plus être mise à jour. Veuillez utiliser "
 "une autre clé de licence."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:910
+#: lib/updatepulse-updater/class-updatepulse-updater.php:936
 msgid ""
 "The license has not been activated and its status is still pending. Please "
 "try again or use another license key."
@@ -655,24 +576,24 @@ msgstr ""
 "La licence n'a pas été activée et son statut est toujours en attente. "
 "Veuillez réessayer ou utiliser une autre clé de licence."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:913
+#: lib/updatepulse-updater/class-updatepulse-updater.php:939
 msgid "The provided license key is invalid. Please use another license key."
 msgstr ""
 "La clé de licence fournie n'est pas valide. Veuillez utiliser une autre clé "
 "de licence."
 
 #. translators: the license expiry date
-#: lib/updatepulse-updater/class-updatepulse-updater.php:923
+#: lib/updatepulse-updater/class-updatepulse-updater.php:949
 #, php-format
 msgid "The license expired on %s and needs to be renewed to be updated."
 msgstr ""
 "La licence a expiré le %s et doit être renouvelée pour être mise à jour."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:927
+#: lib/updatepulse-updater/class-updatepulse-updater.php:953
 msgid "The license expired and needs to be renewed to be updated."
 msgstr "La licence a expiré et doit être renouvelée pour être mise à jour."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:934
+#: lib/updatepulse-updater/class-updatepulse-updater.php:960
 msgid ""
 "The provided license key does not appear to be valid. Please use another "
 "license key."
@@ -680,7 +601,7 @@ msgstr ""
 "La clé de licence fournie ne semble pas valide. Veuillez utiliser une autre "
 "clé de licence."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:939
+#: lib/updatepulse-updater/class-updatepulse-updater.php:965
 msgid ""
 "An active license is required to update the plugin. Please provide a valid "
 "license key in Plugins > Installed Plugins."
@@ -688,7 +609,7 @@ msgstr ""
 "Une licence active est nécessaire pour mettre à jour le plugin. Veuillez "
 "saisir une clé de licence valide dans Plugins > Plugins installés."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:941
+#: lib/updatepulse-updater/class-updatepulse-updater.php:967
 msgid ""
 "An active license is required to update the theme. Please provide a valid "
 "license key in Appearence > Theme License."
@@ -696,11 +617,11 @@ msgstr ""
 "Une licence active est nécessaire pour mettre à jour le thème. Veuillez "
 "saisir une clé de licence valide dans Apparence > Licence du thème."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:946
+#: lib/updatepulse-updater/class-updatepulse-updater.php:972
 msgid "An unexpected error has occured."
 msgstr "Une erreur inattendue s'est produite."
 
-#: lib/updatepulse-updater/class-updatepulse-updater.php:952
+#: lib/updatepulse-updater/class-updatepulse-updater.php:978
 msgid ""
 "An unexpected error has occured. Please try again. If the problem persists, "
 "please contact support."

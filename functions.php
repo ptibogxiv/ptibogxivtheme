@@ -71,6 +71,8 @@ function ptibogxivtheme_init() {
 
 	add_filter( 'superpwa_add_theme_color', '__return_false' );
 
+	add_filter('login_display_language_dropdown', '__return_false');
+
 	function custom_excerpt_length( $length ) {
 		return 25;
 	}

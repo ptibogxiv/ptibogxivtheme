@@ -81,17 +81,11 @@ function ptibogxivtheme_init() {
 	function ptibogxivtheme_show_admin_bar( $show ) {
 		if ( ! is_user_logged_in() ) {
 			return false;
-		}
-
-		if ( current_user_can( 'edit_posts' ) && ! get_theme_mod( 'ptibogxivtheme_adminbar', false ) ) {
+		} elseif ( is_user_logged_in() && ! get_theme_mod( 'ptibogxivtheme_adminbar', false ) ) {
 			return false;
+		} else {
+			return $show;
 		}
-
-		if ( current_user_can( 'edit_posts' ) && get_user_meta( get_current_user_id(), 'show_admin_bar_front', true ) === 'true' ) {
-			return true;
-		}
-
-		return $show;
 	}
 	add_filter( 'show_admin_bar', 'ptibogxivtheme_show_admin_bar' );
 

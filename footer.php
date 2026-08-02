@@ -110,6 +110,13 @@ echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by
           ) );
         ?>
       </div>
+      <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( !empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts') && wp_get_current_user()->show_admin_bar_front == 'false' ) ) { ?>
+        <div class="offcanvas-footer m-3">
+          <div class="d-grid gap-2"> 
+            <a type="button" class="btn btn-outline-secondary btn-lg" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>""><i class="fa-solid fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a>';
+          </div>
+        </div>
+      <?php } ?>
     </div>
   </div>
 </nav>

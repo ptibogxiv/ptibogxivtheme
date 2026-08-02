@@ -87,12 +87,12 @@ if ( function_exists( 'wp_body_open' ) ) {
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="<?php echo get_site_option('dolibarr_public_url'); ?>/?entity=<?php echo dolibarr_entity(); ?>&username=<?php echo wp_get_current_user()->user_email; ?>" rel="noopener" title="<?php _e('Dolibarr', 'ptibogxivtheme'); ?>" target="_dolibarr"><i class="fa-brands fa-dolibarr fa-fw"></i> <?php _e('Dolibarr', 'ptibogxivtheme'); ?></a></li>
                 <?php } ?>
-                <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && ( wp_get_current_user()->show_admin_bar_front != true)) ) { ?>
+                <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( !empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts') && wp_get_current_user()->show_admin_bar_front == 'false' ) ) { ?>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a></li>
                 <?php } ?>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="<?php echo wp_logout_url( $redirect_to ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><?php _e('Logout', 'ptibogxivtheme'); ?></a></li>
+              <li><a class="dropdown-item" href="<?php echo wp_logout_url( $redirect_to ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-right-from-bracket fa-fw"></i><?php _e('Logout', 'ptibogxivtheme'); ?></a></li>
             </ul>
           </li>
         <?php } ?>

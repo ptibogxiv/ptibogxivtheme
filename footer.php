@@ -58,15 +58,8 @@ echo "</script>";
 <br>
 <div class="row">
 <div class="col">
-  <p class="text-center"><small><i class="fa-solid fa-copyright"></i> <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?><br><?php _e('All rights reserved', 'ptibogxivtheme'); ?><?php if (function_exists('doliModalButton')) { ?> - <?php echo doliModalButton('legacy', 'legacyfooter', __('Legal notice', 'ptibogxivtheme'), 'a' , 'text-reset'); } ?>
-  <br><small><?php 
-  if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
-    $redirect_to=doliconnecturl('doliaccount');
-  } elseif (is_front_page()) {
-    $redirect_to=home_url();
-  } else {
-    $redirect_to=get_permalink();
-  }
+  <p class="text-center"><small><i class="fa-solid fa-copyright"></i> <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?><br><?php _e('All rights reserved', 'ptibogxivtheme'); ?><?php if (function_exists('doliModalButton')) { ?> - <?php echo doliModalButton('legacy', 'legacyfooter', __('Legal notice', 'ptibogxivtheme'), 'a' , 'text-reset'); } ?></p>
+  <p class="text-center"><small><?php 
   if ( defined('PTIBOGXIV_NET') ) {
     echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by <b>%s</b> and hosted with <i class="fa-solid fa-leaf text-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b' class='text-reset'>Infomaniak</a>");
   } else {
@@ -90,7 +83,14 @@ echo "</script>";
           <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></a> 
         <?php } ?>
       <?php } ?>
-      <?php if ( !is_user_logged_in() ) { ?>
+      <?php if ( !is_user_logged_in() ) { 
+        if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
+          $redirect_to=doliconnecturl('doliaccount');
+        } elseif (is_front_page()) {
+          $redirect_to=home_url();
+        } else {
+          $redirect_to=get_permalink();
+        } ?>
       <a href="<?php echo wp_login_url( $redirect_to ); ?>" class="btn btn-light w-100" ><i class="fa-regular fa-circle-user fa-2x fa-fw"></i><br><small><?php _e('Account', 'ptibogxivtheme'); ?></small></a> 
       <?php } else { ?>
       <a href="<?php echo doliconnecturl('doliaccount'); ?>" class="btn btn-light w-100" ><i class="fa-regular fa-circle-user fa-2x fa-fw"></i><br><small><?php _e('Account', 'ptibogxivtheme'); ?></small></a> 
@@ -116,6 +116,7 @@ echo "</script>";
       </div>
       <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( !empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts') && wp_get_current_user()->show_admin_bar_front == 'false' ) ) { ?>
         <div class="offcanvas-footer m-3">
+          <p class="text-center"><small><i class="fa-solid fa-copyright"></i> <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?><br><?php _e('All rights reserved', 'ptibogxivtheme'); ?><?php if (function_exists('doliModalButton')) { ?> - <?php echo doliModalButton('legacy', 'legacyfooter', __('Legal notice', 'ptibogxivtheme'), 'a' , 'text-reset'); } ?></p>
           <div class="d-grid gap-2"> 
             <a type="button" class="btn btn-outline-secondary btn-lg" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>""><i class="fa-solid fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a>
           </div>

@@ -54,11 +54,12 @@ document.getElementById("dolikiosk").style.display = "block";
 echo "</script>";
 }
 ?>     
-</div></div><br>
+</div></div>
+<br>
 <div class="row">
-<div class="col"><p class="text-center"><small><i class="fa-solid fa-copyright"></i> <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?><br><?php _e('All rights reserved', 'ptibogxivtheme'); ?><?php if (function_exists('doliModalButton')) { ?> - <?php echo doliModalButton('legacy', 'legacyfooter', __('Legal notice', 'ptibogxivtheme'), 'a' , 'text-reset'); } ?>
-
-<br><small><?php 
+<div class="col">
+  <p class="text-center"><small><i class="fa-solid fa-copyright"></i> <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?><br><?php _e('All rights reserved', 'ptibogxivtheme'); ?><?php if (function_exists('doliModalButton')) { ?> - <?php echo doliModalButton('legacy', 'legacyfooter', __('Legal notice', 'ptibogxivtheme'), 'a' , 'text-reset'); } ?>
+  <br><small><?php 
   if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
     $redirect_to=doliconnecturl('doliaccount');
   } elseif (is_front_page()) {
@@ -66,11 +67,14 @@ echo "</script>";
   } else {
     $redirect_to=get_permalink();
   }
-if ( defined('PTIBOGXIV_NET') ) {
-echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by <b>%s</b> and hosted with <i class="fa-solid fa-leaf text-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b' class='text-reset'>Infomaniak</a>");
-} else {
-echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>");
-} ?></small></small></p></div>
+  if ( defined('PTIBOGXIV_NET') ) {
+    echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by <b>%s</b> and hosted with <i class="fa-solid fa-leaf text-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b' class='text-reset'>Infomaniak</a>");
+  } else {
+    echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>");
+  } ?>
+  </small></small>
+  </p>
+</div>
 </div></div>
 <nav class="bg-body-tertiary fixed-bottom pb-1 d-block d-md-none">
   <div class="container-fluid">

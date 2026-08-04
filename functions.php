@@ -152,7 +152,7 @@ function ptibogxivtheme_init() {
 	}
 
 	function ptibogxivtheme_gradient() {
-		return 'backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); background-color: rgba(255, 255, 255, 0.55);';
+		return 'backdrop-filter: blur(18px) saturate(170%); -webkit-backdrop-filter: blur(18px) saturate(170%); background-color: rgba(255,255,255,.12);';
 	}
 
 	function ptibogxivtheme_time_ago( $time, $format = '' ) {

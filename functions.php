@@ -73,6 +73,26 @@ function ptibogxivtheme_init() {
 
 	add_filter('login_display_language_dropdown', '__return_false');
 
+	// outils de personnalisation et utilisation du module
+	function doliconnect_login_logo_url() {
+	return get_bloginfo( 'url' );
+	}
+	add_filter( 'login_headerurl', 'doliconnect_login_logo_url' );
+
+	function doliconnect_login_logo_url_title() {
+		return get_bloginfo( 'name' );
+	}
+	add_filter( 'login_headertext', 'doliconnect_login_logo_url_title' );
+
+	// Hide Author EVERYWHERE
+	add_filter( 'generate_post_author','generate_modify_author_display' );
+	function generate_modify_author_display()
+	{
+		//if ( is_single() )
+		//    return true;
+	return false;
+	}
+
 	function custom_excerpt_length( $length ) {
 		return 25;
 	}

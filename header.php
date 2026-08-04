@@ -46,11 +46,11 @@ if ( function_exists( 'wp_body_open' ) ) {
     ?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a><?php
     } ?>
     <?php if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
-       $redirect_to=doliconnecturl('doliaccount');
+       $redirect_to = doliconnecturl('doliaccount');
     } elseif (is_front_page()) {
-      $redirect_to=home_url();
+      $redirect_to = home_url();
     } else {
-      $redirect_to=get_permalink();
+      $redirect_to = get_permalink();
     } ?>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <?php

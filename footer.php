@@ -85,11 +85,11 @@ echo "</script>";
       <?php } ?>
       <?php if ( !is_user_logged_in() ) { 
         if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
-          $redirect_to=doliconnecturl('doliaccount');
+          $redirect_to = doliconnecturl('doliaccount');
         } elseif (is_front_page()) {
-          $redirect_to=home_url();
+          $redirect_to = home_url();
         } else {
-          $redirect_to=get_permalink();
+          $redirect_to = get_permalink();
         } ?>
       <a href="<?php echo wp_login_url( $redirect_to ); ?>" class="btn btn-light w-100" ><i class="fa-regular fa-circle-user fa-2x fa-fw"></i><br><small><?php _e('Account', 'ptibogxivtheme'); ?></small></a> 
       <?php } else { ?>

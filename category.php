@@ -4,7 +4,7 @@
 <div class="row">
 <?php dynamic_sidebar('top-widget-area');?>
  </div>
- <div class="row" <?php if(get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?>style="<?php echo ptibogxivtheme_gradient(); ?>"<?php endif; ?>>
+ <div class="row min-vh-100" <?php if(get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?>style="<?php echo ptibogxivtheme_gradient(); ?>"<?php endif; ?>>
 <?php if(is_active_sidebar('sidebar-left-widget-area') && (get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='left' or get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both')){ ?>    
     <div class="order-2 order-md-1 <?php if(get_theme_mod( 'ptibogxivtheme_sidebar_position' )=='both'): ?>col-12 col-md-3<?php
     else: ?>col-12 col-md-3<?php endif; ?>" id="leftsidebar" role="navigation"><br>

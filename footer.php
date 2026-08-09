@@ -83,18 +83,6 @@ echo "</script>";
           <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></a> 
         <?php } ?>
       <?php } ?>
-      <?php if ( !is_user_logged_in() ) { 
-        if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
-          $redirect_to = doliconnecturl('doliaccount');
-        } elseif (is_front_page()) {
-          $redirect_to = home_url();
-        } else {
-          $redirect_to = get_permalink();
-        } ?>
-      <a href="<?php echo wp_login_url( $redirect_to ); ?>" class="btn btn-light w-100" ><i class="fa-regular fa-circle-user fa-2x fa-fw"></i><br><small><?php _e('Account', 'ptibogxivtheme'); ?></small></a> 
-      <?php } else { ?>
-      <a href="<?php echo doliconnecturl('doliaccount'); ?>" class="btn btn-light w-100" ><i class="fa-regular fa-circle-user fa-2x fa-fw"></i><br><small><?php _e('Account', 'ptibogxivtheme'); ?></small></a> 
-      <?php } ?>
     </div>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDoliNavbarBottom" aria-labelledby="offcanvasDoliNavbarBottomLabel">
       <div class="offcanvas-header">

@@ -53,9 +53,9 @@ if ( function_exists( 'wp_body_open' ) ) {
       $redirect_to = get_permalink();
     } ?>
     <?php if ( !is_user_logged_in() ) { ?>
-      <a class="nav-link text-light d-block d-md-none" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a>
+      <a class="nav-link text-body-emphasis d-block d-md-none" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a>
     <?php } else { ?>
-      <a class="nav-link text-light d-block d-md-none" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a>
+      <a class="nav-link text-body-emphasis d-block d-md-none" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a>
     <?php } ?>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <?php

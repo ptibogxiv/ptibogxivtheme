@@ -84,20 +84,20 @@ function ptibogxivtheme_init() {
 	}
 	add_filter( 'login_headertext', 'ptibogxivtheme_login_logo_url_title' );
 
-function ptibogxivtheme_login_enqueue_scripts() {
-	$custom_logo_id = get_theme_mod( 'custom_logo' );
-	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-    ?>
-    <style type="text/css" media="screen">
-    #login h1 a{ background-image:url( <?php echo esc_url( $logo[0] ); ?> ); }
-    </style>
-    <?php
-}
-add_action( 'login_enqueue_scripts', 'ptibogxivtheme_login_enqueue_scripts' );
+	function ptibogxivtheme_login_enqueue_scripts() {
+		$custom_logo_id = get_theme_mod( 'custom_logo' );
+		$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+		?>
+		<style type="text/css" media="screen">
+		#login h1 a{ background-image:url( <?php echo esc_url( $logo[0] ); ?> ); }
+		</style>
+		<?php
+	}
+	add_action( 'login_enqueue_scripts', 'ptibogxivtheme_login_enqueue_scripts' );
 
 	// Hide Author EVERYWHERE
-	add_filter( 'generate_post_author','generate_modify_author_display' );
-	function generate_modify_author_display()
+	add_filter( 'generate_post_author','ptibogxivtheme_generate_modify_author_display' );
+	function ptibogxivtheme_generate_modify_author_display()
 	{
 		//if ( is_single() )
 		//    return true;

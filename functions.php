@@ -16,6 +16,20 @@ $ptibogxivtheme_updater = new UpdatePulse_Updater(
 add_action( 'after_setup_theme', 'ptibogxivtheme_init' );
 
 function ptibogxivtheme_init() {
+	/*
+	All the functions are in the PHP pages in the `functions/` folder.
+	*/
+	require_once get_stylesheet_directory() . '/functions/cleanup.php';
+	require_once get_stylesheet_directory() . '/functions/setup.php';
+	require_once get_stylesheet_directory() . '/functions/enqueues.php';
+	require_once get_stylesheet_directory() . '/functions/navbar.php';
+	require_once get_stylesheet_directory() . '/functions/widgets.php';
+	require_once get_stylesheet_directory() . '/functions/search-widget.php';
+	require_once get_stylesheet_directory() . '/functions/index-pagination.php';
+	require_once get_stylesheet_directory() . '/functions/split-post-pagination.php';
+	require_once get_stylesheet_directory() . '/functions/feedback.php';
+	require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
+
 	load_theme_textdomain( 'ptibogxivtheme', get_template_directory() . '/languages' );
 
 	add_theme_support( 'title-tag' );
@@ -55,34 +69,31 @@ function ptibogxivtheme_init() {
 		'header-text' => array( 'site-title', 'site-description' ),
 	) );
 
-	/*
-	All the functions are in the PHP pages in the `functions/` folder.
-	*/
-	require_once get_stylesheet_directory() . '/functions/cleanup.php';
-	require_once get_stylesheet_directory() . '/functions/setup.php';
-	require_once get_stylesheet_directory() . '/functions/enqueues.php';
-	require_once get_stylesheet_directory() . '/functions/navbar.php';
-	require_once get_stylesheet_directory() . '/functions/widgets.php';
-	require_once get_stylesheet_directory() . '/functions/search-widget.php';
-	require_once get_stylesheet_directory() . '/functions/index-pagination.php';
-	require_once get_stylesheet_directory() . '/functions/split-post-pagination.php';
-	require_once get_stylesheet_directory() . '/functions/feedback.php';
-	require_once get_stylesheet_directory() . '/functions/remove-query-string.php';
-
 	add_filter( 'superpwa_add_theme_color', '__return_false' );
 
 	add_filter('login_display_language_dropdown', '__return_false');
 
 	// outils de personnalisation et utilisation du module
-	function doliconnect_login_logo_url() {
+	function ptibogxivtheme_login_logo_url() {
 	return get_bloginfo( 'url' );
 	}
-	add_filter( 'login_headerurl', 'doliconnect_login_logo_url' );
+	add_filter( 'login_headerurl', 'ptibogxivtheme_login_logo_url' );
 
-	function doliconnect_login_logo_url_title() {
+	function ptibogxivtheme_login_logo_url_title() {
 		return get_bloginfo( 'name' );
 	}
-	add_filter( 'login_headertext', 'doliconnect_login_logo_url_title' );
+	add_filter( 'login_headertext', 'ptibogxivtheme_login_logo_url_title' );
+
+function ptibogxivtheme_login_enqueue_scripts() {
+	$custom_logo_id = get_theme_mod( 'custom_logo' );
+	$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+    ?>
+    <style type="text/css" media="screen">
+    #login h1 a{ background-image:url( <?php echo esc_url( $logo[0] ); ?> ); }
+    </style>
+    <?php
+}
+add_action( 'login_enqueue_scripts', 'ptibogxivtheme_login_enqueue_scripts' );
 
 	// Hide Author EVERYWHERE
 	add_filter( 'generate_post_author','generate_modify_author_display' );

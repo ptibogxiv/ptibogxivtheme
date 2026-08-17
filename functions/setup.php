@@ -3,29 +3,25 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
+add_editor_style( 'theme/css/editor-style.css' );
 
-add_action( 'after_setup_theme', 'ptibogxivtheme_setup' );
-function ptibogxivtheme_setup() {
-	add_editor_style( 'theme/css/editor-style.css' );
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'ptibogxiv_small', 200, 250, true );
+add_image_size( 'ptibogxiv', 380, 200, true );
+add_image_size( 'ptibogxiv_square', 512, 512, true );
+add_image_size( 'ptibogxiv_large', 1200, 400, true );
 
-	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'ptibogxiv_small', 200, 250, true );
-	add_image_size( 'ptibogxiv', 380, 200, true );
-	add_image_size( 'ptibogxiv_square', 512, 512, true );
-	add_image_size( 'ptibogxiv_large', 1200, 400, true );
-
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'gallery',
-		'link',
-		'image',
-		'quote',
-		'status',
-		'video',
-		'audio',
-		'chat',
-	) );
-}
+add_theme_support( 'post-formats', array(
+	'aside',
+	'gallery',
+	'link',
+	'image',
+	'quote',
+	'status',
+	'video',
+	'audio',
+	'chat',
+) );
 
 if ( ! isset( $content_width ) ) {
 	$content_width = 600;

@@ -19,7 +19,7 @@
     else: ?>col-12<?php endif; ?>">
       <div id="content" role="main">
         <header>
-          <h1><?php _e('Category :', 'ptibogxivtheme'); ?> <?php echo single_cat_title(); ?></h1>
+          <h1><?php _e('Shop', 'ptibogxivtheme'); ?></h1>
           <hr>
         </header>
         <?php get_template_part('loops/content', 'doliproductlist'); ?>

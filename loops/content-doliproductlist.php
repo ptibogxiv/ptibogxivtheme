@@ -16,7 +16,7 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
             <?php if ( has_post_thumbnail() ){ ?><a href="<?php the_permalink(); ?>"><img  class="card-img-start flex-auto d-none d-md-block rounded-start" src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_small' ); ?>" alt="<?php the_title()?>"></a><?php } ?><div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-primary small"><?php the_category(', ') ?></strong>
               <h4 class="mb-0"><a href="<?php the_permalink(); ?>"><?php the_title()?></a></h4>
-              <div class="mb-1 text-muted small"><i class="fas fa-calendar fa-fw"></i> <?php _e('Post', 'ptibogxivtheme'); ?> <?php the_time('d F Y') ?> <i class="fas fa-comment fa-fw"></i> <?php comments_popup_link( __('No comments yet', 'ptibogxivtheme'), __('1 comment', 'ptibogxivtheme'), '% comments', 'comments-link', __('Comments are off', 'ptibogxivtheme')); ?></div>
+              <div class="mb-1 text-muted small"></div>
               <p class="text-justify"><?php the_excerpt(); ?></p>
             </div>
           </div>

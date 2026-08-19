@@ -14,6 +14,7 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
 <?php if(have_posts()): while(have_posts()): the_post();?><article role="article" id="post_<?php the_ID()?>">
 <div class="card flex-md-row mb-4 h-md-250 border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="<?php echo ptibogxivtheme_gradient(); ?>">
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo doliPicture($post, 'card-img-start flex-auto d-none d-md-block rounded-start', 'ptibogxiv_small'); ?></a>
+            <?php echo doliProductCart(getDoliProductObject('doliproduct_productid', $post->ID), null, null, esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)); ?>
             <div class="card-body d-flex flex-column align-items-start">
               <strong class="d-inline-block mb-2 text-primary small"><?php the_category(', ') ?></strong>
               <h4 class="mb-0"><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title()?></a></h4>

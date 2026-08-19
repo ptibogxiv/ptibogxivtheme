@@ -1,6 +1,6 @@
 <?php
 /*
-The Single Posts Loop
+The Single doliproduct Posts Loop
 =====================
 */
 ?>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2026-08-02 14:46+0200\n"
-"PO-Revision-Date: 2026-08-02 14:47+0200\n"
+"POT-Creation-Date: 2026-08-21 17:56+0200\n"
+"PO-Revision-Date: 2026-08-21 17:56+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -27,6 +27,14 @@ msgstr "Erreur"
 #: 404.php:24
 msgid "The page you were looking for does not exist."
 msgstr "La page que vous recherchez n’existe pas."
+
+#: archive-doliproduct.php:22
+msgid "Shop"
+msgstr "Boutique"
+
+#: archive.php:22
+msgid "Archives"
+msgstr "Archives"
 
 #: author.php:24
 #, php-format
@@ -57,11 +65,11 @@ msgstr "Conditions Générales d’Utilisation"
 msgid "Kiosk mode ON"
 msgstr "Mode kiosque ON"
 
-#: footer.php:61 footer.php:119
+#: footer.php:61 footer.php:106
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:61 footer.php:119
+#: footer.php:61 footer.php:106
 msgid "Legal notice"
 msgstr "Mentions légales"
 
@@ -81,7 +89,7 @@ msgid ""
 msgstr ""
 "Conçu avec <i class=\"fa-solid fa-heart text-danger\"></i> par <b>%s</b>"
 
-#: footer.php:76 footer.php:101
+#: footer.php:76 footer.php:89
 msgid "Menu"
 msgstr "Menu"
 
@@ -89,31 +97,32 @@ msgstr "Menu"
 msgid "Home"
 msgstr "Accueil"
 
-#: footer.php:81 header.php:80 header.php:83 header.php:85
+#: footer.php:81 header.php:56 header.php:58 header.php:85 header.php:88
+#: header.php:90
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:81 footer.php:83 header.php:73 header.php:75
+#: footer.php:81 footer.php:83 header.php:78 header.php:80
 msgid "Cart"
 msgstr "Panier"
 
-#: footer.php:94 footer.php:96
-msgid "Account"
-msgstr "Compte"
+#: footer.php:110 header.php:93
+msgid "Dolibarr"
+msgstr "Dolibarr"
 
-#: footer.php:121 header.php:92
+#: footer.php:112 header.php:97
 msgid "Administration"
 msgstr "Administration"
 
-#: functions.php:144
+#: functions.php:173
 msgid "Social sharing"
 msgstr "Partage sur les réseaux sociaux"
 
-#: functions.php:172
+#: functions.php:201
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:176
+#: functions.php:205
 #, php-format
 msgid "%s ago"
 msgstr "Il y a %s"
@@ -146,278 +155,278 @@ msgstr "Barre de navigation"
 msgid "Your search"
 msgstr "Votre recherche"
 
-#: functions/setup.php:35
+#: functions/setup.php:31
 msgid "Read more"
 msgstr "Lire plus"
 
-#: functions/setup.php:66
+#: functions/setup.php:62
 msgid "Theme Layout Settings"
 msgstr "Paramètres de mise en page"
 
-#: functions/setup.php:68
+#: functions/setup.php:64
 msgid "Container width and sidebar defaults"
 msgstr "Largeur du site (avec widget latéraux)"
 
-#: functions/setup.php:74
+#: functions/setup.php:70
 msgid "Container Width"
 msgstr "Largeur de conteneur"
 
-#: functions/setup.php:75
+#: functions/setup.php:71
 msgid "Choose between Bootstrap's container and container-fluid"
 msgstr "Choisissez entre conteneur Bootstrap ou conteneur-fluide"
 
-#: functions/setup.php:79
+#: functions/setup.php:75
 msgid "Fixed width container"
 msgstr "Conteneur à largeur fixe"
 
-#: functions/setup.php:80
+#: functions/setup.php:76
 msgid "Full width container"
 msgstr "Container pleine largeur"
 
-#: functions/setup.php:84
+#: functions/setup.php:80
 msgid "Css scheme"
 msgstr "Schéma CSS"
 
-#: functions/setup.php:85 functions/setup.php:120 functions/setup.php:237
+#: functions/setup.php:81 functions/setup.php:116 functions/setup.php:233
 msgid "Choose between scheme"
 msgstr "Choisissez un jeu de couleurs"
 
-#: functions/setup.php:89
+#: functions/setup.php:85
 msgid "Default"
 msgstr "Par défaut"
 
-#: functions/setup.php:90
+#: functions/setup.php:86
 msgid "Brite"
 msgstr "Brite"
 
-#: functions/setup.php:91
+#: functions/setup.php:87
 msgid "Cerulean"
 msgstr "Cæruléum"
 
-#: functions/setup.php:92
+#: functions/setup.php:88
 msgid "Cosmo"
 msgstr "Cosmo"
 
-#: functions/setup.php:93
+#: functions/setup.php:89
 msgid "Cyborg"
 msgstr "Cyborg"
 
-#: functions/setup.php:94
+#: functions/setup.php:90
 msgid "Darkly"
 msgstr "Darkly"
 
-#: functions/setup.php:95
+#: functions/setup.php:91
 msgid "Flatly"
 msgstr "Flatly"
 
-#: functions/setup.php:96
+#: functions/setup.php:92
 msgid "Journal"
 msgstr "Journal"
 
-#: functions/setup.php:97
+#: functions/setup.php:93
 msgid "Litera"
 msgstr "Litera"
 
-#: functions/setup.php:98
+#: functions/setup.php:94
 msgid "Lumen"
 msgstr "Lumen"
 
-#: functions/setup.php:99
+#: functions/setup.php:95
 msgid "Lux"
 msgstr "Lux"
 
-#: functions/setup.php:100
+#: functions/setup.php:96
 msgid "Materia"
 msgstr "Materia"
 
-#: functions/setup.php:101
+#: functions/setup.php:97
 msgid "Minty"
 msgstr "Minty"
 
-#: functions/setup.php:102
+#: functions/setup.php:98
 msgid "Morph"
 msgstr "Morph"
 
-#: functions/setup.php:103
+#: functions/setup.php:99
 msgid "Pulse"
 msgstr "Pulsation"
 
-#: functions/setup.php:104
+#: functions/setup.php:100
 msgid "Quartz"
 msgstr "Quartz"
 
-#: functions/setup.php:105
+#: functions/setup.php:101
 msgid "Sandstone"
 msgstr "Grès"
 
-#: functions/setup.php:106
+#: functions/setup.php:102
 msgid "Simplex"
 msgstr "Simplex"
 
-#: functions/setup.php:107
+#: functions/setup.php:103
 msgid "Sketchy"
 msgstr "Sketchy"
 
-#: functions/setup.php:108
+#: functions/setup.php:104
 msgid "Slate"
 msgstr "Ardoise"
 
-#: functions/setup.php:109
+#: functions/setup.php:105
 msgid "Solar"
 msgstr "Solar"
 
-#: functions/setup.php:110
+#: functions/setup.php:106
 msgid "Spacelab"
 msgstr "Spacelab"
 
-#: functions/setup.php:111
+#: functions/setup.php:107
 msgid "Superhero"
 msgstr "Super-héros"
 
-#: functions/setup.php:112
+#: functions/setup.php:108
 msgid "United"
 msgstr "Fusionné"
 
-#: functions/setup.php:113
+#: functions/setup.php:109
 msgid "Vapor"
 msgstr "Vapor"
 
-#: functions/setup.php:114
+#: functions/setup.php:110
 msgid "Yeti"
 msgstr "Yéti"
 
-#: functions/setup.php:115
+#: functions/setup.php:111
 msgid "Zephyr"
 msgstr "Zephyr"
 
-#: functions/setup.php:119
+#: functions/setup.php:115
 msgid "Navbar Color scheme"
 msgstr "Barre de navigation"
 
-#: functions/setup.php:124 functions/setup.php:243
+#: functions/setup.php:120 functions/setup.php:239
 msgid "Light scheme"
 msgstr "Jeu de couleurs clairs"
 
-#: functions/setup.php:125 functions/setup.php:244
+#: functions/setup.php:121 functions/setup.php:240
 msgid "Dark scheme"
 msgstr "Jeu de couleurs sombres"
 
-#: functions/setup.php:126 functions/setup.php:245
+#: functions/setup.php:122 functions/setup.php:241
 msgid "Primary scheme"
 msgstr "Jeu de couleurs primaires"
 
-#: functions/setup.php:127 functions/setup.php:246
+#: functions/setup.php:123 functions/setup.php:242
 msgid "Secondary scheme"
 msgstr "Jeu de couleurs secondaires"
 
-#: functions/setup.php:128 functions/setup.php:247
+#: functions/setup.php:124 functions/setup.php:243
 msgid "Info scheme"
 msgstr "Jeu de couleurs info"
 
-#: functions/setup.php:129 functions/setup.php:248
+#: functions/setup.php:125 functions/setup.php:244
 msgid "Success scheme"
 msgstr "Jeu de couleurs succès"
 
-#: functions/setup.php:130 functions/setup.php:249
+#: functions/setup.php:126 functions/setup.php:245
 msgid "Warning scheme"
 msgstr "Jeu de couleurs avertissement"
 
-#: functions/setup.php:131 functions/setup.php:250
+#: functions/setup.php:127 functions/setup.php:246
 msgid "Danger scheme"
 msgstr "Jeu de couleurs danger"
 
-#: functions/setup.php:135
+#: functions/setup.php:131
 msgid "Home brand style"
 msgstr "Style du bouton d'acceuil"
 
-#: functions/setup.php:136
+#: functions/setup.php:132
 msgid "Choose between style of home button"
 msgstr "Choisissez un style pour le bouton d'accueil"
 
-#: functions/setup.php:140
+#: functions/setup.php:136
 msgid "Brand only"
 msgstr "Marque seulement"
 
-#: functions/setup.php:141
+#: functions/setup.php:137
 msgid "Logo only"
 msgstr "Logo seulement"
 
-#: functions/setup.php:142
+#: functions/setup.php:138
 msgid "Brand & logo"
 msgstr "Marque et logo"
 
-#: functions/setup.php:143
+#: functions/setup.php:139
 msgid "Generic Home"
 msgstr "Maison générique"
 
-#: functions/setup.php:147
+#: functions/setup.php:143
 msgid "Sidebar Positioning"
 msgstr "Positionnement de la barre latérale"
 
-#: functions/setup.php:148
+#: functions/setup.php:144
 msgid ""
 "Set sidebar's default position. Can either be: right, left, both or none."
 msgstr ""
 "Définissez la position par défaut de la barre latérale. Peut être : droite, "
 "gauche, tous les deux ou aucun."
 
-#: functions/setup.php:152 functions/widgets.php:22
+#: functions/setup.php:148 functions/widgets.php:22
 msgid "Right sidebar"
 msgstr "Barre latérale à droite"
 
-#: functions/setup.php:153 functions/widgets.php:9
+#: functions/setup.php:149 functions/widgets.php:9
 msgid "Left sidebar"
 msgstr "Barre latérale à gauche"
 
-#: functions/setup.php:154
+#: functions/setup.php:150
 msgid "Left & Right sidebars"
 msgstr "Barres latérales gauche et droite"
 
-#: functions/setup.php:155
+#: functions/setup.php:151
 msgid "No sidebar"
 msgstr "Pas de barre latérale"
 
-#: functions/setup.php:159
+#: functions/setup.php:155
 msgid "Carousel / Favorite image"
 msgstr "Carrousel / Image préférée"
 
-#: functions/setup.php:160
+#: functions/setup.php:156
 msgid "Set carousel / image"
 msgstr "Ensemble carrousel / image"
 
-#: functions/setup.php:164
+#: functions/setup.php:160
 msgid "Carousel and images on every pages"
 msgstr "Carrousel et images sur toutes les pages"
 
-#: functions/setup.php:165
+#: functions/setup.php:161
 msgid "Only image on pages"
 msgstr "Seule image sur les pages"
 
-#: functions/setup.php:166
+#: functions/setup.php:162
 msgid "Only carousel and images on posts"
 msgstr "Carrousel et images seulement sur les articles"
 
-#: functions/setup.php:167
+#: functions/setup.php:163
 msgid "No carousel or images"
 msgstr "Pas de carrousel ou d'images"
 
-#: functions/setup.php:198
+#: functions/setup.php:194
 msgid "Restore the native admin bar"
 msgstr "Restaurer la barre admin native"
 
-#: functions/setup.php:199
+#: functions/setup.php:195
 msgid "Remove the shadow of content box"
 msgstr "Supprimer l'ombre de la boîte de contenu"
 
-#: functions/setup.php:200
+#: functions/setup.php:196
 msgid "Remove the card of content box"
 msgstr "Supprimer la carte de la boîte de contenu"
 
-#: functions/setup.php:236
+#: functions/setup.php:232
 msgid "Networkbar Color scheme"
 msgstr "Jeu de couleurs de la barre de réseau"
 
-#: functions/setup.php:242
+#: functions/setup.php:238
 msgid "Not active"
 msgstr "Inactif"
 
@@ -461,13 +470,13 @@ msgstr "Carousel"
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
-#: header.php:88
-msgid "Dolibarr"
-msgstr "Dolibarr"
-
-#: header.php:95 loops/comments.php:49
+#: header.php:100 loops/comments.php:49
 msgid "Logout"
 msgstr "Déconnexion"
+
+#: index.php:22 single.php:22
+msgid "News"
+msgstr "Actualités"
 
 #: lib/plugin-update-checker/Puc/v5p7/Plugin/Ui.php:56
 msgid "View details"
@@ -722,37 +731,37 @@ msgstr "Message"
 msgid "Submit comment"
 msgstr "Envoyer votre commentaire"
 
+#: loops/content-doliproduct.php:13 loops/content-single.php:13
+msgid "By"
+msgstr "Par"
+
+#: loops/content-doliproductlist.php:30 loops/content.php:29
+msgid "Previous"
+msgstr "Précédent"
+
+#: loops/content-doliproductlist.php:32 loops/content.php:31
+msgid "Next"
+msgstr "Suivant"
+
 #: loops/content-search.php:19
 msgid "Sorry, your search yielded no results."
 msgstr "Désolé, votre recherche ne retourne aucun résultat."
 
-#: loops/content-single.php:13
-msgid "By"
-msgstr "Par"
-
-#: loops/content.php:19
+#: loops/content.php:20
 msgid "Post"
 msgstr "Publié"
 
-#: loops/content.php:19
+#: loops/content.php:20
 msgid "No comments yet"
 msgstr "Pas de commentaires"
 
-#: loops/content.php:19
+#: loops/content.php:20
 msgid "1 comment"
 msgstr "1 commentaire"
 
-#: loops/content.php:19
+#: loops/content.php:20
 msgid "Comments are off"
 msgstr "Commentaires désactivés"
-
-#: loops/content.php:28
-msgid "Previous"
-msgstr "Précédent"
-
-#: loops/content.php:30
-msgid "Next"
-msgstr "Suivant"
 
 #: navbar-search.php:12
 msgctxt "ptibogxivtheme"
@@ -779,3 +788,6 @@ msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
 #. Author of the plugin/theme
 msgid "ptibogxiv"
 msgstr "ptibogxiv"
+
+#~ msgid "Account"
+#~ msgstr "Compte"

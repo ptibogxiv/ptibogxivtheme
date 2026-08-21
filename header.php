@@ -43,7 +43,7 @@ if ( function_exists( 'wp_body_open' ) ) {
     <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><img src="<?php echo esc_url($image_attributes[0]); ?>" height="30px" alt="<?php echo esc_attr(get_bloginfo('name')); ?>"/></a>
     <?php endif; ?>
     <?php } else {
-    ?><a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a><?php
+    ?><a class="navbar-brand text-<?php echo (!empty(esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )))?esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )):'bg-light'); ?>" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a><?php
     } ?>
     <?php if ( function_exists('dolikiosk') && ! empty(dolikiosk()) ) {
        $redirect_to = doliconnecturl('doliaccount');

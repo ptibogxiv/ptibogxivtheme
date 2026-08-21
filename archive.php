@@ -18,6 +18,10 @@
     elseif(is_active_sidebar('sidebar-left-widget-area') OR is_active_sidebar('sidebar-right-widget-area')): ?>col-12 col-md-9<?php 
     else: ?>col-12<?php endif; ?>">
       <div id="content" role="main">
+          <header>
+          <h1><?php _e('Archives', 'ptibogxivtheme'); ?></h1>
+          <hr>
+        </header>
         <?php get_template_part('loops/content', get_post_format()); ?>
       </div>
     </div>

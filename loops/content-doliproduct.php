@@ -4,7 +4,7 @@ The Single doliproduct Posts Loop
 =====================
 */
 ?>
-  <?php if(have_posts()): while(have_posts()): the_post(); ?>
+<?php if(have_posts()): while(have_posts()): the_post(); ?>
 <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
 <?php if(!get_theme_mod( 'ptibogxivtheme_cardcontent' )): ?><div class="card border-light <?php if(!get_theme_mod( 'ptibogxivtheme_shadowcontent' )): ?>shadow-lg<?php endif; ?>" style="<?php echo ptibogxivtheme_gradient(); ?>"><?php endif; ?>
 <?php if ( has_post_thumbnail() ){ ?><img src="<?php echo wp_get_attachment_image_url(get_post_thumbnail_id( $post ), 'ptibogxiv_large' ); ?>" class="card-img-top" alt="<?php the_title()?>"><?php } ?>
@@ -20,7 +20,7 @@ The Single doliproduct Posts Loop
         <?php echo ptibogxivtheme_social(); ?>    
 </header>
     <section>
-      <?php the_content()?>
+      <?php the_content() ?>
       <?php wp_link_pages(); ?>
     </section>
 <?php the_terms( $post->ID, 'post_tag', '<hr><i class="fas fa-tags"></i> ', ' ', '<br><br>'); ?>

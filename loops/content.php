@@ -23,13 +23,13 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
           </div>
 </article><?php endwhile; ?>
 
-  <?php if ( function_exists('ptibogxivtheme_pagination') ) { ptibogxivtheme_pagination(); } else if ( is_paged() ) { ?>
-  <ul class="pagination">
-    <li class="page-item older">
-      <?php next_posts_link('<i class="fa fa-arrow-left"></i> ' . __('Previous', 'ptibogxivtheme')) ?></li>
-    <li class="page-item newer">
-      <?php previous_posts_link(__('Next', 'ptibogxivtheme') . ' <i class="fa fa-arrow-right"></i>') ?></li>
-  </ul>
-  <?php } ?>
+<?php if ( function_exists('ptibogxivtheme_pagination') ) { ptibogxivtheme_pagination(); } else if ( is_paged() ) { ?>
+<ul class="pagination">
+  <li class="page-item older">
+    <?php next_posts_link('<i class="fa fa-arrow-left"></i> ' . __('Previous', 'ptibogxivtheme')) ?></li>
+  <li class="page-item newer">
+    <?php previous_posts_link(__('Next', 'ptibogxivtheme') . ' <i class="fa fa-arrow-right"></i>') ?></li>
+</ul>
+<?php } ?>
 
-  <?php else: wp_redirect(get_bloginfo('url').'/300', 300); endif; ?>
+<?php else: wp_redirect(get_bloginfo('url').'/300', 300); endif; ?>

@@ -84,7 +84,7 @@ echo "</script>";
         <?php } ?>
       <?php } ?>
     </div>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDoliNavbarBottom" aria-labelledby="offcanvasDoliNavbarBottomLabel">
+    <div class="offcanvas offcanvas-start text-<?php echo ptibogxivtheme_NavbarTopBg(); ?>" tabindex="-1" id="offcanvasDoliNavbarBottom" aria-labelledby="offcanvasDoliNavbarBottomLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasDoliNavbarBottomLabel"><?php _e('Menu', 'ptibogxivtheme'); ?></h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>

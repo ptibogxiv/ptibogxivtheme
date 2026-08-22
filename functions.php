@@ -186,6 +186,10 @@ function ptibogxivtheme_init() {
 		return 'backdrop-filter: blur(18px) saturate(170%); -webkit-backdrop-filter: blur(18px) saturate(170%); background-color: rgba(255,255,255,.12);';
 	}
 
+	function ptibogxivtheme_NavbarTopBg() {
+		return (!empty(esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )))?esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )):'bg-light');
+	}
+
 	function ptibogxivtheme_time_ago( $time, $format = '' ) {
 		$post_id = get_the_ID();
 

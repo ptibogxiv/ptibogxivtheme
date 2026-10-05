@@ -6,15 +6,17 @@
 <?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('callDoliApi') && !empty(doliconnectid('dolicart'))) { ?>
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><div class="text-center">
 <?php
-$request = "/doliconnector/0/paymentmethods";
-$listpaymentmethods = callDoliApi("GET", $request, null, dolidelay('paymentmethods', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
-?>
-<?php if ( isset($listpaymentmethods->stripe) && in_array('card', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-visa fa-3x fa-fw"></i><i class="fab fa-cc-mastercard fa-3x fa-fw"></i><i class="fab fa-cc-amex fa-3x fa-fw"></i><?php } ?>
-<?php if ( isset($listpaymentmethods->stripe) && in_array('payment_request_api', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-apple-pay fa-3x fa-fw"></i><?php } ?>
-<?php if ( isset($listpaymentmethods->stripe) && in_array('sepa_debit', $listpaymentmethods->stripe->types) ) { ?><i class="fa-solid fa-university fa-3x fa-fw"></i><?php } ?>
-<?php if ( isset($listpaymentmethods->stripe) && in_array('ideal', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-ideal fa-3x fa-fw"></i><?php } ?>
-<?php if ( isset($listpaymentmethods->VIR) ) { ?><i class="fa-solid fa-university fa-3x fa-fw"></i><?php } ?>
-<?php if ( isset($listpaymentmethods->CHQ) ) { ?><i class="fa-solid fa-money-check fa-3x fa-fw"></i><?php } ?>
+if (doliCheckModules('doliconnector')) {
+  $request = "/doliconnector/0/paymentmethods";
+  $listpaymentmethods = callDoliApi("GET", $request, null, dolidelay('paymentmethods', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
+  ?>
+  <?php if ( isset($listpaymentmethods->stripe) && in_array('card', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-visa fa-3x fa-fw"></i><i class="fab fa-cc-mastercard fa-3x fa-fw"></i><i class="fab fa-cc-amex fa-3x fa-fw"></i><?php } ?>
+  <?php if ( isset($listpaymentmethods->stripe) && in_array('payment_request_api', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-cc-apple-pay fa-3x fa-fw"></i><?php } ?>
+  <?php if ( isset($listpaymentmethods->stripe) && in_array('sepa_debit', $listpaymentmethods->stripe->types) ) { ?><i class="fa-solid fa-university fa-3x fa-fw"></i><?php } ?>
+  <?php if ( isset($listpaymentmethods->stripe) && in_array('ideal', $listpaymentmethods->stripe->types) ) { ?><i class="fab fa-ideal fa-3x fa-fw"></i><?php } ?>
+  <?php if ( isset($listpaymentmethods->VIR) ) { ?><i class="fa-solid fa-university fa-3x fa-fw"></i><?php } ?>
+  <?php if ( isset($listpaymentmethods->CHQ) ) { ?><i class="fa-solid fa-money-check fa-3x fa-fw"></i><?php } ?>
+<?php } ?>
 <?php if ( ! empty(dolikiosk()) ) { ?> <i class="fa-solid fa-money-bill-alt fa-3x fa-fw"></i><?php } ?>
 </div>
 <?php } else { 

@@ -171,12 +171,12 @@ function ptibogxivtheme_init() {
 		);
 
 		$html  = '<div class="btn-group d-flex" role="group" aria-label="' . esc_attr__( 'Social sharing', 'ptibogxivtheme' ) . '">';
-		$html .= '<a href="#" class="btn btn-light disabled w-100" role="button" aria-disabled="true"><i class="fas fa-share-alt fa-fw"></i></a>';
-		$html .= '<a href="mailto:?subject=' . $mailto_subject . '&body=' . $mailto_body . '" class="btn btn-dark w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope fa-fw"></i></a>';
-		$html .= '<a href="' . esc_url( $facebook_url ) . '" class="btn btn-facebook w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f fa-fw"></i></a>';
-		$html .= '<a href="' . esc_url( $twitter_url ) . '" class="btn btn-twitter w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-fw"></i></a>';
-		$html .= '<a href="' . esc_url( $linkedin_url ) . '" class="btn btn-linkedin w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in fa-fw"></i></a>';
-		$html .= '<a href="' . esc_url( $pinterest_url ) . '" class="btn btn-pinterest w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest fa-fw"></i></a>';
+		$html .= '<a href="#" class="btn-text theme-secondary disabled w-100" role="button" aria-disabled="true"><i class="fas fa-share-alt fa-fw"></i></a>';
+		$html .= '<a href="mailto:?subject=' . $mailto_subject . '&body=' . $mailto_body . '" class="btn-solid theme-inverse w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope fa-fw"></i></a>';
+		$html .= '<a href="' . esc_url( $facebook_url ) . '" class="btn-solid theme-primary btn-facebook w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f fa-fw"></i></a>';
+		$html .= '<a href="' . esc_url( $twitter_url ) . '" class="btn-solid theme-info btn-twitter w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter fa-fw"></i></a>';
+		$html .= '<a href="' . esc_url( $linkedin_url ) . '" class="btn-solid theme-primary btn-linkedin w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in fa-fw"></i></a>';
+		$html .= '<a href="' . esc_url( $pinterest_url ) . '" class="btn-solid theme-danger btn-pinterest w-100" role="button" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest fa-fw"></i></a>';
 		$html .= '</div>';
 
 		return $html;
@@ -187,7 +187,29 @@ function ptibogxivtheme_init() {
 	}
 
 	function ptibogxivtheme_NavbarTopBg() {
-		return (!empty(esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )))?esc_attr(get_theme_mod( 'ptibogxivtheme_navbar_color' )):'bg-light');
+		$navbar_color = get_theme_mod( 'ptibogxivtheme_navbar_color', 'bg-1' );
+		$allowed_colors = array( 'bg-1', 'bg-black', 'bg-primary', 'bg-secondary', 'bg-info', 'bg-success', 'bg-warning', 'bg-danger' );
+
+		return in_array( $navbar_color, $allowed_colors, true ) ? $navbar_color : 'bg-1';
+	}
+
+	function ptibogxivtheme_NavbarTopFg() {
+		$foregrounds = array(
+			'bg-1'         => 'fg-body',
+			'bg-black'     => 'fg-body',
+			'bg-primary'   => 'fg-contrast-primary',
+			'bg-secondary' => 'fg-contrast-secondary',
+			'bg-info'      => 'fg-contrast-info',
+			'bg-success'   => 'fg-contrast-success',
+			'bg-warning'   => 'fg-contrast-warning',
+			'bg-danger'    => 'fg-contrast-danger',
+		);
+
+		return $foregrounds[ ptibogxivtheme_NavbarTopBg() ];
+	}
+
+	function ptibogxivtheme_NavbarTopTheme() {
+		return 'bg-black' === ptibogxivtheme_NavbarTopBg() ? 'dark' : 'light';
 	}
 
 	function ptibogxivtheme_time_ago( $time, $format = '' ) {

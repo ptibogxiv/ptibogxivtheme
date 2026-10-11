@@ -1,23 +1,10 @@
 <?php
 
 function ptibogxivtheme_enqueues() {
-	if ( empty(get_theme_mod( 'ptibogxivtheme_css')) || get_theme_mod( 'ptibogxivtheme_css') == 'css' ) {
-		$css = 'bootstrap/css';
-		$versionbase = '5.3.8'; 
-		$version = $versionbase; 
-	} else {
-		$css = 'bootswatch/'.get_theme_mod( 'ptibogxivtheme_css');
-		$version = '5.3.8'; 
-		$versionbase = $version; 
-	}
-	if (!empty(get_theme_mod( 'ptibogxivtheme_css')) && $version != $versionbase && empty(get_option('doliconnectbeta'))) {
-		$css = 'bootstrap/css';
-		$version = $versionbase;
-	}
-	wp_register_style( 'bootstrap.min', get_template_directory_uri().'/lib/'.$css.'/bootstrap.min.css', array(), $version );
+	$version = '6.0.0-alpha.1';
+	wp_register_style( 'bootstrap.min', get_template_directory_uri().'/lib/bootstrap/css/bootstrap.min.css', array(), $version );
 	wp_enqueue_style( 'bootstrap.min');
-	wp_register_script( 'bootstrap.bundle.min', get_template_directory_uri().'/lib/bootstrap/js/bootstrap.bundle.min.js', array('jquery'), $version, true);
-  	wp_enqueue_script( 'bootstrap.bundle.min');
+	wp_enqueue_script_module( 'bootstrap', get_template_directory_uri().'/lib/bootstrap/js/bootstrap.bundle.min.js', array(), $version );
   	wp_register_script( 'font-awesome', 'https://use.fontawesome.com/releases/v7.3.1/js/all.js', array(), '7.3.1');
 	wp_enqueue_script( 'font-awesome');
 	wp_enqueue_script( 'jquery-masonry' );

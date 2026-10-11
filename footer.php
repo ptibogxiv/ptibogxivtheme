@@ -1,4 +1,4 @@
-<footer class="bg-dark text-white">
+<footer class="p-3 theme-inverse theme-contrast">
 <div class="container">
 <br>
 <div class="row">
@@ -63,18 +63,18 @@ echo "</script>";
   <p class="text-center"><small><i class="fa-regular fa-copyright"></i> <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?><br><?php _e('All rights reserved', 'ptibogxivtheme'); ?><?php if (function_exists('doliModalButton')) { ?> - <?php echo doliModalButton('legacy', 'legacyfooter', __('Legal notice', 'ptibogxivtheme'), 'a' , 'text-reset'); } ?></p>
   <p class="text-center"><small><?php 
   if ( defined('PTIBOGXIV_NET') ) {
-    echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by <b>%s</b> and hosted with <i class="fa-solid fa-leaf text-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b' class='text-reset'>Infomaniak</a>");
+    echo sprintf( __('Designed with <i class="fa-solid fa-heart fg-danger"></i> by <b>%s</b> and hosted with <i class="fa-solid fa-leaf fg-success"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>", "<a href='https://www.infomaniak.com/goto/fr/home?utm_term=5de6793fdf41b' class='text-reset'>Infomaniak</a>");
   } else {
-    echo sprintf( __('Designed with <i class="fa-solid fa-heart text-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>");
+    echo sprintf( __('Designed with <i class="fa-solid fa-heart fg-danger"></i> by <b>%s</b>', 'ptibogxivtheme'), "<a href='https://ptibogxiv.eu' rel='noopener' class='text-reset'>ptibogxiv.eu</a>");
   } ?>
   </small></small>
   </p>
 </div>
 </div></div>
-<nav class="bg-body-tertiary fixed-bottom pb-1 d-block d-md-none">
+<nav class="navbar fixed-bottom bg-1 pb-1 d-block md:d-none">
   <div class="container-fluid">
     <div class="btn-group d-flex p-2" role="group" aria-label="Bottom menu">
-      <button class="btn btn-light w-100" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDoliNavbarBottom" aria-controls="offcanvasDoliNavbarBottom" aria-label="Togglemenu">
+      <button class="btn btn-light w-100" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'ptibogxivtheme' ); ?>">
         <i class="fa-solid fa-bars fa-2x fa-fw"></i><br><small><?php _e('Menu', 'ptibogxivtheme'); ?></small>
       </button>
       <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fa-regular fa-home fa-2x fa-fw'></i><br><small><?php _e('Home', 'ptibogxivtheme'); ?></small></a> 
@@ -85,36 +85,6 @@ echo "</script>";
           <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></a> 
         <?php } ?>
       <?php } ?>
-    </div>
-    <div class="offcanvas offcanvas-start text-<?php echo ptibogxivtheme_NavbarTopBg(); ?>" tabindex="-1" id="offcanvasDoliNavbarBottom" aria-labelledby="offcanvasDoliNavbarBottomLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDoliNavbarBottomLabel"><?php _e('Menu', 'ptibogxivtheme'); ?></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <?php
-          wp_nav_menu( array(
-            'theme_location'	=> 'navbar',
-            'container'       => false,
-            'menu_class'		  => '',
-            'fallback_cb'		  => '__return_false',
-            'items_wrap'		  => '<ul id="%1$s" class="navbar-nav flex-grow-1 pe-3 %2$s">%3$s</ul>',
-            'depth'			      => 2,
-            'walker'  	      => new ptibogxivtheme_walker_nav_menu()
-          ) );
-        ?>
-      </div>
-      <div class="offcanvas-footer m-3">
-        <p class="text-center"><small><i class="fa-regular fa-copyright"></i> <?php echo date('Y'); ?> <?php echo get_bloginfo('name'); ?><br><?php _e('All rights reserved', 'ptibogxivtheme'); ?><?php if (function_exists('doliModalButton')) { ?> - <?php echo doliModalButton('legacy', 'legacyfooter', __('Legal notice', 'ptibogxivtheme'), 'a' , 'text-reset'); } ?></p>    
-        <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( !empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts') && wp_get_current_user()->show_admin_bar_front == 'false' ) ) { ?>
-          <div class="btn-group-vertical d-flex d-grid" role="group" aria-label="Administration button group">
-            <?php if ( isset(doliConnect('user', wp_get_current_user())->id) && doliConnect('user', wp_get_current_user())->id > 0 ) { ?>
-              <a type="button" class="btn btn-lg" href="<?php echo doliConnect('user', wp_get_current_user())->dolibarr_url; ?>" rel="noopener" title="<?php _e('Dolibarr', 'ptibogxivtheme'); ?>" target="_dolibarr"><i class="fa-brands fa-dolibarr fa-fw"></i> <?php _e('Dolibarr', 'ptibogxivtheme'); ?></a>
-            <?php } ?>
-            <a type="button" class="btn btn-lg" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>""><i class="fa-solid fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a>
-          </div>
-        <?php } ?>
-      </div>
     </div>
   </div>
 </nav>

@@ -92,11 +92,10 @@ if ( function_exists( 'wp_body_open' ) ) {
               <?php } ?>
             <?php } ?>
             <?php if ( !is_user_logged_in() ) { ?>
-              <li class="nav-item"><span class="avatar theme-primary">CD</span></li>
               <li class="nav-item"><a class="nav-link <?php echo ptibogxivtheme_NavbarTopFg() ?>" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a></li>
             <?php } else { ?>
               <li class="nav-item">
-                <button class="nav-link <?php echo ptibogxivtheme_NavbarTopFg() ?>" type="button" data-bs-toggle="menu" data-bs-placement="bottom-end" aria-expanded="false" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></button>
+                <button class="nav-link <?php echo ptibogxivtheme_NavbarTopFg() ?>" type="button" data-bs-toggle="menu" data-bs-placement="bottom-end" aria-expanded="false" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><span class="avatar avatar-sm theme-primary">TF</span></button>
                 <div class="menu">
                   <a class="menu-item" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-circle-user fa-fw"></i> <?php _e('My account', 'ptibogxivtheme'); ?></a>
                     <?php if ( isset(doliConnect('user', wp_get_current_user())->id) && doliConnect('user', wp_get_current_user())->id > 0 ) { ?>
@@ -113,6 +112,18 @@ if ( function_exists( 'wp_body_open' ) ) {
               </li>
             <?php } ?>
           </ul>
+        </div>
+      </div>
+      <div class="drawer-footer">
+        <div class= "d-block lg:d-none">
+          <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( !empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts') && wp_get_current_user()->show_admin_bar_front == 'false' ) ) { ?>
+            <div class="d-grid gap-2" aria-label="Administration button group">
+              <?php if ( isset(doliConnect('user', wp_get_current_user())->id) && doliConnect('user', wp_get_current_user())->id > 0 ) { ?>
+                <a type="button" class="btn-outline theme-secondary btn-lg" href="<?php echo doliConnect('user', wp_get_current_user())->dolibarr_url; ?>" rel="noopener" title="<?php _e('Dolibarr', 'ptibogxivtheme'); ?>" target="_dolibarr"><i class="fa-brands fa-dolibarr fa-fw"></i> <?php _e('Dolibarr', 'ptibogxivtheme'); ?></a>
+              <?php } ?>
+              <a type="button" class="btn-outline theme-secondary btn-lg" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>""><i class="fa-solid fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a>
+            </div>
+          <?php } ?>
         </div>
       </div>
     </dialog>

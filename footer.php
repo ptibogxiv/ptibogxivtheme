@@ -71,18 +71,18 @@ echo "</script>";
   </p>
 </div>
 </div></div>
-<nav class="navbar fixed-bottom bg-1 pb-1 d-block md:d-none">
+<nav class="navbar navbar-translucent fixed-bottom pb-1 d-block md:d-none">
   <div class="container-fluid">
     <div class="btn-group d-flex p-2" role="group" aria-label="Bottom menu">
-      <button class="btn btn-light w-100" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'ptibogxivtheme' ); ?>">
+      <button class="btn btn-link theme-inverse w-100" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'ptibogxivtheme' ); ?>">
         <i class="fa-solid fa-bars fa-2x fa-fw"></i><br><small><?php _e('Menu', 'ptibogxivtheme'); ?></small>
       </button>
-      <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-light w-100" ><i class='fa-regular fa-home fa-2x fa-fw'></i><br><small><?php _e('Home', 'ptibogxivtheme'); ?></small></a> 
+      <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-link theme-inverse w-100" ><i class='fa-regular fa-home fa-2x fa-fw'></i><br><small><?php _e('Home', 'ptibogxivtheme'); ?></small></a> 
       <?php if ( function_exists('doliconnecturl') && doliconnectid('dolicart') > 0 ) { ?>
         <?php if (!is_page(doliconnectid('dolicart')) && function_exists('doliOffcanvasCart')) { ?>
-          <button class="btn btn-light w-100" type="button" data-bs-toggle="drawer" data-bs-target="#offcanvasDoliCartLabel" aria-controls="offcanvasDoliCartLabel" aria-label="<?php _e('My account', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></button>
+          <button class="btn btn-link theme-inverse w-100" type="button" data-bs-toggle="drawer" data-bs-target="#offcanvasDoliCartLabel" aria-controls="offcanvasDoliCartLabel" aria-label="<?php _e('My account', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></button>
         <?php } else { ?>
-          <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-light w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></a> 
+          <a href="<?php echo doliconnecturl('dolicart'); ?>" class="btn btn-link theme-inverse w-100" ><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span><br><small><?php _e('Cart', 'ptibogxivtheme'); ?></small></a> 
         <?php } ?>
       <?php } ?>
     </div>

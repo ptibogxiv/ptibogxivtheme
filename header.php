@@ -53,15 +53,9 @@ if ( function_exists( 'wp_body_open' ) ) {
     } else {
       $redirect_to = get_permalink();
     } ?>
-    
-    <?php if ( !is_user_logged_in() ) { ?>
-      <a class="<?php echo ptibogxivtheme_NavbarTopFg() ?> d-block md:d-none" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a>
-    <?php } else { ?>
-      <a class="<?php echo ptibogxivtheme_NavbarTopFg() ?> d-block md:d-none" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a>
-    <?php } ?>
-    <button class="btn-icon navbar-toggler lg:d-none" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'ptibogxivtheme' ); ?>">
-      <span class="navbar-toggler-icon" aria-hidden="true"></span>
-    </button>
+    <div class="d-block md:d-none">
+      <?php echo ptibogxivtheme_LoginMenu($redirect_to); ?>
+    </div>
     <dialog class="drawer drawer-end drawer-translucent" id="navbarDrawer" tabindex="-1" aria-label="<?php esc_attr_e( 'Navigation', 'ptibogxivtheme' ); ?>">
       <div class="drawer-header">
         <h5 class="drawer-title" id="navbarTextLabel"><?php esc_attr_e( 'Menu', 'ptibogxivtheme' ); ?></h5>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2026-08-21 17:56+0200\n"
-"PO-Revision-Date: 2026-08-21 17:56+0200\n"
+"POT-Creation-Date: 2026-10-15 13:01+0200\n"
+"PO-Revision-Date: 2026-10-15 13:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -49,80 +49,90 @@ msgstr "Catégorie :"
 msgid "Payment modes"
 msgstr "Modes de paiement"
 
-#: footer.php:25
+#: footer.php:27
 msgid "Social networks"
 msgstr "Réseaux sociaux"
 
-#: footer.php:37
+#: footer.php:39
 msgid "Resources"
 msgstr "Ressources"
 
-#: footer.php:40
+#: footer.php:42
 msgid "Terms of service"
 msgstr "Conditions Générales d’Utilisation"
 
-#: footer.php:42
+#: footer.php:44
 msgid "Kiosk mode ON"
 msgstr "Mode kiosque ON"
 
-#: footer.php:61 footer.php:106
+#: footer.php:63
 msgid "All rights reserved"
 msgstr "Tous droits réservés"
 
-#: footer.php:61 footer.php:106
+#: footer.php:63
 msgid "Legal notice"
 msgstr "Mentions légales"
-
-#: footer.php:64
-#, php-format
-msgid ""
-"Designed with <i class=\"fa-solid fa-heart text-danger\"></i> by <b>%s</b> "
-"and hosted with <i class=\"fa-solid fa-leaf text-success\"></i> by <b>%s</b>"
-msgstr ""
-"Conçu avec <i class=\"fa-solid fa-heart text-danger\"></i> par <b>%s</b> et "
-"hébergé avec <i class=\"fa-solid fa-leaf text-success\"></i> par <b>%s</b>"
 
 #: footer.php:66
 #, php-format
 msgid ""
-"Designed with <i class=\"fa-solid fa-heart text-danger\"></i> by <b>%s</b>"
+"Designed with <i class=\"fa-solid fa-heart fg-danger\"></i> by <b>%s</b> and "
+"hosted with <i class=\"fa-solid fa-leaf fg-success\"></i> by <b>%s</b>"
 msgstr ""
-"Conçu avec <i class=\"fa-solid fa-heart text-danger\"></i> par <b>%s</b>"
+"Conçu avec <i class=\"fa-solid fa-heart fg-danger\"></i> par <b>%s</b> et "
+"hébergé sur <i class=\"fa-solid fa-leaf fg-success\"></i> par <b>%s</b>"
 
-#: footer.php:76 footer.php:89
+#: footer.php:68
+#, php-format
+msgid ""
+"Designed with <i class=\"fa-solid fa-heart fg-danger\"></i> by <b>%s</b>"
+msgstr "Conçu avec <i class=\"fa-solid fa-heart fg-danger\"></i> par <b>%s</b>"
+
+#: footer.php:77
+msgid "Toggle navigation"
+msgstr "Basculer la navigation"
+
+#: footer.php:78 header.php:61
 msgid "Menu"
 msgstr "Menu"
 
-#: footer.php:78
+#: footer.php:80
 msgid "Home"
 msgstr "Accueil"
 
-#: footer.php:81 header.php:56 header.php:58 header.php:85 header.php:88
-#: header.php:90
+#: footer.php:83 functions.php:192 functions.php:195 functions.php:200
 msgid "My account"
 msgstr "Mon compte"
 
-#: footer.php:81 footer.php:83 header.php:78 header.php:80
+#: footer.php:83 footer.php:85 header.php:83 header.php:85
 msgid "Cart"
 msgstr "Panier"
-
-#: footer.php:110 header.php:93
-msgid "Dolibarr"
-msgstr "Dolibarr"
-
-#: footer.php:112 header.php:97
-msgid "Administration"
-msgstr "Administration"
 
 #: functions.php:173
 msgid "Social sharing"
 msgstr "Partage sur les réseaux sociaux"
 
-#: functions.php:201
+#: functions.php:199
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: functions.php:203
+msgid "Dolibarr"
+msgstr "Dolibarr"
+
+#: functions.php:207
+msgid "Administration"
+msgstr "Administration"
+
+#: functions.php:210 loops/comments.php:49
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: functions.php:254
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:205
+#: functions.php:258
 #, php-format
 msgid "%s ago"
 msgstr "Il y a %s"
@@ -147,7 +157,7 @@ msgstr "<i class=\"fas fa-angle-left\"></i> Précédent"
 msgid "Older <i class=\"fas fa-angle-right\"></i>"
 msgstr "Suivant <i class=\"fas fa-angle-right\"></i>"
 
-#: functions/navbar.php:59
+#: functions/navbar.php:84
 msgid "Navbar"
 msgstr "Barre de navigation"
 
@@ -187,121 +197,17 @@ msgstr "Container pleine largeur"
 msgid "Css scheme"
 msgstr "Schéma CSS"
 
-#: functions/setup.php:81 functions/setup.php:116 functions/setup.php:233
-msgid "Choose between scheme"
-msgstr "Choisissez un jeu de couleurs"
-
-#: functions/setup.php:85
-msgid "Default"
-msgstr "Par défaut"
-
-#: functions/setup.php:86
-msgid "Brite"
-msgstr "Brite"
-
-#: functions/setup.php:87
-msgid "Cerulean"
-msgstr "Cæruléum"
-
-#: functions/setup.php:88
-msgid "Cosmo"
-msgstr "Cosmo"
-
-#: functions/setup.php:89
-msgid "Cyborg"
-msgstr "Cyborg"
-
-#: functions/setup.php:90
-msgid "Darkly"
-msgstr "Darkly"
-
-#: functions/setup.php:91
-msgid "Flatly"
-msgstr "Flatly"
-
-#: functions/setup.php:92
-msgid "Journal"
-msgstr "Journal"
-
-#: functions/setup.php:93
-msgid "Litera"
-msgstr "Litera"
-
-#: functions/setup.php:94
-msgid "Lumen"
-msgstr "Lumen"
-
-#: functions/setup.php:95
-msgid "Lux"
-msgstr "Lux"
-
-#: functions/setup.php:96
-msgid "Materia"
-msgstr "Materia"
-
-#: functions/setup.php:97
-msgid "Minty"
-msgstr "Minty"
-
-#: functions/setup.php:98
-msgid "Morph"
-msgstr "Morph"
-
-#: functions/setup.php:99
-msgid "Pulse"
-msgstr "Pulsation"
-
-#: functions/setup.php:100
-msgid "Quartz"
-msgstr "Quartz"
-
-#: functions/setup.php:101
-msgid "Sandstone"
-msgstr "Grès"
-
-#: functions/setup.php:102
-msgid "Simplex"
-msgstr "Simplex"
-
-#: functions/setup.php:103
-msgid "Sketchy"
-msgstr "Sketchy"
-
-#: functions/setup.php:104
-msgid "Slate"
-msgstr "Ardoise"
-
-#: functions/setup.php:105
-msgid "Solar"
-msgstr "Solar"
-
-#: functions/setup.php:106
-msgid "Spacelab"
-msgstr "Spacelab"
-
-#: functions/setup.php:107
-msgid "Superhero"
-msgstr "Super-héros"
-
-#: functions/setup.php:108
-msgid "United"
-msgstr "Fusionné"
-
-#: functions/setup.php:109
-msgid "Vapor"
-msgstr "Vapor"
-
-#: functions/setup.php:110
-msgid "Yeti"
-msgstr "Yéti"
-
-#: functions/setup.php:111
-msgid "Zephyr"
-msgstr "Zephyr"
+#: functions/setup.php:81
+msgid "Bootstrap 6 default scheme"
+msgstr "Palette de couleurs par défaut de Bootstrap 6"
 
 #: functions/setup.php:115
 msgid "Navbar Color scheme"
 msgstr "Barre de navigation"
+
+#: functions/setup.php:116 functions/setup.php:233
+msgid "Choose between scheme"
+msgstr "Choisissez un jeu de couleurs"
 
 #: functions/setup.php:120 functions/setup.php:239
 msgid "Light scheme"
@@ -470,11 +376,15 @@ msgstr "Carousel"
 msgid "The caroussel widget area"
 msgstr "La zone de widget caroussel"
 
-#: header.php:100 loops/comments.php:49
-msgid "Logout"
-msgstr "Déconnexion"
+#: header.php:59
+msgid "Navigation"
+msgstr "Navigation"
 
-#: index.php:22 single.php:22
+#: header.php:62
+msgid "Close"
+msgstr "Fermer"
+
+#: index.php:22
 msgid "News"
 msgstr "Actualités"
 
@@ -731,7 +641,7 @@ msgstr "Message"
 msgid "Submit comment"
 msgstr "Envoyer votre commentaire"
 
-#: loops/content-doliproduct.php:13 loops/content-single.php:13
+#: loops/content-doliproduct.php:13 loops/content-single.php:14
 msgid "By"
 msgstr "Par"
 
@@ -788,6 +698,87 @@ msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
 #. Author of the plugin/theme
 msgid "ptibogxiv"
 msgstr "ptibogxiv"
+
+#~ msgid "Default"
+#~ msgstr "Par défaut"
+
+#~ msgid "Brite"
+#~ msgstr "Brite"
+
+#~ msgid "Cerulean"
+#~ msgstr "Cæruléum"
+
+#~ msgid "Cosmo"
+#~ msgstr "Cosmo"
+
+#~ msgid "Cyborg"
+#~ msgstr "Cyborg"
+
+#~ msgid "Darkly"
+#~ msgstr "Darkly"
+
+#~ msgid "Flatly"
+#~ msgstr "Flatly"
+
+#~ msgid "Journal"
+#~ msgstr "Journal"
+
+#~ msgid "Litera"
+#~ msgstr "Litera"
+
+#~ msgid "Lumen"
+#~ msgstr "Lumen"
+
+#~ msgid "Lux"
+#~ msgstr "Lux"
+
+#~ msgid "Materia"
+#~ msgstr "Materia"
+
+#~ msgid "Minty"
+#~ msgstr "Minty"
+
+#~ msgid "Morph"
+#~ msgstr "Morph"
+
+#~ msgid "Pulse"
+#~ msgstr "Pulsation"
+
+#~ msgid "Quartz"
+#~ msgstr "Quartz"
+
+#~ msgid "Sandstone"
+#~ msgstr "Grès"
+
+#~ msgid "Simplex"
+#~ msgstr "Simplex"
+
+#~ msgid "Sketchy"
+#~ msgstr "Sketchy"
+
+#~ msgid "Slate"
+#~ msgstr "Ardoise"
+
+#~ msgid "Solar"
+#~ msgstr "Solar"
+
+#~ msgid "Spacelab"
+#~ msgstr "Spacelab"
+
+#~ msgid "Superhero"
+#~ msgstr "Super-héros"
+
+#~ msgid "United"
+#~ msgstr "Fusionné"
+
+#~ msgid "Vapor"
+#~ msgstr "Vapor"
+
+#~ msgid "Yeti"
+#~ msgstr "Yéti"
+
+#~ msgid "Zephyr"
+#~ msgstr "Zephyr"
 
 #~ msgid "Account"
 #~ msgstr "Compte"

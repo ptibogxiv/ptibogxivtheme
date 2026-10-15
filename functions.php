@@ -187,12 +187,16 @@ function ptibogxivtheme_init() {
 	}
 
 	function ptibogxivtheme_LoginMenu($redirect_to) {
+		global $current_user;
 		if ( !is_user_logged_in() ) {
             $html = '<li class="nav-item"><a class="nav-link ' . ptibogxivtheme_NavbarTopFg() . '" href="' . wp_login_url( $redirect_to ) . '" title="' . __( 'My account', 'ptibogxivtheme' ) . '"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a></li>';
         } else {
             $html = '<li class="nav-item">
-            <button class="nav-link ' . ptibogxivtheme_NavbarTopFg() . '" type="button" data-bs-toggle="menu" data-bs-placement="bottom-end" aria-expanded="false" title="' . __( 'My account', 'ptibogxivtheme' ) . '"><span class="avatar avatar-sm theme-primary">TF</span></button>
+            <button class="nav-link ' . ptibogxivtheme_NavbarTopFg() . '" type="button" data-bs-toggle="menu" data-bs-placement="bottom-end" aria-expanded="false" title="' . __( 'My account', 'ptibogxivtheme' ) . '"><span class="avatar avatar-sm theme-primary">';
+			$html .= strtoupper($current_user->user_firstname ? substr(esc_html($current_user->user_firstname), 0, 2) : substr(esc_html($current_user->user_login), 0, 2));
+			$html .= '</span></button>
             <div class="menu">
+			<h6 class="menu-header">' . __( 'Welcome', 'ptibogxivtheme' ) . ' ' . esc_html($current_user->user_firstname) . '!</h6>
             <a class="menu-item" href="' . doliconnecturl('doliaccount') . '" title="' . __( 'My account', 'ptibogxivtheme' ) . '"><i class="fa-solid fa-circle-user fa-fw"></i> ' . __( 'My account', 'ptibogxivtheme' ) . '</a>';
             if ( isset(doliConnect('user', wp_get_current_user())->id) && doliConnect('user', wp_get_current_user())->id > 0 ) {
             	$html .= '<hr class="menu-divider">

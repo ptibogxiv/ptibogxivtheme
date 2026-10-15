@@ -62,7 +62,7 @@ if ( function_exists( 'wp_body_open' ) ) {
     <button class="btn-icon navbar-toggler lg:d-none" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'ptibogxivtheme' ); ?>">
       <span class="navbar-toggler-icon" aria-hidden="true"></span>
     </button>
-    <dialog class="drawer drawer-end" id="navbarDrawer" tabindex="-1" aria-label="<?php esc_attr_e( 'Navigation', 'ptibogxivtheme' ); ?>">
+    <dialog class="drawer drawer-end drawer-translucent" id="navbarDrawer" tabindex="-1" aria-label="<?php esc_attr_e( 'Navigation', 'ptibogxivtheme' ); ?>">
       <div class="drawer-header">
         <h5 class="drawer-title" id="navbarTextLabel"><?php esc_attr_e( 'Menu', 'ptibogxivtheme' ); ?></h5>
         <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="<?php esc_attr_e( 'Close', 'ptibogxivtheme' ); ?>"></button>

@@ -196,7 +196,7 @@ function ptibogxivtheme_init() {
 			$html .= strtoupper($current_user->user_firstname ? substr(esc_html($current_user->user_firstname), 0, 2) : substr(esc_html($current_user->user_login), 0, 2));
 			$html .= '</span></button>
             <div class="menu">
-			<h6 class="menu-header">' . __( 'Welcome', 'ptibogxivtheme' ) . ' ' . esc_html($current_user->user_firstname) . '!</h6>
+			<h6 class="menu-header">' . __( 'Welcome', 'ptibogxivtheme' ) . ' ' . ucwords(esc_html($current_user->user_firstname)) . '!</h6>
             <a class="menu-item" href="' . doliconnecturl('doliaccount') . '" title="' . __( 'My account', 'ptibogxivtheme' ) . '"><i class="fa-solid fa-circle-user fa-fw"></i> ' . __( 'My account', 'ptibogxivtheme' ) . '</a>';
             if ( isset(doliConnect('user', wp_get_current_user())->id) && doliConnect('user', wp_get_current_user())->id > 0 ) {
             	$html .= '<hr class="menu-divider">

@@ -91,26 +91,7 @@ if ( function_exists( 'wp_body_open' ) ) {
                 <li class="nav-item"><a class="nav-link <?php echo ptibogxivtheme_NavbarTopFg() ?>" href="<?php echo doliconnecturl('dolicart'); ?>" title="<?php _e('Cart', 'ptibogxivtheme'); ?>"><span class="fa-layers fa-2x fa-fw"><i class="fa-solid fa-basket-shopping"></i><span class="fa-layers-counter" id="DoliFooterCartItems" style="background:Tomato"><?php echo doliconnect_countitems(doliConnect('order', wp_get_current_user())); ?></span></span></a></li>
               <?php } ?>
             <?php } ?>
-            <?php if ( !is_user_logged_in() ) { ?>
-              <li class="nav-item"><a class="nav-link <?php echo ptibogxivtheme_NavbarTopFg() ?>" href="<?php echo wp_login_url( $redirect_to ); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a></li>
-            <?php } else { ?>
-              <li class="nav-item">
-                <button class="nav-link <?php echo ptibogxivtheme_NavbarTopFg() ?>" type="button" data-bs-toggle="menu" data-bs-placement="bottom-end" aria-expanded="false" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><span class="avatar avatar-sm theme-primary">TF</span></button>
-                <div class="menu">
-                  <a class="menu-item" href="<?php echo doliconnecturl('doliaccount'); ?>" title="<?php _e('My account', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-circle-user fa-fw"></i> <?php _e('My account', 'ptibogxivtheme'); ?></a>
-                    <?php if ( isset(doliConnect('user', wp_get_current_user())->id) && doliConnect('user', wp_get_current_user())->id > 0 ) { ?>
-                      <hr class="menu-divider">
-                      <a class="menu-item" href="<?php echo doliConnect('user', wp_get_current_user())->dolibarr_url; ?>" rel="noopener" title="<?php _e('Dolibarr', 'ptibogxivtheme'); ?>" target="_dolibarr"><i class="fa-brands fa-dolibarr fa-fw"></i> <?php _e('Dolibarr', 'ptibogxivtheme'); ?></a>
-                    <?php } ?>
-                    <?php if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( !empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts') && wp_get_current_user()->show_admin_bar_front == 'false' ) ) { ?>
-                      <hr class="menu-divider">
-                      <a class="menu-item" href="<?php echo admin_url('index.php'); ?>" title="<?php _e('Administration', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-cogs fa-fw"></i> <?php _e('Administration', 'ptibogxivtheme'); ?></a>
-                    <?php } ?>
-                  <hr class="menu-divider">
-                  <a class="menu-item" href="<?php echo wp_logout_url( $redirect_to ); ?>" title="<?php _e('Logout', 'ptibogxivtheme'); ?>"><i class="fa-solid fa-right-from-bracket fa-fw"></i><?php _e('Logout', 'ptibogxivtheme'); ?></a>
-                </div>
-              </li>
-            <?php } ?>
+          <?php echo ptibogxivtheme_LoginMenu($redirect_to); ?>
           </ul>
         </div>
       </div>

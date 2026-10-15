@@ -186,6 +186,29 @@ function ptibogxivtheme_init() {
 		return 'backdrop-filter: blur(18px) saturate(170%); -webkit-backdrop-filter: blur(18px) saturate(170%); background-color: rgba(255,255,255,.12);';
 	}
 
+	function ptibogxivtheme_LoginMenu($redirect_to) {
+		if ( !is_user_logged_in() ) {
+            $html = '<li class="nav-item"><a class="nav-link ' . ptibogxivtheme_NavbarTopFg() . '" href="' . wp_login_url( $redirect_to ) . '" title="' . __( 'My account', 'ptibogxivtheme' ) . '"><i class="fa-regular fa-circle-user fa-2x fa-fw"></i></a></li>';
+        } else {
+            $html = '<li class="nav-item">
+            <button class="nav-link ' . ptibogxivtheme_NavbarTopFg() . '" type="button" data-bs-toggle="menu" data-bs-placement="bottom-end" aria-expanded="false" title="' . __( 'My account', 'ptibogxivtheme' ) . '"><span class="avatar avatar-sm theme-primary">TF</span></button>
+            <div class="menu">
+            <a class="menu-item" href="' . doliconnecturl('doliaccount') . '" title="' . __( 'My account', 'ptibogxivtheme' ) . '"><i class="fa-solid fa-circle-user fa-fw"></i> ' . __( 'My account', 'ptibogxivtheme' ) . '</a>';
+            if ( isset(doliConnect('user', wp_get_current_user())->id) && doliConnect('user', wp_get_current_user())->id > 0 ) {
+            	$html .= '<hr class="menu-divider">
+                <a class="menu-item" href="' . doliConnect('user', wp_get_current_user())->dolibarr_url . '" rel="noopener" title="' . __( 'Dolibarr', 'ptibogxivtheme' ) . '" target="_dolibarr"><i class="fa-brands fa-dolibarr fa-fw"></i> ' . __( 'Dolibarr', 'ptibogxivtheme' ) . '</a>';
+            }
+            if ( ( empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts' )) || ( !empty(get_theme_mod( 'ptibogxivtheme_adminbar')) && current_user_can( 'edit_posts') && wp_get_current_user()->show_admin_bar_front == 'false' ) ) {
+                $html .= '<hr class="menu-divider">
+                <a class="menu-item" href="' . admin_url('index.php') . '" title="' . __( 'Administration', 'ptibogxivtheme' ) . '"><i class="fa-solid fa-cogs fa-fw"></i> ' . __( 'Administration', 'ptibogxivtheme' ) . '</a>';
+            }
+            $html .= '<hr class="menu-divider">';
+            $html .= '<a class="menu-item" href="' . wp_logout_url( $redirect_to ) . '" title="' . __( 'Logout', 'ptibogxivtheme' ) . '"><i class="fa-solid fa-right-from-bracket fa-fw"></i>' . __( 'Logout', 'ptibogxivtheme' ) . '</a>';
+            $html .= '</div></li>';
+     	}
+	return $html;
+	}
+
 	function ptibogxivtheme_NavbarTopBg() {
 		$navbar_color = get_theme_mod( 'ptibogxivtheme_navbar_color', 'bg-1' );
 		$allowed_colors = array( 'bg-1', 'bg-black', 'bg-primary', 'bg-secondary', 'bg-info', 'bg-success', 'bg-warning', 'bg-danger' );

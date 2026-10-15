@@ -56,7 +56,7 @@ if ( function_exists( 'wp_body_open' ) ) {
     <div class="d-block md:d-none">
       <?php echo ptibogxivtheme_LoginMenu($redirect_to); ?>
     </div>
-    <dialog class="drawer drawer-end drawer-translucent" id="navbarDrawer" tabindex="-1" aria-label="<?php esc_attr_e( 'Navigation', 'ptibogxivtheme' ); ?>">
+    <dialog class="drawer drawer-start drawer-translucent" id="navbarDrawer" tabindex="-1" aria-label="<?php esc_attr_e( 'Navigation', 'ptibogxivtheme' ); ?>">
       <div class="drawer-header">
         <h5 class="drawer-title" id="navbarTextLabel"><?php esc_attr_e( 'Menu', 'ptibogxivtheme' ); ?></h5>
         <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="<?php esc_attr_e( 'Close', 'ptibogxivtheme' ); ?>"></button>

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
 "POT-Creation-Date: 2026-10-30 22:10+0100\n"
-"PO-Revision-Date: 2026-10-30 22:11+0100\n"
+"PO-Revision-Date: 2026-10-30 22:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -73,7 +73,7 @@ msgstr "Auteur %s"
 
 #: category.php:22
 msgid "News:"
-msgstr "News :"
+msgstr "Actualités:"
 
 #: footer.php:7
 msgid "Payment modes"

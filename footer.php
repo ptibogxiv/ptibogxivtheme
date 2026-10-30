@@ -2,7 +2,7 @@
 <div class="container">
 <br>
 <div class="row">
-<div class="col-6 col-md-3">
+<div class="col-6 md:col-3">
 <?php if (! is_active_sidebar('payment-footer-widget-area') && function_exists('callDoliApi') && !empty(doliconnectid('dolicart'))) { ?>
 <strong><?php _e('Payment modes', 'ptibogxivtheme'); ?></strong><div class="text-center">
 <?php
@@ -21,7 +21,7 @@ if (doliCheckModules('doliconnector')) {
 </div>
 <?php } else { 
 dynamic_sidebar('payment-footer-widget-area'); } ?>
-<br></div><div class="col-6 col-md-3">
+<br></div><div class="col-6 md:col-3">
 <?php if (! is_active_sidebar('social-footer-widget-area') && function_exists('callDoliApi')) {
 $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc_attr(isset($_GET["refresh"]) ? $_GET["refresh"] : null)));
 ?><strong><?php _e('Social networks', 'ptibogxivtheme'); ?><br></strong>
@@ -32,7 +32,7 @@ $company = callDoliApi("GET", "/setup/company", null, dolidelay('constante', esc
     dynamic_sidebar('social-footer-widget-area'); 
 }?>
 </div>
-<div class="col-12 col-md-6">
+<div class="col-12 md:col-6">
   <div class="row"><div class="col-6">
     <?php dynamic_sidebar('address-footer-widget-area'); ?>
   </div>

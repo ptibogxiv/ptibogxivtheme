@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ptibogxiv\n"
-"POT-Creation-Date: 2026-10-15 13:01+0200\n"
-"PO-Revision-Date: 2026-10-15 13:02+0200\n"
+"POT-Creation-Date: 2026-10-30 22:10+0100\n"
+"PO-Revision-Date: 2026-10-30 22:11+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.9\n"
+"X-Generator: Poedit 3.10\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -19,6 +19,36 @@ msgstr ""
 "__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Theme Name of the plugin/theme
+#: style.css:2
+msgid "ptibogxivtheme"
+msgstr "ptibogxivtheme"
+
+#. Theme URI of the plugin/theme
+#: style.css:3 style.css:6
+msgid "https://ptibogxiv.eu"
+msgstr "https://ptibogxiv.eu"
+
+#. Description of the plugin/theme
+#: style.css:4
+msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
+msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
+
+#. Author of the plugin/theme
+#: style.css:5
+msgid "ptibogxiv"
+msgstr "ptibogxiv"
+
+#. Template Name of the plugin/theme
+#: page/page-full-home.php:4
+msgid "PleinePageAccueil"
+msgstr "PleinePageAccueil"
+
+#. Template Name of the plugin/theme
+#: page/page-full.php:4
+msgid "PleinePage"
+msgstr "PleinePage"
 
 #: 404.php:23
 msgid "Error"
@@ -41,9 +71,9 @@ msgstr "Archives"
 msgid "Author %s"
 msgstr "Auteur %s"
 
-#: category.php:22 taxonomy-doliproduct_category.php:22
-msgid "Category :"
-msgstr "Catégorie :"
+#: category.php:22
+msgid "News:"
+msgstr "News :"
 
 #: footer.php:7
 msgid "Payment modes"
@@ -100,7 +130,7 @@ msgstr "Menu"
 msgid "Home"
 msgstr "Accueil"
 
-#: footer.php:83 functions.php:192 functions.php:195 functions.php:200
+#: footer.php:83 functions.php:192 functions.php:195 functions.php:209
 msgid "My account"
 msgstr "Mon compte"
 
@@ -112,27 +142,27 @@ msgstr "Panier"
 msgid "Social sharing"
 msgstr "Partage sur les réseaux sociaux"
 
-#: functions.php:199
+#: functions.php:208
 msgid "Welcome"
 msgstr "Bienvenue"
 
-#: functions.php:203
+#: functions.php:212
 msgid "Dolibarr"
 msgstr "Dolibarr"
 
-#: functions.php:207
+#: functions.php:216
 msgid "Administration"
 msgstr "Administration"
 
-#: functions.php:210 loops/comments.php:49
+#: functions.php:219 loops/comments.php:49
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: functions.php:254
+#: functions.php:263
 msgid "sometime"
 msgstr "un jour"
 
-#: functions.php:258
+#: functions.php:267
 #, php-format
 msgid "%s ago"
 msgstr "Il y a %s"
@@ -682,22 +712,9 @@ msgstr "Chercher"
 msgid "Search Results for"
 msgstr "Résultats de la recherche pour"
 
-#. Theme Name of the plugin/theme
-msgid "ptibogxivtheme"
-msgstr "ptibogxivtheme"
-
-#. Theme URI of the plugin/theme
-#. Author URI of the plugin/theme
-msgid "https://ptibogxiv.eu"
-msgstr "https://ptibogxiv.eu"
-
-#. Description of the plugin/theme
-msgid "Bootstrap Starter Theme for WordPress & Doliconnect"
-msgstr "Bootstrap Starter Thème pour WordPress & Doliconnect"
-
-#. Author of the plugin/theme
-msgid "ptibogxiv"
-msgstr "ptibogxiv"
+#: taxonomy-doliproduct_category.php:22
+msgid "Category :"
+msgstr "Catégorie :"
 
 #~ msgid "Default"
 #~ msgstr "Par défaut"
